@@ -55,10 +55,13 @@ Partial Class NuevoCliente
         Me.PBCancelarU = New System.Windows.Forms.PictureBox()
         Me.LblAceptarU = New System.Windows.Forms.Label()
         Me.PBAceptarU = New System.Windows.Forms.PictureBox()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBBorrarU, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBCancelarU, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBAceptarU, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -403,13 +406,29 @@ Partial Class NuevoCliente
         Me.PBAceptarU.TabIndex = 81
         Me.PBAceptarU.TabStop = False
         '
-        'NuevoUsuario
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLabEstado})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 544)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(792, 22)
+        Me.StatusStrip1.TabIndex = 87
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'TSLabEstado
+        '
+        Me.TSLabEstado.Name = "TSLabEstado"
+        Me.TSLabEstado.Size = New System.Drawing.Size(40, 17)
+        Me.TSLabEstado.Text = "Estado"
+        '
+        'NuevoCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(792, 566)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.LblCancelarU)
         Me.Controls.Add(Me.LblBorrarU)
         Me.Controls.Add(Me.PBBorrarU)
@@ -443,12 +462,14 @@ Partial Class NuevoCliente
         Me.Controls.Add(Me.TBNombreU)
         Me.Controls.Add(Me.Label1)
         Me.MaximizeBox = False
-        Me.Name = "NuevoUsuario"
+        Me.Name = "NuevoCliente"
         Me.Text = "Nuevo Usuario"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBBorrarU, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBCancelarU, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBAceptarU, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -485,4 +506,6 @@ Partial Class NuevoCliente
     Friend WithEvents PBCancelarU As System.Windows.Forms.PictureBox
     Friend WithEvents LblAceptarU As System.Windows.Forms.Label
     Friend WithEvents PBAceptarU As System.Windows.Forms.PictureBox
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents TSLabEstado As System.Windows.Forms.ToolStripStatusLabel
 End Class

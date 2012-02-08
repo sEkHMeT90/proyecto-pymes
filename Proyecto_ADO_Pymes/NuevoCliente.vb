@@ -26,6 +26,7 @@ Public Class NuevoCliente
             Next
         End If
 
+        TSLabEstado.Text = ""
     End Sub
 
     ''' <summary>
@@ -47,41 +48,27 @@ Public Class NuevoCliente
     End Sub
 
     ''' <summary>
-    ''' Cierra el formulario y no realiza nada
-    ''' </summary>
-    ''' <author>Pedro Zalacain</author>
-    Private Sub Label19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblCancelarU.Click
-        Me.Close()
-    End Sub
-    ''' <summary>
     ''' Válida los campos e inserta en la Base de Datos
     ''' </summary>
     ''' <author>Pedro Zalacain</author>
-    Private Sub PBAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarU.Click
+    Private Sub InsertarCliente()
         Dim Mun As Municipio = _ListadoMunicipios.Item(CBPoblacionU.SelectedIndex + 1)
         Dim Dir As Direccion = New Direccion(TBCalleU.Text, CInt(TBNumeroU.Text), TBPisoU.Text, Mun)
         Dim Cli As Cliente = New Cliente(0, TBDniU.Text, TBNombreU.Text, TBApellido1U.Text, TBApellidoU.Text, Dir, TBFijoU.Text, TBMovilU.Text, TBEmailU.Text)
 
         If Cli.Insertar = True Then
-            MessageBox.Show("Cliente añadido a la base de datos")
-            Borrar()
-            'Me.Close()
+            TSLabEstado.Text = "Usuario añadido corréctamente"
+            BorrarCampos()
         Else
-            MessageBox.Show("Ocurrio un error mientras se intentaba acceder a los datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            TSLabEstado.Text = "Ocurrió un error mientras se insertaba el cliente"
         End If
-
     End Sub
-
 
     ''' <summary>
-    ''' Vacía el contenido de los campos
+    ''' Borra el contenido de los campos
     ''' </summary>
     ''' <author>Pedro Zalacain</author>
-    Private Sub Label18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblBorrarU.Click
-        Borrar()
-    End Sub
-
-    Private Sub Borrar()
+    Private Sub BorrarCampos()
         TBNombreU.Text = ""
         TBApellido1U.Text = ""
         TBApellidoU.Text = ""
@@ -94,6 +81,30 @@ Public Class NuevoCliente
         TBPisoU.Text = ""
         CBProvinciaU.SelectedIndex = -1
         CBPoblacionU.SelectedIndex = -1
+    End Sub
+
+    Private Sub PBAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarU.Click
+        Me.InsertarCliente()
+    End Sub
+    
+    Private Sub LblAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblAceptarU.Click
+        Me.InsertarCliente()
+    End Sub
+
+    Private Sub PBBorrarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrarU.Click
+        Me.BorrarCampos()
+    End Sub
+
+    Private Sub LblBorrarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblBorrarU.Click
+        Me.BorrarCampos()
+    End Sub
+
+    Private Sub PBCancelarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBCancelarU.Click
+        Me.Close()
+    End Sub
+
+    Private Sub LblCancelarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblCancelarU.Click
+        Me.Close()
     End Sub
 End Class
 

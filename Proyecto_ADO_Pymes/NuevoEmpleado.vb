@@ -25,6 +25,7 @@ Public Class NuevoEmple
             Next
         End If
 
+        TSLabEstado.Text = ""
     End Sub
 
     ''' <summary>
@@ -46,46 +47,27 @@ Public Class NuevoEmple
     End Sub
 
     ''' <summary>
-    ''' Cierra el formulario y no realiza nada
+    ''' Inserta el Cliente en la BBDD
     ''' </summary>
     ''' <author>Pedro Zalacain</author>
-    Private Sub Label19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblCancelarE.Click
-        Me.Close()
-    End Sub
-
-    ''' <summary>
-    ''' Valida los campos e inserta en la Base de Datos
-    ''' </summary>
-    ''' <author>Pedro Zalacain Maria Navarro</author>
-    Private Sub PBAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarE.Click
+    Private Sub InsertarCliente()
         Dim Mun As Municipio = _ListadoMunicipios.Item(CBPoblacionE.SelectedIndex + 1)
         Dim Dir As Direccion = New Direccion(TBCalleE.Text, CInt(TBNumeroE.Text), TBPisoE.Text, Mun)
         Dim Trabaj As Trabajador = New Trabajador(0, TBDniE.Text, TBNombreE.Text, TBApellido1E.Text, TBApellido2E.Text, Dir, TBFijoE.Text, TBMovilE.Text, TBEmailE.Text, CInt(TBNumSSE.Text), CDbl(TBSueldoE.Text), New Especialidad())
 
         If Trabaj.InsertarTrabajador = True Then
-            MessageBox.Show("Cliente añadido a la base de datos")
-            Borrar()
-            'Me.Close()
+            TSLabEstado.Text = "Cliente agregado correctamente"
+            Me.BorrarCampos()
         Else
-            MessageBox.Show("Ocurrio un error mientras se intentaba acceder a los datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            TSLabEstado.Text = "Ocurrio un error mientras se insertaba el cliente"
         End If
-
     End Sub
-
-    ''' <summary>
-    ''' Vacía el contenido de los campos
-    ''' </summary>
-    ''' <author>Pedro Zalacain</author>
-    Private Sub Label18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblBorrarE.Click
-        Borrar()
-    End Sub
-
 
     ''' <summary>
     ''' Vacía el contenido de los campos
     ''' </summary>
     ''' <author>María Navarro</author>
-    Private Sub Borrar()
+    Private Sub BorrarCampos()
         TBNombreE.Text = ""
         TBApellido1E.Text = ""
         TBApellido2E.Text = ""
@@ -101,5 +83,33 @@ Public Class NuevoEmple
         CBEspecialidadE.SelectedIndex = -1
         CBProvinciaE.SelectedIndex = -1
         CBPoblacionE.SelectedIndex = -1
+    End Sub
+
+    ''' <summary>
+    ''' Valida los campos e inserta en la Base de Datos
+    ''' </summary>
+    ''' <author>Pedro Zalacain, Maria Navarro</author>
+    Private Sub PBAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarE.Click
+        Me.InsertarCliente()
+    End Sub
+
+    Private Sub LblAceptarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblAceptarE.Click
+        Me.InsertarCliente()
+    End Sub
+
+    Private Sub PBBorrarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrarE.Click
+        Me.BorrarCampos()
+    End Sub
+
+    Private Sub LblBorrarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblBorrarE.Click
+        Me.BorrarCampos()
+    End Sub
+
+    Private Sub PBCancelarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBCancelarE.Click
+        Me.Close()
+    End Sub
+
+    Private Sub LblCancelarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblCancelarE.Click
+        Me.Close()
     End Sub
 End Class
