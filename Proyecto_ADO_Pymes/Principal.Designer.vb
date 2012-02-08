@@ -1,0 +1,867 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Principal
+    Inherits System.Windows.Forms.Form
+
+    'Form reemplaza a Dispose para limpiar la lista de componentes.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Requerido por el Diseñador de Windows Forms
+    Private components As System.ComponentModel.IContainer
+
+    'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
+    'Se puede modificar usando el Diseñador de Windows Forms.  
+    'No lo modifique con el editor de código.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal))
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Trabajador1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Trabajador2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Trabajador3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Trabajador4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ServicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GestiónUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AltaUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AltaProfesionalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConsultaCitasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FacturaciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ColorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.DPfecha = New System.Windows.Forms.DateTimePicker()
+        Me.PBUsuario = New System.Windows.Forms.PictureBox()
+        Me.PBConsulta = New System.Windows.Forms.PictureBox()
+        Me.PBBuscar = New System.Windows.Forms.PictureBox()
+        Me.PBCita = New System.Windows.Forms.PictureBox()
+        Me.PBNotas = New System.Windows.Forms.PictureBox()
+        Me.PBFactura = New System.Windows.Forms.PictureBox()
+        Me.PBArriba = New System.Windows.Forms.PictureBox()
+        Me.PBAbajo = New System.Windows.Forms.PictureBox()
+        Me.LblHora = New System.Windows.Forms.Label()
+        Me.LblMin = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LblAnio = New System.Windows.Forms.Label()
+        Me.LblMes = New System.Windows.Forms.Label()
+        Me.LblDia = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
+        CType(Me.PBUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBConsulta, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBBuscar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBCita, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBNotas, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBFactura, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBArriba, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBAbajo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.Thistle
+        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Trabajador1, Me.Trabajador2, Me.Trabajador3, Me.Trabajador4})
+        Me.DataGridView1.Location = New System.Drawing.Point(235, 103)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(453, 438)
+        Me.DataGridView1.TabIndex = 0
+        '
+        'Trabajador1
+        '
+        Me.Trabajador1.HeaderText = "Trabajador1"
+        Me.Trabajador1.Name = "Trabajador1"
+        Me.Trabajador1.ReadOnly = True
+        '
+        'Trabajador2
+        '
+        Me.Trabajador2.HeaderText = "Trabajador2"
+        Me.Trabajador2.Name = "Trabajador2"
+        Me.Trabajador2.ReadOnly = True
+        '
+        'Trabajador3
+        '
+        Me.Trabajador3.HeaderText = "Trabajador3"
+        Me.Trabajador3.Name = "Trabajador3"
+        Me.Trabajador3.ReadOnly = True
+        Me.Trabajador3.Width = 105
+        '
+        'Trabajador4
+        '
+        Me.Trabajador4.HeaderText = "Trabajador4"
+        Me.Trabajador4.Name = "Trabajador4"
+        Me.Trabajador4.ReadOnly = True
+        Me.Trabajador4.Width = 105
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
+        Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.GestiónUsuariosToolStripMenuItem, Me.ConsultaCitasToolStripMenuItem, Me.FacturaciónToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(790, 25)
+        Me.MenuStrip1.TabIndex = 2
+        Me.MenuStrip1.Text = "lll"
+        '
+        'ArchivoToolStripMenuItem
+        '
+        Me.ArchivoToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
+        Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem, Me.NuevoToolStripMenuItem, Me.ServicioToolStripMenuItem})
+        Me.ArchivoToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ArchivoToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
+        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(67, 21)
+        Me.ArchivoToolStripMenuItem.Text = "&Archivo"
+        '
+        'SalirToolStripMenuItem
+        '
+        Me.SalirToolStripMenuItem.BackgroundImage = CType(resources.GetObject("SalirToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.SalirToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SalirToolStripMenuItem.Text = "Salir"
+        '
+        'NuevoToolStripMenuItem
+        '
+        Me.NuevoToolStripMenuItem.BackgroundImage = CType(resources.GetObject("NuevoToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.NuevoToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NuevoToolStripMenuItem.Text = "Especilidad"
+        '
+        'ServicioToolStripMenuItem
+        '
+        Me.ServicioToolStripMenuItem.BackgroundImage = CType(resources.GetObject("ServicioToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.ServicioToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ServicioToolStripMenuItem.Name = "ServicioToolStripMenuItem"
+        Me.ServicioToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ServicioToolStripMenuItem.Text = "Servicio"
+        '
+        'GestiónUsuariosToolStripMenuItem
+        '
+        Me.GestiónUsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltaUsuarioToolStripMenuItem, Me.AltaProfesionalToolStripMenuItem})
+        Me.GestiónUsuariosToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.GestiónUsuariosToolStripMenuItem.Name = "GestiónUsuariosToolStripMenuItem"
+        Me.GestiónUsuariosToolStripMenuItem.Size = New System.Drawing.Size(124, 21)
+        Me.GestiónUsuariosToolStripMenuItem.Text = "Gestión &Usuarios"
+        '
+        'AltaUsuarioToolStripMenuItem
+        '
+        Me.AltaUsuarioToolStripMenuItem.BackgroundImage = CType(resources.GetObject("AltaUsuarioToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.AltaUsuarioToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.AltaUsuarioToolStripMenuItem.Name = "AltaUsuarioToolStripMenuItem"
+        Me.AltaUsuarioToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
+        Me.AltaUsuarioToolStripMenuItem.Text = "Alta Usuario"
+        '
+        'AltaProfesionalToolStripMenuItem
+        '
+        Me.AltaProfesionalToolStripMenuItem.BackgroundImage = CType(resources.GetObject("AltaProfesionalToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.AltaProfesionalToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.AltaProfesionalToolStripMenuItem.Name = "AltaProfesionalToolStripMenuItem"
+        Me.AltaProfesionalToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
+        Me.AltaProfesionalToolStripMenuItem.Text = "Alta Profesional"
+        '
+        'ConsultaCitasToolStripMenuItem
+        '
+        Me.ConsultaCitasToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ConsultaCitasToolStripMenuItem.Name = "ConsultaCitasToolStripMenuItem"
+        Me.ConsultaCitasToolStripMenuItem.Size = New System.Drawing.Size(101, 21)
+        Me.ConsultaCitasToolStripMenuItem.Text = "Gestión &Citas"
+        '
+        'FacturaciónToolStripMenuItem
+        '
+        Me.FacturaciónToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.FacturaciónToolStripMenuItem.Name = "FacturaciónToolStripMenuItem"
+        Me.FacturaciónToolStripMenuItem.Size = New System.Drawing.Size(91, 21)
+        Me.FacturaciónToolStripMenuItem.Text = "&Facturación"
+        '
+        'Timer1
+        '
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ColorToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(104, 26)
+        '
+        'ColorToolStripMenuItem
+        '
+        Me.ColorToolStripMenuItem.Name = "ColorToolStripMenuItem"
+        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.ColorToolStripMenuItem.Text = "Color"
+        '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
+        '
+        'DPfecha
+        '
+        Me.DPfecha.Location = New System.Drawing.Point(109, 66)
+        Me.DPfecha.Name = "DPfecha"
+        Me.DPfecha.Size = New System.Drawing.Size(202, 20)
+        Me.DPfecha.TabIndex = 13
+        '
+        'PBUsuario
+        '
+        Me.PBUsuario.BackColor = System.Drawing.Color.Transparent
+        Me.PBUsuario.BackgroundImage = CType(resources.GetObject("PBUsuario.BackgroundImage"), System.Drawing.Image)
+        Me.PBUsuario.Location = New System.Drawing.Point(0, 103)
+        Me.PBUsuario.Name = "PBUsuario"
+        Me.PBUsuario.Size = New System.Drawing.Size(70, 70)
+        Me.PBUsuario.TabIndex = 16
+        Me.PBUsuario.TabStop = False
+        '
+        'PBConsulta
+        '
+        Me.PBConsulta.BackColor = System.Drawing.Color.Transparent
+        Me.PBConsulta.BackgroundImage = CType(resources.GetObject("PBConsulta.BackgroundImage"), System.Drawing.Image)
+        Me.PBConsulta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PBConsulta.Location = New System.Drawing.Point(-1, 471)
+        Me.PBConsulta.Name = "PBConsulta"
+        Me.PBConsulta.Size = New System.Drawing.Size(70, 70)
+        Me.PBConsulta.TabIndex = 17
+        Me.PBConsulta.TabStop = False
+        '
+        'PBBuscar
+        '
+        Me.PBBuscar.BackColor = System.Drawing.Color.Transparent
+        Me.PBBuscar.BackgroundImage = CType(resources.GetObject("PBBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.PBBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PBBuscar.Location = New System.Drawing.Point(-1, 378)
+        Me.PBBuscar.Name = "PBBuscar"
+        Me.PBBuscar.Size = New System.Drawing.Size(70, 70)
+        Me.PBBuscar.TabIndex = 18
+        Me.PBBuscar.TabStop = False
+        '
+        'PBCita
+        '
+        Me.PBCita.BackColor = System.Drawing.Color.Transparent
+        Me.PBCita.BackgroundImage = CType(resources.GetObject("PBCita.BackgroundImage"), System.Drawing.Image)
+        Me.PBCita.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PBCita.Location = New System.Drawing.Point(-1, 196)
+        Me.PBCita.Name = "PBCita"
+        Me.PBCita.Size = New System.Drawing.Size(70, 70)
+        Me.PBCita.TabIndex = 19
+        Me.PBCita.TabStop = False
+        '
+        'PBNotas
+        '
+        Me.PBNotas.BackColor = System.Drawing.Color.Transparent
+        Me.PBNotas.BackgroundImage = CType(resources.GetObject("PBNotas.BackgroundImage"), System.Drawing.Image)
+        Me.PBNotas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PBNotas.Location = New System.Drawing.Point(583, 818)
+        Me.PBNotas.Name = "PBNotas"
+        Me.PBNotas.Size = New System.Drawing.Size(92, 93)
+        Me.PBNotas.TabIndex = 20
+        Me.PBNotas.TabStop = False
+        '
+        'PBFactura
+        '
+        Me.PBFactura.BackColor = System.Drawing.Color.Transparent
+        Me.PBFactura.BackgroundImage = CType(resources.GetObject("PBFactura.BackgroundImage"), System.Drawing.Image)
+        Me.PBFactura.Location = New System.Drawing.Point(0, 287)
+        Me.PBFactura.Name = "PBFactura"
+        Me.PBFactura.Size = New System.Drawing.Size(70, 70)
+        Me.PBFactura.TabIndex = 23
+        Me.PBFactura.TabStop = False
+        '
+        'PBArriba
+        '
+        Me.PBArriba.BackColor = System.Drawing.Color.Transparent
+        Me.PBArriba.BackgroundImage = CType(resources.GetObject("PBArriba.BackgroundImage"), System.Drawing.Image)
+        Me.PBArriba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PBArriba.Location = New System.Drawing.Point(708, 196)
+        Me.PBArriba.Name = "PBArriba"
+        Me.PBArriba.Size = New System.Drawing.Size(70, 70)
+        Me.PBArriba.TabIndex = 24
+        Me.PBArriba.TabStop = False
+        '
+        'PBAbajo
+        '
+        Me.PBAbajo.BackColor = System.Drawing.Color.Transparent
+        Me.PBAbajo.BackgroundImage = CType(resources.GetObject("PBAbajo.BackgroundImage"), System.Drawing.Image)
+        Me.PBAbajo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PBAbajo.Location = New System.Drawing.Point(708, 378)
+        Me.PBAbajo.Name = "PBAbajo"
+        Me.PBAbajo.Size = New System.Drawing.Size(70, 70)
+        Me.PBAbajo.TabIndex = 25
+        Me.PBAbajo.TabStop = False
+        '
+        'LblHora
+        '
+        Me.LblHora.AutoSize = True
+        Me.LblHora.BackColor = System.Drawing.Color.Transparent
+        Me.LblHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblHora.ForeColor = System.Drawing.Color.White
+        Me.LblHora.Location = New System.Drawing.Point(63, 16)
+        Me.LblHora.Name = "LblHora"
+        Me.LblHora.Size = New System.Drawing.Size(41, 37)
+        Me.LblHora.TabIndex = 28
+        Me.LblHora.Text = "lll"
+        '
+        'LblMin
+        '
+        Me.LblMin.AutoSize = True
+        Me.LblMin.BackColor = System.Drawing.Color.Transparent
+        Me.LblMin.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMin.ForeColor = System.Drawing.Color.White
+        Me.LblMin.Location = New System.Drawing.Point(131, 16)
+        Me.LblMin.Name = "LblMin"
+        Me.LblMin.Size = New System.Drawing.Size(41, 37)
+        Me.LblMin.TabIndex = 29
+        Me.LblMin.Text = "lll"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(110, 16)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(27, 37)
+        Me.Label1.TabIndex = 30
+        Me.Label1.Text = ":"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Black
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.LblAnio)
+        Me.Panel1.Controls.Add(Me.LblMes)
+        Me.Panel1.Controls.Add(Me.LblDia)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.LblMin)
+        Me.Panel1.Controls.Add(Me.LblHora)
+        Me.Panel1.Location = New System.Drawing.Point(589, 19)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(188, 67)
+        Me.Panel1.TabIndex = 31
+        '
+        'LblAnio
+        '
+        Me.LblAnio.AutoSize = True
+        Me.LblAnio.BackColor = System.Drawing.Color.Transparent
+        Me.LblAnio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblAnio.ForeColor = System.Drawing.Color.White
+        Me.LblAnio.Location = New System.Drawing.Point(3, 42)
+        Me.LblAnio.Name = "LblAnio"
+        Me.LblAnio.Size = New System.Drawing.Size(21, 20)
+        Me.LblAnio.TabIndex = 34
+        Me.LblAnio.Text = "lll"
+        '
+        'LblMes
+        '
+        Me.LblMes.AutoSize = True
+        Me.LblMes.BackColor = System.Drawing.Color.Transparent
+        Me.LblMes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMes.ForeColor = System.Drawing.Color.White
+        Me.LblMes.Location = New System.Drawing.Point(13, 24)
+        Me.LblMes.Name = "LblMes"
+        Me.LblMes.Size = New System.Drawing.Size(21, 20)
+        Me.LblMes.TabIndex = 33
+        Me.LblMes.Text = "lll"
+        '
+        'LblDia
+        '
+        Me.LblDia.AutoSize = True
+        Me.LblDia.BackColor = System.Drawing.Color.Transparent
+        Me.LblDia.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblDia.ForeColor = System.Drawing.Color.White
+        Me.LblDia.Location = New System.Drawing.Point(13, 4)
+        Me.LblDia.Name = "LblDia"
+        Me.LblDia.Size = New System.Drawing.Size(21, 20)
+        Me.LblDia.TabIndex = 32
+        Me.LblDia.Text = "lll"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Black
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel2.Controls.Add(Me.Label6)
+        Me.Panel2.Controls.Add(Me.Label5)
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.Label4)
+        Me.Panel2.Location = New System.Drawing.Point(109, 124)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(126, 105)
+        Me.Panel2.TabIndex = 32
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(11, 35)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(55, 37)
+        Me.Label6.TabIndex = 39
+        Me.Label6.Text = "08"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(72, 82)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(51, 15)
+        Me.Label5.TabIndex = 38
+        Me.Label5.Text = "00 : 00"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(72, 57)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(51, 15)
+        Me.Label2.TabIndex = 37
+        Me.Label2.Text = "00 : 45"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(72, 32)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(51, 15)
+        Me.Label3.TabIndex = 36
+        Me.Label3.Text = "00 : 30"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(72, 7)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(51, 15)
+        Me.Label4.TabIndex = 35
+        Me.Label4.Text = "00 : 15"
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Black
+        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel3.Controls.Add(Me.Label7)
+        Me.Panel3.Location = New System.Drawing.Point(109, 103)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(126, 27)
+        Me.Panel3.TabIndex = 33
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(37, 5)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(61, 16)
+        Me.Label7.TabIndex = 0
+        Me.Label7.Text = "HORAS"
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.Black
+        Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel4.Controls.Add(Me.Label8)
+        Me.Panel4.Controls.Add(Me.Label9)
+        Me.Panel4.Controls.Add(Me.Label10)
+        Me.Panel4.Controls.Add(Me.Label11)
+        Me.Panel4.Controls.Add(Me.Label12)
+        Me.Panel4.Location = New System.Drawing.Point(109, 228)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(126, 105)
+        Me.Panel4.TabIndex = 34
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(11, 33)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(55, 37)
+        Me.Label8.TabIndex = 39
+        Me.Label8.Text = "09"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(72, 80)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(51, 15)
+        Me.Label9.TabIndex = 38
+        Me.Label9.Text = "00 : 00"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(72, 55)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(51, 15)
+        Me.Label10.TabIndex = 37
+        Me.Label10.Text = "00 : 45"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.White
+        Me.Label11.Location = New System.Drawing.Point(72, 30)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(51, 15)
+        Me.Label11.TabIndex = 36
+        Me.Label11.Text = "00 : 30"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(72, 5)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(51, 15)
+        Me.Label12.TabIndex = 35
+        Me.Label12.Text = "00 : 15"
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.Black
+        Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel5.Controls.Add(Me.Label13)
+        Me.Panel5.Controls.Add(Me.Label14)
+        Me.Panel5.Controls.Add(Me.Label15)
+        Me.Panel5.Controls.Add(Me.Label16)
+        Me.Panel5.Controls.Add(Me.Label17)
+        Me.Panel5.Location = New System.Drawing.Point(109, 332)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(126, 105)
+        Me.Panel5.TabIndex = 35
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.White
+        Me.Label13.Location = New System.Drawing.Point(11, 31)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(53, 37)
+        Me.Label13.TabIndex = 39
+        Me.Label13.Text = "10"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.White
+        Me.Label14.Location = New System.Drawing.Point(72, 78)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(51, 15)
+        Me.Label14.TabIndex = 38
+        Me.Label14.Text = "00 : 00"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(72, 53)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(51, 15)
+        Me.Label15.TabIndex = 37
+        Me.Label15.Text = "00 : 45"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(72, 28)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(51, 15)
+        Me.Label16.TabIndex = 36
+        Me.Label16.Text = "00 : 30"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.White
+        Me.Label17.Location = New System.Drawing.Point(72, 3)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(51, 15)
+        Me.Label17.TabIndex = 35
+        Me.Label17.Text = "00 : 15"
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.Color.Black
+        Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel6.Controls.Add(Me.Label18)
+        Me.Panel6.Controls.Add(Me.Label19)
+        Me.Panel6.Controls.Add(Me.Label20)
+        Me.Panel6.Controls.Add(Me.Label21)
+        Me.Panel6.Controls.Add(Me.Label22)
+        Me.Panel6.Location = New System.Drawing.Point(109, 436)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(126, 105)
+        Me.Panel6.TabIndex = 36
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.White
+        Me.Label18.Location = New System.Drawing.Point(11, 36)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(51, 37)
+        Me.Label18.TabIndex = 39
+        Me.Label18.Text = "11"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.White
+        Me.Label19.Location = New System.Drawing.Point(72, 83)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(51, 15)
+        Me.Label19.TabIndex = 38
+        Me.Label19.Text = "00 : 00"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.Color.Transparent
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.White
+        Me.Label20.Location = New System.Drawing.Point(72, 58)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(51, 15)
+        Me.Label20.TabIndex = 37
+        Me.Label20.Text = "00 : 45"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.BackColor = System.Drawing.Color.Transparent
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.Color.White
+        Me.Label21.Location = New System.Drawing.Point(72, 33)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(51, 15)
+        Me.Label21.TabIndex = 36
+        Me.Label21.Text = "00 : 30"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.BackColor = System.Drawing.Color.Transparent
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.ForeColor = System.Drawing.Color.White
+        Me.Label22.Location = New System.Drawing.Point(72, 8)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(51, 15)
+        Me.Label22.TabIndex = 35
+        Me.Label22.Text = "00 : 15"
+        '
+        'Principal
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(790, 578)
+        Me.Controls.Add(Me.Panel5)
+        Me.Controls.Add(Me.Panel6)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.PBAbajo)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.PBArriba)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.PBNotas)
+        Me.Controls.Add(Me.DPfecha)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.PBFactura)
+        Me.Controls.Add(Me.PBConsulta)
+        Me.Controls.Add(Me.PBUsuario)
+        Me.Controls.Add(Me.PBBuscar)
+        Me.Controls.Add(Me.PBCita)
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
+        Me.Name = "Principal"
+        Me.Text = "Principal"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
+        Me.ContextMenuStrip1.ResumeLayout(False)
+        CType(Me.PBUsuario, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBConsulta, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBBuscar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBCita, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBNotas, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBFactura, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBArriba, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBAbajo, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents ArchivoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ColorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
+    Friend WithEvents DPfecha As System.Windows.Forms.DateTimePicker
+    Friend WithEvents SalirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FacturaciónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ConsultaCitasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PBUsuario As System.Windows.Forms.PictureBox
+    Friend WithEvents GestiónUsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PBConsulta As System.Windows.Forms.PictureBox
+    Friend WithEvents PBBuscar As System.Windows.Forms.PictureBox
+    Friend WithEvents PBCita As System.Windows.Forms.PictureBox
+    Friend WithEvents PBNotas As System.Windows.Forms.PictureBox
+    Friend WithEvents PBFactura As System.Windows.Forms.PictureBox
+    Friend WithEvents PBArriba As System.Windows.Forms.PictureBox
+    Friend WithEvents PBAbajo As System.Windows.Forms.PictureBox
+    Friend WithEvents LblHora As System.Windows.Forms.Label
+    Friend WithEvents LblMin As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents LblDia As System.Windows.Forms.Label
+    Friend WithEvents LblAnio As System.Windows.Forms.Label
+    Friend WithEvents LblMes As System.Windows.Forms.Label
+    Friend WithEvents AltaUsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AltaProfesionalToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Panel4 As System.Windows.Forms.Panel
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Panel5 As System.Windows.Forms.Panel
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Panel6 As System.Windows.Forms.Panel
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents Trabajador1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Trabajador2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Trabajador3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Trabajador4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NuevoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ServicioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+
+End Class

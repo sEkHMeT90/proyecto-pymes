@@ -1,0 +1,106 @@
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.exe
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.pdb
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.xml
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Form1.resources
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Resources.resources
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.xml
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.pdb
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoUsuario.resources
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Consulta.resources
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Buscar.resources
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaCita.resources
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.xml
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.pdb
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.exe
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.pdb
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.xml
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Consulta.resources
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Resources.resources
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Buscar.resources
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaCita.resources
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoUsuario.resources
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Usuario\Desktop\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Principal.resources
+E:\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
+E:\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.xml
+E:\Proyecto PyMES\Proyecto_ADO_Pymes\descargasCode\Proyecto_ADO_Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.pdb
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.xml
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.pdb
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.exe
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.pdb
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.xml
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Consulta.resources
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Principal.resources
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Resources.resources
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Buscar.resources
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaCita.resources
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoUsuario.resources
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\felix\Escritorio\ProyectoCitas\Proyecto_ADO_Pymes\bin\Debug\BDCitas.accdb
+F:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
+F:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.xml
+F:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.pdb
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.xml
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.pdb
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\BDCitas.accdb
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.exe
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.pdb
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.xml
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Consulta.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Principal.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Resources.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Buscar.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaCita.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoUsuario.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.xml
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.pdb
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\BDCitas.accdb
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.exe
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.pdb
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.xml
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Consulta.resources
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Facturacion.resources
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoEmple.resources
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Principal.resources
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Resources.resources
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Buscar.resources
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaCita.resources
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoUsuario.resources
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.xml
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.pdb
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\bin\Debug\BDCitas.accdb
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.exe
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.pdb
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.xml
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Consulta.resources
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Facturacion.resources
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoEmple.resources
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Principal.resources
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Resources.resources
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Buscar.resources
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaCita.resources
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoUsuario.resources
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoServicio.resources
+F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaEspecialidad.resources
