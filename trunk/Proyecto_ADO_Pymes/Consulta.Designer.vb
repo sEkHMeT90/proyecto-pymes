@@ -48,7 +48,7 @@ Partial Class Consulta
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.Thistle
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Lunes, Me.Martes, Me.Miercoles, Me.Jueves, Me.Viernes, Me.Sabado, Me.Domingo})
-        Me.DataGridView1.Location = New System.Drawing.Point(48, 114)
+        Me.DataGridView1.Location = New System.Drawing.Point(52, 114)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.Size = New System.Drawing.Size(689, 402)
@@ -102,7 +102,7 @@ Partial Class Consulta
         Me.LblAnio.BackColor = System.Drawing.Color.Transparent
         Me.LblAnio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblAnio.ForeColor = System.Drawing.Color.White
-        Me.LblAnio.Location = New System.Drawing.Point(560, 52)
+        Me.LblAnio.Location = New System.Drawing.Point(566, 52)
         Me.LblAnio.Name = "LblAnio"
         Me.LblAnio.Size = New System.Drawing.Size(35, 16)
         Me.LblAnio.TabIndex = 63
@@ -114,7 +114,7 @@ Partial Class Consulta
         Me.LblMes.BackColor = System.Drawing.Color.Transparent
         Me.LblMes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblMes.ForeColor = System.Drawing.Color.White
-        Me.LblMes.Location = New System.Drawing.Point(367, 52)
+        Me.LblMes.Location = New System.Drawing.Point(373, 52)
         Me.LblMes.Name = "LblMes"
         Me.LblMes.Size = New System.Drawing.Size(37, 16)
         Me.LblMes.TabIndex = 62
@@ -124,7 +124,7 @@ Partial Class Consulta
         '
         Me.PBMesCon.BackColor = System.Drawing.Color.Transparent
         Me.PBMesCon.BackgroundImage = CType(resources.GetObject("PBMesCon.BackgroundImage"), System.Drawing.Image)
-        Me.PBMesCon.Location = New System.Drawing.Point(339, 42)
+        Me.PBMesCon.Location = New System.Drawing.Point(345, 42)
         Me.PBMesCon.Name = "PBMesCon"
         Me.PBMesCon.Size = New System.Drawing.Size(92, 37)
         Me.PBMesCon.TabIndex = 61
@@ -134,7 +134,7 @@ Partial Class Consulta
         '
         Me.PBAnioCon.BackColor = System.Drawing.Color.Transparent
         Me.PBAnioCon.BackgroundImage = CType(resources.GetObject("PBAnioCon.BackgroundImage"), System.Drawing.Image)
-        Me.PBAnioCon.Location = New System.Drawing.Point(532, 42)
+        Me.PBAnioCon.Location = New System.Drawing.Point(538, 42)
         Me.PBAnioCon.Name = "PBAnioCon"
         Me.PBAnioCon.Size = New System.Drawing.Size(92, 37)
         Me.PBAnioCon.TabIndex = 60
@@ -146,7 +146,7 @@ Partial Class Consulta
         Me.LblSemana.BackColor = System.Drawing.Color.Transparent
         Me.LblSemana.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblSemana.ForeColor = System.Drawing.Color.White
-        Me.LblSemana.Location = New System.Drawing.Point(170, 52)
+        Me.LblSemana.Location = New System.Drawing.Point(176, 52)
         Me.LblSemana.Name = "LblSemana"
         Me.LblSemana.Size = New System.Drawing.Size(65, 16)
         Me.LblSemana.TabIndex = 59
@@ -156,7 +156,7 @@ Partial Class Consulta
         '
         Me.PBSemanaCon.BackColor = System.Drawing.Color.Transparent
         Me.PBSemanaCon.BackgroundImage = CType(resources.GetObject("PBSemanaCon.BackgroundImage"), System.Drawing.Image)
-        Me.PBSemanaCon.Location = New System.Drawing.Point(157, 42)
+        Me.PBSemanaCon.Location = New System.Drawing.Point(163, 42)
         Me.PBSemanaCon.Name = "PBSemanaCon"
         Me.PBSemanaCon.Size = New System.Drawing.Size(92, 37)
         Me.PBSemanaCon.TabIndex = 58
@@ -168,7 +168,7 @@ Partial Class Consulta
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(784, 562)
+        Me.ClientSize = New System.Drawing.Size(792, 566)
         Me.Controls.Add(Me.LblAnio)
         Me.Controls.Add(Me.LblMes)
         Me.Controls.Add(Me.PBMesCon)
