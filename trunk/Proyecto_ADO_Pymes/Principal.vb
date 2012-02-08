@@ -1,11 +1,16 @@
 ﻿Public Class Principal
 
+    Private HoraInicial As Integer
+    Private HoraFinal As Integer
+
     Public Shared _BaseDatos As BBDD
     ''' <summary>
     ''' Formularios y diseño
     ''' </summary>
     ''' <author>María Navarro</author>
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        HoraInicial = 8
+        HoraFinal = 20
         Timer1.Start()
         _BaseDatos = New BBDD()
     End Sub
@@ -82,5 +87,22 @@
         LblAnio.Text = Now.Year.ToString("0000")
     End Sub
 
-   
+
+    Private Sub PBArriba_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBArriba.Click
+        If CInt(LblHora1.Text) > 8 Then
+            LblHora1.Text = (CInt(LblHora1.Text) - 1).ToString("00").ToString()
+            LblHora2.Text = (CInt(LblHora2.Text) - 1).ToString("00").ToString()
+            LblHora3.Text = (CInt(LblHora3.Text) - 1).ToString("00").ToString()
+            LblHora4.Text = (CInt(LblHora4.Text) - 1).ToString("00").ToString()
+        End If
+    End Sub
+
+    Private Sub PBAbajo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAbajo.Click
+        If CInt(LblHora4.Text) < 20 Then
+            LblHora1.Text = (CInt(LblHora1.Text) + 1).ToString("00").ToString()
+            LblHora2.Text = (CInt(LblHora2.Text) + 1).ToString("00").ToString()
+            LblHora3.Text = (CInt(LblHora3.Text) + 1).ToString("00").ToString()
+            LblHora4.Text = (CInt(LblHora4.Text) + 1).ToString("00").ToString()
+        End If
+    End Sub
 End Class

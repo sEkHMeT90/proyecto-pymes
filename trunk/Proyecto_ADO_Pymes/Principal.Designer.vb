@@ -70,7 +70,7 @@ Partial Class Principal
         Me.LblMes = New System.Windows.Forms.Label()
         Me.LblDia = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.LblHora1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -78,19 +78,19 @@ Partial Class Principal
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.LblHora2 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label13 = New System.Windows.Forms.Label()
+        Me.LblHora3 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label18 = New System.Windows.Forms.Label()
+        Me.LblHora4 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
@@ -179,7 +179,7 @@ Partial Class Principal
         Me.NuevoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaToolStripMenuItem, Me.ModificarToolStripMenuItem})
         Me.NuevoToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.NuevoToolStripMenuItem.Text = "Especialidad"
         '
         'NuevaToolStripMenuItem
@@ -187,7 +187,7 @@ Partial Class Principal
         Me.NuevaToolStripMenuItem.BackgroundImage = CType(resources.GetObject("NuevaToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.NuevaToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.NuevaToolStripMenuItem.Name = "NuevaToolStripMenuItem"
-        Me.NuevaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NuevaToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.NuevaToolStripMenuItem.Text = "Nueva"
         '
         'ModificarToolStripMenuItem
@@ -195,7 +195,7 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
         'ServicioToolStripMenuItem
@@ -204,7 +204,7 @@ Partial Class Principal
         Me.ServicioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem1, Me.ModificarToolStripMenuItem1})
         Me.ServicioToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ServicioToolStripMenuItem.Name = "ServicioToolStripMenuItem"
-        Me.ServicioToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ServicioToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.ServicioToolStripMenuItem.Text = "Servicio"
         '
         'NuevoToolStripMenuItem1
@@ -212,7 +212,7 @@ Partial Class Principal
         Me.NuevoToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("NuevoToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
         Me.NuevoToolStripMenuItem1.ForeColor = System.Drawing.Color.White
         Me.NuevoToolStripMenuItem1.Name = "NuevoToolStripMenuItem1"
-        Me.NuevoToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.NuevoToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
         Me.NuevoToolStripMenuItem1.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem1
@@ -220,7 +220,7 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem1.ForeColor = System.Drawing.Color.White
         Me.ModificarToolStripMenuItem1.Name = "ModificarToolStripMenuItem1"
-        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
         Me.ModificarToolStripMenuItem1.Text = "Modificar"
         '
         'SalirToolStripMenuItem
@@ -229,7 +229,7 @@ Partial Class Principal
         Me.SalirToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         Me.SalirToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'GestiónUsuariosToolStripMenuItem
@@ -246,7 +246,7 @@ Partial Class Principal
         Me.AltaUsuarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem2, Me.ModificarToolStripMenuItem2})
         Me.AltaUsuarioToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AltaUsuarioToolStripMenuItem.Name = "AltaUsuarioToolStripMenuItem"
-        Me.AltaUsuarioToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
+        Me.AltaUsuarioToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
         Me.AltaUsuarioToolStripMenuItem.Text = "Cliente"
         '
         'NuevoToolStripMenuItem2
@@ -254,7 +254,7 @@ Partial Class Principal
         Me.NuevoToolStripMenuItem2.BackgroundImage = CType(resources.GetObject("NuevoToolStripMenuItem2.BackgroundImage"), System.Drawing.Image)
         Me.NuevoToolStripMenuItem2.ForeColor = System.Drawing.Color.White
         Me.NuevoToolStripMenuItem2.Name = "NuevoToolStripMenuItem2"
-        Me.NuevoToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.NuevoToolStripMenuItem2.Size = New System.Drawing.Size(143, 22)
         Me.NuevoToolStripMenuItem2.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem2
@@ -262,7 +262,7 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem2.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem2.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem2.ForeColor = System.Drawing.Color.White
         Me.ModificarToolStripMenuItem2.Name = "ModificarToolStripMenuItem2"
-        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(135, 22)
+        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(143, 22)
         Me.ModificarToolStripMenuItem2.Text = "Modificar"
         '
         'AltaProfesionalToolStripMenuItem
@@ -271,7 +271,7 @@ Partial Class Principal
         Me.AltaProfesionalToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem3, Me.ModificarToolStripMenuItem3})
         Me.AltaProfesionalToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AltaProfesionalToolStripMenuItem.Name = "AltaProfesionalToolStripMenuItem"
-        Me.AltaProfesionalToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
+        Me.AltaProfesionalToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
         Me.AltaProfesionalToolStripMenuItem.Text = "Alta Profesional"
         '
         'NuevoToolStripMenuItem3
@@ -279,7 +279,7 @@ Partial Class Principal
         Me.NuevoToolStripMenuItem3.BackgroundImage = CType(resources.GetObject("NuevoToolStripMenuItem3.BackgroundImage"), System.Drawing.Image)
         Me.NuevoToolStripMenuItem3.ForeColor = System.Drawing.Color.White
         Me.NuevoToolStripMenuItem3.Name = "NuevoToolStripMenuItem3"
-        Me.NuevoToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
+        Me.NuevoToolStripMenuItem3.Size = New System.Drawing.Size(143, 22)
         Me.NuevoToolStripMenuItem3.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem3
@@ -287,7 +287,7 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem3.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem3.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem3.ForeColor = System.Drawing.Color.White
         Me.ModificarToolStripMenuItem3.Name = "ModificarToolStripMenuItem3"
-        Me.ModificarToolStripMenuItem3.Size = New System.Drawing.Size(135, 22)
+        Me.ModificarToolStripMenuItem3.Size = New System.Drawing.Size(143, 22)
         Me.ModificarToolStripMenuItem3.Text = "Modificar"
         '
         'ConsultaCitasToolStripMenuItem
@@ -303,7 +303,7 @@ Partial Class Principal
         Me.NuevaToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("NuevaToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
         Me.NuevaToolStripMenuItem1.ForeColor = System.Drawing.Color.White
         Me.NuevaToolStripMenuItem1.Name = "NuevaToolStripMenuItem1"
-        Me.NuevaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.NuevaToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
         Me.NuevaToolStripMenuItem1.Text = "Nueva"
         '
         'ModificarToolStripMenuItem4
@@ -311,7 +311,7 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem4.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem4.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem4.ForeColor = System.Drawing.Color.White
         Me.ModificarToolStripMenuItem4.Name = "ModificarToolStripMenuItem4"
-        Me.ModificarToolStripMenuItem4.Size = New System.Drawing.Size(135, 22)
+        Me.ModificarToolStripMenuItem4.Size = New System.Drawing.Size(143, 22)
         Me.ModificarToolStripMenuItem4.Text = "Modificar"
         '
         'FacturaciónToolStripMenuItem
@@ -525,7 +525,7 @@ Partial Class Principal
         '
         Me.Panel2.BackColor = System.Drawing.Color.Black
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel2.Controls.Add(Me.Label6)
+        Me.Panel2.Controls.Add(Me.LblHora1)
         Me.Panel2.Controls.Add(Me.Label5)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.Label3)
@@ -535,17 +535,17 @@ Partial Class Principal
         Me.Panel2.Size = New System.Drawing.Size(126, 105)
         Me.Panel2.TabIndex = 32
         '
-        'Label6
+        'LblHora1
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(11, 35)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(55, 37)
-        Me.Label6.TabIndex = 39
-        Me.Label6.Text = "08"
+        Me.LblHora1.AutoSize = True
+        Me.LblHora1.BackColor = System.Drawing.Color.Transparent
+        Me.LblHora1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblHora1.ForeColor = System.Drawing.Color.White
+        Me.LblHora1.Location = New System.Drawing.Point(11, 35)
+        Me.LblHora1.Name = "LblHora1"
+        Me.LblHora1.Size = New System.Drawing.Size(55, 37)
+        Me.LblHora1.TabIndex = 39
+        Me.LblHora1.Text = "08"
         '
         'Label5
         '
@@ -620,7 +620,7 @@ Partial Class Principal
         '
         Me.Panel4.BackColor = System.Drawing.Color.Black
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel4.Controls.Add(Me.Label8)
+        Me.Panel4.Controls.Add(Me.LblHora2)
         Me.Panel4.Controls.Add(Me.Label9)
         Me.Panel4.Controls.Add(Me.Label10)
         Me.Panel4.Controls.Add(Me.Label11)
@@ -630,17 +630,17 @@ Partial Class Principal
         Me.Panel4.Size = New System.Drawing.Size(126, 105)
         Me.Panel4.TabIndex = 34
         '
-        'Label8
+        'LblHora2
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(11, 33)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(55, 37)
-        Me.Label8.TabIndex = 39
-        Me.Label8.Text = "09"
+        Me.LblHora2.AutoSize = True
+        Me.LblHora2.BackColor = System.Drawing.Color.Transparent
+        Me.LblHora2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblHora2.ForeColor = System.Drawing.Color.White
+        Me.LblHora2.Location = New System.Drawing.Point(11, 33)
+        Me.LblHora2.Name = "LblHora2"
+        Me.LblHora2.Size = New System.Drawing.Size(55, 37)
+        Me.LblHora2.TabIndex = 39
+        Me.LblHora2.Text = "09"
         '
         'Label9
         '
@@ -694,7 +694,7 @@ Partial Class Principal
         '
         Me.Panel5.BackColor = System.Drawing.Color.Black
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel5.Controls.Add(Me.Label13)
+        Me.Panel5.Controls.Add(Me.LblHora3)
         Me.Panel5.Controls.Add(Me.Label14)
         Me.Panel5.Controls.Add(Me.Label15)
         Me.Panel5.Controls.Add(Me.Label16)
@@ -704,17 +704,17 @@ Partial Class Principal
         Me.Panel5.Size = New System.Drawing.Size(126, 105)
         Me.Panel5.TabIndex = 35
         '
-        'Label13
+        'LblHora3
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.Transparent
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(11, 31)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(53, 37)
-        Me.Label13.TabIndex = 39
-        Me.Label13.Text = "10"
+        Me.LblHora3.AutoSize = True
+        Me.LblHora3.BackColor = System.Drawing.Color.Transparent
+        Me.LblHora3.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblHora3.ForeColor = System.Drawing.Color.White
+        Me.LblHora3.Location = New System.Drawing.Point(11, 31)
+        Me.LblHora3.Name = "LblHora3"
+        Me.LblHora3.Size = New System.Drawing.Size(53, 37)
+        Me.LblHora3.TabIndex = 39
+        Me.LblHora3.Text = "10"
         '
         'Label14
         '
@@ -768,7 +768,7 @@ Partial Class Principal
         '
         Me.Panel6.BackColor = System.Drawing.Color.Black
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel6.Controls.Add(Me.Label18)
+        Me.Panel6.Controls.Add(Me.LblHora4)
         Me.Panel6.Controls.Add(Me.Label19)
         Me.Panel6.Controls.Add(Me.Label20)
         Me.Panel6.Controls.Add(Me.Label21)
@@ -778,17 +778,17 @@ Partial Class Principal
         Me.Panel6.Size = New System.Drawing.Size(126, 105)
         Me.Panel6.TabIndex = 36
         '
-        'Label18
+        'LblHora4
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(11, 36)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(51, 37)
-        Me.Label18.TabIndex = 39
-        Me.Label18.Text = "11"
+        Me.LblHora4.AutoSize = True
+        Me.LblHora4.BackColor = System.Drawing.Color.Transparent
+        Me.LblHora4.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblHora4.ForeColor = System.Drawing.Color.White
+        Me.LblHora4.Location = New System.Drawing.Point(11, 36)
+        Me.LblHora4.Name = "LblHora4"
+        Me.LblHora4.Size = New System.Drawing.Size(51, 37)
+        Me.LblHora4.TabIndex = 39
+        Me.LblHora4.Text = "11"
         '
         'Label19
         '
@@ -927,7 +927,7 @@ Partial Class Principal
     Friend WithEvents AltaUsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AltaProfesionalToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents LblHora1 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -935,19 +935,19 @@ Partial Class Principal
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
-    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents LblHora2 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
-    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents LblHora3 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
-    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents LblHora4 As System.Windows.Forms.Label
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents Label21 As System.Windows.Forms.Label
