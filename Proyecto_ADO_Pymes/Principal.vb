@@ -39,14 +39,6 @@
         NuevaCita.Show()
     End Sub
 
-    Private Sub ArchivoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ArchivoToolStripMenuItem.Click
-        ArchivoToolStripMenuItem.ForeColor = Color.Black
-    End Sub
-
-    Private Sub GestiónUsuariosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GestiónUsuariosToolStripMenuItem.Click
-        GestiónUsuariosToolStripMenuItem.ForeColor = Color.Black
-    End Sub
-
     Private Sub PBFactura_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBFactura.Click
         Facturacion.Show()
     End Sub
