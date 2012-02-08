@@ -34,10 +34,13 @@ Partial Class NuevaEspecialidad
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TBNombreEs = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
         CType(Me.PBBorrarEs, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBCancelarEs, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBAceptarEs, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'LblCancelarEs
@@ -165,6 +168,21 @@ Partial Class NuevaEspecialidad
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "Nombre"
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLabEstado})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 300)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(474, 22)
+        Me.StatusStrip1.TabIndex = 100
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'TSLabEstado
+        '
+        Me.TSLabEstado.Name = "TSLabEstado"
+        Me.TSLabEstado.Size = New System.Drawing.Size(40, 17)
+        Me.TSLabEstado.Text = "Estado"
+        '
         'NuevaEspecialidad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -172,6 +190,7 @@ Partial Class NuevaEspecialidad
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(474, 322)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.LblCancelarEs)
         Me.Controls.Add(Me.LblBorarEs)
         Me.Controls.Add(Me.PBBorrarEs)
@@ -188,6 +207,8 @@ Partial Class NuevaEspecialidad
         CType(Me.PBAceptarEs, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -203,4 +224,6 @@ Partial Class NuevaEspecialidad
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents TBNombreEs As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents TSLabEstado As System.Windows.Forms.ToolStripStatusLabel
 End Class

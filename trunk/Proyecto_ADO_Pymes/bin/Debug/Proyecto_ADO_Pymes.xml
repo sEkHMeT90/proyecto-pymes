@@ -6,36 +6,96 @@ Proyecto_ADO_Pymes
 </name>
 </assembly>
 <members>
-<member name="M:Proyecto_ADO_Pymes.NuevoCliente.NuevoUsuario_Load(System.Object,System.EventArgs)">
+<member name="M:Proyecto_ADO_Pymes.Direccion.#ctor">
+	<summary>
+ Constructor por defecto
+ </summary>
+	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.Direccion.#ctor(System.String,System.Int32,System.String,Proyecto_ADO_Pymes.Municipio)">
+	<summary>
+ Constructor con todos los parámetros
+ </summary>
+	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
+</member><member name="P:Proyecto_ADO_Pymes.Direccion.Calle">
+	<summary>
+ Propiedades de los atributos
+ </summary>
+	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.Direccion.Dispose">
+	<summary>
+ Destructor Dispose
+ </summary>
+	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.Direccion.Finalize">
+	<summary>
+ Destructor Finalize
+ </summary>
+	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
+</member><member name="T:Proyecto_ADO_Pymes.Direccion">
+	<summary>
+ Clase Dirección: Almacena los datos de las direcciones de los usuarios.
+ </summary>
+	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.Usuario.#ctor">
+	<summary>
+ Constructor por parámetros
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.Usuario.#ctor(System.Int32,System.String,System.String,System.String,System.String,Proyecto_ADO_Pymes.Direccion,System.String,System.String,System.String)">
+	<summary>
+ Constructor por parámetros
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="P:Proyecto_ADO_Pymes.Usuario.Codigo">
+	<summary>
+ Propiedades de los atributos
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.Usuario.Dispose">
+	<summary>
+ Destructor Dispose
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.Usuario.Finalize">
+	<summary>
+ Destructor Finalize
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="T:Proyecto_ADO_Pymes.Usuario">
+	<summary>
+ Clase Usuario: Clase genérica para Trabajadores y Clientes
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.NuevoEmple.NuevoEmple_Load(System.Object,System.EventArgs)">
 	<summary>
  Carga el listado de Provincias y muestra las mismas en el ComboBox
  </summary>
 	<author>Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.NuevoCliente.CBProvincia_SelectedIndexChanged(System.Object,System.EventArgs)">
+</member><member name="M:Proyecto_ADO_Pymes.NuevoEmple.CBProvincia_SelectedIndexChanged(System.Object,System.EventArgs)">
 	<summary>
  Carga el listado de Municipios al cambiar de Provincia y muestra los mismos en el ComboBox
  </summary>
 	<author>Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.NuevoCliente.Label19_Click(System.Object,System.EventArgs)">
+</member><member name="M:Proyecto_ADO_Pymes.NuevoEmple.InsertarCliente">
 	<summary>
- Cierra el formulario y no realiza nada
+ Inserta el Cliente en la BBDD
  </summary>
 	<author>Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.NuevoCliente.PBAceptarU_Click(System.Object,System.EventArgs)">
-	<summary>
- Válida los campos e inserta en la Base de Datos
- </summary>
-	<author>Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.NuevoCliente.Label18_Click(System.Object,System.EventArgs)">
+</member><member name="M:Proyecto_ADO_Pymes.NuevoEmple.BorrarCampos">
 	<summary>
  Vacía el contenido de los campos
  </summary>
-	<author>Pedro Zalacain</author>
-</member><member name="T:Proyecto_ADO_Pymes.NuevoCliente">
+	<author>María Navarro</author>
+</member><member name="M:Proyecto_ADO_Pymes.NuevoEmple.PBAceptarU_Click(System.Object,System.EventArgs)">
+	<summary>
+ Valida los campos e inserta en la Base de Datos
+ </summary>
+	<author>Pedro Zalacain, Maria Navarro</author>
+</member><member name="T:Proyecto_ADO_Pymes.NuevoEmple">
 	<summary>
  Formulario NuevoUsuario
  </summary>
-	<author> Pedro Zalacaín María Navarro</author>
+	<author>María Navarro</author>
 </member><member name="M:Proyecto_ADO_Pymes.Factura.#ctor">
 	<summary>
  Constructor por defecto
@@ -71,83 +131,71 @@ Proyecto_ADO_Pymes
  Clase Factura.
  </summary>
 	<author>Raquel Lloréns Gambín</author>
-</member><member name="M:Proyecto_ADO_Pymes.Cita.#ctor">
-	<summary>
- Constructor por defecto
- </summary>
-	<author>Raquel Lloréns Gambín, Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.Cita.#ctor(System.Int32,System.DateTime,System.Int32,System.Int32,System.Collections.Generic.List{Proyecto_ADO_Pymes.Servicio},System.Int32,System.Int32)">
-	<summary>
- Constructor con todos los parámetros
- </summary>
-	<author>Raquel Lloréns Gambín, Andrés Marotta</author>
-</member><member name="P:Proyecto_ADO_Pymes.Cita.Fecha">
-	<summary>
- Propiedades de los atributos
- </summary>
-	<author>Raquel Lloréns Gambín, Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.Cita.Cargar">
-	<summary>
- Carga todas las citas almacenadas en la base de datos
- </summary>
-	<returns>Una lista de citas</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.Cita.Insertar">
-	<summary>
- Inserta una cita en la base de datos
- </summary>
-	<returns>True o False, dependiendo de si todo fue bien o no</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.Cita.Dispose">
-	<summary>
- Destructor Dispose
- </summary>
-	<author>Raquel Lloréns Gambín, Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.Cita.Finalize">
-	<summary>
- Destructor Finalize
- </summary>
-	<author>Raquel Lloréns Gambín, Andrés Marotta</author>
-</member><member name="T:Proyecto_ADO_Pymes.Cita">
-	<summary>
- Clase Cita.
- </summary>
-	<author>Raquel Lloréns Gambín, Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.LineaFactura.#ctor">
+</member><member name="M:Proyecto_ADO_Pymes.Especialidad.#ctor">
 	<summary>
  Constructor por defecto
  </summary>
 	<author>Raquel Lloréns Gambín</author>
-</member><member name="M:Proyecto_ADO_Pymes.LineaFactura.#ctor(System.Int32,System.String)">
+</member><member name="M:Proyecto_ADO_Pymes.Especialidad.#ctor(System.Int32,System.String,System.String)">
 	<summary>
  Constructor con todos los parámetros
  </summary>
 	<author>Raquel Lloréns Gambín</author>
-</member><member name="M:Proyecto_ADO_Pymes.LineaFactura.#ctor(Proyecto_ADO_Pymes.LineaFactura)">
-	<summary>
- Constructor de copia
- </summary>
-	<author>Raquel Lloréns Gambín</author>
-</member><member name="M:Proyecto_ADO_Pymes.LineaFactura.Dispose">
-	<summary>
- Destructor Dispose
- </summary>
-	<author>Raquel Lloréns Gambín</author>
-</member><member name="P:Proyecto_ADO_Pymes.LineaFactura.Descripcion">
+</member><member name="P:Proyecto_ADO_Pymes.Especialidad.Nombre">
 	<summary>
  Propiedades de los atributos
  </summary>
 	<author>Raquel Lloréns Gambín</author>
-</member><member name="M:Proyecto_ADO_Pymes.LineaFactura.Finalize">
+</member><member name="M:Proyecto_ADO_Pymes.Especialidad.Insertar">
+	<summary>
+ Inserta el servicio en la base de datos
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.Especialidad.Dispose">
+	<summary>
+ Destructor Dispose
+ </summary>
+	<author>Raquel Lloréns Gambín</author>
+</member><member name="M:Proyecto_ADO_Pymes.Especialidad.Finalize">
 	<summary>
  Destructor Finalize
  </summary>
 	<author>Raquel Lloréns Gambín</author>
-</member><member name="T:Proyecto_ADO_Pymes.LineaFactura">
+</member><member name="T:Proyecto_ADO_Pymes.Especialidad">
 	<summary>
- Clase LineaFactura: Datos de las diferentes lineas de factura.
+ Clase Especialidad.
  </summary>
-	<author>Raquel Lloréns Gambín</author>
+	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.NuevoCliente.NuevoUsuario_Load(System.Object,System.EventArgs)">
+	<summary>
+ Carga el listado de Provincias y muestra las mismas en el ComboBox
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.NuevoCliente.CBProvincia_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ Carga el listado de Municipios al cambiar de Provincia y muestra los mismos en el ComboBox
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.NuevoCliente.Label19_Click(System.Object,System.EventArgs)">
+	<summary>
+ Cierra el formulario y no realiza nada
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.NuevoCliente.PBAceptarU_Click(System.Object,System.EventArgs)">
+	<summary>
+ Válida los campos e inserta en la Base de Datos
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.NuevoCliente.Label18_Click(System.Object,System.EventArgs)">
+	<summary>
+ Vacía el contenido de los campos
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="T:Proyecto_ADO_Pymes.NuevoCliente">
+	<summary>
+ Formulario NuevoUsuario
+ </summary>
+	<author> Pedro Zalacaín María Navarro</author>
 </member><member name="M:Proyecto_ADO_Pymes.Servicio.#ctor">
 	<summary>
  Constructor por defecto
@@ -232,6 +280,42 @@ Proyecto_ADO_Pymes
  Clase Especialidad.
  </summary>
 	<author>Raquel Lloréns Gambín</author>
+</member><member name="M:Proyecto_ADO_Pymes.Provincia.#ctor">
+	<summary>
+ Constructor por defecto
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:Proyecto_ADO_Pymes.Provincia.#ctor(System.Int32,System.String)">
+	<summary>
+ Constructor por parámetros
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="P:Proyecto_ADO_Pymes.Provincia.Codigo">
+	<summary>
+ Propiedades de los atributos
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:Proyecto_ADO_Pymes.Provincia.Cargar">
+	<summary>
+ Carga todas las provincias
+ </summary>
+	<returns>Una lista con todas las provincias cargadas</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:Proyecto_ADO_Pymes.Provincia.Dispose">
+	<summary>
+ Destructor manual
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:Proyecto_ADO_Pymes.Provincia.Finalize">
+	<summary>
+ Destructor automático
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="T:Proyecto_ADO_Pymes.Provincia">
+	<summary>
+ Clase Provincia
+ </summary>
+	<author>Andrés Marotta</author>
 </member><member name="M:Proyecto_ADO_Pymes.Cliente.#ctor">
 	<summary>
  Constructor por parámetros
@@ -269,58 +353,12 @@ Proyecto_ADO_Pymes
  Clase cliente: Almacena los datos de los clientes.
  </summary>
 	<author>Raquel Lloréns Gambín, Andrés Marotta, Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.NuevaEspecialidad.PBAceptarU_Click(System.Object,System.EventArgs)">
-	<summary>
- Botón .
- </summary>
-	<author>María Navarro, Pedro Zalacain</author>
-</member><member name="T:Proyecto_ADO_Pymes.NuevaEspecialidad">
-	<summary>
- Clase Especialidad.
- </summary>
-	<author>María Navarro, Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.Provincia.#ctor">
-	<summary>
- Constructor por defecto
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.Provincia.#ctor(System.Int32,System.String)">
-	<summary>
- Constructor por parámetros
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="P:Proyecto_ADO_Pymes.Provincia.Codigo">
-	<summary>
- Propiedades de los atributos
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.Provincia.Cargar">
-	<summary>
- Carga todas las provincias
- </summary>
-	<returns>Una lista con todas las provincias cargadas</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.Provincia.Dispose">
-	<summary>
- Destructor manual
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.Provincia.Finalize">
-	<summary>
- Destructor automático
- </summary>
-	<author>Andrés Marotta</author>
-</member><member name="T:Proyecto_ADO_Pymes.Provincia">
-	<summary>
- Clase Provincia
- </summary>
-	<author>Andrés Marotta</author>
 </member><member name="M:Proyecto_ADO_Pymes.Trabajador.#ctor">
 	<summary>
  Constructor por defecto
  </summary>
 	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.Trabajador.#ctor(System.Int32,System.String,System.String,System.String,System.String,Proyecto_ADO_Pymes.Direccion,System.String,System.String,System.String,System.Int32,System.Int32,Proyecto_ADO_Pymes.Especialidad)">
+</member><member name="M:Proyecto_ADO_Pymes.Trabajador.#ctor(System.Int32,System.String,System.String,System.String,System.String,Proyecto_ADO_Pymes.Direccion,System.String,System.String,System.String,System.Int32,System.Double,Proyecto_ADO_Pymes.Especialidad)">
 	<summary>
  Constructor con todos los parámetros
  </summary>
@@ -350,71 +388,21 @@ Proyecto_ADO_Pymes
  Clase Trabajador: Almacena los datos de los trabajadores.
  </summary>
 	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.Especialidad.#ctor">
+</member><member name="M:Proyecto_ADO_Pymes.NuevaEspecialidad.InsertarEspecialidad">
 	<summary>
- Constructor por defecto
- </summary>
-	<author>Raquel Lloréns Gambín</author>
-</member><member name="M:Proyecto_ADO_Pymes.Especialidad.#ctor(System.Int32,System.String,System.String)">
-	<summary>
- Constructor con todos los parámetros
- </summary>
-	<author>Raquel Lloréns Gambín</author>
-</member><member name="P:Proyecto_ADO_Pymes.Especialidad.Nombre">
-	<summary>
- Propiedades de los atributos
- </summary>
-	<author>Raquel Lloréns Gambín</author>
-</member><member name="M:Proyecto_ADO_Pymes.Especialidad.Insertar">
-	<summary>
- Inserta el servicio en la base de datos
+ Inserta una nueva Especialidad
  </summary>
 	<author>Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.Especialidad.Dispose">
+</member><member name="M:Proyecto_ADO_Pymes.NuevaEspecialidad.BorrarCampos">
 	<summary>
- Destructor Dispose
+ Vacía el contenido de los campos
  </summary>
-	<author>Raquel Lloréns Gambín</author>
-</member><member name="M:Proyecto_ADO_Pymes.Especialidad.Finalize">
-	<summary>
- Destructor Finalize
- </summary>
-	<author>Raquel Lloréns Gambín</author>
-</member><member name="T:Proyecto_ADO_Pymes.Especialidad">
+	<author>Pedro Zalacain</author>
+</member><member name="T:Proyecto_ADO_Pymes.NuevaEspecialidad">
 	<summary>
  Clase Especialidad.
  </summary>
-	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.Usuario.#ctor">
-	<summary>
- Constructor por parámetros
- </summary>
-	<author>Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.Usuario.#ctor(System.Int32,System.String,System.String,System.String,System.String,Proyecto_ADO_Pymes.Direccion,System.String,System.String,System.String)">
-	<summary>
- Constructor por parámetros
- </summary>
-	<author>Pedro Zalacain</author>
-</member><member name="P:Proyecto_ADO_Pymes.Usuario.Codigo">
-	<summary>
- Propiedades de los atributos
- </summary>
-	<author>Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.Usuario.Dispose">
-	<summary>
- Destructor Dispose
- </summary>
-	<author>Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.Usuario.Finalize">
-	<summary>
- Destructor Finalize
- </summary>
-	<author>Pedro Zalacain</author>
-</member><member name="T:Proyecto_ADO_Pymes.Usuario">
-	<summary>
- Clase Usuario: Clase genérica para Trabajadores y Clientes
- </summary>
-	<author>Pedro Zalacain</author>
+	<author>María Navarro, Pedro Zalacain</author>
 </member><member name="M:Proyecto_ADO_Pymes.BBDD.#ctor">
 	<summary>
  Constructor por defecto
@@ -461,36 +449,54 @@ Proyecto_ADO_Pymes
  Clase BBDD: Para encapsular la interacción con la base de datos
  </summary>
 	<author>Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.NuevoEmple.NuevoEmple_Load(System.Object,System.EventArgs)">
+</member><member name="P:Proyecto_ADO_Pymes.My.Resources.Resources.ResourceManager">
 	<summary>
- Carga el listado de Provincias y muestra las mismas en el ComboBox
- </summary>
-	<author>Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.NuevoEmple.CBProvincia_SelectedIndexChanged(System.Object,System.EventArgs)">
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Proyecto_ADO_Pymes.My.Resources.Resources.Culture">
 	<summary>
- Carga el listado de Municipios al cambiar de Provincia y muestra los mismos en el ComboBox
- </summary>
-	<author>Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.NuevoEmple.Label19_Click(System.Object,System.EventArgs)">
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Proyecto_ADO_Pymes.My.Resources.Resources">
 	<summary>
- Cierra el formulario y no realiza nada
- </summary>
-	<author>Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.NuevoEmple.Label18_Click(System.Object,System.EventArgs)">
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Proyecto_ADO_Pymes.LineaFactura.#ctor">
 	<summary>
- Vacía el contenido de los campos
+ Constructor por defecto
  </summary>
-	<author>Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.NuevoEmple.Borrar">
+	<author>Raquel Lloréns Gambín</author>
+</member><member name="M:Proyecto_ADO_Pymes.LineaFactura.#ctor(System.Int32,System.String)">
 	<summary>
- Vacía el contenido de los campos
+ Constructor con todos los parámetros
  </summary>
-	<author>María Navarro</author>
-</member><member name="T:Proyecto_ADO_Pymes.NuevoEmple">
+	<author>Raquel Lloréns Gambín</author>
+</member><member name="M:Proyecto_ADO_Pymes.LineaFactura.#ctor(Proyecto_ADO_Pymes.LineaFactura)">
 	<summary>
- Formulario NuevoUsuario
+ Constructor de copia
  </summary>
-	<author>María Navarro</author>
+	<author>Raquel Lloréns Gambín</author>
+</member><member name="M:Proyecto_ADO_Pymes.LineaFactura.Dispose">
+	<summary>
+ Destructor Dispose
+ </summary>
+	<author>Raquel Lloréns Gambín</author>
+</member><member name="P:Proyecto_ADO_Pymes.LineaFactura.Descripcion">
+	<summary>
+ Propiedades de los atributos
+ </summary>
+	<author>Raquel Lloréns Gambín</author>
+</member><member name="M:Proyecto_ADO_Pymes.LineaFactura.Finalize">
+	<summary>
+ Destructor Finalize
+ </summary>
+	<author>Raquel Lloréns Gambín</author>
+</member><member name="T:Proyecto_ADO_Pymes.LineaFactura">
+	<summary>
+ Clase LineaFactura: Datos de las diferentes lineas de factura.
+ </summary>
+	<author>Raquel Lloréns Gambín</author>
 </member><member name="M:Proyecto_ADO_Pymes.Principal.Form1_Load(System.Object,System.EventArgs)">
 	<summary>
  Formularios y diseño
@@ -506,19 +512,48 @@ Proyecto_ADO_Pymes
  Reloj
  </summary>
 	<author>María Navarro</author>
-</member><member name="P:Proyecto_ADO_Pymes.My.Resources.Resources.ResourceManager">
+</member><member name="M:Proyecto_ADO_Pymes.Cita.#ctor">
 	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:Proyecto_ADO_Pymes.My.Resources.Resources.Culture">
+ Constructor por defecto
+ </summary>
+	<author>Raquel Lloréns Gambín, Andrés Marotta</author>
+</member><member name="M:Proyecto_ADO_Pymes.Cita.#ctor(System.Int32,System.DateTime,System.Int32,System.Int32,System.Collections.Generic.List{Proyecto_ADO_Pymes.Servicio},System.Int32,System.Int32)">
 	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:Proyecto_ADO_Pymes.My.Resources.Resources">
+ Constructor con todos los parámetros
+ </summary>
+	<author>Raquel Lloréns Gambín, Andrés Marotta</author>
+</member><member name="P:Proyecto_ADO_Pymes.Cita.Fecha">
 	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
+ Propiedades de los atributos
+ </summary>
+	<author>Raquel Lloréns Gambín, Andrés Marotta</author>
+</member><member name="M:Proyecto_ADO_Pymes.Cita.Cargar">
+	<summary>
+ Carga todas las citas almacenadas en la base de datos
+ </summary>
+	<returns>Una lista de citas</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:Proyecto_ADO_Pymes.Cita.Insertar">
+	<summary>
+ Inserta una cita en la base de datos
+ </summary>
+	<returns>True o False, dependiendo de si todo fue bien o no</returns>
+	<author>Andrés Marotta</author>
+</member><member name="M:Proyecto_ADO_Pymes.Cita.Dispose">
+	<summary>
+ Destructor Dispose
+ </summary>
+	<author>Raquel Lloréns Gambín, Andrés Marotta</author>
+</member><member name="M:Proyecto_ADO_Pymes.Cita.Finalize">
+	<summary>
+ Destructor Finalize
+ </summary>
+	<author>Raquel Lloréns Gambín, Andrés Marotta</author>
+</member><member name="T:Proyecto_ADO_Pymes.Cita">
+	<summary>
+ Clase Cita.
+ </summary>
+	<author>Raquel Lloréns Gambín, Andrés Marotta</author>
 </member><member name="M:Proyecto_ADO_Pymes.Municipio.#ctor">
 	<summary>
  Constructor por defecto
@@ -555,36 +590,6 @@ Proyecto_ADO_Pymes
  Clase Municipio
  </summary>
 	<author>Andrés Marotta, Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.Direccion.#ctor">
-	<summary>
- Constructor por defecto
- </summary>
-	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.Direccion.#ctor(System.String,System.Int32,System.String,Proyecto_ADO_Pymes.Municipio)">
-	<summary>
- Constructor con todos los parámetros
- </summary>
-	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
-</member><member name="P:Proyecto_ADO_Pymes.Direccion.Calle">
-	<summary>
- Propiedades de los atributos
- </summary>
-	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.Direccion.Dispose">
-	<summary>
- Destructor Dispose
- </summary>
-	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
-</member><member name="M:Proyecto_ADO_Pymes.Direccion.Finalize">
-	<summary>
- Destructor Finalize
- </summary>
-	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
-</member><member name="T:Proyecto_ADO_Pymes.Direccion">
-	<summary>
- Clase Dirección: Almacena los datos de las direcciones de los usuarios.
- </summary>
-	<author>Raquel Lloréns Gambín, Pedro Zalacain</author>
 </member>
 </members>
 </doc>
