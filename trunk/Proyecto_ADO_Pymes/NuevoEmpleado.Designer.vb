@@ -24,43 +24,43 @@ Partial Class NuevoEmple
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NuevoEmple))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TBNombre = New System.Windows.Forms.TextBox()
-        Me.TBApellido1 = New System.Windows.Forms.TextBox()
+        Me.TBNombreE = New System.Windows.Forms.TextBox()
+        Me.TBApellido1E = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TBApellido2 = New System.Windows.Forms.TextBox()
+        Me.TBApellido2E = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TBMovil = New System.Windows.Forms.TextBox()
+        Me.TBMovilE = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TBFijo = New System.Windows.Forms.TextBox()
+        Me.TBFijoE = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TBDni = New System.Windows.Forms.TextBox()
+        Me.TBDniE = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.CBProvincia = New System.Windows.Forms.ComboBox()
+        Me.CBProvinciaE = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.CBPoblacion = New System.Windows.Forms.ComboBox()
-        Me.TBPiso = New System.Windows.Forms.TextBox()
+        Me.CBPoblacionE = New System.Windows.Forms.ComboBox()
+        Me.TBPisoE = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TBNumero = New System.Windows.Forms.TextBox()
+        Me.TBNumeroE = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TBCalle = New System.Windows.Forms.TextBox()
+        Me.TBCalleE = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TBEmail = New System.Windows.Forms.TextBox()
+        Me.TBEmailE = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.TBSueldo = New System.Windows.Forms.TextBox()
+        Me.TBSueldoE = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.TBNumSS = New System.Windows.Forms.TextBox()
+        Me.TBNumSSE = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.CBEspecialidad = New System.Windows.Forms.ComboBox()
+        Me.CBEspecialidadE = New System.Windows.Forms.ComboBox()
         Me.PBAceptarE = New System.Windows.Forms.PictureBox()
-        Me.Label17 = New System.Windows.Forms.Label()
+        Me.LblAceptarE = New System.Windows.Forms.Label()
         Me.PBCancelarE = New System.Windows.Forms.PictureBox()
         Me.PBBorrarE = New System.Windows.Forms.PictureBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
+        Me.LblBorrarE = New System.Windows.Forms.Label()
+        Me.LblCancelarE = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBAceptarE, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBCancelarE, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -79,23 +79,23 @@ Partial Class NuevoEmple
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nombre"
         '
-        'TBNombre
+        'TBNombreE
         '
-        Me.TBNombre.BackColor = System.Drawing.Color.Thistle
-        Me.TBNombre.ForeColor = System.Drawing.Color.Black
-        Me.TBNombre.Location = New System.Drawing.Point(164, 71)
-        Me.TBNombre.Name = "TBNombre"
-        Me.TBNombre.Size = New System.Drawing.Size(190, 20)
-        Me.TBNombre.TabIndex = 1
+        Me.TBNombreE.BackColor = System.Drawing.Color.Thistle
+        Me.TBNombreE.ForeColor = System.Drawing.Color.Black
+        Me.TBNombreE.Location = New System.Drawing.Point(164, 71)
+        Me.TBNombreE.Name = "TBNombreE"
+        Me.TBNombreE.Size = New System.Drawing.Size(190, 20)
+        Me.TBNombreE.TabIndex = 1
         '
-        'TBApellido1
+        'TBApellido1E
         '
-        Me.TBApellido1.BackColor = System.Drawing.Color.Thistle
-        Me.TBApellido1.ForeColor = System.Drawing.Color.Black
-        Me.TBApellido1.Location = New System.Drawing.Point(164, 122)
-        Me.TBApellido1.Name = "TBApellido1"
-        Me.TBApellido1.Size = New System.Drawing.Size(190, 20)
-        Me.TBApellido1.TabIndex = 2
+        Me.TBApellido1E.BackColor = System.Drawing.Color.Thistle
+        Me.TBApellido1E.ForeColor = System.Drawing.Color.Black
+        Me.TBApellido1E.Location = New System.Drawing.Point(164, 122)
+        Me.TBApellido1E.Name = "TBApellido1E"
+        Me.TBApellido1E.Size = New System.Drawing.Size(190, 20)
+        Me.TBApellido1E.TabIndex = 2
         '
         'Label2
         '
@@ -109,14 +109,14 @@ Partial Class NuevoEmple
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Apellido 1"
         '
-        'TBApellido2
+        'TBApellido2E
         '
-        Me.TBApellido2.BackColor = System.Drawing.Color.Thistle
-        Me.TBApellido2.ForeColor = System.Drawing.Color.Black
-        Me.TBApellido2.Location = New System.Drawing.Point(164, 174)
-        Me.TBApellido2.Name = "TBApellido2"
-        Me.TBApellido2.Size = New System.Drawing.Size(190, 20)
-        Me.TBApellido2.TabIndex = 3
+        Me.TBApellido2E.BackColor = System.Drawing.Color.Thistle
+        Me.TBApellido2E.ForeColor = System.Drawing.Color.Black
+        Me.TBApellido2E.Location = New System.Drawing.Point(164, 174)
+        Me.TBApellido2E.Name = "TBApellido2E"
+        Me.TBApellido2E.Size = New System.Drawing.Size(190, 20)
+        Me.TBApellido2E.TabIndex = 3
         '
         'Label3
         '
@@ -130,14 +130,14 @@ Partial Class NuevoEmple
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Apellido 2"
         '
-        'TBMovil
+        'TBMovilE
         '
-        Me.TBMovil.BackColor = System.Drawing.Color.Thistle
-        Me.TBMovil.ForeColor = System.Drawing.Color.Black
-        Me.TBMovil.Location = New System.Drawing.Point(164, 329)
-        Me.TBMovil.Name = "TBMovil"
-        Me.TBMovil.Size = New System.Drawing.Size(190, 20)
-        Me.TBMovil.TabIndex = 6
+        Me.TBMovilE.BackColor = System.Drawing.Color.Thistle
+        Me.TBMovilE.ForeColor = System.Drawing.Color.Black
+        Me.TBMovilE.Location = New System.Drawing.Point(164, 329)
+        Me.TBMovilE.Name = "TBMovilE"
+        Me.TBMovilE.Size = New System.Drawing.Size(190, 20)
+        Me.TBMovilE.TabIndex = 6
         '
         'Label4
         '
@@ -151,14 +151,14 @@ Partial Class NuevoEmple
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Movil"
         '
-        'TBFijo
+        'TBFijoE
         '
-        Me.TBFijo.BackColor = System.Drawing.Color.Thistle
-        Me.TBFijo.ForeColor = System.Drawing.Color.Black
-        Me.TBFijo.Location = New System.Drawing.Point(164, 277)
-        Me.TBFijo.Name = "TBFijo"
-        Me.TBFijo.Size = New System.Drawing.Size(190, 20)
-        Me.TBFijo.TabIndex = 5
+        Me.TBFijoE.BackColor = System.Drawing.Color.Thistle
+        Me.TBFijoE.ForeColor = System.Drawing.Color.Black
+        Me.TBFijoE.Location = New System.Drawing.Point(164, 277)
+        Me.TBFijoE.Name = "TBFijoE"
+        Me.TBFijoE.Size = New System.Drawing.Size(190, 20)
+        Me.TBFijoE.TabIndex = 5
         '
         'Label5
         '
@@ -172,14 +172,14 @@ Partial Class NuevoEmple
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Fijo"
         '
-        'TBDni
+        'TBDniE
         '
-        Me.TBDni.BackColor = System.Drawing.Color.Thistle
-        Me.TBDni.ForeColor = System.Drawing.Color.Black
-        Me.TBDni.Location = New System.Drawing.Point(164, 226)
-        Me.TBDni.Name = "TBDni"
-        Me.TBDni.Size = New System.Drawing.Size(190, 20)
-        Me.TBDni.TabIndex = 4
+        Me.TBDniE.BackColor = System.Drawing.Color.Thistle
+        Me.TBDniE.ForeColor = System.Drawing.Color.Black
+        Me.TBDniE.Location = New System.Drawing.Point(164, 226)
+        Me.TBDniE.Name = "TBDniE"
+        Me.TBDniE.Size = New System.Drawing.Size(190, 20)
+        Me.TBDniE.TabIndex = 4
         '
         'Label6
         '
@@ -205,16 +205,16 @@ Partial Class NuevoEmple
         Me.Label11.TabIndex = 31
         Me.Label11.Text = "Provincia"
         '
-        'CBProvincia
+        'CBProvinciaE
         '
-        Me.CBProvincia.BackColor = System.Drawing.Color.Thistle
-        Me.CBProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBProvincia.FormattingEnabled = True
-        Me.CBProvincia.Items.AddRange(New Object() {"Alicante", "Catellón", "Valencia"})
-        Me.CBProvincia.Location = New System.Drawing.Point(537, 429)
-        Me.CBProvincia.Name = "CBProvincia"
-        Me.CBProvincia.Size = New System.Drawing.Size(188, 21)
-        Me.CBProvincia.TabIndex = 14
+        Me.CBProvinciaE.BackColor = System.Drawing.Color.Thistle
+        Me.CBProvinciaE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBProvinciaE.FormattingEnabled = True
+        Me.CBProvinciaE.Items.AddRange(New Object() {"Alicante", "Catellón", "Valencia"})
+        Me.CBProvinciaE.Location = New System.Drawing.Point(537, 429)
+        Me.CBProvinciaE.Name = "CBProvinciaE"
+        Me.CBProvinciaE.Size = New System.Drawing.Size(188, 21)
+        Me.CBProvinciaE.TabIndex = 14
         '
         'Label10
         '
@@ -228,25 +228,25 @@ Partial Class NuevoEmple
         Me.Label10.TabIndex = 29
         Me.Label10.Text = "Población"
         '
-        'CBPoblacion
+        'CBPoblacionE
         '
-        Me.CBPoblacion.BackColor = System.Drawing.Color.Thistle
-        Me.CBPoblacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBPoblacion.FormattingEnabled = True
-        Me.CBPoblacion.Items.AddRange(New Object() {"San Vicente", "San Juan", "Elche" & Global.Microsoft.VisualBasic.ChrW(9), "Alicante"})
-        Me.CBPoblacion.Location = New System.Drawing.Point(539, 479)
-        Me.CBPoblacion.Name = "CBPoblacion"
-        Me.CBPoblacion.Size = New System.Drawing.Size(189, 21)
-        Me.CBPoblacion.TabIndex = 15
+        Me.CBPoblacionE.BackColor = System.Drawing.Color.Thistle
+        Me.CBPoblacionE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBPoblacionE.FormattingEnabled = True
+        Me.CBPoblacionE.Items.AddRange(New Object() {"San Vicente", "San Juan", "Elche" & Global.Microsoft.VisualBasic.ChrW(9), "Alicante"})
+        Me.CBPoblacionE.Location = New System.Drawing.Point(539, 479)
+        Me.CBPoblacionE.Name = "CBPoblacionE"
+        Me.CBPoblacionE.Size = New System.Drawing.Size(189, 21)
+        Me.CBPoblacionE.TabIndex = 15
         '
-        'TBPiso
+        'TBPisoE
         '
-        Me.TBPiso.BackColor = System.Drawing.Color.Thistle
-        Me.TBPiso.ForeColor = System.Drawing.Color.Black
-        Me.TBPiso.Location = New System.Drawing.Point(668, 377)
-        Me.TBPiso.Name = "TBPiso"
-        Me.TBPiso.Size = New System.Drawing.Size(59, 20)
-        Me.TBPiso.TabIndex = 13
+        Me.TBPisoE.BackColor = System.Drawing.Color.Thistle
+        Me.TBPisoE.ForeColor = System.Drawing.Color.Black
+        Me.TBPisoE.Location = New System.Drawing.Point(668, 377)
+        Me.TBPisoE.Name = "TBPisoE"
+        Me.TBPisoE.Size = New System.Drawing.Size(59, 20)
+        Me.TBPisoE.TabIndex = 13
         '
         'Label9
         '
@@ -260,14 +260,14 @@ Partial Class NuevoEmple
         Me.Label9.TabIndex = 26
         Me.Label9.Text = "Piso"
         '
-        'TBNumero
+        'TBNumeroE
         '
-        Me.TBNumero.BackColor = System.Drawing.Color.Thistle
-        Me.TBNumero.ForeColor = System.Drawing.Color.Black
-        Me.TBNumero.Location = New System.Drawing.Point(537, 377)
-        Me.TBNumero.Name = "TBNumero"
-        Me.TBNumero.Size = New System.Drawing.Size(55, 20)
-        Me.TBNumero.TabIndex = 12
+        Me.TBNumeroE.BackColor = System.Drawing.Color.Thistle
+        Me.TBNumeroE.ForeColor = System.Drawing.Color.Black
+        Me.TBNumeroE.Location = New System.Drawing.Point(537, 377)
+        Me.TBNumeroE.Name = "TBNumeroE"
+        Me.TBNumeroE.Size = New System.Drawing.Size(55, 20)
+        Me.TBNumeroE.TabIndex = 12
         '
         'Label8
         '
@@ -281,14 +281,14 @@ Partial Class NuevoEmple
         Me.Label8.TabIndex = 24
         Me.Label8.Text = "Nº"
         '
-        'TBCalle
+        'TBCalleE
         '
-        Me.TBCalle.BackColor = System.Drawing.Color.Thistle
-        Me.TBCalle.ForeColor = System.Drawing.Color.Black
-        Me.TBCalle.Location = New System.Drawing.Point(537, 327)
-        Me.TBCalle.Name = "TBCalle"
-        Me.TBCalle.Size = New System.Drawing.Size(190, 20)
-        Me.TBCalle.TabIndex = 11
+        Me.TBCalleE.BackColor = System.Drawing.Color.Thistle
+        Me.TBCalleE.ForeColor = System.Drawing.Color.Black
+        Me.TBCalleE.Location = New System.Drawing.Point(537, 327)
+        Me.TBCalleE.Name = "TBCalleE"
+        Me.TBCalleE.Size = New System.Drawing.Size(190, 20)
+        Me.TBCalleE.TabIndex = 11
         '
         'Label7
         '
@@ -302,14 +302,14 @@ Partial Class NuevoEmple
         Me.Label7.TabIndex = 22
         Me.Label7.Text = "Calle"
         '
-        'TBEmail
+        'TBEmailE
         '
-        Me.TBEmail.BackColor = System.Drawing.Color.Thistle
-        Me.TBEmail.ForeColor = System.Drawing.Color.Black
-        Me.TBEmail.Location = New System.Drawing.Point(164, 381)
-        Me.TBEmail.Name = "TBEmail"
-        Me.TBEmail.Size = New System.Drawing.Size(190, 20)
-        Me.TBEmail.TabIndex = 7
+        Me.TBEmailE.BackColor = System.Drawing.Color.Thistle
+        Me.TBEmailE.ForeColor = System.Drawing.Color.Black
+        Me.TBEmailE.Location = New System.Drawing.Point(164, 381)
+        Me.TBEmailE.Name = "TBEmailE"
+        Me.TBEmailE.Size = New System.Drawing.Size(190, 20)
+        Me.TBEmailE.TabIndex = 7
         '
         'Label12
         '
@@ -346,14 +346,14 @@ Partial Class NuevoEmple
         Me.Label13.TabIndex = 39
         Me.Label13.Text = "Foto"
         '
-        'TBSueldo
+        'TBSueldoE
         '
-        Me.TBSueldo.BackColor = System.Drawing.Color.Thistle
-        Me.TBSueldo.ForeColor = System.Drawing.Color.Black
-        Me.TBSueldo.Location = New System.Drawing.Point(164, 480)
-        Me.TBSueldo.Name = "TBSueldo"
-        Me.TBSueldo.Size = New System.Drawing.Size(190, 20)
-        Me.TBSueldo.TabIndex = 9
+        Me.TBSueldoE.BackColor = System.Drawing.Color.Thistle
+        Me.TBSueldoE.ForeColor = System.Drawing.Color.Black
+        Me.TBSueldoE.Location = New System.Drawing.Point(164, 480)
+        Me.TBSueldoE.Name = "TBSueldoE"
+        Me.TBSueldoE.Size = New System.Drawing.Size(190, 20)
+        Me.TBSueldoE.TabIndex = 9
         '
         'Label14
         '
@@ -367,14 +367,14 @@ Partial Class NuevoEmple
         Me.Label14.TabIndex = 42
         Me.Label14.Text = "Sueldo"
         '
-        'TBNumSS
+        'TBNumSSE
         '
-        Me.TBNumSS.BackColor = System.Drawing.Color.Thistle
-        Me.TBNumSS.ForeColor = System.Drawing.Color.Black
-        Me.TBNumSS.Location = New System.Drawing.Point(164, 429)
-        Me.TBNumSS.Name = "TBNumSS"
-        Me.TBNumSS.Size = New System.Drawing.Size(190, 20)
-        Me.TBNumSS.TabIndex = 8
+        Me.TBNumSSE.BackColor = System.Drawing.Color.Thistle
+        Me.TBNumSSE.ForeColor = System.Drawing.Color.Black
+        Me.TBNumSSE.Location = New System.Drawing.Point(164, 429)
+        Me.TBNumSSE.Name = "TBNumSSE"
+        Me.TBNumSSE.Size = New System.Drawing.Size(190, 20)
+        Me.TBNumSSE.TabIndex = 8
         '
         'Label15
         '
@@ -400,16 +400,16 @@ Partial Class NuevoEmple
         Me.Label16.TabIndex = 45
         Me.Label16.Text = "Ocupación"
         '
-        'CBEspecialidad
+        'CBEspecialidadE
         '
-        Me.CBEspecialidad.BackColor = System.Drawing.Color.Thistle
-        Me.CBEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBEspecialidad.FormattingEnabled = True
-        Me.CBEspecialidad.Items.AddRange(New Object() {"Peluquero", "Esteticien", "Color"})
-        Me.CBEspecialidad.Location = New System.Drawing.Point(537, 279)
-        Me.CBEspecialidad.Name = "CBEspecialidad"
-        Me.CBEspecialidad.Size = New System.Drawing.Size(189, 21)
-        Me.CBEspecialidad.TabIndex = 10
+        Me.CBEspecialidadE.BackColor = System.Drawing.Color.Thistle
+        Me.CBEspecialidadE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBEspecialidadE.FormattingEnabled = True
+        Me.CBEspecialidadE.Items.AddRange(New Object() {"Peluquero", "Esteticien", "Color"})
+        Me.CBEspecialidadE.Location = New System.Drawing.Point(537, 279)
+        Me.CBEspecialidadE.Name = "CBEspecialidadE"
+        Me.CBEspecialidadE.Size = New System.Drawing.Size(189, 21)
+        Me.CBEspecialidadE.TabIndex = 10
         '
         'PBAceptarE
         '
@@ -421,17 +421,17 @@ Partial Class NuevoEmple
         Me.PBAceptarE.TabIndex = 46
         Me.PBAceptarE.TabStop = False
         '
-        'Label17
+        'LblAceptarE
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(177, 559)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(62, 16)
-        Me.Label17.TabIndex = 47
-        Me.Label17.Text = "Aceptar"
+        Me.LblAceptarE.AutoSize = True
+        Me.LblAceptarE.BackColor = System.Drawing.Color.Transparent
+        Me.LblAceptarE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblAceptarE.ForeColor = System.Drawing.Color.White
+        Me.LblAceptarE.Location = New System.Drawing.Point(177, 559)
+        Me.LblAceptarE.Name = "LblAceptarE"
+        Me.LblAceptarE.Size = New System.Drawing.Size(62, 16)
+        Me.LblAceptarE.TabIndex = 47
+        Me.LblAceptarE.Text = "Aceptar"
         '
         'PBCancelarE
         '
@@ -453,29 +453,29 @@ Partial Class NuevoEmple
         Me.PBBorrarE.TabIndex = 49
         Me.PBBorrarE.TabStop = False
         '
-        'Label18
+        'LblBorrarE
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(363, 559)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(51, 16)
-        Me.Label18.TabIndex = 50
-        Me.Label18.Text = "Borrar"
+        Me.LblBorrarE.AutoSize = True
+        Me.LblBorrarE.BackColor = System.Drawing.Color.Transparent
+        Me.LblBorrarE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblBorrarE.ForeColor = System.Drawing.Color.White
+        Me.LblBorrarE.Location = New System.Drawing.Point(363, 559)
+        Me.LblBorrarE.Name = "LblBorrarE"
+        Me.LblBorrarE.Size = New System.Drawing.Size(51, 16)
+        Me.LblBorrarE.TabIndex = 50
+        Me.LblBorrarE.Text = "Borrar"
         '
-        'Label19
+        'LblCancelarE
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.BackColor = System.Drawing.Color.Transparent
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(550, 559)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(70, 16)
-        Me.Label19.TabIndex = 51
-        Me.Label19.Text = "Cancelar"
+        Me.LblCancelarE.AutoSize = True
+        Me.LblCancelarE.BackColor = System.Drawing.Color.Transparent
+        Me.LblCancelarE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCancelarE.ForeColor = System.Drawing.Color.White
+        Me.LblCancelarE.Location = New System.Drawing.Point(550, 559)
+        Me.LblCancelarE.Name = "LblCancelarE"
+        Me.LblCancelarE.Size = New System.Drawing.Size(70, 16)
+        Me.LblCancelarE.TabIndex = 51
+        Me.LblCancelarE.Text = "Cancelar"
         '
         'NuevoEmple
         '
@@ -484,43 +484,43 @@ Partial Class NuevoEmple
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(784, 612)
-        Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.LblCancelarE)
+        Me.Controls.Add(Me.LblBorrarE)
         Me.Controls.Add(Me.PBBorrarE)
         Me.Controls.Add(Me.PBCancelarE)
-        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.LblAceptarE)
         Me.Controls.Add(Me.PBAceptarE)
         Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.CBEspecialidad)
-        Me.Controls.Add(Me.TBSueldo)
+        Me.Controls.Add(Me.CBEspecialidadE)
+        Me.Controls.Add(Me.TBSueldoE)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.TBNumSS)
+        Me.Controls.Add(Me.TBNumSSE)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TBEmail)
+        Me.Controls.Add(Me.TBEmailE)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.CBProvincia)
+        Me.Controls.Add(Me.CBProvinciaE)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.CBPoblacion)
-        Me.Controls.Add(Me.TBPiso)
+        Me.Controls.Add(Me.CBPoblacionE)
+        Me.Controls.Add(Me.TBPisoE)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.TBNumero)
+        Me.Controls.Add(Me.TBNumeroE)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TBCalle)
+        Me.Controls.Add(Me.TBCalleE)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TBMovil)
+        Me.Controls.Add(Me.TBMovilE)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TBFijo)
+        Me.Controls.Add(Me.TBFijoE)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TBDni)
+        Me.Controls.Add(Me.TBDniE)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TBApellido2)
+        Me.Controls.Add(Me.TBApellido2E)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TBApellido1)
+        Me.Controls.Add(Me.TBApellido1E)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TBNombre)
+        Me.Controls.Add(Me.TBNombreE)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
@@ -535,41 +535,41 @@ Partial Class NuevoEmple
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TBNombre As System.Windows.Forms.TextBox
-    Friend WithEvents TBApellido1 As System.Windows.Forms.TextBox
+    Friend WithEvents TBNombreE As System.Windows.Forms.TextBox
+    Friend WithEvents TBApellido1E As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TBApellido2 As System.Windows.Forms.TextBox
+    Friend WithEvents TBApellido2E As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TBMovil As System.Windows.Forms.TextBox
+    Friend WithEvents TBMovilE As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TBFijo As System.Windows.Forms.TextBox
+    Friend WithEvents TBFijoE As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TBDni As System.Windows.Forms.TextBox
+    Friend WithEvents TBDniE As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents CBProvincia As System.Windows.Forms.ComboBox
+    Friend WithEvents CBProvinciaE As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents CBPoblacion As System.Windows.Forms.ComboBox
-    Friend WithEvents TBPiso As System.Windows.Forms.TextBox
+    Friend WithEvents CBPoblacionE As System.Windows.Forms.ComboBox
+    Friend WithEvents TBPisoE As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents TBNumero As System.Windows.Forms.TextBox
+    Friend WithEvents TBNumeroE As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents TBCalle As System.Windows.Forms.TextBox
+    Friend WithEvents TBCalleE As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents TBEmail As System.Windows.Forms.TextBox
+    Friend WithEvents TBEmailE As System.Windows.Forms.TextBox
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents TBSueldo As System.Windows.Forms.TextBox
+    Friend WithEvents TBSueldoE As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents TBNumSS As System.Windows.Forms.TextBox
+    Friend WithEvents TBNumSSE As System.Windows.Forms.TextBox
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents CBEspecialidad As System.Windows.Forms.ComboBox
+    Friend WithEvents CBEspecialidadE As System.Windows.Forms.ComboBox
     Friend WithEvents PBAceptarE As System.Windows.Forms.PictureBox
-    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents LblAceptarE As System.Windows.Forms.Label
     Friend WithEvents PBCancelarE As System.Windows.Forms.PictureBox
     Friend WithEvents PBBorrarE As System.Windows.Forms.PictureBox
-    Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents LblBorrarE As System.Windows.Forms.Label
+    Friend WithEvents LblCancelarE As System.Windows.Forms.Label
 End Class

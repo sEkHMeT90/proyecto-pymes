@@ -4,10 +4,8 @@ Option Strict On
 ''' <summary>
 ''' Clase Especialidad.
 ''' </summary>
-''' <author>Raquel Lloréns Gambín</author>
-
+''' <author>Raquel Lloréns Gambín, Pedro Zalacain</author>
 Public Class Especialidad
-
 
     Private _Cod As Integer
     Private _Nombre As String
@@ -34,30 +32,9 @@ Public Class Especialidad
     End Sub
 
     ''' <summary>
-    ''' Constructor de copia
-    ''' </summary>
-    ''' <author>Raquel Lloréns Gambín</author>
-    Public Sub New(ByVal nuevaEspecialidad As Especialidad)
-        _Cod = nuevaEspecialidad.Cod()
-        _Nombre = nuevaEspecialidad.Nombre()
-        _Descripcion = nuevaEspecialidad.Descripcion()
-    End Sub
-
-    ''' <summary>
-    ''' Destructor Dispose
-    ''' </summary>
-    ''' <author>Raquel Lloréns Gambín</author>
-    Public Sub Dispose()
-        _Cod = 0
-        _Nombre = ""
-        _Descripcion = ""
-    End Sub
-
-    ''' <summary>
     ''' Propiedades de los atributos
     ''' </summary>
     ''' <author>Raquel Lloréns Gambín</author>
-
     Public Property Nombre() As String
         Get
             Return _Nombre
@@ -84,6 +61,37 @@ Public Class Especialidad
             _Descripcion = value
         End Set
     End Property
+
+    ''' <summary>
+    ''' Inserta el servicio en la base de datos
+    ''' </summary>
+    ''' <author>Pedro Zalacain</author>
+    Public Function Insertar() As Boolean
+        Dim ok As Boolean = False
+        Dim columnas As Integer
+        Dim conexion As New BBDD
+
+        columnas = conexion.Modificar("INSERT INTO Especialidades (nombre, descripcion)" & _
+                                        " VALUES(" & _
+                                        "'" & Me._Nombre & "'," & _
+                                        "'" & Me._Descripcion & "'" & _
+                                        ");")
+        If columnas > 0 Then
+            ok = True
+        End If
+
+        Return ok
+    End Function
+
+    ''' <summary>
+    ''' Destructor Dispose
+    ''' </summary>
+    ''' <author>Raquel Lloréns Gambín</author>
+    Public Sub Dispose()
+        _Cod = 0
+        _Nombre = ""
+        _Descripcion = ""
+    End Sub
 
     ''' <summary>
     ''' Destructor Finalize

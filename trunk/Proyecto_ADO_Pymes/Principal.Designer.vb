@@ -31,13 +31,23 @@ Partial Class Principal
         Me.Trabajador4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GestiónUsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltaUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevoToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltaProfesionalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevoToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaCitasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.FacturaciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
@@ -156,12 +166,62 @@ Partial Class Principal
         'ArchivoToolStripMenuItem
         '
         Me.ArchivoToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
-        Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem, Me.NuevoToolStripMenuItem, Me.ServicioToolStripMenuItem})
+        Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.ServicioToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.ArchivoToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ArchivoToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
         Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(67, 21)
         Me.ArchivoToolStripMenuItem.Text = "&Archivo"
+        '
+        'NuevoToolStripMenuItem
+        '
+        Me.NuevoToolStripMenuItem.BackgroundImage = CType(resources.GetObject("NuevoToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.NuevoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaToolStripMenuItem, Me.ModificarToolStripMenuItem})
+        Me.NuevoToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NuevoToolStripMenuItem.Text = "Especialidad"
+        '
+        'NuevaToolStripMenuItem
+        '
+        Me.NuevaToolStripMenuItem.BackgroundImage = CType(resources.GetObject("NuevaToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.NuevaToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.NuevaToolStripMenuItem.Name = "NuevaToolStripMenuItem"
+        Me.NuevaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NuevaToolStripMenuItem.Text = "Nueva"
+        '
+        'ModificarToolStripMenuItem
+        '
+        Me.ModificarToolStripMenuItem.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.ModificarToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ModificarToolStripMenuItem.Text = "Modificar"
+        '
+        'ServicioToolStripMenuItem
+        '
+        Me.ServicioToolStripMenuItem.BackgroundImage = CType(resources.GetObject("ServicioToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.ServicioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem1, Me.ModificarToolStripMenuItem1})
+        Me.ServicioToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ServicioToolStripMenuItem.Name = "ServicioToolStripMenuItem"
+        Me.ServicioToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ServicioToolStripMenuItem.Text = "Servicio"
+        '
+        'NuevoToolStripMenuItem1
+        '
+        Me.NuevoToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("NuevoToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
+        Me.NuevoToolStripMenuItem1.ForeColor = System.Drawing.Color.White
+        Me.NuevoToolStripMenuItem1.Name = "NuevoToolStripMenuItem1"
+        Me.NuevoToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.NuevoToolStripMenuItem1.Text = "Nuevo"
+        '
+        'ModificarToolStripMenuItem1
+        '
+        Me.ModificarToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
+        Me.ModificarToolStripMenuItem1.ForeColor = System.Drawing.Color.White
+        Me.ModificarToolStripMenuItem1.Name = "ModificarToolStripMenuItem1"
+        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ModificarToolStripMenuItem1.Text = "Modificar"
         '
         'SalirToolStripMenuItem
         '
@@ -171,22 +231,6 @@ Partial Class Principal
         Me.SalirToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
-        '
-        'NuevoToolStripMenuItem
-        '
-        Me.NuevoToolStripMenuItem.BackgroundImage = CType(resources.GetObject("NuevoToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
-        Me.NuevoToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.NuevoToolStripMenuItem.Text = "Especilidad"
-        '
-        'ServicioToolStripMenuItem
-        '
-        Me.ServicioToolStripMenuItem.BackgroundImage = CType(resources.GetObject("ServicioToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
-        Me.ServicioToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.ServicioToolStripMenuItem.Name = "ServicioToolStripMenuItem"
-        Me.ServicioToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ServicioToolStripMenuItem.Text = "Servicio"
         '
         'GestiónUsuariosToolStripMenuItem
         '
@@ -199,25 +243,76 @@ Partial Class Principal
         'AltaUsuarioToolStripMenuItem
         '
         Me.AltaUsuarioToolStripMenuItem.BackgroundImage = CType(resources.GetObject("AltaUsuarioToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.AltaUsuarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem2, Me.ModificarToolStripMenuItem2})
         Me.AltaUsuarioToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AltaUsuarioToolStripMenuItem.Name = "AltaUsuarioToolStripMenuItem"
         Me.AltaUsuarioToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
-        Me.AltaUsuarioToolStripMenuItem.Text = "Alta Usuario"
+        Me.AltaUsuarioToolStripMenuItem.Text = "Cliente"
+        '
+        'NuevoToolStripMenuItem2
+        '
+        Me.NuevoToolStripMenuItem2.BackgroundImage = CType(resources.GetObject("NuevoToolStripMenuItem2.BackgroundImage"), System.Drawing.Image)
+        Me.NuevoToolStripMenuItem2.ForeColor = System.Drawing.Color.White
+        Me.NuevoToolStripMenuItem2.Name = "NuevoToolStripMenuItem2"
+        Me.NuevoToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.NuevoToolStripMenuItem2.Text = "Nuevo"
+        '
+        'ModificarToolStripMenuItem2
+        '
+        Me.ModificarToolStripMenuItem2.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem2.BackgroundImage"), System.Drawing.Image)
+        Me.ModificarToolStripMenuItem2.ForeColor = System.Drawing.Color.White
+        Me.ModificarToolStripMenuItem2.Name = "ModificarToolStripMenuItem2"
+        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(135, 22)
+        Me.ModificarToolStripMenuItem2.Text = "Modificar"
         '
         'AltaProfesionalToolStripMenuItem
         '
         Me.AltaProfesionalToolStripMenuItem.BackgroundImage = CType(resources.GetObject("AltaProfesionalToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.AltaProfesionalToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem3, Me.ModificarToolStripMenuItem3})
         Me.AltaProfesionalToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AltaProfesionalToolStripMenuItem.Name = "AltaProfesionalToolStripMenuItem"
         Me.AltaProfesionalToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
         Me.AltaProfesionalToolStripMenuItem.Text = "Alta Profesional"
         '
+        'NuevoToolStripMenuItem3
+        '
+        Me.NuevoToolStripMenuItem3.BackgroundImage = CType(resources.GetObject("NuevoToolStripMenuItem3.BackgroundImage"), System.Drawing.Image)
+        Me.NuevoToolStripMenuItem3.ForeColor = System.Drawing.Color.White
+        Me.NuevoToolStripMenuItem3.Name = "NuevoToolStripMenuItem3"
+        Me.NuevoToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
+        Me.NuevoToolStripMenuItem3.Text = "Nuevo"
+        '
+        'ModificarToolStripMenuItem3
+        '
+        Me.ModificarToolStripMenuItem3.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem3.BackgroundImage"), System.Drawing.Image)
+        Me.ModificarToolStripMenuItem3.ForeColor = System.Drawing.Color.White
+        Me.ModificarToolStripMenuItem3.Name = "ModificarToolStripMenuItem3"
+        Me.ModificarToolStripMenuItem3.Size = New System.Drawing.Size(135, 22)
+        Me.ModificarToolStripMenuItem3.Text = "Modificar"
+        '
         'ConsultaCitasToolStripMenuItem
         '
+        Me.ConsultaCitasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaToolStripMenuItem1, Me.ModificarToolStripMenuItem4})
         Me.ConsultaCitasToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ConsultaCitasToolStripMenuItem.Name = "ConsultaCitasToolStripMenuItem"
         Me.ConsultaCitasToolStripMenuItem.Size = New System.Drawing.Size(101, 21)
         Me.ConsultaCitasToolStripMenuItem.Text = "Gestión &Citas"
+        '
+        'NuevaToolStripMenuItem1
+        '
+        Me.NuevaToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("NuevaToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
+        Me.NuevaToolStripMenuItem1.ForeColor = System.Drawing.Color.White
+        Me.NuevaToolStripMenuItem1.Name = "NuevaToolStripMenuItem1"
+        Me.NuevaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.NuevaToolStripMenuItem1.Text = "Nueva"
+        '
+        'ModificarToolStripMenuItem4
+        '
+        Me.ModificarToolStripMenuItem4.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem4.BackgroundImage"), System.Drawing.Image)
+        Me.ModificarToolStripMenuItem4.ForeColor = System.Drawing.Color.White
+        Me.ModificarToolStripMenuItem4.Name = "ModificarToolStripMenuItem4"
+        Me.ModificarToolStripMenuItem4.Size = New System.Drawing.Size(135, 22)
+        Me.ModificarToolStripMenuItem4.Text = "Modificar"
         '
         'FacturaciónToolStripMenuItem
         '
@@ -863,5 +958,15 @@ Partial Class Principal
     Friend WithEvents Trabajador4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NuevoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ServicioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents NuevaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ModificarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents NuevoToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ModificarToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents NuevoToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ModificarToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents NuevoToolStripMenuItem3 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ModificarToolStripMenuItem3 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents NuevaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ModificarToolStripMenuItem4 As System.Windows.Forms.ToolStripMenuItem
 
 End Class

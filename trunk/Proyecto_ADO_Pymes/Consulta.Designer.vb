@@ -31,16 +31,16 @@ Partial Class Consulta
         Me.Viernes = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Sabado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Domingo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.PBMes = New System.Windows.Forms.PictureBox()
-        Me.PBAnio = New System.Windows.Forms.PictureBox()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.PBSemana = New System.Windows.Forms.PictureBox()
+        Me.LblAnio = New System.Windows.Forms.Label()
+        Me.LblMes = New System.Windows.Forms.Label()
+        Me.PBMesCon = New System.Windows.Forms.PictureBox()
+        Me.PBAnioCon = New System.Windows.Forms.PictureBox()
+        Me.LblSemana = New System.Windows.Forms.Label()
+        Me.PBSemanaCon = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PBMes, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PBAnio, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PBSemana, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBMesCon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBAnioCon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBSemanaCon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -96,71 +96,71 @@ Partial Class Consulta
         Me.Domingo.HeaderText = "Domingo"
         Me.Domingo.Name = "Domingo"
         '
-        'Label19
+        'LblAnio
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.BackColor = System.Drawing.Color.Transparent
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(560, 52)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(35, 16)
-        Me.Label19.TabIndex = 63
-        Me.Label19.Text = "Año"
+        Me.LblAnio.AutoSize = True
+        Me.LblAnio.BackColor = System.Drawing.Color.Transparent
+        Me.LblAnio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblAnio.ForeColor = System.Drawing.Color.White
+        Me.LblAnio.Location = New System.Drawing.Point(560, 52)
+        Me.LblAnio.Name = "LblAnio"
+        Me.LblAnio.Size = New System.Drawing.Size(35, 16)
+        Me.LblAnio.TabIndex = 63
+        Me.LblAnio.Text = "Año"
         '
-        'Label18
+        'LblMes
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(367, 52)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(37, 16)
-        Me.Label18.TabIndex = 62
-        Me.Label18.Text = "Mes"
+        Me.LblMes.AutoSize = True
+        Me.LblMes.BackColor = System.Drawing.Color.Transparent
+        Me.LblMes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMes.ForeColor = System.Drawing.Color.White
+        Me.LblMes.Location = New System.Drawing.Point(367, 52)
+        Me.LblMes.Name = "LblMes"
+        Me.LblMes.Size = New System.Drawing.Size(37, 16)
+        Me.LblMes.TabIndex = 62
+        Me.LblMes.Text = "Mes"
         '
-        'PBMes
+        'PBMesCon
         '
-        Me.PBMes.BackColor = System.Drawing.Color.Transparent
-        Me.PBMes.BackgroundImage = CType(resources.GetObject("PBMes.BackgroundImage"), System.Drawing.Image)
-        Me.PBMes.Location = New System.Drawing.Point(339, 42)
-        Me.PBMes.Name = "PBMes"
-        Me.PBMes.Size = New System.Drawing.Size(92, 37)
-        Me.PBMes.TabIndex = 61
-        Me.PBMes.TabStop = False
+        Me.PBMesCon.BackColor = System.Drawing.Color.Transparent
+        Me.PBMesCon.BackgroundImage = CType(resources.GetObject("PBMesCon.BackgroundImage"), System.Drawing.Image)
+        Me.PBMesCon.Location = New System.Drawing.Point(339, 42)
+        Me.PBMesCon.Name = "PBMesCon"
+        Me.PBMesCon.Size = New System.Drawing.Size(92, 37)
+        Me.PBMesCon.TabIndex = 61
+        Me.PBMesCon.TabStop = False
         '
-        'PBAnio
+        'PBAnioCon
         '
-        Me.PBAnio.BackColor = System.Drawing.Color.Transparent
-        Me.PBAnio.BackgroundImage = CType(resources.GetObject("PBAnio.BackgroundImage"), System.Drawing.Image)
-        Me.PBAnio.Location = New System.Drawing.Point(532, 42)
-        Me.PBAnio.Name = "PBAnio"
-        Me.PBAnio.Size = New System.Drawing.Size(92, 37)
-        Me.PBAnio.TabIndex = 60
-        Me.PBAnio.TabStop = False
+        Me.PBAnioCon.BackColor = System.Drawing.Color.Transparent
+        Me.PBAnioCon.BackgroundImage = CType(resources.GetObject("PBAnioCon.BackgroundImage"), System.Drawing.Image)
+        Me.PBAnioCon.Location = New System.Drawing.Point(532, 42)
+        Me.PBAnioCon.Name = "PBAnioCon"
+        Me.PBAnioCon.Size = New System.Drawing.Size(92, 37)
+        Me.PBAnioCon.TabIndex = 60
+        Me.PBAnioCon.TabStop = False
         '
-        'Label17
+        'LblSemana
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(170, 52)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(65, 16)
-        Me.Label17.TabIndex = 59
-        Me.Label17.Text = "Semana"
+        Me.LblSemana.AutoSize = True
+        Me.LblSemana.BackColor = System.Drawing.Color.Transparent
+        Me.LblSemana.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblSemana.ForeColor = System.Drawing.Color.White
+        Me.LblSemana.Location = New System.Drawing.Point(170, 52)
+        Me.LblSemana.Name = "LblSemana"
+        Me.LblSemana.Size = New System.Drawing.Size(65, 16)
+        Me.LblSemana.TabIndex = 59
+        Me.LblSemana.Text = "Semana"
         '
-        'PBSemana
+        'PBSemanaCon
         '
-        Me.PBSemana.BackColor = System.Drawing.Color.Transparent
-        Me.PBSemana.BackgroundImage = CType(resources.GetObject("PBSemana.BackgroundImage"), System.Drawing.Image)
-        Me.PBSemana.Location = New System.Drawing.Point(157, 42)
-        Me.PBSemana.Name = "PBSemana"
-        Me.PBSemana.Size = New System.Drawing.Size(92, 37)
-        Me.PBSemana.TabIndex = 58
-        Me.PBSemana.TabStop = False
+        Me.PBSemanaCon.BackColor = System.Drawing.Color.Transparent
+        Me.PBSemanaCon.BackgroundImage = CType(resources.GetObject("PBSemanaCon.BackgroundImage"), System.Drawing.Image)
+        Me.PBSemanaCon.Location = New System.Drawing.Point(157, 42)
+        Me.PBSemanaCon.Name = "PBSemanaCon"
+        Me.PBSemanaCon.Size = New System.Drawing.Size(92, 37)
+        Me.PBSemanaCon.TabIndex = 58
+        Me.PBSemanaCon.TabStop = False
         '
         'Consulta
         '
@@ -169,20 +169,20 @@ Partial Class Consulta
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(784, 562)
-        Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.PBMes)
-        Me.Controls.Add(Me.PBAnio)
-        Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.PBSemana)
+        Me.Controls.Add(Me.LblAnio)
+        Me.Controls.Add(Me.LblMes)
+        Me.Controls.Add(Me.PBMesCon)
+        Me.Controls.Add(Me.PBAnioCon)
+        Me.Controls.Add(Me.LblSemana)
+        Me.Controls.Add(Me.PBSemanaCon)
         Me.Controls.Add(Me.DataGridView1)
         Me.MaximizeBox = False
         Me.Name = "Consulta"
         Me.Text = "Consulta"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PBMes, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PBAnio, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PBSemana, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBMesCon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBAnioCon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBSemanaCon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -195,10 +195,10 @@ Partial Class Consulta
     Friend WithEvents Viernes As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Sabado As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Domingo As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Label19 As System.Windows.Forms.Label
-    Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents PBMes As System.Windows.Forms.PictureBox
-    Friend WithEvents PBAnio As System.Windows.Forms.PictureBox
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents PBSemana As System.Windows.Forms.PictureBox
+    Friend WithEvents LblAnio As System.Windows.Forms.Label
+    Friend WithEvents LblMes As System.Windows.Forms.Label
+    Friend WithEvents PBMesCon As System.Windows.Forms.PictureBox
+    Friend WithEvents PBAnioCon As System.Windows.Forms.PictureBox
+    Friend WithEvents LblSemana As System.Windows.Forms.Label
+    Friend WithEvents PBSemanaCon As System.Windows.Forms.PictureBox
 End Class

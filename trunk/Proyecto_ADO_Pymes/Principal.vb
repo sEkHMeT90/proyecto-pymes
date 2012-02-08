@@ -15,27 +15,11 @@
     ''' </summary>
     ''' <author>María Navarro</author>
     Private Sub NuevoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        NuevoUsuario.Show()
+        NuevoCliente.Show()
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        NuevoUsuario.Show()
-    End Sub
-
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Buscar.Show()
-    End Sub
-
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        NuevaCita.Show()
-    End Sub
-
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Consulta.Show()
-    End Sub
-
-    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBUsuario.Click
-        NuevoUsuario.Show()
+    Private Sub PBUsuario_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBUsuario.Click
+        NuevoCliente.Show()
     End Sub
 
     Private Sub PBCalendario_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBConsulta.Click
@@ -58,14 +42,6 @@
         GestiónUsuariosToolStripMenuItem.ForeColor = Color.Black
     End Sub
 
-    Private Sub AltaUsuarioToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AltaUsuarioToolStripMenuItem.Click
-        NuevoUsuario.Show()
-    End Sub
-
-    Private Sub AltaProfesionalToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AltaProfesionalToolStripMenuItem.Click
-        NuevoEmple.Show()
-    End Sub
-
     Private Sub PBFactura_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBFactura.Click
         Facturacion.Show()
     End Sub
@@ -74,16 +50,24 @@
         Facturacion.Show()
     End Sub
 
-    Private Sub ConsultaCitasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConsultaCitasToolStripMenuItem.Click
-        NuevaCita.Show()
+    Private Sub NuevaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevaToolStripMenuItem.Click
+        NuevaEspecialidad.Show()
     End Sub
 
-    Private Sub ServicioToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ServicioToolStripMenuItem.Click
+    Private Sub NuevoToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevoToolStripMenuItem1.Click
         NuevoServicio.Show()
     End Sub
 
-    Private Sub NuevoToolStripMenuItem_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevoToolStripMenuItem.Click
-        NuevaEspecialidad.Show()
+    Private Sub NuevoToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevoToolStripMenuItem2.Click
+        NuevoCliente.Show()
+    End Sub
+
+    Private Sub NuevoToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevoToolStripMenuItem3.Click
+        NuevoEmple.Show()
+    End Sub
+
+    Private Sub NuevaToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevaToolStripMenuItem1.Click
+        NuevaCita.Show()
     End Sub
 
     ''' <summary>
@@ -97,4 +81,6 @@
         LblMes.Text = Now.Month.ToString("00")
         LblAnio.Text = Now.Year.ToString("0000")
     End Sub
+
+   
 End Class

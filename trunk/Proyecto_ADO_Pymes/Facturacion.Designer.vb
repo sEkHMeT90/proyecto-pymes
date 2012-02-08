@@ -23,44 +23,44 @@ Partial Class Facturacion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Facturacion))
-        Me.ListBCita = New System.Windows.Forms.ListBox()
-        Me.CBoxTipoPago = New System.Windows.Forms.ComboBox()
+        Me.ListBFacturaF = New System.Windows.Forms.ListBox()
+        Me.CBoxTipoPagoF = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.CBoxCliente = New System.Windows.Forms.ComboBox()
+        Me.CBoxCitaF = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.CBoxLineaPedidos = New System.Windows.Forms.ComboBox()
+        Me.CBoxLineaPedidosF = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TBPagar = New System.Windows.Forms.TextBox()
+        Me.TBPagarF = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.PBImprimir = New System.Windows.Forms.PictureBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LblImprimirF = New System.Windows.Forms.Label()
+        Me.PBImprimirF = New System.Windows.Forms.PictureBox()
+        Me.LblCobrarF = New System.Windows.Forms.Label()
+        Me.PBCobrarF = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        CType(Me.PBImprimir, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBImprimirF, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBCobrarF, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ListBCita
+        'ListBFacturaF
         '
-        Me.ListBCita.FormattingEnabled = True
-        Me.ListBCita.Location = New System.Drawing.Point(203, 235)
-        Me.ListBCita.Name = "ListBCita"
-        Me.ListBCita.Size = New System.Drawing.Size(201, 186)
-        Me.ListBCita.TabIndex = 4
+        Me.ListBFacturaF.FormattingEnabled = True
+        Me.ListBFacturaF.Location = New System.Drawing.Point(203, 235)
+        Me.ListBFacturaF.Name = "ListBFacturaF"
+        Me.ListBFacturaF.Size = New System.Drawing.Size(201, 186)
+        Me.ListBFacturaF.TabIndex = 4
         '
-        'CBoxTipoPago
+        'CBoxTipoPagoF
         '
-        Me.CBoxTipoPago.BackColor = System.Drawing.Color.Thistle
-        Me.CBoxTipoPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBoxTipoPago.FormattingEnabled = True
-        Me.CBoxTipoPago.Items.AddRange(New Object() {"Al contado", "Tarjeta"})
-        Me.CBoxTipoPago.Location = New System.Drawing.Point(203, 122)
-        Me.CBoxTipoPago.Name = "CBoxTipoPago"
-        Me.CBoxTipoPago.Size = New System.Drawing.Size(201, 21)
-        Me.CBoxTipoPago.TabIndex = 2
+        Me.CBoxTipoPagoF.BackColor = System.Drawing.Color.Thistle
+        Me.CBoxTipoPagoF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBoxTipoPagoF.FormattingEnabled = True
+        Me.CBoxTipoPagoF.Items.AddRange(New Object() {"Al contado", "Tarjeta"})
+        Me.CBoxTipoPagoF.Location = New System.Drawing.Point(203, 122)
+        Me.CBoxTipoPagoF.Name = "CBoxTipoPagoF"
+        Me.CBoxTipoPagoF.Size = New System.Drawing.Size(201, 21)
+        Me.CBoxTipoPagoF.TabIndex = 2
         '
         'Label6
         '
@@ -74,16 +74,16 @@ Partial Class Facturacion
         Me.Label6.TabIndex = 49
         Me.Label6.Text = "Tipo Pago"
         '
-        'CBoxCliente
+        'CBoxCitaF
         '
-        Me.CBoxCliente.BackColor = System.Drawing.Color.Thistle
-        Me.CBoxCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBoxCliente.FormattingEnabled = True
-        Me.CBoxCliente.Items.AddRange(New Object() {"María Navarro", "Alejandro Diaz"})
-        Me.CBoxCliente.Location = New System.Drawing.Point(203, 69)
-        Me.CBoxCliente.Name = "CBoxCliente"
-        Me.CBoxCliente.Size = New System.Drawing.Size(201, 21)
-        Me.CBoxCliente.TabIndex = 1
+        Me.CBoxCitaF.BackColor = System.Drawing.Color.Thistle
+        Me.CBoxCitaF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBoxCitaF.FormattingEnabled = True
+        Me.CBoxCitaF.Items.AddRange(New Object() {"María Navarro", "Alejandro Diaz"})
+        Me.CBoxCitaF.Location = New System.Drawing.Point(203, 69)
+        Me.CBoxCitaF.Name = "CBoxCitaF"
+        Me.CBoxCitaF.Size = New System.Drawing.Size(201, 21)
+        Me.CBoxCitaF.TabIndex = 1
         '
         'Label5
         '
@@ -109,16 +109,16 @@ Partial Class Facturacion
         Me.Label1.TabIndex = 52
         Me.Label1.Text = "Datos de Cita"
         '
-        'CBoxLineaPedidos
+        'CBoxLineaPedidosF
         '
-        Me.CBoxLineaPedidos.BackColor = System.Drawing.Color.Thistle
-        Me.CBoxLineaPedidos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBoxLineaPedidos.FormattingEnabled = True
-        Me.CBoxLineaPedidos.Items.AddRange(New Object() {"asda", "asdd"})
-        Me.CBoxLineaPedidos.Location = New System.Drawing.Point(203, 180)
-        Me.CBoxLineaPedidos.Name = "CBoxLineaPedidos"
-        Me.CBoxLineaPedidos.Size = New System.Drawing.Size(201, 21)
-        Me.CBoxLineaPedidos.TabIndex = 3
+        Me.CBoxLineaPedidosF.BackColor = System.Drawing.Color.Thistle
+        Me.CBoxLineaPedidosF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBoxLineaPedidosF.FormattingEnabled = True
+        Me.CBoxLineaPedidosF.Items.AddRange(New Object() {"asda", "asdd"})
+        Me.CBoxLineaPedidosF.Location = New System.Drawing.Point(203, 180)
+        Me.CBoxLineaPedidosF.Name = "CBoxLineaPedidosF"
+        Me.CBoxLineaPedidosF.Size = New System.Drawing.Size(201, 21)
+        Me.CBoxLineaPedidosF.TabIndex = 3
         '
         'Label2
         '
@@ -132,14 +132,14 @@ Partial Class Facturacion
         Me.Label2.TabIndex = 53
         Me.Label2.Text = "Linea Pedido"
         '
-        'TBPagar
+        'TBPagarF
         '
-        Me.TBPagar.Location = New System.Drawing.Point(318, 464)
-        Me.TBPagar.Multiline = True
-        Me.TBPagar.Name = "TBPagar"
-        Me.TBPagar.ReadOnly = True
-        Me.TBPagar.Size = New System.Drawing.Size(86, 52)
-        Me.TBPagar.TabIndex = 55
+        Me.TBPagarF.Location = New System.Drawing.Point(318, 464)
+        Me.TBPagarF.Multiline = True
+        Me.TBPagarF.Name = "TBPagarF"
+        Me.TBPagarF.ReadOnly = True
+        Me.TBPagarF.Size = New System.Drawing.Size(86, 52)
+        Me.TBPagarF.TabIndex = 55
         '
         'Label3
         '
@@ -153,49 +153,49 @@ Partial Class Facturacion
         Me.Label3.TabIndex = 56
         Me.Label3.Text = "Total"
         '
-        'Label17
+        'LblImprimirF
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(80, 484)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(63, 16)
-        Me.Label17.TabIndex = 58
-        Me.Label17.Text = "Imprimir"
+        Me.LblImprimirF.AutoSize = True
+        Me.LblImprimirF.BackColor = System.Drawing.Color.Transparent
+        Me.LblImprimirF.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblImprimirF.ForeColor = System.Drawing.Color.White
+        Me.LblImprimirF.Location = New System.Drawing.Point(80, 484)
+        Me.LblImprimirF.Name = "LblImprimirF"
+        Me.LblImprimirF.Size = New System.Drawing.Size(63, 16)
+        Me.LblImprimirF.TabIndex = 58
+        Me.LblImprimirF.Text = "Imprimir"
         '
-        'PBImprimir
+        'PBImprimirF
         '
-        Me.PBImprimir.BackColor = System.Drawing.Color.Transparent
-        Me.PBImprimir.BackgroundImage = CType(resources.GetObject("PBImprimir.BackgroundImage"), System.Drawing.Image)
-        Me.PBImprimir.Location = New System.Drawing.Point(67, 464)
-        Me.PBImprimir.Name = "PBImprimir"
-        Me.PBImprimir.Size = New System.Drawing.Size(86, 52)
-        Me.PBImprimir.TabIndex = 57
-        Me.PBImprimir.TabStop = False
+        Me.PBImprimirF.BackColor = System.Drawing.Color.Transparent
+        Me.PBImprimirF.BackgroundImage = CType(resources.GetObject("PBImprimirF.BackgroundImage"), System.Drawing.Image)
+        Me.PBImprimirF.Location = New System.Drawing.Point(67, 464)
+        Me.PBImprimirF.Name = "PBImprimirF"
+        Me.PBImprimirF.Size = New System.Drawing.Size(86, 52)
+        Me.PBImprimirF.TabIndex = 57
+        Me.PBImprimirF.TabStop = False
         '
-        'Label4
+        'LblCobrarF
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(220, 484)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(55, 16)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Cobrar"
+        Me.LblCobrarF.AutoSize = True
+        Me.LblCobrarF.BackColor = System.Drawing.Color.Transparent
+        Me.LblCobrarF.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCobrarF.ForeColor = System.Drawing.Color.White
+        Me.LblCobrarF.Location = New System.Drawing.Point(220, 484)
+        Me.LblCobrarF.Name = "LblCobrarF"
+        Me.LblCobrarF.Size = New System.Drawing.Size(55, 16)
+        Me.LblCobrarF.TabIndex = 5
+        Me.LblCobrarF.Text = "Cobrar"
         '
-        'PictureBox1
+        'PBCobrarF
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(203, 464)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(86, 52)
-        Me.PictureBox1.TabIndex = 59
-        Me.PictureBox1.TabStop = False
+        Me.PBCobrarF.BackColor = System.Drawing.Color.Transparent
+        Me.PBCobrarF.BackgroundImage = CType(resources.GetObject("PBCobrarF.BackgroundImage"), System.Drawing.Image)
+        Me.PBCobrarF.Location = New System.Drawing.Point(203, 464)
+        Me.PBCobrarF.Name = "PBCobrarF"
+        Me.PBCobrarF.Size = New System.Drawing.Size(86, 52)
+        Me.PBCobrarF.TabIndex = 59
+        Me.PBCobrarF.TabStop = False
         '
         'PictureBox2
         '
@@ -215,44 +215,44 @@ Partial Class Facturacion
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(775, 572)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.PBImprimir)
+        Me.Controls.Add(Me.LblCobrarF)
+        Me.Controls.Add(Me.PBCobrarF)
+        Me.Controls.Add(Me.LblImprimirF)
+        Me.Controls.Add(Me.PBImprimirF)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TBPagar)
-        Me.Controls.Add(Me.CBoxLineaPedidos)
+        Me.Controls.Add(Me.TBPagarF)
+        Me.Controls.Add(Me.CBoxLineaPedidosF)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ListBCita)
-        Me.Controls.Add(Me.CBoxTipoPago)
+        Me.Controls.Add(Me.ListBFacturaF)
+        Me.Controls.Add(Me.CBoxTipoPagoF)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.CBoxCliente)
+        Me.Controls.Add(Me.CBoxCitaF)
         Me.Controls.Add(Me.Label5)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "Facturacion"
         Me.Text = "Facturacion"
-        CType(Me.PBImprimir, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBImprimirF, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBCobrarF, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ListBCita As System.Windows.Forms.ListBox
-    Friend WithEvents CBoxTipoPago As System.Windows.Forms.ComboBox
+    Friend WithEvents ListBFacturaF As System.Windows.Forms.ListBox
+    Friend WithEvents CBoxTipoPagoF As System.Windows.Forms.ComboBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents CBoxCliente As System.Windows.Forms.ComboBox
+    Friend WithEvents CBoxCitaF As System.Windows.Forms.ComboBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents CBoxLineaPedidos As System.Windows.Forms.ComboBox
+    Friend WithEvents CBoxLineaPedidosF As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TBPagar As System.Windows.Forms.TextBox
+    Friend WithEvents TBPagarF As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents PBImprimir As System.Windows.Forms.PictureBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents LblImprimirF As System.Windows.Forms.Label
+    Friend WithEvents PBImprimirF As System.Windows.Forms.PictureBox
+    Friend WithEvents LblCobrarF As System.Windows.Forms.Label
+    Friend WithEvents PBCobrarF As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 End Class

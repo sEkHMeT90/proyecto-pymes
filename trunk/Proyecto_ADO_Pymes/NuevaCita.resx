@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="PBMenosC.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfcAgcLOwhwA5XG
+        YQUAAAAJcEhZcwAACw0AAAsNAe0HwCwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfcAgcLOwhwA5XG
         AAAEIUlEQVRYR+2Yy09TaRiHz2bo/TK0M7TQcmkLWOVqVaDQcolQF4IUZ+MklNuEnZMAFawZNw4JVUdx
         cGwZiCwJYUf4B2DNAgIBhcAG2AAhgbAhIfDz/U5bPHYYZyIFNjR5er7v6+nvffLm3HI4CD5HR0fY2trC
         ysoKFhYWMD8/z8PGpyWSxbYfPn7A6uoq9vb2hOXBRWbb29uYnJzE0NAQAsEAgsEggv1B9Pf3f+ZvGn8L
@@ -146,7 +146,7 @@
   <data name="PBBorrarC.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFwAAAAlCAYAAADPwo5RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw0AAAsNAe0HwCwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfcAgcNCh5GB1uX
+        YQUAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfcAgcNCh5GB1uX
         AAAHp0lEQVRoQ+2aeUwUZxiHd9lrdllYBERAkEsQUUBBYFEUBFGEovawBVyl/csIKJe0aWM1URMV08Y2
         Npp6otA0/aNpm0hrtfeRpmnT+0iv9FKSGtOEdG1KZd7+3m9mYKHLITamsEvy5Nud75vZ+T3zzjczy+p0
         Xv6am5ute/fujTpw4MCiw4cPVx89evSBY8eOPX7ixImuU6dOvXD69OmXzpw5c6HjTMfFjo6OV86ePSvo
@@ -186,7 +186,7 @@
   <data name="PBCancelarC.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFwAAAAlCAYAAADPwo5RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw0AAAsNAe0HwCwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfcAgcNCh5GB1uX
+        YQUAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfcAgcNCh5GB1uX
         AAAHp0lEQVRoQ+2aeUwUZxiHd9lrdllYBERAkEsQUUBBYFEUBFGEovawBVyl/csIKJe0aWM1URMV08Y2
         Npp6otA0/aNpm0hrtfeRpmnT+0iv9FKSGtOEdG1KZd7+3m9mYKHLITamsEvy5Nud75vZ+T3zzjczy+p0
         Xv6am5ute/fujTpw4MCiw4cPVx89evSBY8eOPX7ixImuU6dOvXD69OmXzpw5c6HjTMfFjo6OV86ePSvo
@@ -226,7 +226,7 @@
   <data name="PBAceptarC.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFwAAAAlCAYAAADPwo5RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfcAgcNCh5GB1uX
+        YQUAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfcAgcNCh5GB1uX
         AAAHp0lEQVRoQ+2aeUwUZxiHd9lrdllYBERAkEsQUUBBYFEUBFGEovawBVyl/csIKJe0aWM1URMV08Y2
         Npp6otA0/aNpm0hrtfeRpmnT+0iv9FKSGtOEdG1KZd7+3m9mYKHLITamsEvy5Nud75vZ+T3zzjczy+p0
         Xv6am5ute/fujTpw4MCiw4cPVx89evSBY8eOPX7ixImuU6dOvXD69OmXzpw5c6HjTMfFjo6OV86ePSvo

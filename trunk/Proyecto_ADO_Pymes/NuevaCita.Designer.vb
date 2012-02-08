@@ -26,25 +26,25 @@ Partial Class NuevaCita
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.CBoxHora = New System.Windows.Forms.ComboBox()
-        Me.CBoxMin = New System.Windows.Forms.ComboBox()
+        Me.CBoxHoraC = New System.Windows.Forms.ComboBox()
+        Me.CBoxMinC = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.DPCita = New System.Windows.Forms.DateTimePicker()
+        Me.DPCitaC = New System.Windows.Forms.DateTimePicker()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.CBoxServicios = New System.Windows.Forms.ComboBox()
-        Me.CBoxEmpleado = New System.Windows.Forms.ComboBox()
+        Me.CBoxServiciosC = New System.Windows.Forms.ComboBox()
+        Me.CBoxEmpleadoC = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.CBoxCliente = New System.Windows.Forms.ComboBox()
-        Me.ListBServicios = New System.Windows.Forms.ListBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
+        Me.CBoxClienteC = New System.Windows.Forms.ComboBox()
+        Me.ListBServiciosC = New System.Windows.Forms.ListBox()
+        Me.PBMenosC = New System.Windows.Forms.PictureBox()
+        Me.LblCancelarC = New System.Windows.Forms.Label()
+        Me.LblBorrarC = New System.Windows.Forms.Label()
         Me.PBBorrarC = New System.Windows.Forms.PictureBox()
         Me.PBCancelarC = New System.Windows.Forms.PictureBox()
-        Me.Label17 = New System.Windows.Forms.Label()
+        Me.LblAceptarC = New System.Windows.Forms.Label()
         Me.PBAceptarC = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBMenosC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBBorrarC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBCancelarC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBAceptarC, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,27 +86,27 @@ Partial Class NuevaCita
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Cliente"
         '
-        'CBoxHora
+        'CBoxHoraC
         '
-        Me.CBoxHora.BackColor = System.Drawing.Color.Thistle
-        Me.CBoxHora.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBoxHora.FormattingEnabled = True
-        Me.CBoxHora.Items.AddRange(New Object() {"08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
-        Me.CBoxHora.Location = New System.Drawing.Point(206, 240)
-        Me.CBoxHora.Name = "CBoxHora"
-        Me.CBoxHora.Size = New System.Drawing.Size(64, 21)
-        Me.CBoxHora.TabIndex = 3
+        Me.CBoxHoraC.BackColor = System.Drawing.Color.Thistle
+        Me.CBoxHoraC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBoxHoraC.FormattingEnabled = True
+        Me.CBoxHoraC.Items.AddRange(New Object() {"08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
+        Me.CBoxHoraC.Location = New System.Drawing.Point(206, 240)
+        Me.CBoxHoraC.Name = "CBoxHoraC"
+        Me.CBoxHoraC.Size = New System.Drawing.Size(64, 21)
+        Me.CBoxHoraC.TabIndex = 3
         '
-        'CBoxMin
+        'CBoxMinC
         '
-        Me.CBoxMin.BackColor = System.Drawing.Color.Thistle
-        Me.CBoxMin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBoxMin.FormattingEnabled = True
-        Me.CBoxMin.Items.AddRange(New Object() {"00", "15", "30", "45"})
-        Me.CBoxMin.Location = New System.Drawing.Point(344, 240)
-        Me.CBoxMin.Name = "CBoxMin"
-        Me.CBoxMin.Size = New System.Drawing.Size(64, 21)
-        Me.CBoxMin.TabIndex = 4
+        Me.CBoxMinC.BackColor = System.Drawing.Color.Thistle
+        Me.CBoxMinC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBoxMinC.FormattingEnabled = True
+        Me.CBoxMinC.Items.AddRange(New Object() {"00", "15", "30", "45"})
+        Me.CBoxMinC.Location = New System.Drawing.Point(344, 240)
+        Me.CBoxMinC.Name = "CBoxMinC"
+        Me.CBoxMinC.Size = New System.Drawing.Size(64, 21)
+        Me.CBoxMinC.TabIndex = 4
         '
         'Label4
         '
@@ -120,12 +120,12 @@ Partial Class NuevaCita
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Min"
         '
-        'DPCita
+        'DPCitaC
         '
-        Me.DPCita.Location = New System.Drawing.Point(206, 184)
-        Me.DPCita.Name = "DPCita"
-        Me.DPCita.Size = New System.Drawing.Size(202, 20)
-        Me.DPCita.TabIndex = 2
+        Me.DPCitaC.Location = New System.Drawing.Point(206, 184)
+        Me.DPCitaC.Name = "DPCitaC"
+        Me.DPCitaC.Size = New System.Drawing.Size(202, 20)
+        Me.DPCitaC.TabIndex = 2
         '
         'Label5
         '
@@ -139,27 +139,27 @@ Partial Class NuevaCita
         Me.Label5.TabIndex = 15
         Me.Label5.Text = "Servicios"
         '
-        'CBoxServicios
+        'CBoxServiciosC
         '
-        Me.CBoxServicios.BackColor = System.Drawing.Color.Thistle
-        Me.CBoxServicios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBoxServicios.FormattingEnabled = True
-        Me.CBoxServicios.Items.AddRange(New Object() {"Lavar", "Cortar", "Secar", "Tinte", "Permanente"})
-        Me.CBoxServicios.Location = New System.Drawing.Point(206, 291)
-        Me.CBoxServicios.Name = "CBoxServicios"
-        Me.CBoxServicios.Size = New System.Drawing.Size(201, 21)
-        Me.CBoxServicios.TabIndex = 5
+        Me.CBoxServiciosC.BackColor = System.Drawing.Color.Thistle
+        Me.CBoxServiciosC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBoxServiciosC.FormattingEnabled = True
+        Me.CBoxServiciosC.Items.AddRange(New Object() {"Lavar", "Cortar", "Secar", "Tinte", "Permanente"})
+        Me.CBoxServiciosC.Location = New System.Drawing.Point(206, 291)
+        Me.CBoxServiciosC.Name = "CBoxServiciosC"
+        Me.CBoxServiciosC.Size = New System.Drawing.Size(201, 21)
+        Me.CBoxServiciosC.TabIndex = 5
         '
-        'CBoxEmpleado
+        'CBoxEmpleadoC
         '
-        Me.CBoxEmpleado.BackColor = System.Drawing.Color.Thistle
-        Me.CBoxEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBoxEmpleado.FormattingEnabled = True
-        Me.CBoxEmpleado.Items.AddRange(New Object() {"Andres Marotta", "Pedro Zalacain", "Raquel Llorens", "María Navarro"})
-        Me.CBoxEmpleado.Location = New System.Drawing.Point(206, 347)
-        Me.CBoxEmpleado.Name = "CBoxEmpleado"
-        Me.CBoxEmpleado.Size = New System.Drawing.Size(201, 21)
-        Me.CBoxEmpleado.TabIndex = 6
+        Me.CBoxEmpleadoC.BackColor = System.Drawing.Color.Thistle
+        Me.CBoxEmpleadoC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBoxEmpleadoC.FormattingEnabled = True
+        Me.CBoxEmpleadoC.Items.AddRange(New Object() {"Andres Marotta", "Pedro Zalacain", "Raquel Llorens", "María Navarro"})
+        Me.CBoxEmpleadoC.Location = New System.Drawing.Point(206, 347)
+        Me.CBoxEmpleadoC.Name = "CBoxEmpleadoC"
+        Me.CBoxEmpleadoC.Size = New System.Drawing.Size(201, 21)
+        Me.CBoxEmpleadoC.TabIndex = 6
         '
         'Label6
         '
@@ -185,57 +185,57 @@ Partial Class NuevaCita
         Me.Label7.TabIndex = 22
         Me.Label7.Text = "Servicios"
         '
-        'CBoxCliente
+        'CBoxClienteC
         '
-        Me.CBoxCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBoxCliente.FormattingEnabled = True
-        Me.CBoxCliente.Location = New System.Drawing.Point(206, 129)
-        Me.CBoxCliente.Name = "CBoxCliente"
-        Me.CBoxCliente.Size = New System.Drawing.Size(202, 21)
-        Me.CBoxCliente.TabIndex = 1
+        Me.CBoxClienteC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBoxClienteC.FormattingEnabled = True
+        Me.CBoxClienteC.Location = New System.Drawing.Point(206, 129)
+        Me.CBoxClienteC.Name = "CBoxClienteC"
+        Me.CBoxClienteC.Size = New System.Drawing.Size(202, 21)
+        Me.CBoxClienteC.TabIndex = 1
         '
-        'ListBServicios
+        'ListBServiciosC
         '
-        Me.ListBServicios.FormattingEnabled = True
-        Me.ListBServicios.Location = New System.Drawing.Point(500, 169)
-        Me.ListBServicios.Name = "ListBServicios"
-        Me.ListBServicios.Size = New System.Drawing.Size(197, 199)
-        Me.ListBServicios.TabIndex = 8
+        Me.ListBServiciosC.FormattingEnabled = True
+        Me.ListBServiciosC.Location = New System.Drawing.Point(500, 169)
+        Me.ListBServiciosC.Name = "ListBServiciosC"
+        Me.ListBServiciosC.Size = New System.Drawing.Size(197, 199)
+        Me.ListBServiciosC.TabIndex = 8
         '
-        'PictureBox1
+        'PBMenosC
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(441, 313)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(35, 35)
-        Me.PictureBox1.TabIndex = 47
-        Me.PictureBox1.TabStop = False
-        Me.PictureBox1.Tag = "7"
+        Me.PBMenosC.BackColor = System.Drawing.Color.Transparent
+        Me.PBMenosC.BackgroundImage = CType(resources.GetObject("PBMenosC.BackgroundImage"), System.Drawing.Image)
+        Me.PBMenosC.Location = New System.Drawing.Point(441, 313)
+        Me.PBMenosC.Name = "PBMenosC"
+        Me.PBMenosC.Size = New System.Drawing.Size(35, 35)
+        Me.PBMenosC.TabIndex = 47
+        Me.PBMenosC.TabStop = False
+        Me.PBMenosC.Tag = "7"
         '
-        'Label19
+        'LblCancelarC
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.BackColor = System.Drawing.Color.Transparent
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(548, 468)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(70, 16)
-        Me.Label19.TabIndex = 63
-        Me.Label19.Text = "Cancelar"
+        Me.LblCancelarC.AutoSize = True
+        Me.LblCancelarC.BackColor = System.Drawing.Color.Transparent
+        Me.LblCancelarC.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCancelarC.ForeColor = System.Drawing.Color.White
+        Me.LblCancelarC.Location = New System.Drawing.Point(548, 468)
+        Me.LblCancelarC.Name = "LblCancelarC"
+        Me.LblCancelarC.Size = New System.Drawing.Size(70, 16)
+        Me.LblCancelarC.TabIndex = 63
+        Me.LblCancelarC.Text = "Cancelar"
         '
-        'Label18
+        'LblBorrarC
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(361, 468)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(51, 16)
-        Me.Label18.TabIndex = 62
-        Me.Label18.Text = "Borrar"
+        Me.LblBorrarC.AutoSize = True
+        Me.LblBorrarC.BackColor = System.Drawing.Color.Transparent
+        Me.LblBorrarC.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblBorrarC.ForeColor = System.Drawing.Color.White
+        Me.LblBorrarC.Location = New System.Drawing.Point(361, 468)
+        Me.LblBorrarC.Name = "LblBorrarC"
+        Me.LblBorrarC.Size = New System.Drawing.Size(51, 16)
+        Me.LblBorrarC.TabIndex = 62
+        Me.LblBorrarC.Text = "Borrar"
         '
         'PBBorrarC
         '
@@ -257,17 +257,17 @@ Partial Class NuevaCita
         Me.PBCancelarC.TabIndex = 60
         Me.PBCancelarC.TabStop = False
         '
-        'Label17
+        'LblAceptarC
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(175, 468)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(62, 16)
-        Me.Label17.TabIndex = 8
-        Me.Label17.Text = "Aceptar"
+        Me.LblAceptarC.AutoSize = True
+        Me.LblAceptarC.BackColor = System.Drawing.Color.Transparent
+        Me.LblAceptarC.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblAceptarC.ForeColor = System.Drawing.Color.White
+        Me.LblAceptarC.Location = New System.Drawing.Point(175, 468)
+        Me.LblAceptarC.Name = "LblAceptarC"
+        Me.LblAceptarC.Size = New System.Drawing.Size(62, 16)
+        Me.LblAceptarC.TabIndex = 8
+        Me.LblAceptarC.Text = "Aceptar"
         '
         'PBAceptarC
         '
@@ -286,31 +286,31 @@ Partial Class NuevaCita
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(784, 562)
-        Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.LblCancelarC)
+        Me.Controls.Add(Me.LblBorrarC)
         Me.Controls.Add(Me.PBBorrarC)
         Me.Controls.Add(Me.PBCancelarC)
-        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.LblAceptarC)
         Me.Controls.Add(Me.PBAceptarC)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.ListBServicios)
-        Me.Controls.Add(Me.CBoxCliente)
+        Me.Controls.Add(Me.PBMenosC)
+        Me.Controls.Add(Me.ListBServiciosC)
+        Me.Controls.Add(Me.CBoxClienteC)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.CBoxEmpleado)
+        Me.Controls.Add(Me.CBoxEmpleadoC)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.CBoxServicios)
+        Me.Controls.Add(Me.CBoxServiciosC)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.DPCita)
-        Me.Controls.Add(Me.CBoxMin)
+        Me.Controls.Add(Me.DPCitaC)
+        Me.Controls.Add(Me.CBoxMinC)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.CBoxHora)
+        Me.Controls.Add(Me.CBoxHoraC)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.MaximizeBox = False
         Me.Name = "NuevaCita"
         Me.Text = "Nueva Cita"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBMenosC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBBorrarC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBCancelarC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBAceptarC, System.ComponentModel.ISupportInitialize).EndInit()
@@ -321,22 +321,22 @@ Partial Class NuevaCita
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents CBoxHora As System.Windows.Forms.ComboBox
-    Friend WithEvents CBoxMin As System.Windows.Forms.ComboBox
+    Friend WithEvents CBoxHoraC As System.Windows.Forms.ComboBox
+    Friend WithEvents CBoxMinC As System.Windows.Forms.ComboBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents DPCita As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DPCitaC As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents CBoxServicios As System.Windows.Forms.ComboBox
-    Friend WithEvents CBoxEmpleado As System.Windows.Forms.ComboBox
+    Friend WithEvents CBoxServiciosC As System.Windows.Forms.ComboBox
+    Friend WithEvents CBoxEmpleadoC As System.Windows.Forms.ComboBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents CBoxCliente As System.Windows.Forms.ComboBox
-    Friend WithEvents ListBServicios As System.Windows.Forms.ListBox
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label19 As System.Windows.Forms.Label
-    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents CBoxClienteC As System.Windows.Forms.ComboBox
+    Friend WithEvents ListBServiciosC As System.Windows.Forms.ListBox
+    Friend WithEvents PBMenosC As System.Windows.Forms.PictureBox
+    Friend WithEvents LblCancelarC As System.Windows.Forms.Label
+    Friend WithEvents LblBorrarC As System.Windows.Forms.Label
     Friend WithEvents PBBorrarC As System.Windows.Forms.PictureBox
     Friend WithEvents PBCancelarC As System.Windows.Forms.PictureBox
-    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents LblAceptarC As System.Windows.Forms.Label
     Friend WithEvents PBAceptarC As System.Windows.Forms.PictureBox
 End Class
