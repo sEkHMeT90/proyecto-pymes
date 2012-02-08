@@ -15,11 +15,11 @@
         Serv.Duracion = TBDuracionS.Text
         Serv.Precio = TBDescripcionS.Text
 
-        If Serv.Insertar() = True Then
-            MessageBox.Show("Servicio añadido correctamente...")
-        Else
-            MessageBox.Show("Error en la insercción del servicio")
-        End If
+        'If Serv.Insertar() = True Then
+        'MessageBox.Show("Servicio añadido correctamente...")
+        'Else
+        'MessageBox.Show("Error en la insercción del servicio")
+        'End If
     End Sub
 
 End Class

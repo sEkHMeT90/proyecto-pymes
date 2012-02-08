@@ -9,7 +9,7 @@ Option Strict On
 Public Class Trabajador : Inherits Usuario
 
     Private _NSS As Integer
-    Private _Salario As Integer
+    Private _Salario As Double
     Private _Especialidades As List(Of Especialidad)
 
     ''' <summary>
@@ -26,7 +26,7 @@ Public Class Trabajador : Inherits Usuario
     ''' Constructor con todos los parámetros
     ''' </summary>
     ''' <author>Raquel Lloréns Gambín, Pedro Zalacain</author>
-    Public Sub New(ByVal c As Integer, ByVal dni As String, ByVal n As String, ByVal a1 As String, ByVal a2 As String, ByVal d As Direccion, ByVal p As String, ByVal m As String, ByVal e As String, ByVal ns As Integer, ByVal s As Integer, ByVal es As Especialidad)
+    Public Sub New(ByVal c As Integer, ByVal dni As String, ByVal n As String, ByVal a1 As String, ByVal a2 As String, ByVal d As Direccion, ByVal p As String, ByVal m As String, ByVal e As String, ByVal ns As Integer, ByVal s As Double, ByVal es As Especialidad)
         MyBase.New(c, dni, n, a1, a2, d, p, m, e)
         _NSS = ns
         _Salario = s
@@ -57,11 +57,11 @@ Public Class Trabajador : Inherits Usuario
         End Set
     End Property
 
-    Public Property Salario() As Integer
+    Public Property Salario() As Double
         Get
             Return _Salario
         End Get
-        Set(ByVal value As Integer)
+        Set(ByVal value As Double)
             _Salario = value
         End Set
     End Property

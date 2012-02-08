@@ -148,3 +148,6 @@ C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj
 C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoCliente.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Citas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
+C:\Documents and Settings\felix\Escritorio\Proyecto Citas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.xml
+C:\Documents and Settings\felix\Escritorio\Proyecto Citas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.pdb

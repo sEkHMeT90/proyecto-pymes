@@ -52,14 +52,15 @@ Public Class NuevoEmple
     Private Sub Label19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblCancelarE.Click
         Me.Close()
     End Sub
-    '''' <summary>
-    ''' Válida los campos e inserta en la Base de Datos
+
+    ''' <summary>
+    ''' Valida los campos e inserta en la Base de Datos
     ''' </summary>
     ''' <author>Pedro Zalacain Maria Navarro</author>
     Private Sub PBAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarE.Click
-        Dim Mun As Municipio = _ListadoMunicipios.Item(CBPoblacion.SelectedIndex + 1)
-        Dim Dir As Direccion = New Direccion(TBCalle.Text, CInt(TBNumero.Text), TBPiso.Text, Mun)
-        Dim Trabaj As Trabajador = New Trabajador(0, TBDni.Text, TBNombre.Text, TBApellido1.Text, TBApellido2.Text, Dir, TBFijo.Text, TBMovil.Text, TBEmail.Text, CInt(TBSueldo.Text), CInt(TBNumSS.Text))
+        Dim Mun As Municipio = _ListadoMunicipios.Item(CBPoblacionE.SelectedIndex + 1)
+        Dim Dir As Direccion = New Direccion(TBCalleE.Text, CInt(TBNumeroE.Text), TBPisoE.Text, Mun)
+        Dim Trabaj As Trabajador = New Trabajador(0, TBDniE.Text, TBNombreE.Text, TBApellido1E.Text, TBApellido2E.Text, Dir, TBFijoE.Text, TBMovilE.Text, TBEmailE.Text, CInt(TBNumSSE.Text), CDbl(TBSueldoE.Text), New Especialidad())
 
         If Trabaj.InsertarTrabajador = True Then
             MessageBox.Show("Cliente añadido a la base de datos")
