@@ -16,9 +16,9 @@
     End Sub
 
    
-    Private Sub CBoxServicios_SelectedValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CBoxServicios.SelectedValueChanged
+    Private Sub CBoxServicios_SelectedValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CBoxServiciosC.SelectedValueChanged
 
-        ListBServicios.Items.Add(CBoxServicios.SelectedItem.ToString)
+        ListBServiciosC.Items.Add(CBoxServiciosC.SelectedItem.ToString)
 
     End Sub
 End Class

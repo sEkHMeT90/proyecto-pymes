@@ -91,6 +91,18 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LineaFactura.vb" />
+    <Compile Include="ModificarEspecialidad.Designer.vb">
+      <DependentUpon>ModificarEspecialidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarEspecialidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarServicios.Designer.vb">
+      <DependentUpon>ModificarServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Municipio.vb" />
     <Compile Include="NuevaEspecialidad.Designer.vb">
       <DependentUpon>NuevaEspecialidad.vb</DependentUpon>
@@ -144,10 +156,10 @@
     <Compile Include="NuevaCita.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NuevoUsuario.Designer.vb">
-      <DependentUpon>NuevoUsuario.vb</DependentUpon>
+    <Compile Include="NuevoCliente.Designer.vb">
+      <DependentUpon>NuevoCliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="NuevoUsuario.vb">
+    <Compile Include="NuevoCliente.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Provincia.vb" />
@@ -162,6 +174,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Facturacion.resx">
       <DependentUpon>Facturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarEspecialidad.resx">
+      <DependentUpon>ModificarEspecialidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarServicios.resx">
+      <DependentUpon>ModificarServicios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NuevaEspecialidad.resx">
       <DependentUpon>NuevaEspecialidad.vb</DependentUpon>
@@ -187,8 +205,8 @@
     <EmbeddedResource Include="NuevaCita.resx">
       <DependentUpon>NuevaCita.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NuevoUsuario.resx">
-      <DependentUpon>NuevoUsuario.vb</DependentUpon>
+    <EmbeddedResource Include="NuevoCliente.resx">
+      <DependentUpon>NuevoCliente.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

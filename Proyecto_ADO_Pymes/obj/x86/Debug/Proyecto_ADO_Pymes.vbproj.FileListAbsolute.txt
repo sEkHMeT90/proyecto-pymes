@@ -104,3 +104,47 @@ F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
 F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
 F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoServicio.resources
 F:\Proyecto PyMES\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaEspecialidad.resources
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.xml
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.pdb
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Consulta.resources
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Facturacion.resources
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaEspecialidad.resources
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoEmple.resources
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoServicio.resources
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Principal.resources
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Resources.resources
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Buscar.resources
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaCita.resources
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoUsuario.resources
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\BDCitas.accdb
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.exe
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.pdb
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.xml
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarEspecialidad.resources
+E:\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarServicios.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.xml
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.pdb
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\BDCitas.accdb
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.exe
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.pdb
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.xml
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Consulta.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Facturacion.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarEspecialidad.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarServicios.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaEspecialidad.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoEmple.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoServicio.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Principal.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Resources.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Buscar.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaCita.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\felix\Escritorio\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoCliente.resources

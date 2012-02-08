@@ -56,7 +56,7 @@ Public Class Cliente : Inherits Usuario
     ''' Inserta el cliente en la base de datos
     ''' </summary>
     ''' <author>Andrés Marotta, Pedro Zalacain</author>
-    Public Function InsertarCliente() As Boolean
+    Public Function Insertar() As Boolean
         Dim ok As Boolean = False
         Dim columnas As Integer
         Dim conexion As New BBDD

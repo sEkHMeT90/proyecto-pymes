@@ -23,95 +23,95 @@ Partial Class NuevaEspecialidad
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NuevaEspecialidad))
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.PBBorrarU = New System.Windows.Forms.PictureBox()
-        Me.PBCancelarU = New System.Windows.Forms.PictureBox()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.PBAceptarU = New System.Windows.Forms.PictureBox()
+        Me.LblCancelarEs = New System.Windows.Forms.Label()
+        Me.LblBorarEs = New System.Windows.Forms.Label()
+        Me.PBBorrarEs = New System.Windows.Forms.PictureBox()
+        Me.PBCancelarEs = New System.Windows.Forms.PictureBox()
+        Me.LblAceptarEs = New System.Windows.Forms.Label()
+        Me.PBAceptarEs = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TBApellido1 = New System.Windows.Forms.TextBox()
+        Me.TBDescricionEs = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TBNombre = New System.Windows.Forms.TextBox()
+        Me.TBNombreEs = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.PBBorrarU, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PBCancelarU, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PBAceptarU, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBBorrarEs, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBCancelarEs, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBAceptarEs, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label19
+        'LblCancelarEs
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.BackColor = System.Drawing.Color.Transparent
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(341, 264)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(70, 16)
-        Me.Label19.TabIndex = 99
-        Me.Label19.Text = "Cancelar"
+        Me.LblCancelarEs.AutoSize = True
+        Me.LblCancelarEs.BackColor = System.Drawing.Color.Transparent
+        Me.LblCancelarEs.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblCancelarEs.ForeColor = System.Drawing.Color.White
+        Me.LblCancelarEs.Location = New System.Drawing.Point(341, 264)
+        Me.LblCancelarEs.Name = "LblCancelarEs"
+        Me.LblCancelarEs.Size = New System.Drawing.Size(70, 16)
+        Me.LblCancelarEs.TabIndex = 99
+        Me.LblCancelarEs.Text = "Cancelar"
         '
-        'Label18
+        'LblBorarEs
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(210, 264)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(51, 16)
-        Me.Label18.TabIndex = 98
-        Me.Label18.Text = "Borrar"
+        Me.LblBorarEs.AutoSize = True
+        Me.LblBorarEs.BackColor = System.Drawing.Color.Transparent
+        Me.LblBorarEs.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblBorarEs.ForeColor = System.Drawing.Color.White
+        Me.LblBorarEs.Location = New System.Drawing.Point(210, 264)
+        Me.LblBorarEs.Name = "LblBorarEs"
+        Me.LblBorarEs.Size = New System.Drawing.Size(51, 16)
+        Me.LblBorarEs.TabIndex = 98
+        Me.LblBorarEs.Text = "Borrar"
         '
-        'PBBorrarU
+        'PBBorrarEs
         '
-        Me.PBBorrarU.BackColor = System.Drawing.Color.Transparent
-        Me.PBBorrarU.BackgroundImage = CType(resources.GetObject("PBBorrarU.BackgroundImage"), System.Drawing.Image)
-        Me.PBBorrarU.Location = New System.Drawing.Point(192, 254)
-        Me.PBBorrarU.Name = "PBBorrarU"
-        Me.PBBorrarU.Size = New System.Drawing.Size(92, 37)
-        Me.PBBorrarU.TabIndex = 97
-        Me.PBBorrarU.TabStop = False
+        Me.PBBorrarEs.BackColor = System.Drawing.Color.Transparent
+        Me.PBBorrarEs.BackgroundImage = CType(resources.GetObject("PBBorrarEs.BackgroundImage"), System.Drawing.Image)
+        Me.PBBorrarEs.Location = New System.Drawing.Point(192, 254)
+        Me.PBBorrarEs.Name = "PBBorrarEs"
+        Me.PBBorrarEs.Size = New System.Drawing.Size(92, 37)
+        Me.PBBorrarEs.TabIndex = 97
+        Me.PBBorrarEs.TabStop = False
         '
-        'PBCancelarU
+        'PBCancelarEs
         '
-        Me.PBCancelarU.BackColor = System.Drawing.Color.Transparent
-        Me.PBCancelarU.BackgroundImage = CType(resources.GetObject("PBCancelarU.BackgroundImage"), System.Drawing.Image)
-        Me.PBCancelarU.Location = New System.Drawing.Point(329, 254)
-        Me.PBCancelarU.Name = "PBCancelarU"
-        Me.PBCancelarU.Size = New System.Drawing.Size(92, 37)
-        Me.PBCancelarU.TabIndex = 96
-        Me.PBCancelarU.TabStop = False
+        Me.PBCancelarEs.BackColor = System.Drawing.Color.Transparent
+        Me.PBCancelarEs.BackgroundImage = CType(resources.GetObject("PBCancelarEs.BackgroundImage"), System.Drawing.Image)
+        Me.PBCancelarEs.Location = New System.Drawing.Point(329, 254)
+        Me.PBCancelarEs.Name = "PBCancelarEs"
+        Me.PBCancelarEs.Size = New System.Drawing.Size(92, 37)
+        Me.PBCancelarEs.TabIndex = 96
+        Me.PBCancelarEs.TabStop = False
         '
-        'Label17
+        'LblAceptarEs
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(72, 264)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(62, 16)
-        Me.Label17.TabIndex = 95
-        Me.Label17.Text = "Aceptar"
+        Me.LblAceptarEs.AutoSize = True
+        Me.LblAceptarEs.BackColor = System.Drawing.Color.Transparent
+        Me.LblAceptarEs.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblAceptarEs.ForeColor = System.Drawing.Color.White
+        Me.LblAceptarEs.Location = New System.Drawing.Point(72, 264)
+        Me.LblAceptarEs.Name = "LblAceptarEs"
+        Me.LblAceptarEs.Size = New System.Drawing.Size(62, 16)
+        Me.LblAceptarEs.TabIndex = 95
+        Me.LblAceptarEs.Text = "Aceptar"
         '
-        'PBAceptarU
+        'PBAceptarEs
         '
-        Me.PBAceptarU.BackColor = System.Drawing.Color.Transparent
-        Me.PBAceptarU.BackgroundImage = CType(resources.GetObject("PBAceptarU.BackgroundImage"), System.Drawing.Image)
-        Me.PBAceptarU.Location = New System.Drawing.Point(58, 254)
-        Me.PBAceptarU.Name = "PBAceptarU"
-        Me.PBAceptarU.Size = New System.Drawing.Size(92, 37)
-        Me.PBAceptarU.TabIndex = 94
-        Me.PBAceptarU.TabStop = False
+        Me.PBAceptarEs.BackColor = System.Drawing.Color.Transparent
+        Me.PBAceptarEs.BackgroundImage = CType(resources.GetObject("PBAceptarEs.BackgroundImage"), System.Drawing.Image)
+        Me.PBAceptarEs.Location = New System.Drawing.Point(58, 254)
+        Me.PBAceptarEs.Name = "PBAceptarEs"
+        Me.PBAceptarEs.Size = New System.Drawing.Size(92, 37)
+        Me.PBAceptarEs.TabIndex = 94
+        Me.PBAceptarEs.TabStop = False
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox1.Controls.Add(Me.TBApellido1)
+        Me.GroupBox1.Controls.Add(Me.TBDescricionEs)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.TBNombre)
+        Me.GroupBox1.Controls.Add(Me.TBNombreEs)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
@@ -122,15 +122,15 @@ Partial Class NuevaEspecialidad
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Nuevo Especialidad"
         '
-        'TBApellido1
+        'TBDescricionEs
         '
-        Me.TBApellido1.BackColor = System.Drawing.Color.Thistle
-        Me.TBApellido1.ForeColor = System.Drawing.Color.Black
-        Me.TBApellido1.Location = New System.Drawing.Point(134, 99)
-        Me.TBApellido1.Multiline = True
-        Me.TBApellido1.Name = "TBApellido1"
-        Me.TBApellido1.Size = New System.Drawing.Size(190, 20)
-        Me.TBApellido1.TabIndex = 2
+        Me.TBDescricionEs.BackColor = System.Drawing.Color.Thistle
+        Me.TBDescricionEs.ForeColor = System.Drawing.Color.Black
+        Me.TBDescricionEs.Location = New System.Drawing.Point(134, 99)
+        Me.TBDescricionEs.Multiline = True
+        Me.TBDescricionEs.Name = "TBDescricionEs"
+        Me.TBDescricionEs.Size = New System.Drawing.Size(190, 20)
+        Me.TBDescricionEs.TabIndex = 2
         '
         'Label2
         '
@@ -144,14 +144,14 @@ Partial Class NuevaEspecialidad
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Descripción"
         '
-        'TBNombre
+        'TBNombreEs
         '
-        Me.TBNombre.BackColor = System.Drawing.Color.Thistle
-        Me.TBNombre.ForeColor = System.Drawing.Color.Black
-        Me.TBNombre.Location = New System.Drawing.Point(134, 48)
-        Me.TBNombre.Name = "TBNombre"
-        Me.TBNombre.Size = New System.Drawing.Size(190, 22)
-        Me.TBNombre.TabIndex = 1
+        Me.TBNombreEs.BackColor = System.Drawing.Color.Thistle
+        Me.TBNombreEs.ForeColor = System.Drawing.Color.Black
+        Me.TBNombreEs.Location = New System.Drawing.Point(134, 48)
+        Me.TBNombreEs.Name = "TBNombreEs"
+        Me.TBNombreEs.Size = New System.Drawing.Size(190, 22)
+        Me.TBNombreEs.TabIndex = 1
         '
         'Label1
         '
@@ -172,35 +172,35 @@ Partial Class NuevaEspecialidad
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(474, 322)
-        Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.PBBorrarU)
-        Me.Controls.Add(Me.PBCancelarU)
-        Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.PBAceptarU)
+        Me.Controls.Add(Me.LblCancelarEs)
+        Me.Controls.Add(Me.LblBorarEs)
+        Me.Controls.Add(Me.PBBorrarEs)
+        Me.Controls.Add(Me.PBCancelarEs)
+        Me.Controls.Add(Me.LblAceptarEs)
+        Me.Controls.Add(Me.PBAceptarEs)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.MinimizeBox = False
+        Me.MaximizeBox = False
         Me.Name = "NuevaEspecialidad"
         Me.Text = "NuevaEspecialidad"
-        CType(Me.PBBorrarU, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PBCancelarU, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PBAceptarU, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBBorrarEs, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBCancelarEs, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBAceptarEs, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label19 As System.Windows.Forms.Label
-    Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents PBBorrarU As System.Windows.Forms.PictureBox
-    Friend WithEvents PBCancelarU As System.Windows.Forms.PictureBox
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents PBAceptarU As System.Windows.Forms.PictureBox
+    Friend WithEvents LblCancelarEs As System.Windows.Forms.Label
+    Friend WithEvents LblBorarEs As System.Windows.Forms.Label
+    Friend WithEvents PBBorrarEs As System.Windows.Forms.PictureBox
+    Friend WithEvents PBCancelarEs As System.Windows.Forms.PictureBox
+    Friend WithEvents LblAceptarEs As System.Windows.Forms.Label
+    Friend WithEvents PBAceptarEs As System.Windows.Forms.PictureBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents TBApellido1 As System.Windows.Forms.TextBox
+    Friend WithEvents TBDescricionEs As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TBNombre As System.Windows.Forms.TextBox
+    Friend WithEvents TBNombreEs As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
