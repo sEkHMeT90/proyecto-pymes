@@ -38,10 +38,13 @@ Partial Class NuevoServicio
         Me.PBCancelarS = New System.Windows.Forms.PictureBox()
         Me.LblAceptarS = New System.Windows.Forms.Label()
         Me.PBAceptarS = New System.Windows.Forms.PictureBox()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.SLblEstado = New System.Windows.Forms.ToolStripStatusLabel()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PBBorrarS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBCancelarS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBAceptarS, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TBPrecioS
@@ -155,7 +158,7 @@ Partial Class NuevoServicio
         Me.LblCancelarS.BackColor = System.Drawing.Color.Transparent
         Me.LblCancelarS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblCancelarS.ForeColor = System.Drawing.Color.White
-        Me.LblCancelarS.Location = New System.Drawing.Point(340, 328)
+        Me.LblCancelarS.Location = New System.Drawing.Point(339, 306)
         Me.LblCancelarS.Name = "LblCancelarS"
         Me.LblCancelarS.Size = New System.Drawing.Size(70, 16)
         Me.LblCancelarS.TabIndex = 92
@@ -167,7 +170,7 @@ Partial Class NuevoServicio
         Me.LblBorrarS.BackColor = System.Drawing.Color.Transparent
         Me.LblBorrarS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblBorrarS.ForeColor = System.Drawing.Color.White
-        Me.LblBorrarS.Location = New System.Drawing.Point(209, 328)
+        Me.LblBorrarS.Location = New System.Drawing.Point(208, 306)
         Me.LblBorrarS.Name = "LblBorrarS"
         Me.LblBorrarS.Size = New System.Drawing.Size(51, 16)
         Me.LblBorrarS.TabIndex = 91
@@ -177,7 +180,7 @@ Partial Class NuevoServicio
         '
         Me.PBBorrarS.BackColor = System.Drawing.Color.Transparent
         Me.PBBorrarS.BackgroundImage = CType(resources.GetObject("PBBorrarS.BackgroundImage"), System.Drawing.Image)
-        Me.PBBorrarS.Location = New System.Drawing.Point(191, 318)
+        Me.PBBorrarS.Location = New System.Drawing.Point(190, 296)
         Me.PBBorrarS.Name = "PBBorrarS"
         Me.PBBorrarS.Size = New System.Drawing.Size(92, 37)
         Me.PBBorrarS.TabIndex = 90
@@ -187,7 +190,7 @@ Partial Class NuevoServicio
         '
         Me.PBCancelarS.BackColor = System.Drawing.Color.Transparent
         Me.PBCancelarS.BackgroundImage = CType(resources.GetObject("PBCancelarS.BackgroundImage"), System.Drawing.Image)
-        Me.PBCancelarS.Location = New System.Drawing.Point(328, 318)
+        Me.PBCancelarS.Location = New System.Drawing.Point(327, 296)
         Me.PBCancelarS.Name = "PBCancelarS"
         Me.PBCancelarS.Size = New System.Drawing.Size(92, 37)
         Me.PBCancelarS.TabIndex = 89
@@ -199,7 +202,7 @@ Partial Class NuevoServicio
         Me.LblAceptarS.BackColor = System.Drawing.Color.Transparent
         Me.LblAceptarS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblAceptarS.ForeColor = System.Drawing.Color.White
-        Me.LblAceptarS.Location = New System.Drawing.Point(71, 328)
+        Me.LblAceptarS.Location = New System.Drawing.Point(70, 306)
         Me.LblAceptarS.Name = "LblAceptarS"
         Me.LblAceptarS.Size = New System.Drawing.Size(62, 16)
         Me.LblAceptarS.TabIndex = 88
@@ -209,11 +212,26 @@ Partial Class NuevoServicio
         '
         Me.PBAceptarS.BackColor = System.Drawing.Color.Transparent
         Me.PBAceptarS.BackgroundImage = CType(resources.GetObject("PBAceptarS.BackgroundImage"), System.Drawing.Image)
-        Me.PBAceptarS.Location = New System.Drawing.Point(57, 318)
+        Me.PBAceptarS.Location = New System.Drawing.Point(56, 296)
         Me.PBAceptarS.Name = "PBAceptarS"
         Me.PBAceptarS.Size = New System.Drawing.Size(92, 37)
         Me.PBAceptarS.TabIndex = 87
         Me.PBAceptarS.TabStop = False
+        '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SLblEstado})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 350)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(474, 22)
+        Me.StatusStrip1.TabIndex = 93
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'SLblEstado
+        '
+        Me.SLblEstado.Name = "SLblEstado"
+        Me.SLblEstado.Size = New System.Drawing.Size(111, 17)
+        Me.SLblEstado.Text = "ToolStripStatusLabel1"
         '
         'NuevoServicio
         '
@@ -222,6 +240,7 @@ Partial Class NuevoServicio
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(474, 372)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.LblCancelarS)
         Me.Controls.Add(Me.LblBorrarS)
         Me.Controls.Add(Me.PBBorrarS)
@@ -238,6 +257,8 @@ Partial Class NuevoServicio
         CType(Me.PBBorrarS, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBCancelarS, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBAceptarS, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -257,4 +278,6 @@ Partial Class NuevoServicio
     Friend WithEvents PBCancelarS As System.Windows.Forms.PictureBox
     Friend WithEvents LblAceptarS As System.Windows.Forms.Label
     Friend WithEvents PBAceptarS As System.Windows.Forms.PictureBox
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents SLblEstado As System.Windows.Forms.ToolStripStatusLabel
 End Class

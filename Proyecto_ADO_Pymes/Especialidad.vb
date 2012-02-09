@@ -1,6 +1,9 @@
 ﻿Option Explicit On
 Option Strict On
 
+Imports System.Data
+Imports System.Data.OleDb
+
 ''' <summary>
 ''' Clase Especialidad.
 ''' </summary>
@@ -63,7 +66,43 @@ Public Class Especialidad
     End Property
 
     ''' <summary>
-    ''' Inserta el servicio en la base de datos
+    ''' Eliminar una especialidad existente
+    ''' </summary>
+    ''' <author>Pedro Zalacain</author>
+    Public Function Eliminar() As Boolean
+        Dim ok As Boolean = False
+        Dim columnas As Integer
+        Dim conexion As New BBDD
+
+        columnas = conexion.Modificar("DELETE FROM Especialidades WHERE codigo = " & Me._Cod & ";")
+        If columnas > 0 Then
+            ok = True
+        End If
+
+        Return ok
+    End Function
+
+    ''' <summary>
+    ''' Modificar una especialidad
+    ''' </summary>
+    ''' <author>Pedro Zalacain</author>
+    Public Function Modificar() As Boolean
+        Dim ok As Boolean = False
+        Dim columnas As Integer
+        Dim conexion As New BBDD
+
+        columnas = conexion.Modificar("UPDATE Especialidades SET nombre = " & _
+                                        "'" & Me._Nombre & "', descripcion = " & _
+                                        "'" & Me._Descripcion & "' WHERE codigo = " & Me._Cod & ";")
+        If columnas > 0 Then
+            ok = True
+        End If
+
+        Return ok
+    End Function
+
+    ''' <summary>
+    ''' Inserta la especialidad en la base de datos
     ''' </summary>
     ''' <author>Pedro Zalacain</author>
     Public Function Insertar() As Boolean
@@ -81,6 +120,35 @@ Public Class Especialidad
         End If
 
         Return ok
+    End Function
+
+    ''' <summary>
+    ''' Carga todas las especialidades almacenadas en la base de datos
+    ''' </summary>
+    ''' <returns>Una lista de especialidades</returns>
+    ''' <author>Pedro Zalacain</author>
+    Public Shared Function Cargar() As List(Of Especialidad)
+        Dim conexion As New BBDD
+        Dim lector As OleDbDataReader
+        Dim especialidades As New List(Of Especialidad)
+
+        If conexion.Conectar Then
+            lector = conexion.Consultar("SELECT * FROM Especialidades;")
+
+            While lector.Read
+                Dim nuevo As New Especialidad()
+                nuevo.Cod = lector.GetInt32(0)
+                nuevo.Nombre = lector.GetString(1)
+                nuevo.Descripcion = lector.GetString(2)
+                especialidades.Add(nuevo)
+            End While
+
+            lector.Close()
+            conexion.Desconectar()
+            conexion.Dispose()
+        End If
+
+        Return especialidades
     End Function
 
     ''' <summary>

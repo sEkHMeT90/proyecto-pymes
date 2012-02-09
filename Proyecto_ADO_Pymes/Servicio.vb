@@ -89,6 +89,29 @@ Public Class Servicio
     End Property
 
     ''' <summary>
+    ''' Inserta el servicio en la base de datos
+    ''' </summary>
+    ''' <author>Pedro Zalacain</author>
+    Public Function Insertar() As Boolean
+        Dim ok As Boolean = False
+        Dim columnas As Integer
+        Dim conexion As New BBDD
+
+        columnas = conexion.Modificar("INSERT INTO Servicios (nombre, descripcion,duracion,precio)" & _
+                                        " VALUES(" & _
+                                        "'" & Me._Nombre & "'," & _
+                                        "'" & Me._Descripcion & "'," & _
+                                        Me._Duracion & "," & _
+                                        Me._Precio & ");")
+
+        If columnas > 0 Then
+            ok = True
+        End If
+
+        Return ok
+    End Function
+
+    ''' <summary>
     ''' Carga todos los servicios almacenados en la base de datos
     ''' </summary>
     ''' <returns>Una lista de servicios</returns>

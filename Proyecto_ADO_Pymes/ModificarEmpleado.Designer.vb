@@ -25,18 +25,8 @@ Partial Class ModificarEmpleado
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarEmpleado))
         Me.LBoxME = New System.Windows.Forms.ListBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.PBBorrarMC = New System.Windows.Forms.PictureBox()
-        Me.PBModificarMC = New System.Windows.Forms.PictureBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.CBProvinciaU = New System.Windows.Forms.ComboBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.CBPoblacionU = New System.Windows.Forms.ComboBox()
-        Me.TBPisoMU = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TBNumeroMU = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TBCalleMU = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.CBEspecialidadE = New System.Windows.Forms.ComboBox()
         Me.TBSueldoE = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.TBNumSSE = New System.Windows.Forms.TextBox()
@@ -55,8 +45,18 @@ Partial Class ModificarEmpleado
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TBNombreE = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.CBEspecialidadE = New System.Windows.Forms.ComboBox()
+        Me.PBBorrarMC = New System.Windows.Forms.PictureBox()
+        Me.PBModificarMC = New System.Windows.Forms.PictureBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.CBProvinciaU = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.CBPoblacionU = New System.Windows.Forms.ComboBox()
+        Me.TBPisoMU = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.TBNumeroMU = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TBCalleMU = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,132 +114,28 @@ Partial Class ModificarEmpleado
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Empleado"
         '
-        'PBBorrarMC
+        'Label16
         '
-        Me.PBBorrarMC.BackColor = System.Drawing.Color.Transparent
-        Me.PBBorrarMC.BackgroundImage = CType(resources.GetObject("PBBorrarMC.BackgroundImage"), System.Drawing.Image)
-        Me.PBBorrarMC.Location = New System.Drawing.Point(558, 402)
-        Me.PBBorrarMC.Name = "PBBorrarMC"
-        Me.PBBorrarMC.Size = New System.Drawing.Size(70, 70)
-        Me.PBBorrarMC.TabIndex = 58
-        Me.PBBorrarMC.TabStop = False
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(343, 44)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(94, 20)
+        Me.Label16.TabIndex = 78
+        Me.Label16.Text = "Ocupación"
         '
-        'PBModificarMC
+        'CBEspecialidadE
         '
-        Me.PBModificarMC.BackColor = System.Drawing.Color.Transparent
-        Me.PBModificarMC.BackgroundImage = CType(resources.GetObject("PBModificarMC.BackgroundImage"), System.Drawing.Image)
-        Me.PBModificarMC.Location = New System.Drawing.Point(401, 402)
-        Me.PBModificarMC.Name = "PBModificarMC"
-        Me.PBModificarMC.Size = New System.Drawing.Size(70, 70)
-        Me.PBModificarMC.TabIndex = 57
-        Me.PBModificarMC.TabStop = False
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(341, 189)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(81, 20)
-        Me.Label11.TabIndex = 56
-        Me.Label11.Text = "Provincia"
-        '
-        'CBProvinciaU
-        '
-        Me.CBProvinciaU.BackColor = System.Drawing.Color.Thistle
-        Me.CBProvinciaU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBProvinciaU.FormattingEnabled = True
-        Me.CBProvinciaU.Location = New System.Drawing.Point(439, 188)
-        Me.CBProvinciaU.Name = "CBProvinciaU"
-        Me.CBProvinciaU.Size = New System.Drawing.Size(191, 24)
-        Me.CBProvinciaU.TabIndex = 50
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(341, 240)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(87, 20)
-        Me.Label10.TabIndex = 55
-        Me.Label10.Text = "Población"
-        '
-        'CBPoblacionU
-        '
-        Me.CBPoblacionU.BackColor = System.Drawing.Color.Thistle
-        Me.CBPoblacionU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBPoblacionU.FormattingEnabled = True
-        Me.CBPoblacionU.Location = New System.Drawing.Point(439, 239)
-        Me.CBPoblacionU.Name = "CBPoblacionU"
-        Me.CBPoblacionU.Size = New System.Drawing.Size(189, 24)
-        Me.CBPoblacionU.TabIndex = 51
-        '
-        'TBPisoMU
-        '
-        Me.TBPisoMU.BackColor = System.Drawing.Color.Thistle
-        Me.TBPisoMU.ForeColor = System.Drawing.Color.Black
-        Me.TBPisoMU.Location = New System.Drawing.Point(570, 139)
-        Me.TBPisoMU.Name = "TBPisoMU"
-        Me.TBPisoMU.Size = New System.Drawing.Size(60, 22)
-        Me.TBPisoMU.TabIndex = 49
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(512, 139)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(43, 20)
-        Me.Label9.TabIndex = 54
-        Me.Label9.Text = "Piso"
-        '
-        'TBNumeroMU
-        '
-        Me.TBNumeroMU.BackColor = System.Drawing.Color.Thistle
-        Me.TBNumeroMU.ForeColor = System.Drawing.Color.Black
-        Me.TBNumeroMU.Location = New System.Drawing.Point(439, 139)
-        Me.TBNumeroMU.Name = "TBNumeroMU"
-        Me.TBNumeroMU.Size = New System.Drawing.Size(55, 22)
-        Me.TBNumeroMU.TabIndex = 48
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(343, 141)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(28, 20)
-        Me.Label8.TabIndex = 53
-        Me.Label8.Text = "Nº"
-        '
-        'TBCalleMU
-        '
-        Me.TBCalleMU.BackColor = System.Drawing.Color.Thistle
-        Me.TBCalleMU.ForeColor = System.Drawing.Color.Black
-        Me.TBCalleMU.Location = New System.Drawing.Point(439, 89)
-        Me.TBCalleMU.Name = "TBCalleMU"
-        Me.TBCalleMU.Size = New System.Drawing.Size(191, 22)
-        Me.TBCalleMU.TabIndex = 47
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(343, 89)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(49, 20)
-        Me.Label7.TabIndex = 52
-        Me.Label7.Text = "Calle"
+        Me.CBEspecialidadE.BackColor = System.Drawing.Color.Thistle
+        Me.CBEspecialidadE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBEspecialidadE.FormattingEnabled = True
+        Me.CBEspecialidadE.Items.AddRange(New Object() {"Peluquero", "Esteticien", "Color"})
+        Me.CBEspecialidadE.Location = New System.Drawing.Point(439, 44)
+        Me.CBEspecialidadE.Name = "CBEspecialidadE"
+        Me.CBEspecialidadE.Size = New System.Drawing.Size(189, 24)
+        Me.CBEspecialidadE.TabIndex = 77
         '
         'TBSueldoE
         '
@@ -430,28 +326,130 @@ Partial Class ModificarEmpleado
         Me.Label1.TabIndex = 59
         Me.Label1.Text = "Nombre"
         '
-        'Label16
+        'PBBorrarMC
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.BackColor = System.Drawing.Color.Transparent
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(343, 44)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(94, 20)
-        Me.Label16.TabIndex = 78
-        Me.Label16.Text = "Ocupación"
+        Me.PBBorrarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBBorrarMC.Location = New System.Drawing.Point(558, 402)
+        Me.PBBorrarMC.Name = "PBBorrarMC"
+        Me.PBBorrarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBBorrarMC.TabIndex = 58
+        Me.PBBorrarMC.TabStop = False
         '
-        'CBEspecialidadE
+        'PBModificarMC
         '
-        Me.CBEspecialidadE.BackColor = System.Drawing.Color.Thistle
-        Me.CBEspecialidadE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBEspecialidadE.FormattingEnabled = True
-        Me.CBEspecialidadE.Items.AddRange(New Object() {"Peluquero", "Esteticien", "Color"})
-        Me.CBEspecialidadE.Location = New System.Drawing.Point(439, 44)
-        Me.CBEspecialidadE.Name = "CBEspecialidadE"
-        Me.CBEspecialidadE.Size = New System.Drawing.Size(189, 24)
-        Me.CBEspecialidadE.TabIndex = 77
+        Me.PBModificarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBModificarMC.Location = New System.Drawing.Point(401, 402)
+        Me.PBModificarMC.Name = "PBModificarMC"
+        Me.PBModificarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBModificarMC.TabIndex = 57
+        Me.PBModificarMC.TabStop = False
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.White
+        Me.Label11.Location = New System.Drawing.Point(341, 189)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(81, 20)
+        Me.Label11.TabIndex = 56
+        Me.Label11.Text = "Provincia"
+        '
+        'CBProvinciaU
+        '
+        Me.CBProvinciaU.BackColor = System.Drawing.Color.Thistle
+        Me.CBProvinciaU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBProvinciaU.FormattingEnabled = True
+        Me.CBProvinciaU.Location = New System.Drawing.Point(439, 188)
+        Me.CBProvinciaU.Name = "CBProvinciaU"
+        Me.CBProvinciaU.Size = New System.Drawing.Size(191, 24)
+        Me.CBProvinciaU.TabIndex = 50
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(341, 240)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(87, 20)
+        Me.Label10.TabIndex = 55
+        Me.Label10.Text = "Población"
+        '
+        'CBPoblacionU
+        '
+        Me.CBPoblacionU.BackColor = System.Drawing.Color.Thistle
+        Me.CBPoblacionU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBPoblacionU.FormattingEnabled = True
+        Me.CBPoblacionU.Location = New System.Drawing.Point(439, 239)
+        Me.CBPoblacionU.Name = "CBPoblacionU"
+        Me.CBPoblacionU.Size = New System.Drawing.Size(189, 24)
+        Me.CBPoblacionU.TabIndex = 51
+        '
+        'TBPisoMU
+        '
+        Me.TBPisoMU.BackColor = System.Drawing.Color.Thistle
+        Me.TBPisoMU.ForeColor = System.Drawing.Color.Black
+        Me.TBPisoMU.Location = New System.Drawing.Point(570, 139)
+        Me.TBPisoMU.Name = "TBPisoMU"
+        Me.TBPisoMU.Size = New System.Drawing.Size(60, 22)
+        Me.TBPisoMU.TabIndex = 49
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(512, 139)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(43, 20)
+        Me.Label9.TabIndex = 54
+        Me.Label9.Text = "Piso"
+        '
+        'TBNumeroMU
+        '
+        Me.TBNumeroMU.BackColor = System.Drawing.Color.Thistle
+        Me.TBNumeroMU.ForeColor = System.Drawing.Color.Black
+        Me.TBNumeroMU.Location = New System.Drawing.Point(439, 139)
+        Me.TBNumeroMU.Name = "TBNumeroMU"
+        Me.TBNumeroMU.Size = New System.Drawing.Size(55, 22)
+        Me.TBNumeroMU.TabIndex = 48
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(343, 141)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(28, 20)
+        Me.Label8.TabIndex = 53
+        Me.Label8.Text = "Nº"
+        '
+        'TBCalleMU
+        '
+        Me.TBCalleMU.BackColor = System.Drawing.Color.Thistle
+        Me.TBCalleMU.ForeColor = System.Drawing.Color.Black
+        Me.TBCalleMU.Location = New System.Drawing.Point(439, 89)
+        Me.TBCalleMU.Name = "TBCalleMU"
+        Me.TBCalleMU.Size = New System.Drawing.Size(191, 22)
+        Me.TBCalleMU.TabIndex = 47
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(343, 89)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(49, 20)
+        Me.Label7.TabIndex = 52
+        Me.Label7.Text = "Calle"
         '
         'ModificarEmpleado
         '
