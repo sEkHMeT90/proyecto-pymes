@@ -63,7 +63,6 @@ E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debu
 E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Resources.resources
 E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Buscar.resources
 E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaCita.resources
-E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoUsuario.resources
 E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
 E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
 F:\Proyecto Andrés y Pedro\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
@@ -194,3 +193,13 @@ F:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debu
 C:\Documents and Settings\felix\Escritorio\Proyecto Citas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarCita.resources
 C:\Documents and Settings\felix\Escritorio\Proyecto Citas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarCliente.resources
 C:\Documents and Settings\felix\Escritorio\Proyecto Citas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarEmpleado.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Facturacion.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarCita.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarCliente.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarEmpleado.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarEspecialidad.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarServicios.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaEspecialidad.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoEmple.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoServicio.resources
+E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoCliente.resources
