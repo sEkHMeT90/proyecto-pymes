@@ -34,19 +34,19 @@ Public Class Principal
     ''' <author>Pedro Zalacain</author>
     Private Sub PBArriba_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBArriba.Click
         If CInt(LblHora1.Text) > 8 Then
-            LblHora1.Text = (CInt(LblHora1.Text) - 1).ToString("00").ToString()
-            LblHora2.Text = (CInt(LblHora2.Text) - 1).ToString("00").ToString()
-            LblHora3.Text = (CInt(LblHora3.Text) - 1).ToString("00").ToString()
-            LblHora4.Text = (CInt(LblHora4.Text) - 1).ToString("00").ToString()
+            LblHora1.Text = (CInt(LblHora1.Text) - 1).ToString("00")
+            LblHora2.Text = (CInt(LblHora2.Text) - 1).ToString("00")
+            LblHora3.Text = (CInt(LblHora3.Text) - 1).ToString("00")
+            LblHora4.Text = (CInt(LblHora4.Text) - 1).ToString("00")
         End If
     End Sub
 
     Private Sub PBAbajo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAbajo.Click
         If CInt(LblHora4.Text) < 20 Then
-            LblHora1.Text = (CInt(LblHora1.Text) + 1).ToString("00").ToString()
-            LblHora2.Text = (CInt(LblHora2.Text) + 1).ToString("00").ToString()
-            LblHora3.Text = (CInt(LblHora3.Text) + 1).ToString("00").ToString()
-            LblHora4.Text = (CInt(LblHora4.Text) + 1).ToString("00").ToString()
+            LblHora1.Text = (CInt(LblHora1.Text) + 1).ToString("00")
+            LblHora2.Text = (CInt(LblHora2.Text) + 1).ToString("00")
+            LblHora3.Text = (CInt(LblHora3.Text) + 1).ToString("00")
+            LblHora4.Text = (CInt(LblHora4.Text) + 1).ToString("00")
         End If
     End Sub
 
