@@ -9,8 +9,8 @@ Imports System.Data.OleDb
 ''' </summary>
 ''' <author>Andrés Marotta, Pedro Zalacain</author>
 Public Class Municipio
-    Private _CodigoProvincia As Integer
     Private _Codigo As Integer
+    Private _Provincia As Provincia
     Private _Nombre As String
 
     ''' <summary>
@@ -18,8 +18,8 @@ Public Class Municipio
     ''' </summary>
     ''' <author>Andrés Marotta, Pedro Zalacain</author>
     Public Sub New()
-        Me._CodigoProvincia = 0
         Me._Codigo = 0
+        Me._Provincia = New Provincia
         Me._Nombre = "Desconocido"
     End Sub
 
@@ -27,9 +27,9 @@ Public Class Municipio
     ''' Constructor por parámetros
     ''' </summary>
     ''' <author>Andrés Marotta, Pedro Zalacain</author>
-    Public Sub New(ByVal codigo As Integer, ByVal codprovincia As Integer, ByVal nombre As String)
-        Me._CodigoProvincia = codprovincia
-        Me._Codigo = codigo
+    Public Sub New(ByVal provincia As Provincia, ByVal codprovincia As Integer, ByVal nombre As String)
+        Me._Codigo = Codigo
+        Me._Provincia = provincia
         Me._Nombre = nombre
     End Sub
 
@@ -37,16 +37,15 @@ Public Class Municipio
     ''' Propiedades de los atributos
     ''' </summary>
     ''' <author>Andrés Marotta, Pedro Zalacain</author>
-
-    Public ReadOnly Property CodigoProvincia() As Integer
-        Get
-            Return Me._CodigoProvincia
-        End Get
-    End Property
-
     Public ReadOnly Property Codigo() As Integer
         Get
             Return Me._Codigo
+        End Get
+    End Property
+
+    Public ReadOnly Property Provincia() As Provincia
+        Get
+            Return Me._Provincia
         End Get
     End Property
 
@@ -59,18 +58,21 @@ Public Class Municipio
     ''' <summary>
     ''' Carga todos los municipios
     ''' </summary>
-    ''' <returns>Una lista con todos los municipios cargadas</returns>
+    ''' <returns>Una lista con todos los municipios cargados</returns>
     ''' <author>Andrés Marotta, Pedro Zalacain</author>
-    Public Shared Function Cargar(ByVal provincia As Integer) As List(Of Municipio)
+    Public Shared Function Cargar(ByVal codProvincia As Integer) As List(Of Municipio)
         Dim conexion As New BBDD
         Dim lector As OleDbDataReader
         Dim municipios As New List(Of Municipio)
 
         If conexion.Conectar Then
-            lector = conexion.Consultar("SELECT * FROM Municipios WHERE provincia = " & provincia & ";")
+            lector = conexion.Consultar("SELECT * FROM Municipios WHERE provincia = " & codProvincia & ";")
 
             While lector.Read
-                Dim nueva As New Municipio(CInt(lector(0)), CInt(lector(1)), CStr(lector(2)))
+                Dim nueva As New Municipio()
+                nueva._Codigo = CInt(lector(0))
+                nueva._Provincia = Provincia.ProvinciaPorCodigo(CInt(lector(1)))
+                nueva._Nombre = CStr(lector(2))
                 municipios.Add(nueva)
             End While
 
@@ -84,12 +86,44 @@ Public Class Municipio
     End Function
 
     ''' <summary>
+    ''' Devuelve los datos de un municipio dado un código
+    ''' </summary>
+    ''' <param name="codigo">Código del municipio a buscar</param>
+    ''' <returns>El municipio encontrado</returns>
+    ''' <author>Andrés Marotta</author>
+    Public Shared Function MunicipioPorCodigo(ByVal codigo As Integer) As Municipio
+        Dim conexion As New BBDD
+        Dim lector As OleDbDataReader
+        Dim municipio As New Municipio
+
+        Try
+            conexion.Conectar()
+            lector = conexion.Consultar("SELECT * FROM Municipios WHERE codigo = " & codigo & ";")
+            lector.Read()
+
+            municipio._Codigo = CInt(lector(0))
+            municipio._Provincia = Provincia.ProvinciaPorCodigo(CInt(lector(1)))
+            municipio._Nombre = CStr(lector(2))
+
+            lector.Close()
+        Catch ex As Exception
+            municipio = Nothing
+
+        Finally
+            conexion.Desconectar()
+            conexion.Dispose()
+        End Try
+
+        Return municipio
+    End Function
+
+    ''' <summary>
     ''' Destructor manual
     ''' </summary>
     ''' <author>Andrés Marotta, Pedro Zalacain</author>
     Public Sub Dispose()
-        Me._CodigoProvincia = -1
         Me._Codigo = -1
+        Me._Provincia.Dispose()
         Me._Nombre = ""
     End Sub
 
@@ -99,7 +133,7 @@ Public Class Municipio
     ''' <author>Andrés Marotta, Pedro Zalacain</author>
     Protected Overrides Sub Finalize()
         Me._Codigo = -1
-        Me._CodigoProvincia = -1
+        Me._Provincia.Dispose()
         Me._Nombre = ""
     End Sub
 End Class

@@ -1,6 +1,9 @@
 ﻿Option Explicit On
 Option Strict On
 
+Imports System.Data
+Imports System.Data.OleDb
+
 ''' <summary>
 ''' Clase cliente: Almacena los datos de los clientes.
 ''' </summary>
@@ -26,28 +29,45 @@ Public Class Cliente : Inherits Usuario
     ''' <summary>
     ''' Carga todos los clientes almacenados
     ''' </summary>
-    ''' <param name="conexion">Conexión con la Base de Datos</param>
     ''' <returns>Un List(Of Cliente) con los clientes</returns>
     ''' <author>Andrés Marotta</author>
-    Public Shared Function CargarClientes(ByVal conexion As BBDD) As List(Of Cliente)
+    Public Shared Function Cargar() As List(Of Cliente)
+        Dim conexion As New BBDD
         Dim clientes As New List(Of Cliente)
-        Dim lector As OleDb.OleDbDataReader
+        Dim lector As OleDbDataReader
 
-        lector = conexion.Consultar("SELECT * FROM Clientes;")
+        Try
+            conexion.Conectar()
 
-        While lector.Read
-            Dim cliente As New Cliente
+            lector = conexion.Consultar("SELECT * FROM Clientes;")
 
-            cliente._Nombre = CStr(lector(0))
-            cliente._Apellido1 = CStr(lector(1))
-            cliente._Apellido2 = CStr(lector(2))
-            cliente._Direccion = New Direccion
-            cliente._Particular = CStr(lector(4))
-            cliente._Movil = CStr(lector(5))
-            cliente._Email = CStr(lector(6))
+            While lector.Read
+                Dim cliente As New Cliente
+                cliente._Cod = CInt(lector(0))
+                cliente._DNI = CStr(lector(1))
+                cliente._Nombre = CStr(lector(2))
+                cliente._Apellido1 = CStr(lector(3))
+                cliente._Apellido2 = CStr(lector(4))
+                cliente._Email = CStr(lector(5))
+                cliente._Particular = CStr(lector(6))
+                cliente._Movil = CStr(lector(7))
+                cliente._Direccion.Calle = CStr(lector(8))
+                cliente._Direccion.Numero = CInt(lector(9))
+                cliente._Direccion.Piso = CStr(lector(10))
+                cliente._Direccion.Municipio = Municipio.MunicipioPorCodigo(CInt(lector(11)))
 
-            clientes.Add(cliente)
-        End While
+                clientes.Add(cliente)
+            End While
+
+            lector.Close()
+
+        Catch ex As Exception
+            clientes = Nothing
+
+        Finally
+            conexion.Desconectar()
+            conexion.Dispose()
+        End Try
 
         Return clientes
     End Function

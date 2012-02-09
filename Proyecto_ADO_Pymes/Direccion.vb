@@ -5,15 +5,13 @@ Option Strict On
 ''' Clase Dirección: Almacena los datos de las direcciones de los usuarios.
 ''' </summary>
 ''' <author>Raquel Lloréns Gambín, Pedro Zalacain</author>
-''' 
-
 Public Class Direccion
     Private _Calle As String
     Private _Numero As Integer
     Private _Piso As String
     Private _Letra As String
     Private _Municipio As Municipio
-    
+
     ''' <summary>
     ''' Constructor por defecto
     ''' </summary>
@@ -84,7 +82,7 @@ Public Class Direccion
         _Calle = ""
         _Numero = 0
         _Piso = ""
-        _Municipio = New Municipio
+        _Municipio.Dispose()
     End Sub
 
     ''' <summary>
@@ -95,6 +93,6 @@ Public Class Direccion
         _Calle = ""
         _Numero = 0
         _Piso = ""
-        _Municipio = New Municipio
+        _Municipio.Dispose()
     End Sub
 End Class

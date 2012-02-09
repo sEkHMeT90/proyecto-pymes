@@ -133,7 +133,7 @@ Public Class Servicio
 
         While lector.Read
             Dim nuevo As New Servicio()
-            nuevo._Codigo = lector.GetInt32(0)
+            nuevo._Codigo = CInt(lector(0))
             nuevo._Nombre = lector.GetString(1)
             nuevo._Descripcion = lector.GetString(2)
             nuevo._Duracion = CInt(lector(3))
@@ -160,12 +160,13 @@ Public Class Servicio
         Try
             conexion.Conectar()
             lector = conexion.Consultar("SELECT * FROM Servicios WHERE nombre = '" & nombre & "';")
+            lector.Read()
 
-            servicio.Codigo = CInt(lector(0))
-            servicio.Nombre = CStr(lector(1))
-            servicio.Descripcion = CStr(lector(2))
-            servicio.Duracion = CInt(lector(3))
-            servicio.Precio = CDbl(lector(4))
+            servicio._Codigo = CInt(lector.GetValue(0))
+            servicio._Nombre = CStr(lector.GetValue(1))
+            servicio._Descripcion = CStr(lector.GetValue(2))
+            servicio._Duracion = CInt(lector.GetValue(3))
+            servicio._Precio = CDbl(lector.GetValue(4))
 
             lector.Close()
 

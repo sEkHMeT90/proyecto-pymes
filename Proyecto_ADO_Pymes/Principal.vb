@@ -97,4 +97,8 @@
             LblHora4.Text = (CInt(LblHora4.Text) + 1).ToString("00").ToString()
         End If
     End Sub
+
+    Private Sub ModificarToolStripMenuItem4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ModificarToolStripMenuItem4.Click
+        ModificarCita.ShowDialog()
+    End Sub
 End Class
