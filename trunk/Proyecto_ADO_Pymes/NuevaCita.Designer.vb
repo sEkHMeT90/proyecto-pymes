@@ -144,7 +144,6 @@ Partial Class NuevaCita
         Me.CBoxServiciosC.BackColor = System.Drawing.Color.Thistle
         Me.CBoxServiciosC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBoxServiciosC.FormattingEnabled = True
-        Me.CBoxServiciosC.Items.AddRange(New Object() {"Lavar", "Cortar", "Secar", "Tinte", "Permanente"})
         Me.CBoxServiciosC.Location = New System.Drawing.Point(206, 291)
         Me.CBoxServiciosC.Name = "CBoxServiciosC"
         Me.CBoxServiciosC.Size = New System.Drawing.Size(201, 21)
@@ -155,7 +154,6 @@ Partial Class NuevaCita
         Me.CBoxEmpleadoC.BackColor = System.Drawing.Color.Thistle
         Me.CBoxEmpleadoC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBoxEmpleadoC.FormattingEnabled = True
-        Me.CBoxEmpleadoC.Items.AddRange(New Object() {"Andres Marotta", "Pedro Zalacain", "Raquel Llorens", "María Navarro"})
         Me.CBoxEmpleadoC.Location = New System.Drawing.Point(206, 347)
         Me.CBoxEmpleadoC.Name = "CBoxEmpleadoC"
         Me.CBoxEmpleadoC.Size = New System.Drawing.Size(201, 21)

@@ -160,35 +160,25 @@ Public Class Cita
         Dim insercion As String
         Dim ok As Boolean
 
-
         Try
-            insercion = "INSERT INTO Citas(servicios, cliente, trabajador, fecha, hora, minutos) " & _
-                        "VALUES (1, 1, 1, 08/02/2012, 10, 15);"
-            If conexion.Modificar(insercion) > 0 Then
-                ok = True
-            Else
-                ok = False
-            End If
+            For Each servicio In Me._Servicios
+                insercion = "INSERT INTO Citas(servicios, cliente, trabajador, fecha, hora, minutos) " & _
+                            "VALUES(" & _
+                            servicio.Codigo & ", " & _
+                            Me._Cliente & ", " & _
+                            Me._Trabajador & ", " & _
+                            "#" & Me._Fecha.Day & "/" & Me._Fecha.Month & "/" & Me._Fecha.Year & "#, " & _
+                            Me._Hora & ", " & _
+                            Me._Minutos & _
+                            ");"
 
-            'For Each servicio In Me._Servicios
-            '    insercion = "INSERT INTO Citas(servicios, cliente, trabajador, fecha, hora, minutos) " & _
-            '                "VALUES(" & _
-            '                servicio.Codigo & ", " & _
-            '                Me._Cliente & ", " & _
-            '                Me._Trabajador & ", " & _
-            '                Me.Fecha & ", " & _
-            '                Me._Hora & ", " & _
-            '                Me._Minutos & _
-            '                ");"
-            '    conexion.Modificar(insercion)
-            'Next
+                conexion.Modificar(insercion)
+            Next
 
-            'ok = True
-
+            ok = True
         Catch ex As Exception
             ok = False
         End Try
-
 
         Return ok
     End Function

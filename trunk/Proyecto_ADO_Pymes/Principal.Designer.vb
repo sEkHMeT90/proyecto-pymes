@@ -303,7 +303,7 @@ Partial Class Principal
         Me.NuevaToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("NuevaToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
         Me.NuevaToolStripMenuItem1.ForeColor = System.Drawing.Color.White
         Me.NuevaToolStripMenuItem1.Name = "NuevaToolStripMenuItem1"
-        Me.NuevaToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
+        Me.NuevaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.NuevaToolStripMenuItem1.Text = "Nueva"
         '
         'ModificarToolStripMenuItem4
@@ -311,7 +311,7 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem4.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem4.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem4.ForeColor = System.Drawing.Color.White
         Me.ModificarToolStripMenuItem4.Name = "ModificarToolStripMenuItem4"
-        Me.ModificarToolStripMenuItem4.Size = New System.Drawing.Size(143, 22)
+        Me.ModificarToolStripMenuItem4.Size = New System.Drawing.Size(152, 22)
         Me.ModificarToolStripMenuItem4.Text = "Modificar"
         '
         'FacturaciónToolStripMenuItem

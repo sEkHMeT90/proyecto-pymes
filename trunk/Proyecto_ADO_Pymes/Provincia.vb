@@ -74,6 +74,37 @@ Public Class Provincia
     End Function
 
     ''' <summary>
+    ''' Devuelve los datos de una provincia dado un código
+    ''' </summary>
+    ''' <param name="codigo">Código de la provincia a buscar</param>
+    ''' <returns>La provincia encontrada</returns>
+    ''' <author>Andrés Marotta</author>
+    Public Shared Function ProvinciaPorCodigo(ByVal codigo As Integer) As Provincia
+        Dim conexion As New BBDD
+        Dim lector As OleDbDataReader
+        Dim provincia As New Provincia
+
+        Try
+            conexion.Conectar()
+            lector = conexion.Consultar("SELECT * FROM Provincias WHERE codigo = " & codigo & ";")
+            lector.Read()
+
+            provincia._Codigo = CInt(lector(0))
+            provincia._Nombre = CStr(lector(1))
+
+            lector.Close()
+        Catch ex As Exception
+            provincia = Nothing
+
+        Finally
+            conexion.Desconectar()
+            conexion.Dispose()
+        End Try
+
+        Return provincia
+    End Function
+
+    ''' <summary>
     ''' Destructor manual
     ''' </summary>
     ''' <author>Andrés Marotta</author>
