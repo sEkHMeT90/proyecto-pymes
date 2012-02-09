@@ -54,10 +54,13 @@ Public Class Usuario
     ''' </summary>
     ''' <author>Pedro Zalacain</author>
 
-    Public ReadOnly Property Codigo() As Integer
+    Public Property Codigo() As Integer
         Get
             Return _Cod
         End Get
+        Set(ByVal value As Integer)
+            Me._Cod = value
+        End Set
     End Property
 
     Public ReadOnly Property DNI() As String

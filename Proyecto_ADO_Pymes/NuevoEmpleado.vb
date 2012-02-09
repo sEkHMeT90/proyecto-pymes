@@ -53,7 +53,7 @@ Public Class NuevoEmple
     Private Sub InsertarCliente()
         Dim Mun As Municipio = _ListadoMunicipios.Item(CBPoblacionE.SelectedIndex + 1)
         Dim Dir As Direccion = New Direccion(TBCalleE.Text, CInt(TBNumeroE.Text), TBPisoE.Text, Mun)
-        Dim Trabaj As Trabajador = New Trabajador(0, TBDniE.Text, TBNombreE.Text, TBApellido1E.Text, TBApellido2E.Text, Dir, TBFijoE.Text, TBMovilE.Text, TBEmailE.Text, CInt(TBNumSSE.Text), CDbl(TBSueldoE.Text), New Especialidad())
+        Dim Trabaj As Trabajador = New Trabajador(0, TBDniE.Text, TBNombreE.Text, TBApellido1E.Text, TBApellido2E.Text, Dir, TBFijoE.Text, TBMovilE.Text, TBEmailE.Text, CInt(TBNumSSE.Text), CDbl(TBSueldoE.Text), New List(Of Especialidad))
 
         If Trabaj.InsertarTrabajador = True Then
             TSLabEstado.Text = "Cliente agregado correctamente"

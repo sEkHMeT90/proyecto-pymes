@@ -54,8 +54,8 @@
     Private Sub PBAceptarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarC.Click, LblAceptarC.Click
         Dim nueva As New Cita()
 
-        nueva.Cliente = CBoxClienteC.Text
-        nueva.Trabajador = CBoxEmpleadoC.Text
+        nueva.Cliente.Codigo = CInt(CBoxClienteC.Text)
+        nueva.Trabajador.Codigo = CInt(CBoxEmpleadoC.Text)
         nueva.Fecha = CDate(DPCitaC.Value.Day & "/" & DPCitaC.Value.Month & "/" & DPCitaC.Value.Month)
         nueva.Hora = CInt(CBoxHoraC.Text)
         nueva.Minutos = CInt(CBoxMinC.Text)

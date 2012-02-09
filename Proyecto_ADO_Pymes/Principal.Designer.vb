@@ -24,11 +24,7 @@ Partial Class Principal
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal))
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Trabajador1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Trabajador2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Trabajador3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Trabajador4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGVCitas = New System.Windows.Forms.DataGridView()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -95,7 +91,7 @@ Partial Class Principal
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGVCitas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.PBUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,43 +110,20 @@ Partial Class Principal
         Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'DGVCitas
         '
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.Thistle
-        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Trabajador1, Me.Trabajador2, Me.Trabajador3, Me.Trabajador4})
-        Me.DataGridView1.Location = New System.Drawing.Point(235, 103)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(453, 438)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'Trabajador1
-        '
-        Me.Trabajador1.HeaderText = "Trabajador1"
-        Me.Trabajador1.Name = "Trabajador1"
-        Me.Trabajador1.ReadOnly = True
-        '
-        'Trabajador2
-        '
-        Me.Trabajador2.HeaderText = "Trabajador2"
-        Me.Trabajador2.Name = "Trabajador2"
-        Me.Trabajador2.ReadOnly = True
-        '
-        'Trabajador3
-        '
-        Me.Trabajador3.HeaderText = "Trabajador3"
-        Me.Trabajador3.Name = "Trabajador3"
-        Me.Trabajador3.ReadOnly = True
-        Me.Trabajador3.Width = 105
-        '
-        'Trabajador4
-        '
-        Me.Trabajador4.HeaderText = "Trabajador4"
-        Me.Trabajador4.Name = "Trabajador4"
-        Me.Trabajador4.ReadOnly = True
-        Me.Trabajador4.Width = 105
+        Me.DGVCitas.AllowUserToAddRows = False
+        Me.DGVCitas.AllowUserToDeleteRows = False
+        Me.DGVCitas.AllowUserToResizeColumns = False
+        Me.DGVCitas.AllowUserToResizeRows = False
+        Me.DGVCitas.BackgroundColor = System.Drawing.Color.Thistle
+        Me.DGVCitas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.DGVCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVCitas.Location = New System.Drawing.Point(235, 103)
+        Me.DGVCitas.Name = "DGVCitas"
+        Me.DGVCitas.ReadOnly = True
+        Me.DGVCitas.Size = New System.Drawing.Size(453, 438)
+        Me.DGVCitas.TabIndex = 0
         '
         'MenuStrip1
         '
@@ -857,7 +830,7 @@ Partial Class Principal
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.PBNotas)
         Me.Controls.Add(Me.DPfecha)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DGVCitas)
         Me.Controls.Add(Me.PBFactura)
         Me.Controls.Add(Me.PBConsulta)
         Me.Controls.Add(Me.PBUsuario)
@@ -869,7 +842,7 @@ Partial Class Principal
         Me.MaximizeBox = False
         Me.Name = "Principal"
         Me.Text = "Principal"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGVCitas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ContextMenuStrip1.ResumeLayout(False)
@@ -897,7 +870,7 @@ Partial Class Principal
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents DGVCitas As System.Windows.Forms.DataGridView
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents ArchivoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
@@ -952,10 +925,6 @@ Partial Class Principal
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents Label22 As System.Windows.Forms.Label
-    Friend WithEvents Trabajador1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Trabajador2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Trabajador3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Trabajador4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NuevoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ServicioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NuevaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

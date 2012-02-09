@@ -152,6 +152,35 @@ Public Class Especialidad
     End Function
 
     ''' <summary>
+    ''' Carga las especialidades dado un trabajador
+    ''' </summary>
+    ''' <returns>Una lista de especialidades</returns>
+    ''' <author>Andrés Marotta</author>
+    Public Shared Function EspecialidadTrabajador(ByVal trabajador As Integer) As List(Of Especialidad)
+        Dim conexion As New BBDD
+        Dim lector As OleDbDataReader
+        Dim especialidades As New List(Of Especialidad)
+
+        If conexion.Conectar Then
+            lector = conexion.Consultar("SELECT Especialidades.* FROM TenerEspecialidad, Especialidades WHERE trabajador = " & trabajador & ";")
+
+            While lector.Read
+                Dim nuevo As New Especialidad()
+                nuevo.Cod = lector.GetInt32(0)
+                nuevo.Nombre = lector.GetString(1)
+                nuevo.Descripcion = lector.GetString(2)
+                especialidades.Add(nuevo)
+            End While
+
+            lector.Close()
+            conexion.Desconectar()
+            conexion.Dispose()
+        End If
+
+        Return especialidades
+    End Function
+
+    ''' <summary>
     ''' Destructor Dispose
     ''' </summary>
     ''' <author>Raquel Lloréns Gambín</author>
@@ -172,5 +201,3 @@ Public Class Especialidad
     End Sub
 
 End Class
-
-

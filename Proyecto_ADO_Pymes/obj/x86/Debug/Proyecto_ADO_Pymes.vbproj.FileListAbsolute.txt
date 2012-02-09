@@ -203,3 +203,4 @@ E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debu
 E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoEmple.resources
 E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoServicio.resources
 E:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoCliente.resources
+F:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarEmpleado.resources

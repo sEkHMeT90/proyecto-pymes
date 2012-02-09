@@ -8,15 +8,14 @@ Imports System.Data.OleDb
 ''' Clase Cita.
 ''' </summary>
 ''' <author>Raquel Lloréns Gambín, Andrés Marotta</author>
-
 Public Class Cita
     Private _Codigo As Integer
     Private _Fecha As Date
     Private _Hora As Integer
     Private _Minutos As Integer
     Private _Servicios As List(Of Servicio)
-    Private _Trabajador As Integer
-    Private _Cliente As Integer
+    Private _Trabajador As Trabajador
+    Private _Cliente As Cliente
 
     ''' <summary>
     ''' Constructor por defecto
@@ -28,15 +27,15 @@ Public Class Cita
         Me._Hora = 0
         Me._Minutos = 0
         Me._Servicios = New List(Of Servicio)
-        Me._Trabajador = 0
-        Me._Cliente = 0
+        Me._Trabajador = New Trabajador
+        Me._Cliente = New Cliente
     End Sub
 
     ''' <summary>
     ''' Constructor con todos los parámetros
     ''' </summary>
     ''' <author>Raquel Lloréns Gambín, Andrés Marotta</author>
-    Public Sub New(ByVal c As Integer, ByVal f As Date, ByVal h As Integer, ByVal m As Integer, ByVal s As List(Of Servicio), ByVal t As Integer, ByVal cl As Integer)
+    Public Sub New(ByVal c As Integer, ByVal f As Date, ByVal h As Integer, ByVal m As Integer, ByVal s As List(Of Servicio), ByVal t As Trabajador, ByVal cl As Cliente)
         Me._Codigo = c
         Me._Fecha = f
         Me._Hora = h
@@ -95,20 +94,20 @@ Public Class Cita
         End Set
     End Property
 
-    Public Property Trabajador() As Integer
+    Public Property Trabajador() As Trabajador
         Get
             Return Me._Trabajador
         End Get
-        Set(ByVal value As Integer)
+        Set(ByVal value As Trabajador)
             Me._Trabajador = value
         End Set
     End Property
 
-    Public Property Cliente() As Integer
+    Public Property Cliente() As Cliente
         Get
             Return Me._Cliente
         End Get
-        Set(ByVal value As Integer)
+        Set(ByVal value As Cliente)
             Me._Cliente = value
         End Set
     End Property
@@ -129,8 +128,8 @@ Public Class Cita
             While lector.Read
                 Dim nueva As New Cita()
                 nueva._Codigo = lector.GetInt32(0)
-                nueva._Cliente = lector.GetInt32(1)
-                nueva._Trabajador = lector.GetInt32(2)
+                nueva._Cliente = Cliente.Obtener(lector.GetInt32(1), conexion)
+                nueva._Trabajador = Trabajador.Obtener(lector.GetInt32(2), conexion)
                 nueva._Fecha = lector.GetDateTime(3)
                 nueva._Hora = lector.GetInt32(4)
                 nueva._Minutos = lector.GetInt32(5)
@@ -165,8 +164,8 @@ Public Class Cita
                 insercion = "INSERT INTO Citas(servicios, cliente, trabajador, fecha, hora, minutos) " & _
                             "VALUES(" & _
                             servicio.Codigo & ", " & _
-                            Me._Cliente & ", " & _
-                            Me._Trabajador & ", " & _
+                            Me._Cliente.Codigo & ", " & _
+                            Me._Trabajador.Codigo & ", " & _
                             "#" & Me._Fecha.Day & "/" & Me._Fecha.Month & "/" & Me._Fecha.Year & "#, " & _
                             Me._Hora & ", " & _
                             Me._Minutos & _
@@ -184,6 +183,30 @@ Public Class Cita
     End Function
 
     ''' <summary>
+    ''' Obtiene la hora de la última cita
+    ''' </summary>
+    ''' <returns>Un entero con la hora encontrada</returns>
+    ''' <author>Andrés Marotta</author>
+    Public Shared Function CitaMasTarde() As Integer
+        Dim hora As Integer
+        Dim conexion As New BBDD
+        Dim lector As OleDbDataReader
+
+        If conexion.Conectar Then
+            lector = conexion.Consultar("SELECT MAX(hora) FROM Citas;")
+            lector.Read()
+
+            hora = CInt(lector(0))
+
+            lector.Close()
+            conexion.Desconectar()
+            conexion.Dispose()
+        End If
+
+        Return hora
+    End Function
+
+    ''' <summary>
     ''' Destructor Dispose
     ''' </summary>
     ''' <author>Raquel Lloréns Gambín, Andrés Marotta</author>
@@ -193,8 +216,8 @@ Public Class Cita
         Me._Hora = -1
         Me._Minutos = -1
         Me._Servicios.Clear()
-        Me._Trabajador = -1
-        Me._Cliente = -1
+        Me._Trabajador.Dispose()
+        Me._Cliente.Dispose()
     End Sub
 
     ''' <summary>
@@ -207,8 +230,8 @@ Public Class Cita
         Me._Hora = -1
         Me._Minutos = -1
         Me._Servicios.Clear()
-        Me._Trabajador = -1
-        Me._Cliente = -1
+        Me._Trabajador.Dispose()
+        Me._Cliente.Dispose()
     End Sub
 
 End Class

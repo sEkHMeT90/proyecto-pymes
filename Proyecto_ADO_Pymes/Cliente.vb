@@ -73,6 +73,45 @@ Public Class Cliente : Inherits Usuario
     End Function
 
     ''' <summary>
+    ''' Devuleve los datos de un cliente dado un código
+    ''' </summary>
+    ''' <param name="codigo">Código del cliente a buscar</param>
+    ''' <returns>El cliente encontrado</returns>
+    ''' <author>Andrés Marotta</author>
+    Public Shared Function Obtener(ByVal codigo As Integer, ByVal conexion As BBDD) As Cliente
+        Dim cliente As New Cliente
+        Dim lector As OleDbDataReader
+
+        Try
+
+            lector = conexion.Consultar("SELECT * FROM Clientes WHERE codigo = " & codigo & ";")
+
+            lector.Read()
+
+            cliente._Cod = CInt(lector(0))
+            cliente._DNI = CStr(lector(1))
+            cliente._Nombre = CStr(lector(2))
+            cliente._Apellido1 = CStr(lector(3))
+            cliente._Apellido2 = CStr(lector(4))
+            cliente._Email = CStr(lector(5))
+            cliente._Particular = CStr(lector(6))
+            cliente._Movil = CStr(lector(7))
+            cliente._Direccion.Calle = CStr(lector(8))
+            cliente._Direccion.Numero = CInt(lector(9))
+            cliente._Direccion.Piso = CStr(lector(10))
+            cliente._Direccion.Municipio = Municipio.MunicipioPorCodigo(CInt(lector(11)))
+
+            lector.Close()
+
+        Catch ex As Exception
+            cliente = Nothing
+
+        End Try
+
+        Return cliente
+    End Function
+
+    ''' <summary>
     ''' Inserta el cliente en la base de datos
     ''' </summary>
     ''' <author>Andrés Marotta, Pedro Zalacain</author>
