@@ -99,9 +99,9 @@ Public Class Servicio
 
         columnas = conexion.Modificar("INSERT INTO Servicios (nombre, descripcion,duracion,precio)" & _
                                         " VALUES(" & _
-                                        "'" & Me._Nombre & "'," & _
-                                        "'" & Me._Descripcion & "'," & _
-                                        Me._Duracion & "," & _
+                                        "'" & Me._Nombre & "', " & _
+                                        "'" & Me._Descripcion & "', " & _
+                                        Me._Duracion & ", " & _
                                         Me._Precio & ");")
 
         If columnas > 0 Then
@@ -189,8 +189,8 @@ Public Class Servicio
         Dim lector As OleDbDataReader
         Dim servicios As New List(Of Servicio)
 
-        lector = conexion.Consultar("SELECT * FROM Servicios, Citas " & _
-                                    "WHERE Citas.codigo = " & cita & " AND Citas.servicios = Servicios.codigo;")
+        lector = conexion.Consultar("SELECT Servicios.* FROM Servicios, PrestarServicio " & _
+                                    "WHERE cita = " & cita & " AND servicio = codigo;")
 
         While lector.Read
             Dim nuevo As New Servicio()
