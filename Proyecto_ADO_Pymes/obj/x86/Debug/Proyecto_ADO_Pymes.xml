@@ -237,6 +237,16 @@ Proyecto_ADO_Pymes
  Inserta el servicio en la base de datos
  </summary>
 	<author>Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.Servicio.Eliminar">
+	<summary>
+ Eliminar un servicio existente
+ </summary>
+	<author>Pedro Zalacain</author>
+</member><member name="M:Proyecto_ADO_Pymes.Servicio.Modificar">
+	<summary>
+ Modificar un servicio
+ </summary>
+	<author>Pedro Zalacain</author>
 </member><member name="M:Proyecto_ADO_Pymes.Servicio.Cargar">
 	<summary>
  Carga todos los servicios almacenados en la base de datos
@@ -544,6 +554,11 @@ Proyecto_ADO_Pymes
  Clase LineaFactura: Datos de las diferentes lineas de factura.
  </summary>
 	<author>Raquel Lloréns Gambín</author>
+</member><member name="T:Proyecto_ADO_Pymes.ModificarServicios">
+	<summary>
+ Formulario ModificarServicios
+ </summary>
+	<author>María Navarro, Pedro Zalacain</author>
 </member><member name="M:Proyecto_ADO_Pymes.Principal.timer_tick(System.Object,System.EventArgs)">
 	<summary>
  Reloj

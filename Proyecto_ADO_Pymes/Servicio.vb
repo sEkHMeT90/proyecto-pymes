@@ -112,6 +112,44 @@ Public Class Servicio
     End Function
 
     ''' <summary>
+    ''' Eliminar un servicio existente
+    ''' </summary>
+    ''' <author>Pedro Zalacain</author>
+    Public Function Eliminar() As Boolean
+        Dim ok As Boolean = False
+        Dim columnas As Integer
+        Dim conexion As New BBDD
+
+        columnas = conexion.Modificar("DELETE FROM Servicios WHERE codigo = " & Me._Codigo & ";")
+        If columnas > 0 Then
+            ok = True
+        End If
+
+        Return ok
+    End Function
+
+    ''' <summary>
+    ''' Modificar un servicio
+    ''' </summary>
+    ''' <author>Pedro Zalacain</author>
+    Public Function Modificar() As Boolean
+        Dim ok As Boolean = False
+        Dim columnas As Integer
+        Dim conexion As New BBDD
+
+        columnas = conexion.Modificar("UPDATE Servicios SET nombre = " & _
+                                        "'" & Me._Nombre & "', descripcion = " & _
+                                        "'" & Me._Descripcion & "', duracion = " & _
+                                        Me._Duracion & "," & "precio = " & Me._Precio & _
+                                        " WHERE codigo = " & Me._Codigo & ";")
+        If columnas > 0 Then
+            ok = True
+        End If
+
+        Return ok
+    End Function
+
+    ''' <summary>
     ''' Carga todos los servicios almacenados en la base de datos
     ''' </summary>
     ''' <returns>Una lista de servicios</returns>
