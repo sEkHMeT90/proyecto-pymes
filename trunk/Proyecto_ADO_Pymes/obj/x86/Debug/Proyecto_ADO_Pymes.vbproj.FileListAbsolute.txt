@@ -191,3 +191,6 @@ F:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debu
 F:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoCliente.resources
 F:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
 F:\DEG\Segundo Trimestre\Ado .Net\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\felix\Escritorio\Proyecto Citas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarCita.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Citas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarCliente.resources
+C:\Documents and Settings\felix\Escritorio\Proyecto Citas\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarEmpleado.resources

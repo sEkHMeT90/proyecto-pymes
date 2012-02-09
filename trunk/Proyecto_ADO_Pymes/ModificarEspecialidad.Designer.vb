@@ -29,7 +29,16 @@ Partial Class ModificarEspecialidad
         Me.TBNombreMEs = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.LBoxEspecialidadesM = New System.Windows.Forms.ListBox()
+        Me.PBBorrarMC = New System.Windows.Forms.PictureBox()
+        Me.PBModificarMC = New System.Windows.Forms.PictureBox()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.TSLblEstado = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.PBCancelarMC = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
+        CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -41,7 +50,7 @@ Partial Class ModificarEspecialidad
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(308, 71)
+        Me.GroupBox1.Location = New System.Drawing.Point(316, 29)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(363, 218)
         Me.GroupBox1.TabIndex = 94
@@ -94,10 +103,55 @@ Partial Class ModificarEspecialidad
         'LBoxEspecialidadesM
         '
         Me.LBoxEspecialidadesM.FormattingEnabled = True
-        Me.LBoxEspecialidadesM.Location = New System.Drawing.Point(76, 61)
+        Me.LBoxEspecialidadesM.Location = New System.Drawing.Point(65, 29)
         Me.LBoxEspecialidadesM.Name = "LBoxEspecialidadesM"
-        Me.LBoxEspecialidadesM.Size = New System.Drawing.Size(192, 238)
+        Me.LBoxEspecialidadesM.Size = New System.Drawing.Size(192, 264)
         Me.LBoxEspecialidadesM.TabIndex = 95
+        '
+        'PBBorrarMC
+        '
+        Me.PBBorrarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBBorrarMC.BackgroundImage = CType(resources.GetObject("PBBorrarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBBorrarMC.Location = New System.Drawing.Point(475, 262)
+        Me.PBBorrarMC.Name = "PBBorrarMC"
+        Me.PBBorrarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBBorrarMC.TabIndex = 97
+        Me.PBBorrarMC.TabStop = False
+        '
+        'PBModificarMC
+        '
+        Me.PBModificarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBModificarMC.BackgroundImage = CType(resources.GetObject("PBModificarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBModificarMC.Location = New System.Drawing.Point(399, 262)
+        Me.PBModificarMC.Name = "PBModificarMC"
+        Me.PBModificarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBModificarMC.TabIndex = 96
+        Me.PBModificarMC.TabStop = False
+        '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLblEstado})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 350)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(744, 22)
+        Me.StatusStrip1.TabIndex = 98
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'TSLblEstado
+        '
+        Me.TSLblEstado.Name = "TSLblEstado"
+        Me.TSLblEstado.Size = New System.Drawing.Size(111, 17)
+        Me.TSLblEstado.Text = "ToolStripStatusLabel1"
+        '
+        'PBCancelarMC
+        '
+        Me.PBCancelarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBCancelarMC.BackgroundImage = CType(resources.GetObject("PBCancelarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBCancelarMC.Location = New System.Drawing.Point(551, 262)
+        Me.PBCancelarMC.Name = "PBCancelarMC"
+        Me.PBCancelarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBCancelarMC.TabIndex = 99
+        Me.PBCancelarMC.TabStop = False
         '
         'ModificarEspecialidad
         '
@@ -106,6 +160,10 @@ Partial Class ModificarEspecialidad
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(744, 372)
+        Me.Controls.Add(Me.PBCancelarMC)
+        Me.Controls.Add(Me.StatusStrip1)
+        Me.Controls.Add(Me.PBBorrarMC)
+        Me.Controls.Add(Me.PBModificarMC)
         Me.Controls.Add(Me.LBoxEspecialidadesM)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -114,7 +172,13 @@ Partial Class ModificarEspecialidad
         Me.Text = "Modificar Especialidad"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
+        CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
@@ -123,4 +187,9 @@ Partial Class ModificarEspecialidad
     Friend WithEvents TBNombreMEs As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents LBoxEspecialidadesM As System.Windows.Forms.ListBox
+    Friend WithEvents PBBorrarMC As System.Windows.Forms.PictureBox
+    Friend WithEvents PBModificarMC As System.Windows.Forms.PictureBox
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents TSLblEstado As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents PBCancelarMC As System.Windows.Forms.PictureBox
 End Class

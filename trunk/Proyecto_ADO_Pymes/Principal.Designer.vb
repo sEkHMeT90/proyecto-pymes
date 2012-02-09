@@ -159,7 +159,7 @@ Partial Class Principal
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.GestiónUsuariosToolStripMenuItem, Me.ConsultaCitasToolStripMenuItem, Me.FacturaciónToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(790, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(794, 25)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "lll"
         '
@@ -303,7 +303,7 @@ Partial Class Principal
         Me.NuevaToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("NuevaToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
         Me.NuevaToolStripMenuItem1.ForeColor = System.Drawing.Color.White
         Me.NuevaToolStripMenuItem1.Name = "NuevaToolStripMenuItem1"
-        Me.NuevaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.NuevaToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
         Me.NuevaToolStripMenuItem1.Text = "Nueva"
         '
         'ModificarToolStripMenuItem4
@@ -311,7 +311,7 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem4.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem4.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem4.ForeColor = System.Drawing.Color.White
         Me.ModificarToolStripMenuItem4.Name = "ModificarToolStripMenuItem4"
-        Me.ModificarToolStripMenuItem4.Size = New System.Drawing.Size(152, 22)
+        Me.ModificarToolStripMenuItem4.Size = New System.Drawing.Size(143, 22)
         Me.ModificarToolStripMenuItem4.Text = "Modificar"
         '
         'FacturaciónToolStripMenuItem
@@ -845,7 +845,7 @@ Partial Class Principal
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(790, 578)
+        Me.ClientSize = New System.Drawing.Size(794, 568)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel4)
