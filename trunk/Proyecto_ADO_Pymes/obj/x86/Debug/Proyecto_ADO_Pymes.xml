@@ -90,7 +90,7 @@ Proyecto_ADO_Pymes
  </summary>
 	<returns>Una lista con los trabajadores</returns>
 	<author>Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.Trabajador.InsertarTrabajador">
+</member><member name="M:Proyecto_ADO_Pymes.Trabajador.Insertar">
 	<summary>
  Inserta el cliente en la base de datos
  </summary>
@@ -466,17 +466,22 @@ Proyecto_ADO_Pymes
  </summary>
 	<returns>Una lista de citas</returns>
 	<author>Andrés Marotta</author>
+</member><member name="M:Proyecto_ADO_Pymes.Cita.ObtenerCodigo(System.Int32,System.Int32,System.DateTime,System.Int32,System.Int32)">
+	<summary>
+ Devuelve el código de una cita dados sus parámetros
+ </summary>
+	<param name="c">Cliente</param>
+	<param name="t">Trabajador</param>
+	<param name="f">Fecha</param>
+	<param name="h">Hora</param>
+	<param name="m">Minutos</param>
+	<returns>El código de la cita encontrada</returns>
+	<author>Andrés Marotta</author>
 </member><member name="M:Proyecto_ADO_Pymes.Cita.Insertar">
 	<summary>
  Inserta una cita en la base de datos
  </summary>
 	<returns>True o False, dependiendo de si todo fue bien o no</returns>
-	<author>Andrés Marotta</author>
-</member><member name="M:Proyecto_ADO_Pymes.Cita.CitaMasTarde">
-	<summary>
- Obtiene la hora de la última cita
- </summary>
-	<returns>Un entero con la hora encontrada</returns>
 	<author>Andrés Marotta</author>
 </member><member name="M:Proyecto_ADO_Pymes.Cita.Dispose">
 	<summary>
@@ -498,9 +503,19 @@ Proyecto_ADO_Pymes
  Rellena el ComboBox de Clientes
  </summary>
 	<author>Andrés Marotta</author>
+</member><member name="M:Proyecto_ADO_Pymes.NuevaCita.RellenarEmpleados">
+	<summary>
+ Rellena el ComboBox de Empleados
+ </summary>
+	<author>Andrés Marotta</author>
 </member><member name="M:Proyecto_ADO_Pymes.NuevaCita.RellenarServicios">
 	<summary>
  Rellena el ComboBox de Servicios
+ </summary>
+	<author>Andrés Marotta</author>
+</member><member name="M:Proyecto_ADO_Pymes.NuevaCita.PBMenosC_Click(System.Object,System.EventArgs)">
+	<summary>
+ Borra el elemento seleccionado del ListBox de servicios
  </summary>
 	<author>Andrés Marotta</author>
 </member><member name="M:Proyecto_ADO_Pymes.Direccion.#ctor">
