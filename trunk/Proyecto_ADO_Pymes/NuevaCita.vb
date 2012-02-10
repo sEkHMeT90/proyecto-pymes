@@ -49,16 +49,21 @@
 
     End Sub
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Close()
-        Principal.Show()
-    End Sub
-
     Private Sub CBoxServicios_SelectedValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CBoxServiciosC.SelectedValueChanged
         ListBServiciosC.Items.Add(CBoxServiciosC.SelectedItem.ToString)
     End Sub
 
-    Private Sub PBAceptarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    ''' <summary>
+    ''' Borra el elemento seleccionado del ListBox de servicios
+    ''' </summary>
+    ''' <author>Andrés Marotta</author>
+    Private Sub PBMenosC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBMenosC.Click
+        If ListBServiciosC.SelectedIndex >= 0 Then
+            ListBServiciosC.Items.Remove(ListBServiciosC.SelectedItem)
+        End If
+    End Sub
+
+    Private Sub PBAceptarC_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarC.Click
         Dim nueva As New Cita()
 
         nueva.Cliente.Codigo = Me._Clientes(CBoxClienteC.SelectedIndex).Codigo
@@ -80,13 +85,12 @@
         End If
     End Sub
 
-    ''' <summary>
-    ''' Borra el elemento seleccionado del ListBox de servicios
-    ''' </summary>
-    ''' <author>Andrés Marotta</author>
-    Private Sub PBMenosC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBMenosC.Click
-        If ListBServiciosC.SelectedIndex >= 0 Then
-            ListBServiciosC.Items.Remove(ListBServiciosC.SelectedItem)
-        End If
+    Private Sub PBBorrarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrarC.Click
+
+    End Sub
+
+    Private Sub PBCancelarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBCancelarC.Click
+        Me.Close()
+        Principal.Show()
     End Sub
 End Class

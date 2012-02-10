@@ -31,16 +31,16 @@ Partial Class Consulta
         Me.Viernes = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Sabado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Domingo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LblAnio = New System.Windows.Forms.Label()
-        Me.LblMes = New System.Windows.Forms.Label()
         Me.PBMesCon = New System.Windows.Forms.PictureBox()
         Me.PBAnioCon = New System.Windows.Forms.PictureBox()
-        Me.LblSemana = New System.Windows.Forms.Label()
         Me.PBSemanaCon = New System.Windows.Forms.PictureBox()
+        Me.BarraEstado = New System.Windows.Forms.StatusStrip()
+        Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBMesCon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBAnioCon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBSemanaCon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BarraEstado.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -96,30 +96,6 @@ Partial Class Consulta
         Me.Domingo.HeaderText = "Domingo"
         Me.Domingo.Name = "Domingo"
         '
-        'LblAnio
-        '
-        Me.LblAnio.AutoSize = True
-        Me.LblAnio.BackColor = System.Drawing.Color.Transparent
-        Me.LblAnio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblAnio.ForeColor = System.Drawing.Color.White
-        Me.LblAnio.Location = New System.Drawing.Point(566, 52)
-        Me.LblAnio.Name = "LblAnio"
-        Me.LblAnio.Size = New System.Drawing.Size(35, 16)
-        Me.LblAnio.TabIndex = 63
-        Me.LblAnio.Text = "Año"
-        '
-        'LblMes
-        '
-        Me.LblMes.AutoSize = True
-        Me.LblMes.BackColor = System.Drawing.Color.Transparent
-        Me.LblMes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMes.ForeColor = System.Drawing.Color.White
-        Me.LblMes.Location = New System.Drawing.Point(373, 52)
-        Me.LblMes.Name = "LblMes"
-        Me.LblMes.Size = New System.Drawing.Size(37, 16)
-        Me.LblMes.TabIndex = 62
-        Me.LblMes.Text = "Mes"
-        '
         'PBMesCon
         '
         Me.PBMesCon.BackColor = System.Drawing.Color.Transparent
@@ -140,18 +116,6 @@ Partial Class Consulta
         Me.PBAnioCon.TabIndex = 60
         Me.PBAnioCon.TabStop = False
         '
-        'LblSemana
-        '
-        Me.LblSemana.AutoSize = True
-        Me.LblSemana.BackColor = System.Drawing.Color.Transparent
-        Me.LblSemana.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblSemana.ForeColor = System.Drawing.Color.White
-        Me.LblSemana.Location = New System.Drawing.Point(176, 52)
-        Me.LblSemana.Name = "LblSemana"
-        Me.LblSemana.Size = New System.Drawing.Size(65, 16)
-        Me.LblSemana.TabIndex = 59
-        Me.LblSemana.Text = "Semana"
-        '
         'PBSemanaCon
         '
         Me.PBSemanaCon.BackColor = System.Drawing.Color.Transparent
@@ -162,6 +126,24 @@ Partial Class Consulta
         Me.PBSemanaCon.TabIndex = 58
         Me.PBSemanaCon.TabStop = False
         '
+        'BarraEstado
+        '
+        Me.BarraEstado.BackColor = System.Drawing.Color.Transparent
+        Me.BarraEstado.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLabEstado})
+        Me.BarraEstado.Location = New System.Drawing.Point(0, 544)
+        Me.BarraEstado.Name = "BarraEstado"
+        Me.BarraEstado.Size = New System.Drawing.Size(792, 22)
+        Me.BarraEstado.TabIndex = 103
+        Me.BarraEstado.Text = "StatusStrip1"
+        '
+        'TSLabEstado
+        '
+        Me.TSLabEstado.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TSLabEstado.ForeColor = System.Drawing.Color.White
+        Me.TSLabEstado.Name = "TSLabEstado"
+        Me.TSLabEstado.Size = New System.Drawing.Size(143, 17)
+        Me.TSLabEstado.Text = "ToolStripStatusLabel1"
+        '
         'Consulta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -169,11 +151,9 @@ Partial Class Consulta
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(792, 566)
-        Me.Controls.Add(Me.LblAnio)
-        Me.Controls.Add(Me.LblMes)
+        Me.Controls.Add(Me.BarraEstado)
         Me.Controls.Add(Me.PBMesCon)
         Me.Controls.Add(Me.PBAnioCon)
-        Me.Controls.Add(Me.LblSemana)
         Me.Controls.Add(Me.PBSemanaCon)
         Me.Controls.Add(Me.DataGridView1)
         Me.MaximizeBox = False
@@ -183,6 +163,8 @@ Partial Class Consulta
         CType(Me.PBMesCon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBAnioCon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBSemanaCon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BarraEstado.ResumeLayout(False)
+        Me.BarraEstado.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -195,10 +177,9 @@ Partial Class Consulta
     Friend WithEvents Viernes As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Sabado As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Domingo As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents LblAnio As System.Windows.Forms.Label
-    Friend WithEvents LblMes As System.Windows.Forms.Label
     Friend WithEvents PBMesCon As System.Windows.Forms.PictureBox
     Friend WithEvents PBAnioCon As System.Windows.Forms.PictureBox
-    Friend WithEvents LblSemana As System.Windows.Forms.Label
     Friend WithEvents PBSemanaCon As System.Windows.Forms.PictureBox
+    Friend WithEvents BarraEstado As System.Windows.Forms.StatusStrip
+    Friend WithEvents TSLabEstado As System.Windows.Forms.ToolStripStatusLabel
 End Class

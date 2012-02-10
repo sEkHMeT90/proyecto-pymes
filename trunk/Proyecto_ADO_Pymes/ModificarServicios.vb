@@ -18,8 +18,21 @@ Public Class ModificarServicios
         Next
     End Sub
 
-    Private Sub PBModificarMC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub LBoxServiciosM_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LBoxServiciosM.SelectedIndexChanged
+        If LBoxServiciosM.Items.Count > 0 Then
+            TBNombreSM.Text = ListaServicios.Item(LBoxServiciosM.SelectedIndex).Nombre
+            TBDescripcionSM.Text = ListaServicios.Item(LBoxServiciosM.SelectedIndex).Descripcion
+            TBDuracionSM.Text = CStr(ListaServicios.Item(LBoxServiciosM.SelectedIndex).Duracion)
+            TBPrecioSM.Text = CStr(ListaServicios.Item(LBoxServiciosM.SelectedIndex).Precio)
+        End If
+    End Sub
 
+    Private Sub ModificarServicios_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        TSLabEstado.Text = ""
+        CargarListBox()
+    End Sub
+
+    Private Sub PBModificarMC_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBModificarMC.Click
         ListaServicios.Item(LBoxServiciosM.SelectedIndex).Nombre = TBNombreSM.Text
         ListaServicios.Item(LBoxServiciosM.SelectedIndex).Descripcion = TBDescripcionSM.Text
         ListaServicios.Item(LBoxServiciosM.SelectedIndex).Duracion = CInt(TBDuracionSM.Text)
@@ -33,7 +46,7 @@ Public Class ModificarServicios
         End If
     End Sub
 
-    Private Sub PBBorrarMC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub PBBorrarMC_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrarMC.Click
         If ListaServicios.Item(LBoxServiciosM.SelectedIndex).Eliminar() = True Then
             TSLabEstado.Text = "Servicio eliminado satisfactoriamente"
             CargarListBox()
@@ -46,21 +59,7 @@ Public Class ModificarServicios
         End If
     End Sub
 
-    Private Sub PBCancelarMC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub PBCancelarMC_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBCancelarMC.Click
         Me.Close()
-    End Sub
-
-    Private Sub LBoxServiciosM_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LBoxServiciosM.SelectedIndexChanged
-        If LBoxServiciosM.Items.Count > 0 Then
-            TBNombreSM.Text = ListaServicios.Item(LBoxServiciosM.SelectedIndex).Nombre
-            TBDescripcionSM.Text = ListaServicios.Item(LBoxServiciosM.SelectedIndex).Descripcion
-            TBDuracionSM.Text = CStr(ListaServicios.Item(LBoxServiciosM.SelectedIndex).Duracion)
-            TBPrecioSM.Text = CStr(ListaServicios.Item(LBoxServiciosM.SelectedIndex).Precio)
-        End If
-    End Sub
-
-    Private Sub ModificarServicios_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        TSLabEstado.Text = ""
-        CargarListBox()
     End Sub
 End Class

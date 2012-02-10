@@ -185,6 +185,7 @@
     <Compile Include="TipoPago.vb" />
     <Compile Include="Trabajador.vb" />
     <Compile Include="Usuario.vb" />
+    <Compile Include="Validaciones.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Consulta.resx">

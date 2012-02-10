@@ -39,17 +39,17 @@ Partial Class ModificarCita
         Me.ListBServiciosMC = New System.Windows.Forms.ListBox()
         Me.PBMenosMC = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TBClienteMC = New System.Windows.Forms.TextBox()
+        Me.PBCancelarMC = New System.Windows.Forms.PictureBox()
         Me.PBBorrarMC = New System.Windows.Forms.PictureBox()
         Me.PBModificarMC = New System.Windows.Forms.PictureBox()
-        Me.PBCancelarMC = New System.Windows.Forms.PictureBox()
+        Me.TBClienteMC = New System.Windows.Forms.TextBox()
         Me.BarraEstado = New System.Windows.Forms.StatusStrip()
         Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
         CType(Me.PBMenosMC, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BarraEstado.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -245,12 +245,15 @@ Partial Class ModificarCita
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Cita"
         '
-        'TBClienteMC
+        'PBCancelarMC
         '
-        Me.TBClienteMC.Location = New System.Drawing.Point(127, 44)
-        Me.TBClienteMC.Name = "TBClienteMC"
-        Me.TBClienteMC.Size = New System.Drawing.Size(199, 22)
-        Me.TBClienteMC.TabIndex = 63
+        Me.PBCancelarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBCancelarMC.BackgroundImage = CType(resources.GetObject("PBCancelarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBCancelarMC.Location = New System.Drawing.Point(416, 296)
+        Me.PBCancelarMC.Name = "PBCancelarMC"
+        Me.PBCancelarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBCancelarMC.TabIndex = 102
+        Me.PBCancelarMC.TabStop = False
         '
         'PBBorrarMC
         '
@@ -272,15 +275,12 @@ Partial Class ModificarCita
         Me.PBModificarMC.TabIndex = 99
         Me.PBModificarMC.TabStop = False
         '
-        'PBCancelarMC
+        'TBClienteMC
         '
-        Me.PBCancelarMC.BackColor = System.Drawing.Color.Transparent
-        Me.PBCancelarMC.BackgroundImage = CType(resources.GetObject("PBCancelarMC.BackgroundImage"), System.Drawing.Image)
-        Me.PBCancelarMC.Location = New System.Drawing.Point(416, 296)
-        Me.PBCancelarMC.Name = "PBCancelarMC"
-        Me.PBCancelarMC.Size = New System.Drawing.Size(70, 70)
-        Me.PBCancelarMC.TabIndex = 102
-        Me.PBCancelarMC.TabStop = False
+        Me.TBClienteMC.Location = New System.Drawing.Point(127, 44)
+        Me.TBClienteMC.Name = "TBClienteMC"
+        Me.TBClienteMC.Size = New System.Drawing.Size(199, 22)
+        Me.TBClienteMC.TabIndex = 63
         '
         'BarraEstado
         '
@@ -317,9 +317,9 @@ Partial Class ModificarCita
         CType(Me.PBMenosMC, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BarraEstado.ResumeLayout(False)
         Me.BarraEstado.PerformLayout()
         Me.ResumeLayout(False)

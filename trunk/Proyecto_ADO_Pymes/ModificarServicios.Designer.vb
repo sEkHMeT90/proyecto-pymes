@@ -24,8 +24,11 @@ Partial Class ModificarServicios
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarServicios))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.PBCancelarMC = New System.Windows.Forms.PictureBox()
         Me.TBPrecioSM = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.PBBorrarMC = New System.Windows.Forms.PictureBox()
+        Me.PBModificarMC = New System.Windows.Forms.PictureBox()
         Me.TBDuracionSM = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TBDescripcionSM = New System.Windows.Forms.TextBox()
@@ -33,16 +36,13 @@ Partial Class ModificarServicios
         Me.TBNombreSM = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.LBoxServiciosM = New System.Windows.Forms.ListBox()
-        Me.PBCancelarMC = New System.Windows.Forms.PictureBox()
         Me.BarraEstado = New System.Windows.Forms.StatusStrip()
         Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.PBBorrarMC = New System.Windows.Forms.PictureBox()
-        Me.PBModificarMC = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.BarraEstado.SuspendLayout()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BarraEstado.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -68,6 +68,16 @@ Partial Class ModificarServicios
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Servicio"
         '
+        'PBCancelarMC
+        '
+        Me.PBCancelarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBCancelarMC.BackgroundImage = CType(resources.GetObject("PBCancelarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBCancelarMC.Location = New System.Drawing.Point(258, 249)
+        Me.PBCancelarMC.Name = "PBCancelarMC"
+        Me.PBCancelarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBCancelarMC.TabIndex = 103
+        Me.PBCancelarMC.TabStop = False
+        '
         'TBPrecioSM
         '
         Me.TBPrecioSM.BackColor = System.Drawing.Color.Thistle
@@ -88,6 +98,26 @@ Partial Class ModificarServicios
         Me.Label6.Size = New System.Drawing.Size(59, 20)
         Me.Label6.TabIndex = 20
         Me.Label6.Text = "Precio"
+        '
+        'PBBorrarMC
+        '
+        Me.PBBorrarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBBorrarMC.BackgroundImage = CType(resources.GetObject("PBBorrarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBBorrarMC.Location = New System.Drawing.Point(182, 249)
+        Me.PBBorrarMC.Name = "PBBorrarMC"
+        Me.PBBorrarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBBorrarMC.TabIndex = 101
+        Me.PBBorrarMC.TabStop = False
+        '
+        'PBModificarMC
+        '
+        Me.PBModificarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBModificarMC.BackgroundImage = CType(resources.GetObject("PBModificarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBModificarMC.Location = New System.Drawing.Point(106, 249)
+        Me.PBModificarMC.Name = "PBModificarMC"
+        Me.PBModificarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBModificarMC.TabIndex = 100
+        Me.PBModificarMC.TabStop = False
         '
         'TBDuracionSM
         '
@@ -161,16 +191,6 @@ Partial Class ModificarServicios
         Me.LBoxServiciosM.Size = New System.Drawing.Size(192, 251)
         Me.LBoxServiciosM.TabIndex = 96
         '
-        'PBCancelarMC
-        '
-        Me.PBCancelarMC.BackColor = System.Drawing.Color.Transparent
-        Me.PBCancelarMC.BackgroundImage = CType(resources.GetObject("PBCancelarMC.BackgroundImage"), System.Drawing.Image)
-        Me.PBCancelarMC.Location = New System.Drawing.Point(258, 249)
-        Me.PBCancelarMC.Name = "PBCancelarMC"
-        Me.PBCancelarMC.Size = New System.Drawing.Size(70, 70)
-        Me.PBCancelarMC.TabIndex = 103
-        Me.PBCancelarMC.TabStop = False
-        '
         'BarraEstado
         '
         Me.BarraEstado.BackColor = System.Drawing.Color.Transparent
@@ -189,26 +209,6 @@ Partial Class ModificarServicios
         Me.TSLabEstado.Size = New System.Drawing.Size(143, 17)
         Me.TSLabEstado.Text = "ToolStripStatusLabel1"
         '
-        'PBBorrarMC
-        '
-        Me.PBBorrarMC.BackColor = System.Drawing.Color.Transparent
-        Me.PBBorrarMC.BackgroundImage = CType(resources.GetObject("PBBorrarMC.BackgroundImage"), System.Drawing.Image)
-        Me.PBBorrarMC.Location = New System.Drawing.Point(182, 249)
-        Me.PBBorrarMC.Name = "PBBorrarMC"
-        Me.PBBorrarMC.Size = New System.Drawing.Size(70, 70)
-        Me.PBBorrarMC.TabIndex = 101
-        Me.PBBorrarMC.TabStop = False
-        '
-        'PBModificarMC
-        '
-        Me.PBModificarMC.BackColor = System.Drawing.Color.Transparent
-        Me.PBModificarMC.BackgroundImage = CType(resources.GetObject("PBModificarMC.BackgroundImage"), System.Drawing.Image)
-        Me.PBModificarMC.Location = New System.Drawing.Point(106, 249)
-        Me.PBModificarMC.Name = "PBModificarMC"
-        Me.PBModificarMC.Size = New System.Drawing.Size(70, 70)
-        Me.PBModificarMC.TabIndex = 100
-        Me.PBModificarMC.TabStop = False
-        '
         'ModificarServicios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -226,10 +226,10 @@ Partial Class ModificarServicios
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.BarraEstado.ResumeLayout(False)
-        Me.BarraEstado.PerformLayout()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BarraEstado.ResumeLayout(False)
+        Me.BarraEstado.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
