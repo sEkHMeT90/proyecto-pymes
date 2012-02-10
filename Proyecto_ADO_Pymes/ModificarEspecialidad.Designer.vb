@@ -31,13 +31,13 @@ Partial Class ModificarEspecialidad
         Me.LBoxEspecialidadesM = New System.Windows.Forms.ListBox()
         Me.PBBorrarMC = New System.Windows.Forms.PictureBox()
         Me.PBModificarMC = New System.Windows.Forms.PictureBox()
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.TSLblEstado = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.BarraEstado = New System.Windows.Forms.StatusStrip()
+        Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
         Me.PBCancelarMC = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.StatusStrip1.SuspendLayout()
+        Me.BarraEstado.SuspendLayout()
         CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -128,20 +128,23 @@ Partial Class ModificarEspecialidad
         Me.PBModificarMC.TabIndex = 96
         Me.PBModificarMC.TabStop = False
         '
-        'StatusStrip1
+        'BarraEstado
         '
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLblEstado})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 350)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(744, 22)
-        Me.StatusStrip1.TabIndex = 98
-        Me.StatusStrip1.Text = "StatusStrip1"
+        Me.BarraEstado.BackColor = System.Drawing.Color.Transparent
+        Me.BarraEstado.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLabEstado})
+        Me.BarraEstado.Location = New System.Drawing.Point(0, 350)
+        Me.BarraEstado.Name = "BarraEstado"
+        Me.BarraEstado.Size = New System.Drawing.Size(744, 22)
+        Me.BarraEstado.TabIndex = 98
+        Me.BarraEstado.Text = "StatusStrip1"
         '
-        'TSLblEstado
+        'TSLabEstado
         '
-        Me.TSLblEstado.Name = "TSLblEstado"
-        Me.TSLblEstado.Size = New System.Drawing.Size(111, 17)
-        Me.TSLblEstado.Text = "ToolStripStatusLabel1"
+        Me.TSLabEstado.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TSLabEstado.ForeColor = System.Drawing.Color.White
+        Me.TSLabEstado.Name = "TSLabEstado"
+        Me.TSLabEstado.Size = New System.Drawing.Size(143, 17)
+        Me.TSLabEstado.Text = "ToolStripStatusLabel1"
         '
         'PBCancelarMC
         '
@@ -161,7 +164,7 @@ Partial Class ModificarEspecialidad
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(744, 372)
         Me.Controls.Add(Me.PBCancelarMC)
-        Me.Controls.Add(Me.StatusStrip1)
+        Me.Controls.Add(Me.BarraEstado)
         Me.Controls.Add(Me.PBBorrarMC)
         Me.Controls.Add(Me.PBModificarMC)
         Me.Controls.Add(Me.LBoxEspecialidadesM)
@@ -174,8 +177,8 @@ Partial Class ModificarEspecialidad
         Me.GroupBox1.PerformLayout()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.StatusStrip1.ResumeLayout(False)
-        Me.StatusStrip1.PerformLayout()
+        Me.BarraEstado.ResumeLayout(False)
+        Me.BarraEstado.PerformLayout()
         CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -189,7 +192,7 @@ Partial Class ModificarEspecialidad
     Friend WithEvents LBoxEspecialidadesM As System.Windows.Forms.ListBox
     Friend WithEvents PBBorrarMC As System.Windows.Forms.PictureBox
     Friend WithEvents PBModificarMC As System.Windows.Forms.PictureBox
-    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
-    Friend WithEvents TSLblEstado As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents BarraEstado As System.Windows.Forms.StatusStrip
+    Friend WithEvents TSLabEstado As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents PBCancelarMC As System.Windows.Forms.PictureBox
 End Class

@@ -58,7 +58,7 @@
         ListBServiciosC.Items.Add(CBoxServiciosC.SelectedItem.ToString)
     End Sub
 
-    Private Sub PBAceptarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarC.Click, LblAceptarC.Click
+    Private Sub PBAceptarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim nueva As New Cita()
 
         nueva.Cliente.Codigo = Me._Clientes(CBoxClienteC.SelectedIndex).Codigo

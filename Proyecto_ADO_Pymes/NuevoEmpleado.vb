@@ -89,27 +89,27 @@ Public Class NuevoEmple
     ''' Valida los campos e inserta en la Base de Datos
     ''' </summary>
     ''' <author>Pedro Zalacain, Maria Navarro</author>
-    Private Sub PBAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarE.Click
+    Private Sub PBAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.InsertarCliente()
     End Sub
 
-    Private Sub LblAceptarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblAceptarE.Click
+    Private Sub LblAceptarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.InsertarCliente()
     End Sub
 
-    Private Sub PBBorrarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrarE.Click
+    Private Sub PBBorrarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.BorrarCampos()
     End Sub
 
-    Private Sub LblBorrarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblBorrarE.Click
+    Private Sub LblBorrarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.BorrarCampos()
     End Sub
 
-    Private Sub PBCancelarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBCancelarE.Click
+    Private Sub PBCancelarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Close()
     End Sub
 
-    Private Sub LblCancelarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblCancelarE.Click
+    Private Sub LblCancelarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Close()
     End Sub
 End Class

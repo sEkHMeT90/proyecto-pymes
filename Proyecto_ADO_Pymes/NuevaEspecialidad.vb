@@ -34,31 +34,32 @@ Public Class NuevaEspecialidad
         TBDescricionEs.Text = ""
     End Sub
     
-    Private Sub PBAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarEs.Click
+    Private Sub PBAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.InsertarEspecialidad()
     End Sub
    
-    Private Sub LblAceptarEs_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblAceptarEs.Click
+    Private Sub LblAceptarEs_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.InsertarEspecialidad()
     End Sub
 
-    Private Sub PBBorrarEs_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrarEs.Click
+    Private Sub PBBorrarEs_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.BorrarCampos()
     End Sub
 
-    Private Sub LblBorarEs_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblBorarEs.Click
+    Private Sub LblBorarEs_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.BorrarCampos()
     End Sub
 
-    Private Sub PBCancelarEs_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBCancelarEs.Click
+    Private Sub PBCancelarEs_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Close()
     End Sub
 
-    Private Sub LblCancelarEs_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblCancelarEs.Click
+    Private Sub LblCancelarEs_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Close()
     End Sub
 
     Private Sub NuevaEspecialidad_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         TSLabEstado.Text = ""
     End Sub
+
 End Class

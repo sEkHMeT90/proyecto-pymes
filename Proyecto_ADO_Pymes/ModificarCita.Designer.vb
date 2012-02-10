@@ -39,13 +39,18 @@ Partial Class ModificarCita
         Me.ListBServiciosMC = New System.Windows.Forms.ListBox()
         Me.PBMenosMC = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TBClienteMC = New System.Windows.Forms.TextBox()
         Me.PBBorrarMC = New System.Windows.Forms.PictureBox()
         Me.PBModificarMC = New System.Windows.Forms.PictureBox()
-        Me.TBClienteMC = New System.Windows.Forms.TextBox()
+        Me.PBCancelarMC = New System.Windows.Forms.PictureBox()
+        Me.BarraEstado = New System.Windows.Forms.StatusStrip()
+        Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
         CType(Me.PBMenosMC, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BarraEstado.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label6
@@ -213,6 +218,7 @@ Partial Class ModificarCita
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.PBCancelarMC)
         Me.GroupBox1.Controls.Add(Me.PBBorrarMC)
         Me.GroupBox1.Controls.Add(Me.PBModificarMC)
         Me.GroupBox1.Controls.Add(Me.TBClienteMC)
@@ -239,30 +245,60 @@ Partial Class ModificarCita
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Cita"
         '
-        'PBBorrarMC
-        '
-        Me.PBBorrarMC.BackColor = System.Drawing.Color.Transparent
-        Me.PBBorrarMC.Location = New System.Drawing.Point(531, 297)
-        Me.PBBorrarMC.Name = "PBBorrarMC"
-        Me.PBBorrarMC.Size = New System.Drawing.Size(70, 70)
-        Me.PBBorrarMC.TabIndex = 65
-        Me.PBBorrarMC.TabStop = False
-        '
-        'PBModificarMC
-        '
-        Me.PBModificarMC.BackColor = System.Drawing.Color.Transparent
-        Me.PBModificarMC.Location = New System.Drawing.Point(383, 297)
-        Me.PBModificarMC.Name = "PBModificarMC"
-        Me.PBModificarMC.Size = New System.Drawing.Size(70, 70)
-        Me.PBModificarMC.TabIndex = 64
-        Me.PBModificarMC.TabStop = False
-        '
         'TBClienteMC
         '
         Me.TBClienteMC.Location = New System.Drawing.Point(127, 44)
         Me.TBClienteMC.Name = "TBClienteMC"
         Me.TBClienteMC.Size = New System.Drawing.Size(199, 22)
         Me.TBClienteMC.TabIndex = 63
+        '
+        'PBBorrarMC
+        '
+        Me.PBBorrarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBBorrarMC.BackgroundImage = CType(resources.GetObject("PBBorrarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBBorrarMC.Location = New System.Drawing.Point(329, 296)
+        Me.PBBorrarMC.Name = "PBBorrarMC"
+        Me.PBBorrarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBBorrarMC.TabIndex = 100
+        Me.PBBorrarMC.TabStop = False
+        '
+        'PBModificarMC
+        '
+        Me.PBModificarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBModificarMC.BackgroundImage = CType(resources.GetObject("PBModificarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBModificarMC.Location = New System.Drawing.Point(244, 296)
+        Me.PBModificarMC.Name = "PBModificarMC"
+        Me.PBModificarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBModificarMC.TabIndex = 99
+        Me.PBModificarMC.TabStop = False
+        '
+        'PBCancelarMC
+        '
+        Me.PBCancelarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBCancelarMC.BackgroundImage = CType(resources.GetObject("PBCancelarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBCancelarMC.Location = New System.Drawing.Point(416, 296)
+        Me.PBCancelarMC.Name = "PBCancelarMC"
+        Me.PBCancelarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBCancelarMC.TabIndex = 102
+        Me.PBCancelarMC.TabStop = False
+        '
+        'BarraEstado
+        '
+        Me.BarraEstado.BackColor = System.Drawing.Color.Transparent
+        Me.BarraEstado.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLabEstado})
+        Me.BarraEstado.Location = New System.Drawing.Point(0, 490)
+        Me.BarraEstado.Name = "BarraEstado"
+        Me.BarraEstado.Size = New System.Drawing.Size(894, 22)
+        Me.BarraEstado.TabIndex = 102
+        Me.BarraEstado.Text = "StatusStrip1"
+        '
+        'TSLabEstado
+        '
+        Me.TSLabEstado.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TSLabEstado.ForeColor = System.Drawing.Color.White
+        Me.TSLabEstado.Name = "TSLabEstado"
+        Me.TSLabEstado.Size = New System.Drawing.Size(143, 17)
+        Me.TSLabEstado.Text = "ToolStripStatusLabel1"
         '
         'ModificarCita
         '
@@ -271,6 +307,7 @@ Partial Class ModificarCita
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(894, 512)
+        Me.Controls.Add(Me.BarraEstado)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.LBoxMCita)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -282,7 +319,11 @@ Partial Class ModificarCita
         Me.GroupBox1.PerformLayout()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BarraEstado.ResumeLayout(False)
+        Me.BarraEstado.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label6 As System.Windows.Forms.Label
@@ -304,4 +345,7 @@ Partial Class ModificarCita
     Friend WithEvents TBClienteMC As System.Windows.Forms.TextBox
     Friend WithEvents PBBorrarMC As System.Windows.Forms.PictureBox
     Friend WithEvents PBModificarMC As System.Windows.Forms.PictureBox
+    Friend WithEvents PBCancelarMC As System.Windows.Forms.PictureBox
+    Friend WithEvents BarraEstado As System.Windows.Forms.StatusStrip
+    Friend WithEvents TSLabEstado As System.Windows.Forms.ToolStripStatusLabel
 End Class
