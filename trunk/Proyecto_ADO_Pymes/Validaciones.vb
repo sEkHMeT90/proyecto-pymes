@@ -14,6 +14,8 @@ Module Validaciones
     Public Function EsTexto(ByVal texto As String) As Boolean
         Dim correcto As Boolean = False
 
+        texto = texto.Trim
+
         For Each caracter As Char In texto
             'Si el carácter no es una letra
             If (((Asc(caracter) < 65) And (Asc(caracter) > 90)) Or
@@ -139,6 +141,28 @@ Module Validaciones
         Else
             correcto = True
         End If
+
+        Return correcto
+    End Function
+
+    ''' <summary>
+    ''' Función que comprueba si una cadena de carácteres es una fecha.
+    ''' </summary>
+    ''' <param name="texto">Cadena de carácteres a comprobar</param>
+    ''' <author>Raquel Lloréns Gambín</author>
+    Public Function EsFecha(ByVal texto As String) As Boolean
+        Dim correcto As Boolean = False
+        Dim fecha As Date
+
+        texto = texto.Trim
+
+        Try
+            fecha = CDate(texto)
+
+            correcto = True
+        Catch ex As Exception
+            correcto = False
+        End Try
 
         Return correcto
     End Function
