@@ -33,14 +33,15 @@ Partial Class Facturacion
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TBPagarF = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.LblImprimirF = New System.Windows.Forms.Label()
         Me.PBImprimirF = New System.Windows.Forms.PictureBox()
-        Me.LblCobrarF = New System.Windows.Forms.Label()
         Me.PBCobrarF = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.LblImprimirF = New System.Windows.Forms.Label()
+        Me.LblCobrarF = New System.Windows.Forms.Label()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
         CType(Me.PBImprimirF, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBCobrarF, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ListBFacturaF
@@ -153,6 +154,26 @@ Partial Class Facturacion
         Me.Label3.TabIndex = 56
         Me.Label3.Text = "Total"
         '
+        'PBImprimirF
+        '
+        Me.PBImprimirF.BackColor = System.Drawing.Color.Transparent
+        Me.PBImprimirF.BackgroundImage = CType(resources.GetObject("PBImprimirF.BackgroundImage"), System.Drawing.Image)
+        Me.PBImprimirF.Location = New System.Drawing.Point(67, 464)
+        Me.PBImprimirF.Name = "PBImprimirF"
+        Me.PBImprimirF.Size = New System.Drawing.Size(86, 52)
+        Me.PBImprimirF.TabIndex = 57
+        Me.PBImprimirF.TabStop = False
+        '
+        'PBCobrarF
+        '
+        Me.PBCobrarF.BackColor = System.Drawing.Color.Transparent
+        Me.PBCobrarF.BackgroundImage = CType(resources.GetObject("PBCobrarF.BackgroundImage"), System.Drawing.Image)
+        Me.PBCobrarF.Location = New System.Drawing.Point(203, 464)
+        Me.PBCobrarF.Name = "PBCobrarF"
+        Me.PBCobrarF.Size = New System.Drawing.Size(86, 52)
+        Me.PBCobrarF.TabIndex = 59
+        Me.PBCobrarF.TabStop = False
+        '
         'LblImprimirF
         '
         Me.LblImprimirF.AutoSize = True
@@ -164,16 +185,6 @@ Partial Class Facturacion
         Me.LblImprimirF.Size = New System.Drawing.Size(63, 16)
         Me.LblImprimirF.TabIndex = 58
         Me.LblImprimirF.Text = "Imprimir"
-        '
-        'PBImprimirF
-        '
-        Me.PBImprimirF.BackColor = System.Drawing.Color.Transparent
-        Me.PBImprimirF.BackgroundImage = CType(resources.GetObject("PBImprimirF.BackgroundImage"), System.Drawing.Image)
-        Me.PBImprimirF.Location = New System.Drawing.Point(67, 464)
-        Me.PBImprimirF.Name = "PBImprimirF"
-        Me.PBImprimirF.Size = New System.Drawing.Size(86, 52)
-        Me.PBImprimirF.TabIndex = 57
-        Me.PBImprimirF.TabStop = False
         '
         'LblCobrarF
         '
@@ -187,25 +198,23 @@ Partial Class Facturacion
         Me.LblCobrarF.TabIndex = 5
         Me.LblCobrarF.Text = "Cobrar"
         '
-        'PBCobrarF
+        'StatusStrip1
         '
-        Me.PBCobrarF.BackColor = System.Drawing.Color.Transparent
-        Me.PBCobrarF.BackgroundImage = CType(resources.GetObject("PBCobrarF.BackgroundImage"), System.Drawing.Image)
-        Me.PBCobrarF.Location = New System.Drawing.Point(203, 464)
-        Me.PBCobrarF.Name = "PBCobrarF"
-        Me.PBCobrarF.Size = New System.Drawing.Size(86, 52)
-        Me.PBCobrarF.TabIndex = 59
-        Me.PBCobrarF.TabStop = False
+        Me.StatusStrip1.BackColor = System.Drawing.Color.Transparent
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLabEstado})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 550)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(494, 22)
+        Me.StatusStrip1.TabIndex = 105
+        Me.StatusStrip1.Text = "StatusStrip1"
         '
-        'PictureBox2
+        'TSLabEstado
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(504, 67)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(226, 327)
-        Me.PictureBox2.TabIndex = 61
-        Me.PictureBox2.TabStop = False
+        Me.TSLabEstado.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TSLabEstado.ForeColor = System.Drawing.Color.White
+        Me.TSLabEstado.Name = "TSLabEstado"
+        Me.TSLabEstado.Size = New System.Drawing.Size(143, 17)
+        Me.TSLabEstado.Text = "ToolStripStatusLabel1"
         '
         'Facturacion
         '
@@ -213,8 +222,8 @@ Partial Class Facturacion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(775, 572)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.ClientSize = New System.Drawing.Size(494, 572)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.LblCobrarF)
         Me.Controls.Add(Me.PBCobrarF)
         Me.Controls.Add(Me.LblImprimirF)
@@ -235,7 +244,8 @@ Partial Class Facturacion
         Me.Text = "Facturacion"
         CType(Me.PBImprimirF, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBCobrarF, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -250,9 +260,10 @@ Partial Class Facturacion
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents TBPagarF As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents LblImprimirF As System.Windows.Forms.Label
     Friend WithEvents PBImprimirF As System.Windows.Forms.PictureBox
-    Friend WithEvents LblCobrarF As System.Windows.Forms.Label
     Friend WithEvents PBCobrarF As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents LblImprimirF As System.Windows.Forms.Label
+    Friend WithEvents LblCobrarF As System.Windows.Forms.Label
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents TSLabEstado As System.Windows.Forms.ToolStripStatusLabel
 End Class

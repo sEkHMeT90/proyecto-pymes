@@ -30,13 +30,13 @@ Partial Class NuevaEspecialidad
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PBCancelarEs = New System.Windows.Forms.PictureBox()
         Me.PBBorrarEs = New System.Windows.Forms.PictureBox()
-        Me.PBModificarEs = New System.Windows.Forms.PictureBox()
+        Me.PBAceptarEs = New System.Windows.Forms.PictureBox()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PBCancelarEs, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBBorrarEs, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PBModificarEs, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBAceptarEs, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -119,15 +119,15 @@ Partial Class NuevaEspecialidad
         Me.PBBorrarEs.TabIndex = 101
         Me.PBBorrarEs.TabStop = False
         '
-        'PBModificarEs
+        'PBAceptarEs
         '
-        Me.PBModificarEs.BackColor = System.Drawing.Color.Transparent
-        Me.PBModificarEs.BackgroundImage = CType(resources.GetObject("PBModificarEs.BackgroundImage"), System.Drawing.Image)
-        Me.PBModificarEs.Location = New System.Drawing.Point(129, 211)
-        Me.PBModificarEs.Name = "PBModificarEs"
-        Me.PBModificarEs.Size = New System.Drawing.Size(70, 70)
-        Me.PBModificarEs.TabIndex = 100
-        Me.PBModificarEs.TabStop = False
+        Me.PBAceptarEs.BackColor = System.Drawing.Color.Transparent
+        Me.PBAceptarEs.BackgroundImage = CType(resources.GetObject("PBAceptarEs.BackgroundImage"), System.Drawing.Image)
+        Me.PBAceptarEs.Location = New System.Drawing.Point(129, 211)
+        Me.PBAceptarEs.Name = "PBAceptarEs"
+        Me.PBAceptarEs.Size = New System.Drawing.Size(70, 70)
+        Me.PBAceptarEs.TabIndex = 100
+        Me.PBAceptarEs.TabStop = False
         '
         'StatusStrip1
         '
@@ -157,7 +157,7 @@ Partial Class NuevaEspecialidad
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.PBCancelarEs)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.PBModificarEs)
+        Me.Controls.Add(Me.PBAceptarEs)
         Me.Controls.Add(Me.PBBorrarEs)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
@@ -167,7 +167,7 @@ Partial Class NuevaEspecialidad
         Me.GroupBox1.PerformLayout()
         CType(Me.PBCancelarEs, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBBorrarEs, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PBModificarEs, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBAceptarEs, System.ComponentModel.ISupportInitialize).EndInit()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -181,7 +181,7 @@ Partial Class NuevaEspecialidad
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PBCancelarEs As System.Windows.Forms.PictureBox
     Friend WithEvents PBBorrarEs As System.Windows.Forms.PictureBox
-    Friend WithEvents PBModificarEs As System.Windows.Forms.PictureBox
+    Friend WithEvents PBAceptarEs As System.Windows.Forms.PictureBox
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents TSLabEstado As System.Windows.Forms.ToolStripStatusLabel
 End Class

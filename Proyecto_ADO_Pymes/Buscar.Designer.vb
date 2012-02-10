@@ -32,11 +32,15 @@ Partial Class Buscar
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.BtnBuscar = New System.Windows.Forms.Button()
+        Me.PBBuscarB = New System.Windows.Forms.PictureBox()
         Me.TBBuscar = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.BarraEstado = New System.Windows.Forms.StatusStrip()
+        Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
         CType(Me.DataGridBuscar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        CType(Me.PBBuscarB, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BarraEstado.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataGridBuscar
@@ -86,10 +90,10 @@ Partial Class Buscar
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.Black
-        Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel2.Controls.Add(Me.BtnBuscar)
+        Me.Panel2.Controls.Add(Me.PBBuscarB)
         Me.Panel2.Controls.Add(Me.TBBuscar)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Location = New System.Drawing.Point(70, 45)
@@ -97,15 +101,16 @@ Partial Class Buscar
         Me.Panel2.Size = New System.Drawing.Size(648, 113)
         Me.Panel2.TabIndex = 7
         '
-        'BtnBuscar
+        'PBBuscarB
         '
-        Me.BtnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnBuscar.Location = New System.Drawing.Point(516, 33)
-        Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(81, 47)
-        Me.BtnBuscar.TabIndex = 14
-        Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
+        Me.PBBuscarB.BackColor = System.Drawing.Color.Transparent
+        Me.PBBuscarB.BackgroundImage = CType(resources.GetObject("PBBuscarB.BackgroundImage"), System.Drawing.Image)
+        Me.PBBuscarB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PBBuscarB.Location = New System.Drawing.Point(529, 20)
+        Me.PBBuscarB.Name = "PBBuscarB"
+        Me.PBBuscarB.Size = New System.Drawing.Size(70, 70)
+        Me.PBBuscarB.TabIndex = 19
+        Me.PBBuscarB.TabStop = False
         '
         'TBBuscar
         '
@@ -113,7 +118,7 @@ Partial Class Buscar
         Me.TBBuscar.ForeColor = System.Drawing.Color.Black
         Me.TBBuscar.Location = New System.Drawing.Point(51, 47)
         Me.TBBuscar.Name = "TBBuscar"
-        Me.TBBuscar.Size = New System.Drawing.Size(425, 20)
+        Me.TBBuscar.Size = New System.Drawing.Size(435, 20)
         Me.TBBuscar.TabIndex = 13
         '
         'Label2
@@ -127,6 +132,24 @@ Partial Class Buscar
         Me.Label2.Size = New System.Drawing.Size(0, 20)
         Me.Label2.TabIndex = 10
         '
+        'BarraEstado
+        '
+        Me.BarraEstado.BackColor = System.Drawing.Color.Transparent
+        Me.BarraEstado.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLabEstado})
+        Me.BarraEstado.Location = New System.Drawing.Point(0, 540)
+        Me.BarraEstado.Name = "BarraEstado"
+        Me.BarraEstado.Size = New System.Drawing.Size(784, 22)
+        Me.BarraEstado.TabIndex = 103
+        Me.BarraEstado.Text = "StatusStrip1"
+        '
+        'TSLabEstado
+        '
+        Me.TSLabEstado.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TSLabEstado.ForeColor = System.Drawing.Color.White
+        Me.TSLabEstado.Name = "TSLabEstado"
+        Me.TSLabEstado.Size = New System.Drawing.Size(143, 17)
+        Me.TSLabEstado.Text = "ToolStripStatusLabel1"
+        '
         'Buscar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -134,6 +157,7 @@ Partial Class Buscar
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(784, 562)
+        Me.Controls.Add(Me.BarraEstado)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.DataGridBuscar)
         Me.MaximizeBox = False
@@ -142,7 +166,11 @@ Partial Class Buscar
         CType(Me.DataGridBuscar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PBBuscarB, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BarraEstado.ResumeLayout(False)
+        Me.BarraEstado.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents DataGridBuscar As System.Windows.Forms.DataGridView
@@ -154,7 +182,9 @@ Partial Class Buscar
     Friend WithEvents Column6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents BtnBuscar As System.Windows.Forms.Button
     Friend WithEvents TBBuscar As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents PBBuscarB As System.Windows.Forms.PictureBox
+    Friend WithEvents BarraEstado As System.Windows.Forms.StatusStrip
+    Friend WithEvents TSLabEstado As System.Windows.Forms.ToolStripStatusLabel
 End Class

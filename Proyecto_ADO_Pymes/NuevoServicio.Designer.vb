@@ -35,12 +35,12 @@ Partial Class NuevoServicio
         Me.BarraEstado = New System.Windows.Forms.StatusStrip()
         Me.SLblEstado = New System.Windows.Forms.ToolStripStatusLabel()
         Me.PBCancelarS = New System.Windows.Forms.PictureBox()
-        Me.PBModificarS = New System.Windows.Forms.PictureBox()
+        Me.PBAceptarS = New System.Windows.Forms.PictureBox()
         Me.PBBorrarS = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.BarraEstado.SuspendLayout()
         CType(Me.PBCancelarS, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PBModificarS, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBAceptarS, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBBorrarS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -177,15 +177,15 @@ Partial Class NuevoServicio
         Me.PBCancelarS.TabIndex = 110
         Me.PBCancelarS.TabStop = False
         '
-        'PBModificarS
+        'PBAceptarS
         '
-        Me.PBModificarS.BackColor = System.Drawing.Color.Transparent
-        Me.PBModificarS.BackgroundImage = CType(resources.GetObject("PBModificarS.BackgroundImage"), System.Drawing.Image)
-        Me.PBModificarS.Location = New System.Drawing.Point(129, 309)
-        Me.PBModificarS.Name = "PBModificarS"
-        Me.PBModificarS.Size = New System.Drawing.Size(70, 70)
-        Me.PBModificarS.TabIndex = 108
-        Me.PBModificarS.TabStop = False
+        Me.PBAceptarS.BackColor = System.Drawing.Color.Transparent
+        Me.PBAceptarS.BackgroundImage = CType(resources.GetObject("PBAceptarS.BackgroundImage"), System.Drawing.Image)
+        Me.PBAceptarS.Location = New System.Drawing.Point(129, 309)
+        Me.PBAceptarS.Name = "PBAceptarS"
+        Me.PBAceptarS.Size = New System.Drawing.Size(70, 70)
+        Me.PBAceptarS.TabIndex = 108
+        Me.PBAceptarS.TabStop = False
         '
         'PBBorrarS
         '
@@ -206,7 +206,7 @@ Partial Class NuevoServicio
         Me.ClientSize = New System.Drawing.Size(474, 422)
         Me.Controls.Add(Me.BarraEstado)
         Me.Controls.Add(Me.PBCancelarS)
-        Me.Controls.Add(Me.PBModificarS)
+        Me.Controls.Add(Me.PBAceptarS)
         Me.Controls.Add(Me.PBBorrarS)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -218,7 +218,7 @@ Partial Class NuevoServicio
         Me.BarraEstado.ResumeLayout(False)
         Me.BarraEstado.PerformLayout()
         CType(Me.PBCancelarS, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PBModificarS, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBAceptarS, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBBorrarS, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -236,6 +236,6 @@ Partial Class NuevoServicio
     Friend WithEvents BarraEstado As System.Windows.Forms.StatusStrip
     Friend WithEvents SLblEstado As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents PBCancelarS As System.Windows.Forms.PictureBox
-    Friend WithEvents PBModificarS As System.Windows.Forms.PictureBox
+    Friend WithEvents PBAceptarS As System.Windows.Forms.PictureBox
     Friend WithEvents PBBorrarS As System.Windows.Forms.PictureBox
 End Class

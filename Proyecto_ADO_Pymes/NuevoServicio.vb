@@ -35,31 +35,19 @@ Public Class NuevoServicio
         TBPrecioS.Text = ""
     End Sub
 
-    Private Sub PBAceptarS_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.InsertarServicio()
-    End Sub
-
-    Private Sub LblAceptarS_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.InsertarServicio()
-    End Sub
-
-    Private Sub PBBorrarS_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.BorrarCampos()
-    End Sub
-
-    Private Sub LblBorrarS_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.BorrarCampos()
-    End Sub
-
     Private Sub NuevoServicio_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         SLblEstado.Text = ""
     End Sub
 
-    Private Sub PBCancelarS_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub PBBorrarS_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrarS.Click
+        Me.BorrarCampos()
+    End Sub
+
+    Private Sub PBCancelarS_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBCancelarS.Click
         Me.Close()
     End Sub
 
-    Private Sub LblCancelarS_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Close()
+    Private Sub PBAceptarS_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarS.Click
+        Me.InsertarServicio()
     End Sub
 End Class
