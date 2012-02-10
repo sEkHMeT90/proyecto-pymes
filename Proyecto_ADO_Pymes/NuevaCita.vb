@@ -1,8 +1,10 @@
 ﻿Public Class NuevaCita
+    Private _Clientes As List(Of Cliente)
+    Private _Empleados As List(Of Trabajador)
 
     Private Sub NuevaCita_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         RellenarClientes()
-        ' RellenarEmpleados()
+        RellenarEmpleados()
         RellenarServicios()
     End Sub
 
@@ -11,12 +13,23 @@
     ''' </summary>
     ''' <author>Andrés Marotta</author>
     Private Sub RellenarClientes()
-        Dim clientes As List(Of Cliente)
+        Me._Clientes = Cliente.Cargar()
 
-        clientes = Cliente.Cargar()
+        For Each cliente In Me._Clientes
+            CBoxClienteC.Items.Add(cliente.DNI & " - " & cliente.Apellido1 & " " & cliente.Apellido2)
+        Next
 
-        For Each cliente In clientes
-            CBoxClienteC.Items.Add(cliente.Apellido1 & " " & cliente.Apellido2 & ", " & cliente.Nombre)
+    End Sub
+
+    ''' <summary>
+    ''' Rellena el ComboBox de Empleados
+    ''' </summary>
+    ''' <author>Andrés Marotta</author>
+    Private Sub RellenarEmpleados()
+        Me._Empleados = Trabajador.Cargar()
+
+        For Each empleado In Me._Empleados
+            CBoxEmpleadoC.Items.Add(empleado.DNI & " - " & empleado.Apellido1 & " " & empleado.Apellido2)
         Next
 
     End Sub
@@ -36,12 +49,6 @@
 
     End Sub
 
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        ' If ListBServicios.SelectedItem = 0 Then
-        'MsgBox(ListBServicios.SelectedItem)
-        'End If
-    End Sub
-
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Close()
         Principal.Show()
@@ -54,8 +61,8 @@
     Private Sub PBAceptarC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarC.Click, LblAceptarC.Click
         Dim nueva As New Cita()
 
-        nueva.Cliente.Codigo = CInt(CBoxClienteC.Text)
-        nueva.Trabajador.Codigo = CInt(CBoxEmpleadoC.Text)
+        nueva.Cliente.Codigo = Me._Clientes(CBoxClienteC.SelectedIndex).Codigo
+        nueva.Trabajador.Codigo = Me._Empleados(CBoxEmpleadoC.SelectedIndex).Codigo
         nueva.Fecha = CDate(DPCitaC.Value.Day & "/" & DPCitaC.Value.Month & "/" & DPCitaC.Value.Month)
         nueva.Hora = CInt(CBoxHoraC.Text)
         nueva.Minutos = CInt(CBoxMinC.Text)
@@ -70,6 +77,16 @@
             MsgBox("Cita insertada")
         Else
             MsgBox("No se ha insertado la cita")
+        End If
+    End Sub
+
+    ''' <summary>
+    ''' Borra el elemento seleccionado del ListBox de servicios
+    ''' </summary>
+    ''' <author>Andrés Marotta</author>
+    Private Sub PBMenosC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBMenosC.Click
+        If ListBServiciosC.SelectedIndex >= 0 Then
+            ListBServiciosC.Items.Remove(ListBServiciosC.SelectedItem)
         End If
     End Sub
 End Class

@@ -121,8 +121,8 @@
   <data name="PBMenosC.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALDAAA
-        CwwBP0AiyAAABCdJREFUWEftmN0zW2kcxx/trMg7YldC4iUJqktQbZEQYUp6USq6N90Z8bbjrjuDlOps
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCwAA
+        CwsBbQSEtwAABCdJREFUWEftmN0zW2kcxx/trMg7YldC4iUJqktQbZEQYUp6USq6N90Z8bbjrjuDlOps
         b7pmpO22uroVy9SlMe6Mf4BrFwxXjDtuMGa83DCG7/6eI4ezWdvdIbhxZj6e5znn5Pv7+M3JOZkTAdpY
         cOPTjY0Ntr29zfb29ph4KCIiQjzlzKOkDLtx8wZTKpQsJiaGqVSqk0wuwzeSwNTUFIaHh9Ef6EcgEEBg
         IICBgYET/qT5WZBk8Nz+/n4hc2xsDHNzczg8PBQc+H+P9fV1jIyM4JdXr/CiqwvPOzrQ3t6O1rY2ojWs
@@ -146,8 +146,8 @@
   <data name="PBBorrarC.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFwAAAAlCAYAAADPwo5RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCwAA
-        CwsBbQSEtwAAB5pJREFUaEPtm1tMFFcYx/cyuzt7gUUWkavcXEQUUBFYFAVBFEHUXqyKq7RPRkC5SZM2
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCgAA
+        CwoBv0NmUwAAB5pJREFUaEPtm1tMFFcYx/cyuzt7gUUWkavcXEQUUBFYFAVBFEHUXqyKq7RPRkC5SZM2
         1kZ9UDFt+tKkafrYNqYPjWkijb3X2sY0bXq/xFrT2ipJjbGhXVpA5uv/OzMDC+UmNqawu8kvZ+acM2fn
         +803Z3aGwWgY49Pa2mr3eDxRFosl0el0eiVJmm82mxNNJpMHRBiNRitKMxnIaCCDEctiFNQPj6YtGg1B
         dWN92f+gDnGoe6EVYpHUFUVRxCpiIywPor4P/IHlmwMDA9f6+vqugku9vb3X0e/3I0eO/D2lkFhyR0eH
@@ -185,8 +185,8 @@
   <data name="PBCancelarC.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFwAAAAlCAYAAADPwo5RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCwAA
-        CwsBbQSEtwAAB5pJREFUaEPtm1tMFFcYx/cyuzt7gUUWkavcXEQUUBFYFAVBFEHUXqyKq7RPRkC5SZM2
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCgAA
+        CwoBv0NmUwAAB5pJREFUaEPtm1tMFFcYx/cyuzt7gUUWkavcXEQUUBFYFAVBFEHUXqyKq7RPRkC5SZM2
         1kZ9UDFt+tKkafrYNqYPjWkijb3X2sY0bXq/xFrT2ipJjbGhXVpA5uv/OzMDC+UmNqawu8kvZ+acM2fn
         +803Z3aGwWgY49Pa2mr3eDxRFosl0el0eiVJmm82mxNNJpMHRBiNRitKMxnIaCCDEctiFNQPj6YtGg1B
         dWN92f+gDnGoe6EVYpHUFUVRxCpiIywPor4P/IHlmwMDA9f6+vqugku9vb3X0e/3I0eO/D2lkFhyR0eH
@@ -224,8 +224,8 @@
   <data name="PBAceptarC.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFwAAAAlCAYAAADPwo5RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCwAA
-        CwsBbQSEtwAAB5pJREFUaEPtm1tMFFcYx/cyuzt7gUUWkavcXEQUUBFYFAVBFEHUXqyKq7RPRkC5SZM2
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALCgAA
+        CwoBv0NmUwAAB5pJREFUaEPtm1tMFFcYx/cyuzt7gUUWkavcXEQUUBFYFAVBFEHUXqyKq7RPRkC5SZM2
         1kZ9UDFt+tKkafrYNqYPjWkijb3X2sY0bXq/xFrT2ipJjbGhXVpA5uv/OzMDC+UmNqawu8kvZ+acM2fn
         +803Z3aGwWgY49Pa2mr3eDxRFosl0el0eiVJmm82mxNNJpMHRBiNRitKMxnIaCCDEctiFNQPj6YtGg1B
         dWN92f+gDnGoe6EVYpHUFUVRxCpiIywPor4P/IHlmwMDA9f6+vqugku9vb3X0e/3I0eO/D2lkFhyR0eH

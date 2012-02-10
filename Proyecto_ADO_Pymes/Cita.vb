@@ -150,6 +150,43 @@ Public Class Cita
     End Function
 
     ''' <summary>
+    ''' Devuelve el código de una cita dados sus parámetros
+    ''' </summary>
+    ''' <param name="c">Cliente</param>
+    ''' <param name="t">Trabajador</param>
+    ''' <param name="f">Fecha</param>
+    ''' <param name="h">Hora</param>
+    ''' <param name="m">Minutos</param>
+    ''' <returns>El código de la cita encontrada</returns>
+    ''' <author>Andrés Marotta</author>
+    Public Function ObtenerCodigo(ByVal c As Integer, ByVal t As Integer, ByVal f As Date, ByVal h As Integer, ByVal m As Integer) As Integer
+        Dim conexion As New BBDD
+        Dim lector As OleDbDataReader
+        Dim codigo As Integer
+
+        If conexion.Conectar Then
+            lector = conexion.Consultar("SELECT codigo FROM Citas " & _
+                                        "WHERE cliente = " & c & " AND " & _
+                                        "trabajador = " & t & " AND " & _
+                                        "fecha = #" & Fecha & "# AND " & _
+                                        "hora = " & h & " AND " & _
+                                        "minutos = " & m & _
+                                        ";")
+
+            lector.Read()
+
+            codigo = CInt(lector(0))
+
+            lector.Close()
+
+            conexion.Desconectar()
+            conexion.Dispose()
+        End If
+
+        Return codigo
+    End Function
+
+    ''' <summary>
     ''' Inserta una cita en la base de datos
     ''' </summary>
     ''' <returns>True o False, dependiendo de si todo fue bien o no</returns>
@@ -160,15 +197,22 @@ Public Class Cita
         Dim ok As Boolean
 
         Try
+            insercion = "INSERT INTO Citas(cliente, trabajador, fecha, hora, minutos) " & _
+                        "VALUES(" & _
+                        Me._Cliente.Codigo & ", " & _
+                        Me._Trabajador.Codigo & ", " & _
+                        "#" & Me._Fecha.Day & "/" & Me._Fecha.Month & "/" & Me._Fecha.Year & "#, " & _
+                        Me._Hora & ", " & _
+                        Me._Minutos & _
+                        ");"
+
+            conexion.Modificar(insercion)
+
             For Each servicio In Me._Servicios
-                insercion = "INSERT INTO Citas(servicios, cliente, trabajador, fecha, hora, minutos) " & _
-                            "VALUES(" & _
-                            servicio.Codigo & ", " & _
-                            Me._Cliente.Codigo & ", " & _
-                            Me._Trabajador.Codigo & ", " & _
-                            "#" & Me._Fecha.Day & "/" & Me._Fecha.Month & "/" & Me._Fecha.Year & "#, " & _
-                            Me._Hora & ", " & _
-                            Me._Minutos & _
+                insercion = "INSERT INTO PrestarServicio (cita, servicio) " & _
+                            "Values(" & _
+                            ObtenerCodigo(Me._Cliente.Codigo, Me._Trabajador.Codigo, Me._Fecha, Me._Hora, Me._Minutos) & ", " & _
+                            servicio.Codigo & _
                             ");"
 
                 conexion.Modificar(insercion)
@@ -180,30 +224,6 @@ Public Class Cita
         End Try
 
         Return ok
-    End Function
-
-    ''' <summary>
-    ''' Obtiene la hora de la última cita
-    ''' </summary>
-    ''' <returns>Un entero con la hora encontrada</returns>
-    ''' <author>Andrés Marotta</author>
-    Public Shared Function CitaMasTarde() As Integer
-        Dim hora As Integer
-        Dim conexion As New BBDD
-        Dim lector As OleDbDataReader
-
-        If conexion.Conectar Then
-            lector = conexion.Consultar("SELECT MAX(hora) FROM Citas;")
-            lector.Read()
-
-            hora = CInt(lector(0))
-
-            lector.Close()
-            conexion.Desconectar()
-            conexion.Dispose()
-        End If
-
-        Return hora
     End Function
 
     ''' <summary>
