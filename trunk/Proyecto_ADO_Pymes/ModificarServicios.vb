@@ -18,7 +18,7 @@ Public Class ModificarServicios
         Next
     End Sub
 
-    Private Sub PBModificarMC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBModificarMC.Click
+    Private Sub PBModificarMC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         ListaServicios.Item(LBoxServiciosM.SelectedIndex).Nombre = TBNombreSM.Text
         ListaServicios.Item(LBoxServiciosM.SelectedIndex).Descripcion = TBDescripcionSM.Text
@@ -26,27 +26,27 @@ Public Class ModificarServicios
         ListaServicios.Item(LBoxServiciosM.SelectedIndex).Precio = CDbl(TBPrecioSM.Text)
 
         If ListaServicios.Item(LBoxServiciosM.SelectedIndex).Modificar() = True Then
-            TSLblEstado.Text = "Servicio modificado satisfactoriamente"
+            TSLabEstado.Text = "Servicio modificado satisfactoriamente"
             CargarListBox()
         Else
-            TSLblEstado.Text = "Ocurrió un error mientras se intentaba modificar"
+            TSLabEstado.Text = "Ocurrió un error mientras se intentaba modificar"
         End If
     End Sub
 
-    Private Sub PBBorrarMC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrarMC.Click
+    Private Sub PBBorrarMC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         If ListaServicios.Item(LBoxServiciosM.SelectedIndex).Eliminar() = True Then
-            TSLblEstado.Text = "Servicio eliminado satisfactoriamente"
+            TSLabEstado.Text = "Servicio eliminado satisfactoriamente"
             CargarListBox()
             TBNombreSM.Text = ""
             TBDescripcionSM.Text = ""
             TBDuracionSM.Text = ""
             TBPrecioSM.Text = ""
         Else
-            TSLblEstado.Text = "Ocurrió un error mientras se intentaba eliminar"
+            TSLabEstado.Text = "Ocurrió un error mientras se intentaba eliminar"
         End If
     End Sub
 
-    Private Sub PBCancelarMC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBCancelarMC.Click
+    Private Sub PBCancelarMC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Close()
     End Sub
 
@@ -60,7 +60,7 @@ Public Class ModificarServicios
     End Sub
 
     Private Sub ModificarServicios_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        TSLblEstado.Text = ""
+        TSLabEstado.Text = ""
         CargarListBox()
     End Sub
 End Class

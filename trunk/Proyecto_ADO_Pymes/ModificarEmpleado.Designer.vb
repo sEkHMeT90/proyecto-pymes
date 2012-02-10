@@ -45,8 +45,6 @@ Partial Class ModificarEmpleado
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TBNombreE = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PBBorrarMC = New System.Windows.Forms.PictureBox()
-        Me.PBModificarMC = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.CBProvinciaU = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -57,7 +55,14 @@ Partial Class ModificarEmpleado
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TBCalleMU = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.PBCancelarMC = New System.Windows.Forms.PictureBox()
+        Me.BarraEstado = New System.Windows.Forms.StatusStrip()
+        Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.PBBorrarMC = New System.Windows.Forms.PictureBox()
+        Me.PBModificarMC = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BarraEstado.SuspendLayout()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -73,8 +78,11 @@ Partial Class ModificarEmpleado
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.PBCancelarMC)
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.CBEspecialidadE)
+        Me.GroupBox1.Controls.Add(Me.PBBorrarMC)
+        Me.GroupBox1.Controls.Add(Me.PBModificarMC)
         Me.GroupBox1.Controls.Add(Me.TBSueldoE)
         Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.TBNumSSE)
@@ -93,8 +101,6 @@ Partial Class ModificarEmpleado
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.TBNombreE)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.PBBorrarMC)
-        Me.GroupBox1.Controls.Add(Me.PBModificarMC)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.CBProvinciaU)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -326,24 +332,6 @@ Partial Class ModificarEmpleado
         Me.Label1.TabIndex = 59
         Me.Label1.Text = "Nombre"
         '
-        'PBBorrarMC
-        '
-        Me.PBBorrarMC.BackColor = System.Drawing.Color.Transparent
-        Me.PBBorrarMC.Location = New System.Drawing.Point(558, 402)
-        Me.PBBorrarMC.Name = "PBBorrarMC"
-        Me.PBBorrarMC.Size = New System.Drawing.Size(70, 70)
-        Me.PBBorrarMC.TabIndex = 58
-        Me.PBBorrarMC.TabStop = False
-        '
-        'PBModificarMC
-        '
-        Me.PBModificarMC.BackColor = System.Drawing.Color.Transparent
-        Me.PBModificarMC.Location = New System.Drawing.Point(401, 402)
-        Me.PBModificarMC.Name = "PBModificarMC"
-        Me.PBModificarMC.Size = New System.Drawing.Size(70, 70)
-        Me.PBModificarMC.TabIndex = 57
-        Me.PBModificarMC.TabStop = False
-        '
         'Label11
         '
         Me.Label11.AutoSize = True
@@ -451,6 +439,54 @@ Partial Class ModificarEmpleado
         Me.Label7.TabIndex = 52
         Me.Label7.Text = "Calle"
         '
+        'PBCancelarMC
+        '
+        Me.PBCancelarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBCancelarMC.BackgroundImage = CType(resources.GetObject("PBCancelarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBCancelarMC.Location = New System.Drawing.Point(570, 389)
+        Me.PBCancelarMC.Name = "PBCancelarMC"
+        Me.PBCancelarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBCancelarMC.TabIndex = 103
+        Me.PBCancelarMC.TabStop = False
+        '
+        'BarraEstado
+        '
+        Me.BarraEstado.BackColor = System.Drawing.Color.Transparent
+        Me.BarraEstado.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLabEstado})
+        Me.BarraEstado.Location = New System.Drawing.Point(0, 600)
+        Me.BarraEstado.Name = "BarraEstado"
+        Me.BarraEstado.Size = New System.Drawing.Size(994, 22)
+        Me.BarraEstado.TabIndex = 102
+        Me.BarraEstado.Text = "StatusStrip1"
+        '
+        'TSLabEstado
+        '
+        Me.TSLabEstado.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TSLabEstado.ForeColor = System.Drawing.Color.White
+        Me.TSLabEstado.Name = "TSLabEstado"
+        Me.TSLabEstado.Size = New System.Drawing.Size(143, 17)
+        Me.TSLabEstado.Text = "ToolStripStatusLabel1"
+        '
+        'PBBorrarMC
+        '
+        Me.PBBorrarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBBorrarMC.BackgroundImage = CType(resources.GetObject("PBBorrarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBBorrarMC.Location = New System.Drawing.Point(494, 389)
+        Me.PBBorrarMC.Name = "PBBorrarMC"
+        Me.PBBorrarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBBorrarMC.TabIndex = 101
+        Me.PBBorrarMC.TabStop = False
+        '
+        'PBModificarMC
+        '
+        Me.PBModificarMC.BackColor = System.Drawing.Color.Transparent
+        Me.PBModificarMC.BackgroundImage = CType(resources.GetObject("PBModificarMC.BackgroundImage"), System.Drawing.Image)
+        Me.PBModificarMC.Location = New System.Drawing.Point(418, 389)
+        Me.PBModificarMC.Name = "PBModificarMC"
+        Me.PBModificarMC.Size = New System.Drawing.Size(70, 70)
+        Me.PBModificarMC.TabIndex = 100
+        Me.PBModificarMC.TabStop = False
+        '
         'ModificarEmpleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -458,6 +494,7 @@ Partial Class ModificarEmpleado
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(994, 622)
+        Me.Controls.Add(Me.BarraEstado)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.LBoxME)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -466,15 +503,17 @@ Partial Class ModificarEmpleado
         Me.Text = "ModificarEmpleado"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BarraEstado.ResumeLayout(False)
+        Me.BarraEstado.PerformLayout()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents LBoxME As System.Windows.Forms.ListBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents PBBorrarMC As System.Windows.Forms.PictureBox
-    Friend WithEvents PBModificarMC As System.Windows.Forms.PictureBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents CBProvinciaU As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
@@ -505,4 +544,9 @@ Partial Class ModificarEmpleado
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents CBEspecialidadE As System.Windows.Forms.ComboBox
+    Friend WithEvents PBCancelarMC As System.Windows.Forms.PictureBox
+    Friend WithEvents PBBorrarMC As System.Windows.Forms.PictureBox
+    Friend WithEvents PBModificarMC As System.Windows.Forms.PictureBox
+    Friend WithEvents BarraEstado As System.Windows.Forms.StatusStrip
+    Friend WithEvents TSLabEstado As System.Windows.Forms.ToolStripStatusLabel
 End Class

@@ -83,28 +83,29 @@ Public Class NuevoCliente
         CBPoblacionU.SelectedIndex = -1
     End Sub
 
-    Private Sub PBAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarU.Click
+    Private Sub PBAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.InsertarCliente()
     End Sub
     
-    Private Sub LblAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblAceptarU.Click
+    Private Sub LblAceptarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.InsertarCliente()
     End Sub
 
-    Private Sub PBBorrarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrarU.Click
+    Private Sub PBBorrarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.BorrarCampos()
     End Sub
 
-    Private Sub LblBorrarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblBorrarU.Click
+    Private Sub LblBorrarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.BorrarCampos()
     End Sub
 
-    Private Sub PBCancelarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBCancelarU.Click
+    Private Sub PBCancelarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Close()
     End Sub
 
-    Private Sub LblCancelarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LblCancelarU.Click
+    Private Sub LblCancelarU_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Close()
     End Sub
+
 End Class
 

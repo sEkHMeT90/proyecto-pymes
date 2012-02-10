@@ -10,7 +10,7 @@ Public Class ModificarEspecialidad
     Private ListaEspecialidades As List(Of Especialidad)
 
     Private Sub ModificarEspecialidad_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        TSLblEstado.Text = ""
+        TSLabEstado.Text = ""
         CargarListBox()
     End Sub
 
@@ -36,21 +36,21 @@ Public Class ModificarEspecialidad
         ListaEspecialidades.Item(LBoxEspecialidadesM.SelectedIndex).Descripcion = TBDescricionMEs.Text
 
         If ListaEspecialidades.Item(LBoxEspecialidadesM.SelectedIndex).Modificar() = True Then
-            TSLblEstado.Text = "Especialidad modificada satisfactoriamente"
+            TSLabEstado.Text = "Especialidad modificada satisfactoriamente"
             CargarListBox()
         Else
-            TSLblEstado.Text = "Ocurrió un error mientras se intentaba modificar"
+            TSLabEstado.Text = "Ocurrió un error mientras se intentaba modificar"
         End If
     End Sub
 
     Private Sub PBBorrarMC_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrarMC.Click
         If ListaEspecialidades.Item(LBoxEspecialidadesM.SelectedIndex).Eliminar() = True Then
-            TSLblEstado.Text = "Especialidad eliminada satisfactoriamente"
+            TSLabEstado.Text = "Especialidad eliminada satisfactoriamente"
             CargarListBox()
             TBNombreMEs.Text = ""
             TBDescricionMEs.Text = ""
         Else
-            TSLblEstado.Text = "Ocurrió un error mientras se intentaba eliminar"
+            TSLabEstado.Text = "Ocurrió un error mientras se intentaba eliminar"
         End If
     End Sub
 

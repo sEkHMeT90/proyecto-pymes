@@ -35,7 +35,7 @@ Public Class Buscar
     ''' </summary>
     ''' <author>Raquel Lloréns Gambín</author>
     Public Sub BuscarFecha()
-        Dim fecha As Date = TBBuscar.Text.Trim
+        Dim fecha As Date = CDate(TBBuscar.Text.Trim)
         Dim citas As List(Of Cita)
         citas = Cita.Cargar()
 

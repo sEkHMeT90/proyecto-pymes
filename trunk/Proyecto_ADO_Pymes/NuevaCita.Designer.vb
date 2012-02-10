@@ -38,15 +38,15 @@ Partial Class NuevaCita
         Me.CBoxClienteC = New System.Windows.Forms.ComboBox()
         Me.ListBServiciosC = New System.Windows.Forms.ListBox()
         Me.PBMenosC = New System.Windows.Forms.PictureBox()
-        Me.LblCancelarC = New System.Windows.Forms.Label()
-        Me.LblBorrarC = New System.Windows.Forms.Label()
-        Me.PBBorrarC = New System.Windows.Forms.PictureBox()
         Me.PBCancelarC = New System.Windows.Forms.PictureBox()
-        Me.LblAceptarC = New System.Windows.Forms.Label()
+        Me.BarraEstado = New System.Windows.Forms.StatusStrip()
+        Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.PBBorrarC = New System.Windows.Forms.PictureBox()
         Me.PBAceptarC = New System.Windows.Forms.PictureBox()
         CType(Me.PBMenosC, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PBBorrarC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBCancelarC, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BarraEstado.SuspendLayout()
+        CType(Me.PBBorrarC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBAceptarC, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -211,70 +211,52 @@ Partial Class NuevaCita
         Me.PBMenosC.TabStop = False
         Me.PBMenosC.Tag = "7"
         '
-        'LblCancelarC
+        'PBCancelarC
         '
-        Me.LblCancelarC.AutoSize = True
-        Me.LblCancelarC.BackColor = System.Drawing.Color.Transparent
-        Me.LblCancelarC.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblCancelarC.ForeColor = System.Drawing.Color.White
-        Me.LblCancelarC.Location = New System.Drawing.Point(548, 468)
-        Me.LblCancelarC.Name = "LblCancelarC"
-        Me.LblCancelarC.Size = New System.Drawing.Size(70, 16)
-        Me.LblCancelarC.TabIndex = 63
-        Me.LblCancelarC.Text = "Cancelar"
+        Me.PBCancelarC.BackColor = System.Drawing.Color.Transparent
+        Me.PBCancelarC.BackgroundImage = CType(resources.GetObject("PBCancelarC.BackgroundImage"), System.Drawing.Image)
+        Me.PBCancelarC.Location = New System.Drawing.Point(582, 444)
+        Me.PBCancelarC.Name = "PBCancelarC"
+        Me.PBCancelarC.Size = New System.Drawing.Size(70, 70)
+        Me.PBCancelarC.TabIndex = 103
+        Me.PBCancelarC.TabStop = False
         '
-        'LblBorrarC
+        'BarraEstado
         '
-        Me.LblBorrarC.AutoSize = True
-        Me.LblBorrarC.BackColor = System.Drawing.Color.Transparent
-        Me.LblBorrarC.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblBorrarC.ForeColor = System.Drawing.Color.White
-        Me.LblBorrarC.Location = New System.Drawing.Point(361, 468)
-        Me.LblBorrarC.Name = "LblBorrarC"
-        Me.LblBorrarC.Size = New System.Drawing.Size(51, 16)
-        Me.LblBorrarC.TabIndex = 62
-        Me.LblBorrarC.Text = "Borrar"
+        Me.BarraEstado.BackColor = System.Drawing.Color.Transparent
+        Me.BarraEstado.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLabEstado})
+        Me.BarraEstado.Location = New System.Drawing.Point(0, 540)
+        Me.BarraEstado.Name = "BarraEstado"
+        Me.BarraEstado.Size = New System.Drawing.Size(784, 22)
+        Me.BarraEstado.TabIndex = 102
+        Me.BarraEstado.Text = "StatusStrip1"
+        '
+        'TSLabEstado
+        '
+        Me.TSLabEstado.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TSLabEstado.ForeColor = System.Drawing.Color.White
+        Me.TSLabEstado.Name = "TSLabEstado"
+        Me.TSLabEstado.Size = New System.Drawing.Size(143, 17)
+        Me.TSLabEstado.Text = "ToolStripStatusLabel1"
         '
         'PBBorrarC
         '
         Me.PBBorrarC.BackColor = System.Drawing.Color.Transparent
         Me.PBBorrarC.BackgroundImage = CType(resources.GetObject("PBBorrarC.BackgroundImage"), System.Drawing.Image)
-        Me.PBBorrarC.Location = New System.Drawing.Point(344, 458)
+        Me.PBBorrarC.Location = New System.Drawing.Point(390, 444)
         Me.PBBorrarC.Name = "PBBorrarC"
-        Me.PBBorrarC.Size = New System.Drawing.Size(92, 37)
-        Me.PBBorrarC.TabIndex = 61
+        Me.PBBorrarC.Size = New System.Drawing.Size(70, 70)
+        Me.PBBorrarC.TabIndex = 101
         Me.PBBorrarC.TabStop = False
-        '
-        'PBCancelarC
-        '
-        Me.PBCancelarC.BackColor = System.Drawing.Color.Transparent
-        Me.PBCancelarC.BackgroundImage = CType(resources.GetObject("PBCancelarC.BackgroundImage"), System.Drawing.Image)
-        Me.PBCancelarC.Location = New System.Drawing.Point(537, 458)
-        Me.PBCancelarC.Name = "PBCancelarC"
-        Me.PBCancelarC.Size = New System.Drawing.Size(92, 37)
-        Me.PBCancelarC.TabIndex = 60
-        Me.PBCancelarC.TabStop = False
-        '
-        'LblAceptarC
-        '
-        Me.LblAceptarC.AutoSize = True
-        Me.LblAceptarC.BackColor = System.Drawing.Color.Transparent
-        Me.LblAceptarC.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblAceptarC.ForeColor = System.Drawing.Color.White
-        Me.LblAceptarC.Location = New System.Drawing.Point(175, 468)
-        Me.LblAceptarC.Name = "LblAceptarC"
-        Me.LblAceptarC.Size = New System.Drawing.Size(62, 16)
-        Me.LblAceptarC.TabIndex = 8
-        Me.LblAceptarC.Text = "Aceptar"
         '
         'PBAceptarC
         '
         Me.PBAceptarC.BackColor = System.Drawing.Color.Transparent
         Me.PBAceptarC.BackgroundImage = CType(resources.GetObject("PBAceptarC.BackgroundImage"), System.Drawing.Image)
-        Me.PBAceptarC.Location = New System.Drawing.Point(162, 458)
+        Me.PBAceptarC.Location = New System.Drawing.Point(200, 444)
         Me.PBAceptarC.Name = "PBAceptarC"
-        Me.PBAceptarC.Size = New System.Drawing.Size(92, 37)
-        Me.PBAceptarC.TabIndex = 58
+        Me.PBAceptarC.Size = New System.Drawing.Size(70, 70)
+        Me.PBAceptarC.TabIndex = 100
         Me.PBAceptarC.TabStop = False
         '
         'NuevaCita
@@ -284,11 +266,9 @@ Partial Class NuevaCita
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(784, 562)
-        Me.Controls.Add(Me.LblCancelarC)
-        Me.Controls.Add(Me.LblBorrarC)
-        Me.Controls.Add(Me.PBBorrarC)
         Me.Controls.Add(Me.PBCancelarC)
-        Me.Controls.Add(Me.LblAceptarC)
+        Me.Controls.Add(Me.BarraEstado)
+        Me.Controls.Add(Me.PBBorrarC)
         Me.Controls.Add(Me.PBAceptarC)
         Me.Controls.Add(Me.PBMenosC)
         Me.Controls.Add(Me.ListBServiciosC)
@@ -309,8 +289,10 @@ Partial Class NuevaCita
         Me.Name = "NuevaCita"
         Me.Text = "Nueva Cita"
         CType(Me.PBMenosC, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PBBorrarC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBCancelarC, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BarraEstado.ResumeLayout(False)
+        Me.BarraEstado.PerformLayout()
+        CType(Me.PBBorrarC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBAceptarC, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -331,10 +313,9 @@ Partial Class NuevaCita
     Friend WithEvents CBoxClienteC As System.Windows.Forms.ComboBox
     Friend WithEvents ListBServiciosC As System.Windows.Forms.ListBox
     Friend WithEvents PBMenosC As System.Windows.Forms.PictureBox
-    Friend WithEvents LblCancelarC As System.Windows.Forms.Label
-    Friend WithEvents LblBorrarC As System.Windows.Forms.Label
-    Friend WithEvents PBBorrarC As System.Windows.Forms.PictureBox
     Friend WithEvents PBCancelarC As System.Windows.Forms.PictureBox
-    Friend WithEvents LblAceptarC As System.Windows.Forms.Label
+    Friend WithEvents BarraEstado As System.Windows.Forms.StatusStrip
+    Friend WithEvents TSLabEstado As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents PBBorrarC As System.Windows.Forms.PictureBox
     Friend WithEvents PBAceptarC As System.Windows.Forms.PictureBox
 End Class
