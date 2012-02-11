@@ -217,7 +217,7 @@ Public Class Principal
     Private Sub CargarNotas()
         _Notas = Nota.Cargar()
         If _Notas.Count > 0 Then
-            NotaActual = 0
+            NotaActual = _Notas.Count - 1
             LblX.Text = CStr(NotaActual + 1)
             LblY.Text = CStr(_Notas.Count)
             TBoxNotas.Text = _Notas(NotaActual).Texto
@@ -269,17 +269,15 @@ Public Class Principal
     Private Sub PBAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptar.Click
         If _Notas.Count > 0 Then
             _Notas(NotaActual).Texto = TBoxNotas.Text
-            _Notas(NotaActual).Insertar()
+            _Notas(NotaActual).Modificar()
         End If
     End Sub
 
     Private Sub LinkNuevo_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkNuevo.LinkClicked
         Dim NewNota As New Nota
         _Notas.Add(NewNota)
-
-        TBoxNotas.Text = "Escribe aquí..."
         NotaActual = _Notas.Count - 1
-        LblX.Text = CStr(_Notas.Count)
-        LblY.Text = CStr(_Notas.Count)
+        _Notas(NotaActual).Insertar()
+        CargarNotas()
     End Sub
 End Class
