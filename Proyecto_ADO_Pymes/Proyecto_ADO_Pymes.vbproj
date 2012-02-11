@@ -122,6 +122,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Municipio.vb" />
+    <Compile Include="Nota.vb" />
     <Compile Include="NuevaEspecialidad.Designer.vb">
       <DependentUpon>NuevaEspecialidad.vb</DependentUpon>
     </Compile>

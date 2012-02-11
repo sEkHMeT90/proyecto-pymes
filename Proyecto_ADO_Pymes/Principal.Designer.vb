@@ -45,6 +45,7 @@ Partial Class Principal
         Me.NuevaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.FacturaciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ColorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -91,6 +92,18 @@ Partial Class Principal
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
+        Me.PanelNotas = New System.Windows.Forms.Panel()
+        Me.PBAceptar = New System.Windows.Forms.PictureBox()
+        Me.LinkNuevo = New System.Windows.Forms.LinkLabel()
+        Me.PBBorrar = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Separator = New System.Windows.Forms.Label()
+        Me.LblY = New System.Windows.Forms.Label()
+        Me.LblX = New System.Windows.Forms.Label()
+        Me.PBSiguiente = New System.Windows.Forms.PictureBox()
+        Me.PBAnterior = New System.Windows.Forms.PictureBox()
+        Me.TBoxNotas = New System.Windows.Forms.RichTextBox()
+        Me.BlocNotas = New System.Windows.Forms.PictureBox()
         CType(Me.DGVCitas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
@@ -108,6 +121,13 @@ Partial Class Principal
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
+        Me.PanelNotas.SuspendLayout()
+        CType(Me.PBAceptar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBBorrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBSiguiente, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBAnterior, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BlocNotas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DGVCitas
@@ -129,7 +149,7 @@ Partial Class Principal
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.GestiónUsuariosToolStripMenuItem, Me.ConsultaCitasToolStripMenuItem, Me.FacturaciónToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.GestiónUsuariosToolStripMenuItem, Me.ConsultaCitasToolStripMenuItem, Me.FacturaciónToolStripMenuItem, Me.NotasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(794, 25)
@@ -152,7 +172,7 @@ Partial Class Principal
         Me.NuevoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaToolStripMenuItem, Me.ModificarToolStripMenuItem})
         Me.NuevoToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.NuevoToolStripMenuItem.Text = "Especialidad"
         '
         'NuevaToolStripMenuItem
@@ -160,7 +180,7 @@ Partial Class Principal
         Me.NuevaToolStripMenuItem.BackgroundImage = CType(resources.GetObject("NuevaToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.NuevaToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.NuevaToolStripMenuItem.Name = "NuevaToolStripMenuItem"
-        Me.NuevaToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.NuevaToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.NuevaToolStripMenuItem.Text = "Nueva"
         '
         'ModificarToolStripMenuItem
@@ -168,7 +188,7 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
         'ServicioToolStripMenuItem
@@ -177,7 +197,7 @@ Partial Class Principal
         Me.ServicioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem1, Me.ModificarToolStripMenuItem1})
         Me.ServicioToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ServicioToolStripMenuItem.Name = "ServicioToolStripMenuItem"
-        Me.ServicioToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ServicioToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.ServicioToolStripMenuItem.Text = "Servicio"
         '
         'NuevoToolStripMenuItem1
@@ -185,7 +205,7 @@ Partial Class Principal
         Me.NuevoToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("NuevoToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
         Me.NuevoToolStripMenuItem1.ForeColor = System.Drawing.Color.White
         Me.NuevoToolStripMenuItem1.Name = "NuevoToolStripMenuItem1"
-        Me.NuevoToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.NuevoToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
         Me.NuevoToolStripMenuItem1.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem1
@@ -193,7 +213,7 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem1.ForeColor = System.Drawing.Color.White
         Me.ModificarToolStripMenuItem1.Name = "ModificarToolStripMenuItem1"
-        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
         Me.ModificarToolStripMenuItem1.Text = "Modificar"
         '
         'SalirToolStripMenuItem
@@ -202,7 +222,7 @@ Partial Class Principal
         Me.SalirToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         Me.SalirToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'GestiónUsuariosToolStripMenuItem
@@ -219,7 +239,7 @@ Partial Class Principal
         Me.AltaUsuarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem2, Me.ModificarToolStripMenuItem2})
         Me.AltaUsuarioToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AltaUsuarioToolStripMenuItem.Name = "AltaUsuarioToolStripMenuItem"
-        Me.AltaUsuarioToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
+        Me.AltaUsuarioToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.AltaUsuarioToolStripMenuItem.Text = "Cliente"
         '
         'NuevoToolStripMenuItem2
@@ -227,7 +247,7 @@ Partial Class Principal
         Me.NuevoToolStripMenuItem2.BackgroundImage = CType(resources.GetObject("NuevoToolStripMenuItem2.BackgroundImage"), System.Drawing.Image)
         Me.NuevoToolStripMenuItem2.ForeColor = System.Drawing.Color.White
         Me.NuevoToolStripMenuItem2.Name = "NuevoToolStripMenuItem2"
-        Me.NuevoToolStripMenuItem2.Size = New System.Drawing.Size(135, 22)
+        Me.NuevoToolStripMenuItem2.Size = New System.Drawing.Size(143, 22)
         Me.NuevoToolStripMenuItem2.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem2
@@ -235,7 +255,7 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem2.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem2.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem2.ForeColor = System.Drawing.Color.White
         Me.ModificarToolStripMenuItem2.Name = "ModificarToolStripMenuItem2"
-        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(135, 22)
+        Me.ModificarToolStripMenuItem2.Size = New System.Drawing.Size(143, 22)
         Me.ModificarToolStripMenuItem2.Text = "Modificar"
         '
         'AltaProfesionalToolStripMenuItem
@@ -244,7 +264,7 @@ Partial Class Principal
         Me.AltaProfesionalToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem3, Me.ModificarToolStripMenuItem3})
         Me.AltaProfesionalToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.AltaProfesionalToolStripMenuItem.Name = "AltaProfesionalToolStripMenuItem"
-        Me.AltaProfesionalToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AltaProfesionalToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.AltaProfesionalToolStripMenuItem.Text = "Empleado"
         '
         'NuevoToolStripMenuItem3
@@ -252,7 +272,7 @@ Partial Class Principal
         Me.NuevoToolStripMenuItem3.BackgroundImage = CType(resources.GetObject("NuevoToolStripMenuItem3.BackgroundImage"), System.Drawing.Image)
         Me.NuevoToolStripMenuItem3.ForeColor = System.Drawing.Color.White
         Me.NuevoToolStripMenuItem3.Name = "NuevoToolStripMenuItem3"
-        Me.NuevoToolStripMenuItem3.Size = New System.Drawing.Size(135, 22)
+        Me.NuevoToolStripMenuItem3.Size = New System.Drawing.Size(143, 22)
         Me.NuevoToolStripMenuItem3.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem3
@@ -260,7 +280,7 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem3.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem3.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem3.ForeColor = System.Drawing.Color.White
         Me.ModificarToolStripMenuItem3.Name = "ModificarToolStripMenuItem3"
-        Me.ModificarToolStripMenuItem3.Size = New System.Drawing.Size(135, 22)
+        Me.ModificarToolStripMenuItem3.Size = New System.Drawing.Size(143, 22)
         Me.ModificarToolStripMenuItem3.Text = "Modificar"
         '
         'ConsultaCitasToolStripMenuItem
@@ -276,7 +296,7 @@ Partial Class Principal
         Me.NuevaToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("NuevaToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
         Me.NuevaToolStripMenuItem1.ForeColor = System.Drawing.Color.White
         Me.NuevaToolStripMenuItem1.Name = "NuevaToolStripMenuItem1"
-        Me.NuevaToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.NuevaToolStripMenuItem1.Size = New System.Drawing.Size(143, 22)
         Me.NuevaToolStripMenuItem1.Text = "Nueva"
         '
         'ModificarToolStripMenuItem4
@@ -284,7 +304,7 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem4.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem4.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem4.ForeColor = System.Drawing.Color.White
         Me.ModificarToolStripMenuItem4.Name = "ModificarToolStripMenuItem4"
-        Me.ModificarToolStripMenuItem4.Size = New System.Drawing.Size(135, 22)
+        Me.ModificarToolStripMenuItem4.Size = New System.Drawing.Size(143, 22)
         Me.ModificarToolStripMenuItem4.Text = "Modificar"
         '
         'FacturaciónToolStripMenuItem
@@ -294,19 +314,27 @@ Partial Class Principal
         Me.FacturaciónToolStripMenuItem.Size = New System.Drawing.Size(91, 21)
         Me.FacturaciónToolStripMenuItem.Text = "&Facturación"
         '
+        'NotasToolStripMenuItem
+        '
+        Me.NotasToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.NotasToolStripMenuItem.Name = "NotasToolStripMenuItem"
+        Me.NotasToolStripMenuItem.Size = New System.Drawing.Size(56, 21)
+        Me.NotasToolStripMenuItem.Text = "Notas"
+        '
         'Timer1
         '
+        Me.Timer1.Interval = 1000
         '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ColorToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(104, 26)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(111, 26)
         '
         'ColorToolStripMenuItem
         '
         Me.ColorToolStripMenuItem.Name = "ColorToolStripMenuItem"
-        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(110, 22)
         Me.ColorToolStripMenuItem.Text = "Color"
         '
         'NotifyIcon1
@@ -811,6 +839,132 @@ Partial Class Principal
         Me.Label22.TabIndex = 35
         Me.Label22.Text = "00 : 15"
         '
+        'PanelNotas
+        '
+        Me.PanelNotas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PanelNotas.Controls.Add(Me.PBAceptar)
+        Me.PanelNotas.Controls.Add(Me.LinkNuevo)
+        Me.PanelNotas.Controls.Add(Me.PBBorrar)
+        Me.PanelNotas.Controls.Add(Me.PictureBox1)
+        Me.PanelNotas.Controls.Add(Me.Separator)
+        Me.PanelNotas.Controls.Add(Me.LblY)
+        Me.PanelNotas.Controls.Add(Me.LblX)
+        Me.PanelNotas.Controls.Add(Me.PBSiguiente)
+        Me.PanelNotas.Controls.Add(Me.PBAnterior)
+        Me.PanelNotas.Controls.Add(Me.TBoxNotas)
+        Me.PanelNotas.Controls.Add(Me.BlocNotas)
+        Me.PanelNotas.Location = New System.Drawing.Point(542, 228)
+        Me.PanelNotas.Name = "PanelNotas"
+        Me.PanelNotas.Size = New System.Drawing.Size(252, 340)
+        Me.PanelNotas.TabIndex = 37
+        '
+        'PBAceptar
+        '
+        Me.PBAceptar.BackgroundImage = CType(resources.GetObject("PBAceptar.BackgroundImage"), System.Drawing.Image)
+        Me.PBAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PBAceptar.Location = New System.Drawing.Point(149, 211)
+        Me.PBAceptar.Name = "PBAceptar"
+        Me.PBAceptar.Size = New System.Drawing.Size(30, 27)
+        Me.PBAceptar.TabIndex = 41
+        Me.PBAceptar.TabStop = False
+        '
+        'LinkNuevo
+        '
+        Me.LinkNuevo.AutoSize = True
+        Me.LinkNuevo.BackColor = System.Drawing.Color.Transparent
+        Me.LinkNuevo.Location = New System.Drawing.Point(32, 241)
+        Me.LinkNuevo.Name = "LinkNuevo"
+        Me.LinkNuevo.Size = New System.Drawing.Size(48, 13)
+        Me.LinkNuevo.TabIndex = 40
+        Me.LinkNuevo.TabStop = True
+        Me.LinkNuevo.Text = "+ Nueva"
+        '
+        'PBBorrar
+        '
+        Me.PBBorrar.BackgroundImage = CType(resources.GetObject("PBBorrar.BackgroundImage"), System.Drawing.Image)
+        Me.PBBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PBBorrar.Location = New System.Drawing.Point(185, 211)
+        Me.PBBorrar.Name = "PBBorrar"
+        Me.PBBorrar.Size = New System.Drawing.Size(30, 27)
+        Me.PBBorrar.TabIndex = 39
+        Me.PBBorrar.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(232, -2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(18, 18)
+        Me.PictureBox1.TabIndex = 38
+        Me.PictureBox1.TabStop = False
+        '
+        'Separator
+        '
+        Me.Separator.AutoSize = True
+        Me.Separator.Location = New System.Drawing.Point(51, 258)
+        Me.Separator.Name = "Separator"
+        Me.Separator.Size = New System.Drawing.Size(12, 13)
+        Me.Separator.TabIndex = 6
+        Me.Separator.Text = "/"
+        '
+        'LblY
+        '
+        Me.LblY.AutoSize = True
+        Me.LblY.Location = New System.Drawing.Point(69, 258)
+        Me.LblY.Name = "LblY"
+        Me.LblY.Size = New System.Drawing.Size(13, 13)
+        Me.LblY.TabIndex = 5
+        Me.LblY.Text = "2"
+        '
+        'LblX
+        '
+        Me.LblX.AutoSize = True
+        Me.LblX.Location = New System.Drawing.Point(32, 258)
+        Me.LblX.Name = "LblX"
+        Me.LblX.Size = New System.Drawing.Size(13, 13)
+        Me.LblX.TabIndex = 4
+        Me.LblX.Text = "1"
+        '
+        'PBSiguiente
+        '
+        Me.PBSiguiente.BackgroundImage = CType(resources.GetObject("PBSiguiente.BackgroundImage"), System.Drawing.Image)
+        Me.PBSiguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PBSiguiente.Location = New System.Drawing.Point(185, 244)
+        Me.PBSiguiente.Name = "PBSiguiente"
+        Me.PBSiguiente.Size = New System.Drawing.Size(30, 27)
+        Me.PBSiguiente.TabIndex = 3
+        Me.PBSiguiente.TabStop = False
+        '
+        'PBAnterior
+        '
+        Me.PBAnterior.BackgroundImage = CType(resources.GetObject("PBAnterior.BackgroundImage"), System.Drawing.Image)
+        Me.PBAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PBAnterior.Location = New System.Drawing.Point(149, 244)
+        Me.PBAnterior.Name = "PBAnterior"
+        Me.PBAnterior.Size = New System.Drawing.Size(30, 27)
+        Me.PBAnterior.TabIndex = 2
+        Me.PBAnterior.TabStop = False
+        '
+        'TBoxNotas
+        '
+        Me.TBoxNotas.Location = New System.Drawing.Point(24, 57)
+        Me.TBoxNotas.MaxLength = 150
+        Me.TBoxNotas.Name = "TBoxNotas"
+        Me.TBoxNotas.Size = New System.Drawing.Size(195, 224)
+        Me.TBoxNotas.TabIndex = 1
+        Me.TBoxNotas.Text = ""
+        '
+        'BlocNotas
+        '
+        Me.BlocNotas.BackgroundImage = CType(resources.GetObject("BlocNotas.BackgroundImage"), System.Drawing.Image)
+        Me.BlocNotas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BlocNotas.Location = New System.Drawing.Point(3, 3)
+        Me.BlocNotas.Name = "BlocNotas"
+        Me.BlocNotas.Size = New System.Drawing.Size(248, 335)
+        Me.BlocNotas.TabIndex = 0
+        Me.BlocNotas.TabStop = False
+        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -822,6 +976,7 @@ Partial Class Principal
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.PanelNotas)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.PBAbajo)
@@ -866,6 +1021,14 @@ Partial Class Principal
         Me.Panel5.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
+        Me.PanelNotas.ResumeLayout(False)
+        Me.PanelNotas.PerformLayout()
+        CType(Me.PBAceptar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBBorrar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBSiguiente, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBAnterior, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BlocNotas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -937,5 +1100,18 @@ Partial Class Principal
     Friend WithEvents ModificarToolStripMenuItem3 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NuevaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ModificarToolStripMenuItem4 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PanelNotas As System.Windows.Forms.Panel
+    Friend WithEvents NotasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents BlocNotas As System.Windows.Forms.PictureBox
+    Friend WithEvents TBoxNotas As System.Windows.Forms.RichTextBox
+    Friend WithEvents PBSiguiente As System.Windows.Forms.PictureBox
+    Friend WithEvents PBAnterior As System.Windows.Forms.PictureBox
+    Friend WithEvents Separator As System.Windows.Forms.Label
+    Friend WithEvents LblY As System.Windows.Forms.Label
+    Friend WithEvents LblX As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PBBorrar As System.Windows.Forms.PictureBox
+    Friend WithEvents LinkNuevo As System.Windows.Forms.LinkLabel
+    Friend WithEvents PBAceptar As System.Windows.Forms.PictureBox
 
 End Class

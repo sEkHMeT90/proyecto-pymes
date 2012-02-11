@@ -11,6 +11,8 @@ Public Class Principal
     Private _HoraFinal As Integer
     Private _Trabajadores As List(Of Trabajador)
     Private _Citas As List(Of Cita)
+    Private _Notas As List(Of Nota)
+    Private NotaActual As Integer
 
     ''' <summary>
     ''' Actualiza los datos del DataGrid
@@ -87,9 +89,11 @@ Public Class Principal
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         _HoraInicial = 8
         _HoraFinal = 20
+        PanelNotas.Visible = False
         Timer1.Start()
         PrepararDataGrid()
         Actualizar()
+        Me.CargarNotas()
     End Sub
 
     ''' <summary>
@@ -200,5 +204,82 @@ Public Class Principal
 
     Private Sub ModificarToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ModificarToolStripMenuItem3.Click
         ModificarEmpleado.ShowDialog()
+    End Sub
+
+    Private Sub NotasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NotasToolStripMenuItem.Click
+        If PanelNotas.Visible = True Then
+            PanelNotas.Visible = False
+        Else
+            PanelNotas.Visible = True
+        End If
+    End Sub
+
+    Private Sub CargarNotas()
+        _Notas = Nota.Cargar()
+        If _Notas.Count > 0 Then
+            NotaActual = 0
+            LblX.Text = CStr(NotaActual + 1)
+            LblY.Text = CStr(_Notas.Count)
+            TBoxNotas.Text = _Notas(NotaActual).Texto
+        End If
+    End Sub
+
+    Private Sub PBAnterior_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAnterior.Click
+        If NotaActual - 1 >= 0 Then
+            NotaActual = NotaActual - 1
+            LblX.Text = CStr(NotaActual + 1)
+            TBoxNotas.Text = _Notas(NotaActual).Texto
+        End If
+    End Sub
+
+    Private Sub PBSiguiente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBSiguiente.Click
+        If NotaActual + 1 < _Notas.Count Then
+            NotaActual = NotaActual + 1
+            LblX.Text = CStr(NotaActual + 1)
+            TBoxNotas.Text = _Notas(NotaActual).Texto
+        End If
+    End Sub
+
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
+        If PanelNotas.Visible = True Then
+            PanelNotas.Visible = False
+        End If
+    End Sub
+
+    Private Sub PBBorrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrar.Click
+        If _Notas.Count > 0 Then
+            _Notas(NotaActual).Eliminar()
+            _Notas.RemoveAt(NotaActual)
+            If NotaActual - 1 >= 0 Then
+                NotaActual = NotaActual - 1
+                LblX.Text = CStr(NotaActual + 1)
+            End If
+
+            LblY.Text = CStr(_Notas.Count)
+
+            If _Notas.Count > 0 Then
+                TBoxNotas.Text = _Notas(NotaActual).Texto
+            Else
+                LblX.Text = "0"
+                TBoxNotas.Text = ""
+            End If
+        End If
+    End Sub
+
+    Private Sub PBAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptar.Click
+        If _Notas.Count > 0 Then
+            _Notas(NotaActual).Texto = TBoxNotas.Text
+            _Notas(NotaActual).Insertar()
+        End If
+    End Sub
+
+    Private Sub LinkNuevo_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkNuevo.LinkClicked
+        Dim NewNota As New Nota
+        _Notas.Add(NewNota)
+
+        TBoxNotas.Text = "Escribe aquí..."
+        NotaActual = _Notas.Count - 1
+        LblX.Text = CStr(_Notas.Count)
+        LblY.Text = CStr(_Notas.Count)
     End Sub
 End Class
