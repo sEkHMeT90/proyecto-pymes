@@ -22,6 +22,7 @@ Partial Class Consulta
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Consulta))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Lunes = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -36,6 +37,7 @@ Partial Class Consulta
         Me.PBSemanaCon = New System.Windows.Forms.PictureBox()
         Me.BarraEstado = New System.Windows.Forms.StatusStrip()
         Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBMesCon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBAnioCon, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -182,4 +184,5 @@ Partial Class Consulta
     Friend WithEvents PBSemanaCon As System.Windows.Forms.PictureBox
     Friend WithEvents BarraEstado As System.Windows.Forms.StatusStrip
     Friend WithEvents TSLabEstado As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class
