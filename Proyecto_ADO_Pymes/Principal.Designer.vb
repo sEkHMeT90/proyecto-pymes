@@ -104,6 +104,7 @@ Partial Class Principal
         Me.PBAnterior = New System.Windows.Forms.PictureBox()
         Me.TBoxNotas = New System.Windows.Forms.RichTextBox()
         Me.BlocNotas = New System.Windows.Forms.PictureBox()
+        Me.LBLNotas = New System.Windows.Forms.Label()
         CType(Me.DGVCitas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
@@ -846,6 +847,7 @@ Partial Class Principal
         'PanelNotas
         '
         Me.PanelNotas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PanelNotas.Controls.Add(Me.LBLNotas)
         Me.PanelNotas.Controls.Add(Me.PBAceptar)
         Me.PanelNotas.Controls.Add(Me.LinkNuevo)
         Me.PanelNotas.Controls.Add(Me.PBBorrar)
@@ -955,7 +957,7 @@ Partial Class Principal
         Me.TBoxNotas.Location = New System.Drawing.Point(24, 57)
         Me.TBoxNotas.MaxLength = 150
         Me.TBoxNotas.Name = "TBoxNotas"
-        Me.TBoxNotas.Size = New System.Drawing.Size(195, 224)
+        Me.TBoxNotas.Size = New System.Drawing.Size(195, 236)
         Me.TBoxNotas.TabIndex = 1
         Me.TBoxNotas.Text = ""
         '
@@ -968,6 +970,16 @@ Partial Class Principal
         Me.BlocNotas.Size = New System.Drawing.Size(248, 335)
         Me.BlocNotas.TabIndex = 0
         Me.BlocNotas.TabStop = False
+        '
+        'LBLNotas
+        '
+        Me.LBLNotas.AutoSize = True
+        Me.LBLNotas.BackColor = System.Drawing.Color.Transparent
+        Me.LBLNotas.Location = New System.Drawing.Point(32, 280)
+        Me.LBLNotas.Name = "LBLNotas"
+        Me.LBLNotas.Size = New System.Drawing.Size(40, 13)
+        Me.LBLNotas.TabIndex = 42
+        Me.LBLNotas.Text = "Estado"
         '
         'Principal
         '
@@ -1117,5 +1129,6 @@ Partial Class Principal
     Friend WithEvents PBBorrar As System.Windows.Forms.PictureBox
     Friend WithEvents LinkNuevo As System.Windows.Forms.LinkLabel
     Friend WithEvents PBAceptar As System.Windows.Forms.PictureBox
+    Friend WithEvents LBLNotas As System.Windows.Forms.Label
 
 End Class

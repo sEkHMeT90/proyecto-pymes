@@ -204,6 +204,7 @@ Public Class Principal
             PanelNotas.Visible = False
         Else
             PanelNotas.Visible = True
+            LBLNotas.Text = ""
         End If
     End Sub
 
@@ -222,6 +223,7 @@ Public Class Principal
             _NotaActual = _NotaActual - 1
             LblX.Text = CStr(_NotaActual + 1)
             TBoxNotas.Text = _Notas(_NotaActual).Texto
+            LBLNotas.Text = ""
         End If
     End Sub
 
@@ -230,6 +232,7 @@ Public Class Principal
             _NotaActual = _NotaActual + 1
             LblX.Text = CStr(_NotaActual + 1)
             TBoxNotas.Text = _Notas(_NotaActual).Texto
+            LBLNotas.Text = ""
         End If
     End Sub
 
@@ -243,6 +246,7 @@ Public Class Principal
         If _Notas.Count > 0 Then
             _Notas(_NotaActual).Eliminar()
             _Notas.RemoveAt(_NotaActual)
+            LBLNotas.Text = "- Nota eliminada..."
             If _NotaActual - 1 >= 0 Then
                 _NotaActual = _NotaActual - 1
                 LblX.Text = CStr(_NotaActual + 1)
@@ -263,14 +267,14 @@ Public Class Principal
         If _Notas.Count > 0 Then
             _Notas(_NotaActual).Texto = TBoxNotas.Text
             _Notas(_NotaActual).Modificar()
+            LBLNotas.Text = "- Nota modificada..."
         End If
     End Sub
 
     Private Sub LinkNuevo_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkNuevo.LinkClicked
         Dim NewNota As New Nota
-        _Notas.Add(NewNota)
-        _NotaActual = _Notas.Count - 1
-        _Notas(_NotaActual).Insertar()
+        NewNota.Insertar()
+        LBLNotas.Text = "- Nota creada..."
         CargarNotas()
     End Sub
 End Class
