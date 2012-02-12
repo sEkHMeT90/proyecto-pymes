@@ -200,6 +200,53 @@ Public Class Cita
     End Function
 
     ''' <summary>
+    ''' Devuelve todas las citas de un mes
+    ''' </summary>
+    ''' <param name="mes">Mes a buscar</param>
+    ''' <returns>Las citas encontradas</returns>
+    ''' <author>Pedro Zalacain</author>
+    Public Shared Function ObtenerPorMes(ByVal mes As Integer) As List(Of Cita)
+        Dim citas As New List(Of Cita)
+        Dim conexion As New BBDD
+        Dim lector As OleDbDataReader
+
+        If conexion.Conectar Then
+            lector = conexion.Consultar("SELECT * FROM Citas " & _
+                                         "WHERE fecha LIKE '*';")
+
+            If lector IsNot Nothing Then
+                While lector.Read
+                    Dim nueva As New Cita()
+                    nueva._Codigo = CInt(lector(0))
+                    nueva._Cliente = Cliente.Obtener(CInt(lector(1)), conexion)
+                    nueva._Trabajador = Trabajador.Obtener(CInt(lector(2)), conexion)
+                    nueva._Fecha = CDate(lector(3))
+                    nueva._Hora = CDate(lector(4))
+                    nueva._Duracion = CInt(lector(5))
+                    citas.Add(nueva)
+                End While
+
+                lector.Close()
+
+                For Each cita In citas
+                    cita._Servicios = Servicio.ServiciosPorCita(cita._Codigo, conexion)
+                Next
+
+            Else
+                citas = Nothing
+            End If
+
+            conexion.Desconectar()
+            conexion.Dispose()
+        Else
+            citas = Nothing
+            conexion.Dispose()
+        End If
+
+        Return citas
+    End Function
+
+    ''' <summary>
     ''' Devuelve la cita de un trabajador en una fecha a una determinada hora
     ''' </summary>
     ''' <param name="t">Código del trabajador</param>
