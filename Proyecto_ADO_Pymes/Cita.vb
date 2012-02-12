@@ -212,7 +212,7 @@ Public Class Cita
 
         If conexion.Conectar Then
             lector = conexion.Consultar("SELECT * FROM Citas " & _
-                                         "WHERE fecha LIKE '*';")
+                                         "WHERE fecha LIKE '%/%" & mes & "/%';")
 
             If lector IsNot Nothing Then
                 While lector.Read
