@@ -7,64 +7,55 @@ Option Strict On
 ''' <author>María Navarro, Pedro Zalacain</author>
 Public Class Principal
     Private _Fecha As Date
-    Private _HoraInicial As DateTime
-    Private _HoraFinal As DateTime
+    Private _HoraInicial As Integer
+    Private _HoraFinal As Integer
     Private _Trabajadores As List(Of Trabajador)
     Private _Citas As List(Of Cita)
     Private _Notas As List(Of Nota)
-    Private NotaActual As Integer
+    Private _NotaActual As Integer
 
     ''' <summary>
     ''' Actualiza los datos del DataGrid
     ''' </summary>
     ''' <author>Andrés Marotta</author>
     Private Sub Actualizar()
-        'Dim Minutos As Integer
-        'Dim HoraCita As DateTime
+        Dim Fila As Integer = 0
+        Dim Minutos As Integer
+        Dim HoraCita As DateTime
 
-        'Me._Citas = New List(Of Cita)
-        'Me._Fecha = Now
+        ' Recorro las horas
+        For Hora = Me._HoraInicial To Me._HoraFinal
+            Minutos = 0
+            ' Recorro los cuartos de cada hora
+            For Cuarto = 0 To 3
+                HoraCita = CDate("#" & Hora & ":" & Minutos & "#")
 
-        '' Recorro la columna de cada trabajador
-        'For columna = 0 To Me.DGVCitas.Columns.Count - 1
-        '    ' Recorro el intervalo de horas visible
-        '    For Hora = Me._HoraInicial.Hour To Me._HoraFinal.Hour
-        '        Minutos = 0
-        '        ' Recorro los cuartos de cada hora
-        '        For Cuarto = 0 To 3
-        '            HoraCita = CDate("#" & Hora & ":" & Minutos & "#")
+                ' Recorro la columna de cada trabajador
+                For Columna = 0 To Me.DGVCitas.Columns.Count - 1
+                    ' Compruebo si hay una cita con esos parámetros
+                    Dim nueva As Cita = Cita.Obtener(Me._Trabajadores(Columna).Codigo, Me._Fecha, HoraCita)
 
-        '            ' Compruebo si hay una cita con esos parámetros
-        '            Dim nueva As Cita = Cita.Obtener(Me._Trabajadores(columna).Codigo, Me._Fecha, HoraCita)
+                    ' Si la hay, la guardo
+                    If nueva IsNot Nothing Then
+                        For i = 0 To nueva.Duracion Step 15
+                            If i <= nueva.Servicios.Count Then
+                                Me.DGVCitas.Rows(Fila + i).Cells(Columna).Value = nueva.Servicios(i).Nombre & " - " & _
+                                                                                  nueva.Cliente.Apellido1
+                            Else
+                                Me.DGVCitas.Rows(Fila + CInt((i / 15))).Cells(Columna).Value = nueva.Servicios(0).Nombre & " - " & _
+                                                                                               nueva.Cliente.Apellido1
+                            End If
+                        Next
+                    End If
+                Next
 
-        '            ' Si la hay, la guardo
-        '            If nueva IsNot Nothing Then
-        '                Me._Citas.Add(nueva)
-        '            End If
+                Minutos += 15
 
-        '            Minutos += 15
-        '        Next
-        '    Next
-        'Next
-
-        '' Agrego las citas en las celdas correspondientes
-        'If Me._Citas.Count > 0 Then
-        '    HoraCita = Me._HoraInicial
-
-        '    ' Por cada fila
-        '    For fila = 0 To Me.DGVCitas.RowCount - 1
-        '        ' Por cada trabajador
-        '        For columna = 0 To Me.DGVCitas.Columns.Count - 1
-        '            For Each cita In Me._Citas
-        '                If cita.Trabajador.Codigo = Me._Trabajadores(columna).Codigo And cita.Hora = HoraCita Then
-        '                    Me.DGVCitas.Rows(fila).Cells(columna).Value = cita.Servicios(0).Nombre
-        '                End If
-        '            Next
-        '        Next
-
-        '        HoraCita.AddMinutes(15)
-        '    Next
-        'End If
+                If Fila <= 11 Then
+                    Fila += 1
+                End If
+            Next
+        Next
     End Sub
 
     ''' <summary>
@@ -88,9 +79,9 @@ Public Class Principal
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me._HoraInicial = #8:00:00 AM#
-        Me._HoraFinal = #12:59:00 PM#
-        Me._Fecha = Now()
+        Me._HoraInicial = 8
+        Me._HoraFinal = 13
+        Me._Fecha = CDate(Now.Day & "/" & Now.Month & "/" & Now.Year)
         Me.PanelNotas.Visible = False
         Me.Timer1.Start()
         Me.PrepararDataGrid()
@@ -219,26 +210,26 @@ Public Class Principal
     Private Sub CargarNotas()
         _Notas = Nota.Cargar()
         If _Notas.Count > 0 Then
-            NotaActual = _Notas.Count - 1
-            LblX.Text = CStr(NotaActual + 1)
+            _NotaActual = _Notas.Count - 1
+            LblX.Text = CStr(_NotaActual + 1)
             LblY.Text = CStr(_Notas.Count)
-            TBoxNotas.Text = _Notas(NotaActual).Texto
+            TBoxNotas.Text = _Notas(_NotaActual).Texto
         End If
     End Sub
 
     Private Sub PBAnterior_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAnterior.Click
-        If NotaActual - 1 >= 0 Then
-            NotaActual = NotaActual - 1
-            LblX.Text = CStr(NotaActual + 1)
-            TBoxNotas.Text = _Notas(NotaActual).Texto
+        If _NotaActual - 1 >= 0 Then
+            _NotaActual = _NotaActual - 1
+            LblX.Text = CStr(_NotaActual + 1)
+            TBoxNotas.Text = _Notas(_NotaActual).Texto
         End If
     End Sub
 
     Private Sub PBSiguiente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBSiguiente.Click
-        If NotaActual + 1 < _Notas.Count Then
-            NotaActual = NotaActual + 1
-            LblX.Text = CStr(NotaActual + 1)
-            TBoxNotas.Text = _Notas(NotaActual).Texto
+        If _NotaActual + 1 < _Notas.Count Then
+            _NotaActual = _NotaActual + 1
+            LblX.Text = CStr(_NotaActual + 1)
+            TBoxNotas.Text = _Notas(_NotaActual).Texto
         End If
     End Sub
 
@@ -250,17 +241,17 @@ Public Class Principal
 
     Private Sub PBBorrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrar.Click
         If _Notas.Count > 0 Then
-            _Notas(NotaActual).Eliminar()
-            _Notas.RemoveAt(NotaActual)
-            If NotaActual - 1 >= 0 Then
-                NotaActual = NotaActual - 1
-                LblX.Text = CStr(NotaActual + 1)
+            _Notas(_NotaActual).Eliminar()
+            _Notas.RemoveAt(_NotaActual)
+            If _NotaActual - 1 >= 0 Then
+                _NotaActual = _NotaActual - 1
+                LblX.Text = CStr(_NotaActual + 1)
             End If
 
             LblY.Text = CStr(_Notas.Count)
 
             If _Notas.Count > 0 Then
-                TBoxNotas.Text = _Notas(NotaActual).Texto
+                TBoxNotas.Text = _Notas(_NotaActual).Texto
             Else
                 LblX.Text = "0"
                 TBoxNotas.Text = ""
@@ -270,16 +261,16 @@ Public Class Principal
 
     Private Sub PBAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptar.Click
         If _Notas.Count > 0 Then
-            _Notas(NotaActual).Texto = TBoxNotas.Text
-            _Notas(NotaActual).Modificar()
+            _Notas(_NotaActual).Texto = TBoxNotas.Text
+            _Notas(_NotaActual).Modificar()
         End If
     End Sub
 
     Private Sub LinkNuevo_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkNuevo.LinkClicked
         Dim NewNota As New Nota
         _Notas.Add(NewNota)
-        NotaActual = _Notas.Count - 1
-        _Notas(NotaActual).Insertar()
+        _NotaActual = _Notas.Count - 1
+        _Notas(_NotaActual).Insertar()
         CargarNotas()
     End Sub
 End Class
