@@ -93,6 +93,7 @@ Partial Class Principal
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.PanelNotas = New System.Windows.Forms.Panel()
+        Me.LBLNotas = New System.Windows.Forms.Label()
         Me.PBAceptar = New System.Windows.Forms.PictureBox()
         Me.LinkNuevo = New System.Windows.Forms.LinkLabel()
         Me.PBBorrar = New System.Windows.Forms.PictureBox()
@@ -104,7 +105,6 @@ Partial Class Principal
         Me.PBAnterior = New System.Windows.Forms.PictureBox()
         Me.TBoxNotas = New System.Windows.Forms.RichTextBox()
         Me.BlocNotas = New System.Windows.Forms.PictureBox()
-        Me.LBLNotas = New System.Windows.Forms.Label()
         CType(Me.DGVCitas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
@@ -864,6 +864,16 @@ Partial Class Principal
         Me.PanelNotas.Size = New System.Drawing.Size(252, 340)
         Me.PanelNotas.TabIndex = 37
         '
+        'LBLNotas
+        '
+        Me.LBLNotas.AutoSize = True
+        Me.LBLNotas.BackColor = System.Drawing.Color.Transparent
+        Me.LBLNotas.Location = New System.Drawing.Point(32, 280)
+        Me.LBLNotas.Name = "LBLNotas"
+        Me.LBLNotas.Size = New System.Drawing.Size(40, 13)
+        Me.LBLNotas.TabIndex = 42
+        Me.LBLNotas.Text = "Estado"
+        '
         'PBAceptar
         '
         Me.PBAceptar.BackgroundImage = CType(resources.GetObject("PBAceptar.BackgroundImage"), System.Drawing.Image)
@@ -971,16 +981,6 @@ Partial Class Principal
         Me.BlocNotas.TabIndex = 0
         Me.BlocNotas.TabStop = False
         '
-        'LBLNotas
-        '
-        Me.LBLNotas.AutoSize = True
-        Me.LBLNotas.BackColor = System.Drawing.Color.Transparent
-        Me.LBLNotas.Location = New System.Drawing.Point(32, 280)
-        Me.LBLNotas.Name = "LBLNotas"
-        Me.LBLNotas.Size = New System.Drawing.Size(40, 13)
-        Me.LBLNotas.TabIndex = 42
-        Me.LBLNotas.Text = "Estado"
-        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -992,8 +992,8 @@ Partial Class Principal
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel4)
-        Me.Controls.Add(Me.PanelNotas)
         Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.PanelNotas)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.PBAbajo)
         Me.Controls.Add(Me.Panel1)

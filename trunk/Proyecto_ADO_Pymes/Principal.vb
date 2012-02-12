@@ -23,6 +23,9 @@ Public Class Principal
         Dim Minutos As Integer
         Dim HoraCita As DateTime
 
+        Me.DGVCitas.Rows.Clear()
+        Me.PrepararDataGrid()
+
         ' Recorro las horas
         For Hora = Me._HoraInicial To Me._HoraFinal
             Minutos = 0
@@ -84,7 +87,6 @@ Public Class Principal
         Me._Fecha = CDate(Now.Day & "/" & Now.Month & "/" & Now.Year)
         Me.PanelNotas.Visible = False
         Me.Timer1.Start()
-        Me.PrepararDataGrid()
         Me.Actualizar()
         Me.CargarNotas()
     End Sub
@@ -111,6 +113,9 @@ Public Class Principal
             LblHora2.Text = (CInt(LblHora2.Text) - 1).ToString("00")
             LblHora3.Text = (CInt(LblHora3.Text) - 1).ToString("00")
             LblHora4.Text = (CInt(LblHora4.Text) - 1).ToString("00")
+            Me._HoraInicial -= 1
+            Me._HoraFinal -= 1
+            Me.Actualizar()
         End If
     End Sub
 
@@ -120,6 +125,9 @@ Public Class Principal
             LblHora2.Text = (CInt(LblHora2.Text) + 1).ToString("00")
             LblHora3.Text = (CInt(LblHora3.Text) + 1).ToString("00")
             LblHora4.Text = (CInt(LblHora4.Text) + 1).ToString("00")
+            Me._HoraInicial += 1
+            Me._HoraFinal += 1
+            Me.Actualizar()
         End If
     End Sub
 
@@ -276,5 +284,10 @@ Public Class Principal
         NewNota.Insertar()
         LBLNotas.Text = "- Nota creada..."
         CargarNotas()
+    End Sub
+
+    Private Sub DPfecha_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DPfecha.ValueChanged
+        Me._Fecha = CDate(DPfecha.Value.Day & "/" & DPfecha.Value.Month & "/" & Me.DPfecha.Value.Year)
+        Me.Actualizar()
     End Sub
 End Class
