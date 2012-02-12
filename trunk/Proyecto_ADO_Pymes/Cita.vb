@@ -189,8 +189,11 @@ Public Class Cita
                 citas = Nothing
             End If
 
+            conexion.Desconectar()
+            conexion.Dispose()
         Else
             citas = Nothing
+            conexion.Dispose()
         End If
 
         Return citas
@@ -212,13 +215,12 @@ Public Class Cita
         If conexion.Conectar Then
             lector = conexion.Consultar("SELECT * FROM Citas " & _
                                         "WHERE trabajador = " & t & " AND " & _
-                                        "fecha = #" & f.Month & "/" & f.Day & "/" & f.Year & "# AND" & _
+                                        "fecha = #" & f.Month & "/" & f.Day & "/" & f.Year & "# AND " & _
                                         "hora = #" & h & "#" & _
                                         ";")
 
 
-            If Not lector Is Nothing Then
-                lector.Read()
+            If lector.Read() Then
                 nueva = New Cita
                 nueva._Codigo = CInt(lector(0))
                 nueva._Cliente = Cliente.Obtener(CInt(lector(1)), conexion)
@@ -293,7 +295,7 @@ Public Class Cita
                     "VALUES(" & _
                     Me._Cliente.Codigo & ", " & _
                     Me._Trabajador.Codigo & ", " & _
-                    "#" & Me._Fecha.Day & "/" & Me._Fecha.Month & "/" & Me._Fecha.Year & "#, " & _
+                    "#" & Me._Fecha.Month & "/" & Me._Fecha.Day & "/" & Me._Fecha.Year & "#, " & _
                     "#" & Me._Hora & "#, " & _
                     Me._Duracion & _
                     ");"

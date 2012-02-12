@@ -88,7 +88,7 @@ Public Class NuevaCita
 
         nueva.Cliente.Codigo = Me._Clientes(CBoxClienteC.SelectedIndex).Codigo
         nueva.Trabajador.Codigo = Me._Empleados(CBoxEmpleadoC.SelectedIndex).Codigo
-        nueva.Fecha = CDate(DPCitaC.Value.Day & "/" & DPCitaC.Value.Month & "/" & DPCitaC.Value.Month)
+        nueva.Fecha = CDate(DPCitaC.Value.Day & "/" & DPCitaC.Value.Month & "/" & DPCitaC.Value.Year)
         nueva.Hora = CDate("#" & CBoxHoraC.Text & ":" & CBoxMinC.Text & "#")
 
         For Each elemento As String In ListBServiciosC.Items
