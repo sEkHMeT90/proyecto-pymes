@@ -6,9 +6,9 @@ Option Strict On
 ''' </summary>
 ''' <author>María Navarro, Pedro Zalacain</author>
 Public Class Principal
-
-    Private _HoraInicial As Integer
-    Private _HoraFinal As Integer
+    Private _Fecha As Date
+    Private _HoraInicial As DateTime
+    Private _HoraFinal As DateTime
     Private _Trabajadores As List(Of Trabajador)
     Private _Citas As List(Of Cita)
     Private _Notas As List(Of Nota)
@@ -19,56 +19,51 @@ Public Class Principal
     ''' </summary>
     ''' <author>Andrés Marotta</author>
     Private Sub Actualizar()
-        Dim minutos As Integer = 0
-        Dim hora As Integer = Me._HoraInicial - 1
+        'Dim Minutos As Integer
+        'Dim HoraCita As DateTime
 
-        Me._Citas = Cita.Cargar
+        'Me._Citas = New List(Of Cita)
+        'Me._Fecha = Now
 
-        ' Agrego tantas filas como horas, divididas en cuartos, haya
-        For i = 0 To (Me._HoraFinal - Me._HoraInicial) * 4
-            Me.DGVCitas.Rows.Add()
-        Next
+        '' Recorro la columna de cada trabajador
+        'For columna = 0 To Me.DGVCitas.Columns.Count - 1
+        '    ' Recorro el intervalo de horas visible
+        '    For Hora = Me._HoraInicial.Hour To Me._HoraFinal.Hour
+        '        Minutos = 0
+        '        ' Recorro los cuartos de cada hora
+        '        For Cuarto = 0 To 3
+        '            HoraCita = CDate("#" & Hora & ":" & Minutos & "#")
 
-        ' Recorro cada fila del DataGridView
-        For fila = 0 To Me.DGVCitas.RowCount - 1
+        '            ' Compruebo si hay una cita con esos parámetros
+        '            Dim nueva As Cita = Cita.Obtener(Me._Trabajadores(columna).Codigo, Me._Fecha, HoraCita)
 
-            For columna = 0 To Me.DGVCitas.ColumnCount - 1
-                For Each cita In Me._Citas
-                    If cita.Hora = hora And cita.Minutos = minutos Then
-                        If CStr(cita.Trabajador.Codigo) = Me.DGVCitas.Columns(columna).HeaderText Then
-                            Me.DGVCitas.Rows(fila).Cells(columna).Value = cita.Cliente.Apellido1
-                        End If
-                    End If
-                Next
-            Next
-
-            If minutos < 45 Then
-                minutos += 15
-            Else
-                minutos = 0
-            End If
-
-            If fila Mod 4 = 0 Then
-                hora += 1
-            End If
-        Next
-
-        'If Me._Citas.Count > 0 Then
-        '    For i = 0 To Me.DGVCitas.RowCount - 1
-
-        '    Next
-        'End If
-
-        'If Me._Citas.Count > 0 Then
-        '    For i = 0 To Me._Citas.Count - 1
-        '        For j = 0 To Me._Trabajadores.Count - 1
-        '            If Me._Citas(i).Trabajador.Codigo = j Then
-        '                Me.DGVCitas.Rows(i).Cells(j).Value = Me._Citas(i).Cliente.Apellido1
+        '            ' Si la hay, la guardo
+        '            If nueva IsNot Nothing Then
+        '                Me._Citas.Add(nueva)
         '            End If
+
+        '            Minutos += 15
         '        Next
         '    Next
-        'Else
-        '    MsgBox("No hay citas")
+        'Next
+
+        '' Agrego las citas en las celdas correspondientes
+        'If Me._Citas.Count > 0 Then
+        '    HoraCita = Me._HoraInicial
+
+        '    ' Por cada fila
+        '    For fila = 0 To Me.DGVCitas.RowCount - 1
+        '        ' Por cada trabajador
+        '        For columna = 0 To Me.DGVCitas.Columns.Count - 1
+        '            For Each cita In Me._Citas
+        '                If cita.Trabajador.Codigo = Me._Trabajadores(columna).Codigo And cita.Hora = HoraCita Then
+        '                    Me.DGVCitas.Rows(fila).Cells(columna).Value = cita.Servicios(0).Nombre
+        '                End If
+        '            Next
+        '        Next
+
+        '        HoraCita.AddMinutes(15)
+        '    Next
         'End If
     End Sub
 
@@ -81,18 +76,25 @@ Public Class Principal
 
         Me.DGVCitas.ColumnCount = Me._Trabajadores.Count
 
+        ' Agrego una columna por cada trabajador
         For i = 0 To Me._Trabajadores.Count - 1
-            Me.DGVCitas.Columns(i).HeaderText = CStr(Me._Trabajadores(i).Codigo)
+            Me.DGVCitas.Columns(i).HeaderText = CStr(Me._Trabajadores(i).Nombre & " " & Me._Trabajadores(i).Apellido1)
+        Next
+
+        ' Agrego las filas para las 4 horas que se muestran
+        For i = 0 To 15
+            Me.DGVCitas.Rows.Add()
         Next
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        _HoraInicial = 8
-        _HoraFinal = 20
-        PanelNotas.Visible = False
-        Timer1.Start()
-        PrepararDataGrid()
-        Actualizar()
+        Me._HoraInicial = #8:00:00 AM#
+        Me._HoraFinal = #12:59:00 PM#
+        Me._Fecha = Now()
+        Me.PanelNotas.Visible = False
+        Me.Timer1.Start()
+        Me.PrepararDataGrid()
+        Me.Actualizar()
         Me.CargarNotas()
     End Sub
 

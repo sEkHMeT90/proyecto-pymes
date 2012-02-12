@@ -136,12 +136,16 @@ Partial Class Principal
         Me.DGVCitas.AllowUserToDeleteRows = False
         Me.DGVCitas.AllowUserToResizeColumns = False
         Me.DGVCitas.AllowUserToResizeRows = False
-        Me.DGVCitas.BackgroundColor = System.Drawing.Color.Thistle
+        Me.DGVCitas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DGVCitas.BackgroundColor = System.Drawing.Color.White
         Me.DGVCitas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.DGVCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVCitas.ColumnHeadersHeight = 25
         Me.DGVCitas.Location = New System.Drawing.Point(235, 103)
         Me.DGVCitas.Name = "DGVCitas"
         Me.DGVCitas.ReadOnly = True
+        Me.DGVCitas.RowHeadersVisible = False
+        Me.DGVCitas.RowTemplate.Height = 26
+        Me.DGVCitas.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.DGVCitas.Size = New System.Drawing.Size(460, 438)
         Me.DGVCitas.TabIndex = 0
         '
