@@ -33,11 +33,11 @@ Public Class ModificarCliente
         CBPoblacionU.Items.Clear()
         CBProvinciaU.Items.Clear()
 
-        If LBoxMC.Items.Count > 0 Then
+        If LBoxMC.SelectedIndex >= 0 Then
             TBNombreMU.Text = ListaClientes.Item(LBoxMC.SelectedIndex).Nombre
             TBApellido1MU.Text = ListaClientes.Item(LBoxMC.SelectedIndex).Apellido1
             TBApellidoMU.Text = ListaClientes.Item(LBoxMC.SelectedIndex).Apellido2
-            TBDniMU.Text = ListaClientes.Item(LBoxMC.SelectedIndex).DNI
+            TBDniMU.Text = ListaClientes.Item(LBoxMC.SelectedIndex).Dni
             TBFijoMU.Text = CStr(ListaClientes.Item(LBoxMC.SelectedIndex).Particular)
             TBMovilMU.Text = CStr(ListaClientes.Item(LBoxMC.SelectedIndex).Movil)
             TBEmailMU.Text = ListaClientes.Item(LBoxMC.SelectedIndex).Email

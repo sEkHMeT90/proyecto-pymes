@@ -31,9 +31,9 @@ Partial Class Consulta
         Me.BarraEstado = New System.Windows.Forms.StatusStrip()
         Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.MCalendar = New System.Windows.Forms.MonthCalendar()
         Me.LblState = New System.Windows.Forms.Label()
         Me.LblVista = New System.Windows.Forms.Label()
+        Me.MCalendar = New System.Windows.Forms.MonthCalendar()
         CType(Me.DatosConsulta, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBMesCon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBAnioCon, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,7 +62,7 @@ Partial Class Consulta
         '
         Me.PBMesCon.BackColor = System.Drawing.Color.Transparent
         Me.PBMesCon.BackgroundImage = CType(resources.GetObject("PBMesCon.BackgroundImage"), System.Drawing.Image)
-        Me.PBMesCon.Location = New System.Drawing.Point(416, 107)
+        Me.PBMesCon.Location = New System.Drawing.Point(487, 107)
         Me.PBMesCon.Name = "PBMesCon"
         Me.PBMesCon.Size = New System.Drawing.Size(92, 37)
         Me.PBMesCon.TabIndex = 61
@@ -72,7 +72,7 @@ Partial Class Consulta
         '
         Me.PBAnioCon.BackColor = System.Drawing.Color.Transparent
         Me.PBAnioCon.BackgroundImage = CType(resources.GetObject("PBAnioCon.BackgroundImage"), System.Drawing.Image)
-        Me.PBAnioCon.Location = New System.Drawing.Point(605, 107)
+        Me.PBAnioCon.Location = New System.Drawing.Point(649, 107)
         Me.PBAnioCon.Name = "PBAnioCon"
         Me.PBAnioCon.Size = New System.Drawing.Size(92, 37)
         Me.PBAnioCon.TabIndex = 60
@@ -82,7 +82,7 @@ Partial Class Consulta
         '
         Me.PBSemanaCon.BackColor = System.Drawing.Color.Transparent
         Me.PBSemanaCon.BackgroundImage = CType(resources.GetObject("PBSemanaCon.BackgroundImage"), System.Drawing.Image)
-        Me.PBSemanaCon.Location = New System.Drawing.Point(230, 107)
+        Me.PBSemanaCon.Location = New System.Drawing.Point(332, 107)
         Me.PBSemanaCon.Name = "PBSemanaCon"
         Me.PBSemanaCon.Size = New System.Drawing.Size(92, 37)
         Me.PBSemanaCon.TabIndex = 58
@@ -106,21 +106,13 @@ Partial Class Consulta
         Me.TSLabEstado.Size = New System.Drawing.Size(49, 17)
         Me.TSLabEstado.Text = "Estado"
         '
-        'MCalendar
-        '
-        Me.MCalendar.Location = New System.Drawing.Point(9, 9)
-        Me.MCalendar.MaxSelectionCount = 1
-        Me.MCalendar.Name = "MCalendar"
-        Me.MCalendar.ShowToday = False
-        Me.MCalendar.TabIndex = 104
-        '
         'LblState
         '
         Me.LblState.AutoSize = True
         Me.LblState.BackColor = System.Drawing.Color.Transparent
         Me.LblState.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblState.ForeColor = System.Drawing.Color.White
-        Me.LblState.Location = New System.Drawing.Point(267, 42)
+        Me.LblState.Location = New System.Drawing.Point(328, 39)
         Me.LblState.Name = "LblState"
         Me.LblState.Size = New System.Drawing.Size(55, 20)
         Me.LblState.TabIndex = 105
@@ -132,11 +124,19 @@ Partial Class Consulta
         Me.LblVista.BackColor = System.Drawing.Color.Transparent
         Me.LblVista.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblVista.ForeColor = System.Drawing.Color.White
-        Me.LblVista.Location = New System.Drawing.Point(328, 42)
+        Me.LblVista.Location = New System.Drawing.Point(400, 39)
         Me.LblVista.Name = "LblVista"
         Me.LblVista.Size = New System.Drawing.Size(84, 20)
         Me.LblVista.TabIndex = 106
         Me.LblVista.Text = "TipoVista"
+        '
+        'MCalendar
+        '
+        Me.MCalendar.Location = New System.Drawing.Point(52, 9)
+        Me.MCalendar.MaxSelectionCount = 1
+        Me.MCalendar.Name = "MCalendar"
+        Me.MCalendar.ShowToday = False
+        Me.MCalendar.TabIndex = 104
         '
         'Consulta
         '
@@ -174,7 +174,7 @@ Partial Class Consulta
     Friend WithEvents BarraEstado As System.Windows.Forms.StatusStrip
     Friend WithEvents TSLabEstado As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
-    Friend WithEvents MCalendar As System.Windows.Forms.MonthCalendar
     Friend WithEvents LblState As System.Windows.Forms.Label
     Friend WithEvents LblVista As System.Windows.Forms.Label
+    Friend WithEvents MCalendar As System.Windows.Forms.MonthCalendar
 End Class
