@@ -156,11 +156,19 @@ Public Class Principal
     End Sub
 
     Private Sub PBFactura_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBFactura.Click
-        Facturacion.ShowDialog()
-    End Sub
+        If Not Me.DGVCitas.CurrentCell.Value Is Nothing Then
+            Dim nueva As Cita
+            Dim hora As DateTime
+            hora = CDate((((Me.DGVCitas.CurrentCell.RowIndex) \ 4) + Me._HoraInicial) & ":" & (((Me.DGVCitas.CurrentCell.RowIndex) Mod 4) * 15))
+            nueva = Cita.Obtener(Me._Trabajadores(Me.DGVCitas.CurrentCell.ColumnIndex).Codigo, Me._Fecha, hora)
 
-    Private Sub FacturaciónToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Facturacion.ShowDialog()
+            If nueva IsNot Nothing Then
+                Dim factura As New Facturacion(nueva)
+                factura.Show()
+            End If
+        Else
+            MessageBox.Show("Debe seleccionar una cita a cobrar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
 
     Private Sub NuevaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NuevaToolStripMenuItem.Click
