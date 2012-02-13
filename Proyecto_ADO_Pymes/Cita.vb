@@ -200,6 +200,165 @@ Public Class Cita
     End Function
 
     ''' <summary>
+    ''' Devuelve todas las citas de un cliente dado
+    ''' </summary>
+    ''' <param name="texto"> Nombre y/o apellidos a buscar </param>
+    ''' <returns>Lista con las citas encontradas</returns>
+    ''' <author>Raquel Lloréns Gambín</author>
+    Public Shared Function Cargar(ByVal texto As String) As List(Of Cita)
+        Dim citas As New List(Of Cita)
+        Dim conexion As New BBDD
+        Dim lector As OleDbDataReader
+
+        If conexion.Conectar Then
+
+            'Buscamos en el nombre y ambos apellidos
+            lector = conexion.Consultar("SELECT * FROM Citas " & _
+                                    "WHERE ('" & texto & "' = (SELECT nombre FROM Clientes " & _
+                                        "WHERE Citas.cliente = Clientes.codigo;)) " & _
+                                    "OR ('" & texto & "' = (SELECT apellido1 FROM Clientes " & _
+                                        "WHERE Citas.cliente = Clientes.codigo;))" & _
+                                    "OR ('" & texto & "' = (SELECT apellido2 FROM Clientes " & _
+                                        "WHERE Citas.cliente = Clientes.codigo;));")
+
+            If lector IsNot Nothing Then
+                While lector.Read
+                    Dim nueva As New Cita()
+                    nueva._Codigo = CInt(lector(0))
+                    nueva._Cliente = Cliente.Obtener(CInt(lector(1)), conexion)
+                    nueva._Trabajador = Trabajador.Obtener(CInt(lector(2)), conexion)
+                    nueva._Fecha = CDate(lector(3))
+                    nueva._Hora = CDate(lector(4))
+                    nueva._Duracion = CInt(lector(5))
+                    citas.Add(nueva)
+                End While
+
+                lector.Close()
+
+                For Each cita In citas
+                    cita._Servicios = Servicio.ServiciosPorCita(cita._Codigo, conexion)
+                Next
+            End If
+
+            conexion.Desconectar()
+            conexion.Dispose()
+        Else
+            citas = Nothing
+            conexion.Dispose()
+        End If
+
+        Return citas
+    End Function
+
+    ''' <summary>
+    ''' Devuelve todas las citas de un cliente dado
+    ''' </summary>
+    ''' <param name="nombre"> Nombre a buscar </param>
+    ''' <param name="apellido"> Primer o segundo apellido a buscar </param>
+    ''' <returns>Lista con las citas encontradas</returns>
+    ''' <author>Raquel Lloréns Gambín</author>
+    Public Shared Function Cargar(ByVal nombre As String, ByVal apellido As String) As List(Of Cita)
+        Dim citas As New List(Of Cita)
+        Dim conexion As New BBDD
+        Dim lector As OleDbDataReader
+
+
+        If conexion.Conectar Then
+
+            'Buscamos en el nombre y el primer apellido
+            lector = conexion.Consultar("SELECT * FROM Citas " & _
+                                    "WHERE ('" & nombre & "' = (SELECT nombre FROM Clientes " & _
+                                        "WHERE Citas.cliente = Clientes.codigo;) " & _
+                                    "AND '" & apellido & "' = (SELECT apellido1 FROM Clientes " & _
+                                        "WHERE Citas.cliente = Clientes.codigo;)) " & _
+                                    "OR ('" & nombre & "' = (SELECT nombre FROM Clientes " & _
+                                        "WHERE Citas.cliente = Clientes.codigo;) " & _
+                                    "AND '" & apellido & "' = (SELECT apellido1 FROM Clientes " & _
+                                        "WHERE Citas.cliente = Clientes.codigo;));")
+
+            If lector IsNot Nothing Then
+                While lector.Read
+                    Dim nueva As New Cita()
+                    nueva._Codigo = CInt(lector(0))
+                    nueva._Cliente = Cliente.Obtener(CInt(lector(1)), conexion)
+                    nueva._Trabajador = Trabajador.Obtener(CInt(lector(2)), conexion)
+                    nueva._Fecha = CDate(lector(3))
+                    nueva._Hora = CDate(lector(4))
+                    nueva._Duracion = CInt(lector(5))
+                    citas.Add(nueva)
+                End While
+
+                lector.Close()
+
+                For Each cita In citas
+                    cita._Servicios = Servicio.ServiciosPorCita(cita._Codigo, conexion)
+                Next
+            End If
+
+            conexion.Desconectar()
+            conexion.Dispose()
+        Else
+            citas = Nothing
+            conexion.Dispose()
+        End If
+
+        Return citas
+    End Function
+
+    ''' <summary>
+    ''' Devuelve todas las citas de un cliente dado
+    ''' </summary>
+    ''' <param name="nombre"> Nombre a buscar </param>
+    ''' <param name="apellido1"> Primer apellido a buscar </param>
+    ''' <param name="apellido2"> Segundo apellido a buscar </param>
+    ''' <returns>Lista con las citas encontradas</returns>
+    ''' <author>Raquel Lloréns Gambín</author>
+    Public Shared Function Cargar(ByVal nombre As String, ByVal apellido1 As String, ByVal apellido2 As String) As List(Of Cita)
+        Dim citas As New List(Of Cita)
+        Dim conexion As New BBDD
+        Dim lector As OleDbDataReader
+
+
+        If conexion.Conectar Then
+
+            'Buscamos en el nombre y el primer apellido
+            lector = conexion.Consultar("SELECT * FROM Citas " & _
+                                    "WHERE '" & nombre & "' = (SELECT nombre FROM Clientes " & _
+                                        "WHERE Citas.cliente = Clientes.codigo;) " & _
+                                    "AND '" & apellido1 & "' = (SELECT apellido1 FROM Clientes " & _
+                                        "WHERE Citas.cliente = Clientes.codigo;) " & _
+                                    "AND '" & apellido2 & "' = (SELECT apellido2 FROM Clientes " & _
+                                        "WHERE Citas.cliente = Clientes.codigo;);")
+
+            If lector IsNot Nothing Then
+                While lector.Read
+                    Dim nueva As New Cita()
+                    nueva._Codigo = CInt(lector(0))
+                    nueva._Cliente = Cliente.Obtener(CInt(lector(1)), conexion)
+                    nueva._Trabajador = Trabajador.Obtener(CInt(lector(2)), conexion)
+                    nueva._Fecha = CDate(lector(3))
+                    nueva._Hora = CDate(lector(4))
+                    nueva._Duracion = CInt(lector(5))
+                    citas.Add(nueva)
+                End While
+
+                lector.Close()
+
+                For Each cita In citas
+                    cita._Servicios = Servicio.ServiciosPorCita(cita._Codigo, conexion)
+                Next
+            End If
+
+            conexion.Desconectar()
+            conexion.Dispose()
+        Else
+            citas = Nothing
+            conexion.Dispose()
+        End If
+
+        Return citas
+    End Function
+    ''' <summary>
     ''' Devuelve todas las citas de un mes
     ''' </summary>
     ''' <param name="mes">Mes a buscar</param>

@@ -16,6 +16,16 @@ Public Class Buscar
         If TBBuscar.Text = "" Then
             TBBuscar.Text = "    Antonio Picazo Escudero (ó) 12/12/2012   "
         End If
+
+        With DataGridBuscar
+            .ColumnCount = 5
+            .Columns.Item(0).HeaderText = "Hora"
+            .Columns.Item(1).HeaderText = "Cliente"
+            .Columns.Item(2).HeaderText = "Servicio"
+            .Columns.Item(3).HeaderText = "Duración"
+            .Columns.Item(4).HeaderText = "Trabajador"
+        End With
+
     End Sub
     Private Sub TBBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TBBuscar.Click
         TBBuscar.Text = ""
@@ -23,6 +33,8 @@ Public Class Buscar
 
 
     Private Sub PBBuscarB_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBuscarB.Click
+        DataGridBuscar.Rows.Clear()
+
         If Validaciones.EsFecha(TBBuscar.Text) Then
             BuscarFecha()
         Else
@@ -40,22 +52,17 @@ Public Class Buscar
     Public Sub BuscarFecha()
         Dim fecha As Date = CDate(TBBuscar.Text.Trim)
         Dim citas As List(Of Cita)
-        citas = Cita.Cargar()
+        citas = Cita.Cargar(fecha)
 
-        With DataGridBuscar
-            .ColumnCount = 4
-            .Columns.Item(0).HeaderText = "Hora"
-            .Columns.Item(1).HeaderText = "Cliente"
-            .Columns.Item(2).HeaderText = "Servicios"
-            .Columns.Item(3).HeaderText = "Trabajador"
-        End With
-
-        For Each Cita As Cita In citas
-            If Cita.Fecha() = fecha Then
-                DataGridBuscar.Rows.Add(Cita.Hora(), Cita.Cliente(), Cita.Servicios.ToString(), Cita.Trabajador())
-            End If
-        Next
-
+        If citas Is Nothing Then
+            MessageBox.Show("No se han encontrado resultados a su busqueda")
+        Else
+            For Each Cita As Cita In citas
+                For Each Servicio As Servicio In Cita.Servicios()
+                    DataGridBuscar.Rows.Add(Cita.Hora().TimeOfDay, Cita.Cliente.Nombre() & " " & Cita.Cliente.Apellido1(), Servicio.Nombre(), Servicio.Duracion(), Cita.Trabajador.Nombre() & " " & Cita.Trabajador.Apellido1())
+                Next
+            Next
+        End If
     End Sub
 
     ''' <summary>
@@ -63,6 +70,30 @@ Public Class Buscar
     ''' </summary>
     ''' <author>Raquel Lloréns Gambín</author>
     Public Sub BuscarTexto()
-        'TODO
+        Dim nombres As String()
+        Dim citas As List(Of Cita)
+
+        nombres = TBBuscar.Text.Split(CChar(" "))
+
+        If nombres.Count = 1 Then
+            citas = Cita.Cargar(nombres(0))
+        ElseIf nombres.Count = 2 Then
+            citas = Cita.Cargar(nombres(0), nombres(1))
+        ElseIf nombres.Count = 3 Then
+            citas = Cita.Cargar(nombres(0), nombres(1), nombres(2))
+        End If
+
+
+        If citas Is Nothing Then
+            MessageBox.Show("No se han encontrado resultados a su busqueda")
+        Else
+            For Each Cita As Cita In citas
+                For Each Servicio As Servicio In Cita.Servicios()
+                    DataGridBuscar.Rows.Add(Cita.Hora().TimeOfDay, Cita.Cliente.Nombre() & " " & Cita.Cliente.Apellido1(), Servicio.Nombre(), Servicio.Duracion(), Cita.Trabajador.Nombre() & " " & Cita.Trabajador.Apellido1())
+                Next
+            Next
+        End If
+
+
     End Sub
 End Class

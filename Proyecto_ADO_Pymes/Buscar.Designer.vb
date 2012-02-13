@@ -45,9 +45,11 @@ Partial Class Buscar
         '
         'DataGridBuscar
         '
+        Me.DataGridBuscar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridBuscar.BackgroundColor = System.Drawing.Color.Thistle
         Me.DataGridBuscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridBuscar.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
+        Me.DataGridBuscar.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DataGridBuscar.Location = New System.Drawing.Point(70, 196)
         Me.DataGridBuscar.Name = "DataGridBuscar"
         Me.DataGridBuscar.Size = New System.Drawing.Size(648, 325)
