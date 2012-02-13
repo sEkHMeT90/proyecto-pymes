@@ -44,7 +44,6 @@ Partial Class Principal
         Me.ConsultaCitasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModificarToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FacturaciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
@@ -154,7 +153,7 @@ Partial Class Principal
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.GestiónUsuariosToolStripMenuItem, Me.ConsultaCitasToolStripMenuItem, Me.FacturaciónToolStripMenuItem, Me.NotasToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.GestiónUsuariosToolStripMenuItem, Me.ConsultaCitasToolStripMenuItem, Me.NotasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(794, 25)
@@ -311,13 +310,6 @@ Partial Class Principal
         Me.ModificarToolStripMenuItem4.Name = "ModificarToolStripMenuItem4"
         Me.ModificarToolStripMenuItem4.Size = New System.Drawing.Size(135, 22)
         Me.ModificarToolStripMenuItem4.Text = "Modificar"
-        '
-        'FacturaciónToolStripMenuItem
-        '
-        Me.FacturaciónToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.FacturaciónToolStripMenuItem.Name = "FacturaciónToolStripMenuItem"
-        Me.FacturaciónToolStripMenuItem.Size = New System.Drawing.Size(91, 21)
-        Me.FacturaciónToolStripMenuItem.Text = "&Facturación"
         '
         'NotasToolStripMenuItem
         '
@@ -867,7 +859,7 @@ Partial Class Principal
         'LBLNotas
         '
         Me.LBLNotas.AutoSize = True
-        Me.LBLNotas.BackColor = System.Drawing.Color.Transparent
+        Me.LBLNotas.BackColor = System.Drawing.Color.White
         Me.LBLNotas.Location = New System.Drawing.Point(32, 280)
         Me.LBLNotas.Name = "LBLNotas"
         Me.LBLNotas.Size = New System.Drawing.Size(40, 13)
@@ -887,7 +879,7 @@ Partial Class Principal
         'LinkNuevo
         '
         Me.LinkNuevo.AutoSize = True
-        Me.LinkNuevo.BackColor = System.Drawing.Color.Transparent
+        Me.LinkNuevo.BackColor = System.Drawing.Color.White
         Me.LinkNuevo.Location = New System.Drawing.Point(32, 241)
         Me.LinkNuevo.Name = "LinkNuevo"
         Me.LinkNuevo.Size = New System.Drawing.Size(48, 13)
@@ -909,7 +901,7 @@ Partial Class Principal
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(232, -2)
+        Me.PictureBox1.Location = New System.Drawing.Point(232, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(18, 18)
         Me.PictureBox1.TabIndex = 38
@@ -918,6 +910,7 @@ Partial Class Principal
         'Separator
         '
         Me.Separator.AutoSize = True
+        Me.Separator.BackColor = System.Drawing.Color.White
         Me.Separator.Location = New System.Drawing.Point(51, 258)
         Me.Separator.Name = "Separator"
         Me.Separator.Size = New System.Drawing.Size(12, 13)
@@ -927,6 +920,7 @@ Partial Class Principal
         'LblY
         '
         Me.LblY.AutoSize = True
+        Me.LblY.BackColor = System.Drawing.Color.White
         Me.LblY.Location = New System.Drawing.Point(69, 258)
         Me.LblY.Name = "LblY"
         Me.LblY.Size = New System.Drawing.Size(13, 13)
@@ -936,6 +930,7 @@ Partial Class Principal
         'LblX
         '
         Me.LblX.AutoSize = True
+        Me.LblX.BackColor = System.Drawing.Color.White
         Me.LblX.Location = New System.Drawing.Point(32, 258)
         Me.LblX.Name = "LblX"
         Me.LblX.Size = New System.Drawing.Size(13, 13)
@@ -1058,7 +1053,6 @@ Partial Class Principal
     Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
     Friend WithEvents DPfecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents SalirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents FacturaciónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConsultaCitasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PBUsuario As System.Windows.Forms.PictureBox
     Friend WithEvents GestiónUsuariosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

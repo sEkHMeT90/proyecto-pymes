@@ -159,7 +159,7 @@ Public Class Principal
         Facturacion.ShowDialog()
     End Sub
 
-    Private Sub FacturaciónToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FacturaciónToolStripMenuItem.Click
+    Private Sub FacturaciónToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Facturacion.ShowDialog()
     End Sub
 

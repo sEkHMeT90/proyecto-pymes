@@ -44,7 +44,7 @@ Public Class ModificarEmpleado
         CBEspecialidadE_Click(sender, e)
         CBEspecialidadE.SelectedIndex = Trabajador.NombreEspecialidad(ListaEmpleados.Item(LBoxME.SelectedIndex).Codigo) - 1
 
-        If LBoxME.Items.Count > 0 Then
+        If LBoxME.SelectedIndex >= 0 Then
             TBNombreE.Text = ListaEmpleados.Item(LBoxME.SelectedIndex).Nombre
             TBApellido1E.Text = ListaEmpleados.Item(LBoxME.SelectedIndex).Apellido1
             TBApellido2E.Text = ListaEmpleados.Item(LBoxME.SelectedIndex).Apellido2

@@ -157,4 +157,6 @@ Public Class Consulta
         Estado = Anual
         CargarDataGrid()
     End Sub
+
+
 End Class

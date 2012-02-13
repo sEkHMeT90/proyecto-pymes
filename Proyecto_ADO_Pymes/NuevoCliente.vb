@@ -52,7 +52,7 @@ Public Class NuevoCliente
     ''' </summary>
     ''' <author>Pedro Zalacain</author>
     Private Sub InsertarCliente()
-        Dim Mun As Municipio = _ListadoMunicipios.Item(CBPoblacionU.SelectedIndex + 1)
+        Dim Mun As Municipio = _ListadoMunicipios(CBPoblacionU.SelectedIndex)
         Dim Dir As Direccion = New Direccion(TBCalleU.Text, CInt(TBNumeroU.Text), TBPisoU.Text, Mun)
         Dim Cli As Cliente = New Cliente(0, TBDniU.Text, TBNombreU.Text, TBApellido1U.Text, TBApellidoU.Text, Dir, TBFijoU.Text, TBMovilU.Text, TBEmailU.Text)
 

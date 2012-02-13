@@ -59,7 +59,7 @@ Public Class NuevoEmple
     ''' </summary>
     ''' <author>Pedro Zalacain, María Navarro</author>
     Private Sub InsertarEmpleado()
-        Dim Mun As Municipio = _ListadoMunicipios.Item(CBPoblacionE.SelectedIndex)
+        Dim Mun As Municipio = _ListadoMunicipios(CBPoblacionE.SelectedIndex)
         Dim Dir As Direccion = New Direccion(TBCalleE.Text, CInt(TBNumeroE.Text), TBPisoE.Text, Mun)
         Dim Trabaj As Trabajador = New Trabajador(0, TBDniE.Text, TBNombreE.Text, TBApellido1E.Text, TBApellido2E.Text, Dir, TBFijoE.Text, TBMovilE.Text, TBEmailE.Text, CInt(TBNumSSE.Text), CDbl(TBSueldoE.Text), CStr(CBEspecialidadE.SelectedIndex))
 
