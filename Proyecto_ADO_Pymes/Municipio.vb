@@ -37,22 +37,28 @@ Public Class Municipio
     ''' Propiedades de los atributos
     ''' </summary>
     ''' <author>Andrés Marotta, Pedro Zalacain</author>
-    Public ReadOnly Property Codigo() As Integer
-        Get
-            Return Me._Codigo
-        End Get
-    End Property
 
     Public ReadOnly Property Provincia() As Provincia
         Get
             Return Me._Provincia
         End Get
     End Property
-
-    Public ReadOnly Property Nombre() As String
+    Public Property Codigo() As Integer
         Get
-            Return Me._Nombre
+            Return _Codigo
         End Get
+        Set(ByVal value As Integer)
+            Me._Codigo = value
+        End Set
+    End Property
+
+    Public Property Nombre() As String
+        Get
+            Return _Nombre
+        End Get
+        Set(ByVal value As String)
+            Me._Nombre = value
+        End Set
     End Property
 
     ''' <summary>

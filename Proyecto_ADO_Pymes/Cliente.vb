@@ -1,4 +1,16 @@
-﻿Option Explicit On
+﻿
+
+
+
+
+
+
+
+
+
+
+
+Option Explicit On
 Option Strict On
 
 Imports System.Data
@@ -140,6 +152,53 @@ Public Class Cliente : Inherits Usuario
 
         Return ok
     End Function
+
+    ''' <summary>
+    ''' Modificar une cliente
+    ''' </summary>
+    ''' <author>María Navarro Sánchez</author>
+    Public Function Modificar() As Boolean
+        Dim ok As Boolean = False
+        Dim columnas As Integer
+        Dim conexion As New BBDD
+
+        columnas = conexion.Modificar("UPDATE Clientes SET dni = " & _
+                                        "'" & Me._DNI & "',nombre = " & _
+                                        "'" & Me._Nombre & "', apellido1 = " & _
+                                        "'" & Me._Apellido1 & "', apellido2 = " & _
+                                        "'" & Me._Apellido2 & "', email = " & _
+                                        "'" & Me._Email & "', telefonoparticular = " & _
+                                        "'" & Me._Particular & "',telefonomovil = " & _
+                                        "'" & Me._Movil & "',calle = " & _
+                                        "'" & Me._Direccion.Calle & _
+                                        "',numero = " & Me._Direccion.Numero & _
+                                        ",piso = '" & Me._Direccion.Piso & "'" & _
+                                        ",poblacion = " & Me._Direccion.Municipio.Codigo & _
+                                        " WHERE codigo = " & Me._Cod & ";")
+        If columnas > 0 Then
+            ok = True
+        End If
+
+        Return ok
+    End Function
+
+    ''' <summary>
+    ''' Eliminar un cliente
+    ''' </summary>
+    ''' <author>María Navarro Sánchez</author>
+    Public Function Eliminar() As Boolean
+        Dim ok As Boolean = False
+        Dim columnas As Integer
+        Dim conexion As New BBDD
+
+        columnas = conexion.Modificar("DELETE FROM Clientes WHERE codigo = " & Me._Cod & ";")
+        If columnas > 0 Then
+            ok = True
+        End If
+
+        Return ok
+    End Function
+
 
     ''' <summary>
     ''' Destructor Dispose

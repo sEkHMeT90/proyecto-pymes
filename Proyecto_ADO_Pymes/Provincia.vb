@@ -1,4 +1,5 @@
-﻿Option Strict On
+﻿
+Option Strict On
 Option Explicit On
 
 Imports System.Data
@@ -33,17 +34,23 @@ Public Class Provincia
     ''' <summary>
     ''' Propiedades de los atributos
     ''' </summary>
-    ''' <author>Andrés Marotta</author>
-    Public ReadOnly Property Codigo() As Integer
+    ''' <author>Andrés Marotta, Maria Navarro</author>
+    Public Property Codigo() As Integer
         Get
-            Return Me._Codigo
+            Return _Codigo
         End Get
+        Set(ByVal value As Integer)
+            Me._Codigo = value
+        End Set
     End Property
 
-    Public ReadOnly Property Nombre() As String
+    Public Property Nombre() As String
         Get
-            Return Me._Nombre
+            Return _Nombre
         End Get
+        Set(ByVal value As String)
+            Me._Nombre = value
+        End Set
     End Property
 
     ''' <summary>

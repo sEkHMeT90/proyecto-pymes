@@ -9,19 +9,27 @@ Public Class NuevoEmple
 
     Dim _ListadoProvincias As List(Of Provincia)
     Dim _ListadoMunicipios As List(Of Municipio)
+    Dim _ListadoEspecialidades As List(Of Especialidad)
 
     ''' <summary>
-    ''' Carga el listado de Provincias y muestra las mismas en el ComboBox
+    ''' Carga el listado de Provincias y  especialidades y muestra las mismas en el ComboBox
     ''' </summary>
-    ''' <author>Pedro Zalacain</author>
+    ''' <author>Maria Navarro</author>
     Private Sub NuevoEmple_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         _ListadoProvincias = Provincia.Cargar()
-
+        _ListadoEspecialidades = Especialidad.Cargar()
+        CBEspecialidadE.Items.Clear()
         CBProvinciaE.Items.Clear()
 
         If _ListadoProvincias IsNot Nothing Then
             For Each Prov In _ListadoProvincias
                 CBProvinciaE.Items.Add(Prov.Nombre)
+            Next
+        End If
+
+        If _ListadoEspecialidades IsNot Nothing Then
+            For Each Espec In _ListadoEspecialidades
+                CBEspecialidadE.Items.Add(Espec.Nombre)
             Next
         End If
 
@@ -47,19 +55,19 @@ Public Class NuevoEmple
     End Sub
 
     ''' <summary>
-    ''' Inserta el Cliente en la BBDD
+    ''' Inserta el Empleado en la BBDD
     ''' </summary>
-    ''' <author>Pedro Zalacain</author>
-    Private Sub InsertarCliente()
-        Dim Mun As Municipio = _ListadoMunicipios.Item(CBPoblacionE.SelectedIndex + 1)
+    ''' <author>Pedro Zalacain, María Navarro</author>
+    Private Sub InsertarEmpleado()
+        Dim Mun As Municipio = _ListadoMunicipios.Item(CBPoblacionE.SelectedIndex)
         Dim Dir As Direccion = New Direccion(TBCalleE.Text, CInt(TBNumeroE.Text), TBPisoE.Text, Mun)
-        Dim Trabaj As Trabajador = New Trabajador(0, TBDniE.Text, TBNombreE.Text, TBApellido1E.Text, TBApellido2E.Text, Dir, TBFijoE.Text, TBMovilE.Text, TBEmailE.Text, CInt(TBNumSSE.Text), CDbl(TBSueldoE.Text), New List(Of Especialidad))
+        Dim Trabaj As Trabajador = New Trabajador(0, TBDniE.Text, TBNombreE.Text, TBApellido1E.Text, TBApellido2E.Text, Dir, TBFijoE.Text, TBMovilE.Text, TBEmailE.Text, CInt(TBNumSSE.Text), CDbl(TBSueldoE.Text), CStr(CBEspecialidadE.SelectedIndex))
 
         If Trabaj.Insertar = True Then
-            TSLabEstado.Text = "Cliente agregado correctamente"
+            TSLabEstado.Text = "Empleado agregado correctamente"
             Me.BorrarCampos()
         Else
-            TSLabEstado.Text = "Ocurrio un error mientras se insertaba el cliente"
+            TSLabEstado.Text = "Ocurrio un error mientras se insertaba el empleado"
         End If
     End Sub
 
@@ -88,10 +96,10 @@ Public Class NuevoEmple
     ''' <summary>
     ''' Valida los campos e inserta en la Base de Datos
     ''' </summary>
-    ''' <author>Pedro Zalacain, Maria Navarro</author>
+    ''' <author> Maria Navarro</author>
 
     Private Sub PBAceptarE_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBAceptarE.Click
-        Me.InsertarCliente()
+        Me.InsertarEmpleado()
     End Sub
 
     Private Sub PBBorrarE_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBorrarE.Click
@@ -102,3 +110,5 @@ Public Class NuevoEmple
         Me.Close()
     End Sub
 End Class
+
+

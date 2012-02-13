@@ -63,28 +63,40 @@ Public Class Usuario
         End Set
     End Property
 
-    Public ReadOnly Property DNI() As String
+    Public Property Dni() As String
         Get
             Return _DNI
         End Get
+        Set(ByVal value As String)
+            Me._DNI = value
+        End Set
     End Property
 
-    Public ReadOnly Property Nombre() As String
+    Public Property Nombre() As String
         Get
             Return _Nombre
         End Get
+        Set(ByVal value As String)
+            Me._Nombre = value
+        End Set
     End Property
 
-    Public ReadOnly Property Apellido1() As String
+    Public Property Apellido1() As String
         Get
             Return _Apellido1
         End Get
+        Set(ByVal value As String)
+            Me._Apellido1 = value
+        End Set
     End Property
 
-    Public ReadOnly Property Apellido2() As String
+    Public Property Apellido2() As String
         Get
             Return _Apellido2
         End Get
+        Set(ByVal value As String)
+            Me._Apellido2 = value
+        End Set
     End Property
 
     Public Property Direccion() As Direccion
@@ -96,22 +108,31 @@ Public Class Usuario
         End Set
     End Property
 
-    Public ReadOnly Property Particular() As String
+    Public Property Particular() As String
         Get
-            Return Me._Particular
+            Return _Particular
         End Get
+        Set(ByVal value As String)
+            Me._Particular = value
+        End Set
     End Property
 
-    Public ReadOnly Property Movil() As String
+    Public Property Movil() As String
         Get
-            Return Me._Movil
+            Return _Movil
         End Get
+        Set(ByVal value As String)
+            Me._Movil = value
+        End Set
     End Property
 
-    Public ReadOnly Property Email() As String
+    Public Property Email() As String
         Get
             Return _Email
         End Get
+        Set(ByVal value As String)
+            Me._Email = value
+        End Set
     End Property
 
     ''' <summary>
