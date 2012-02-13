@@ -407,8 +407,7 @@ Partial Class ModificarCliente
         Me.TSLabEstado.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TSLabEstado.ForeColor = System.Drawing.Color.White
         Me.TSLabEstado.Name = "TSLabEstado"
-        Me.TSLabEstado.Size = New System.Drawing.Size(143, 17)
-        Me.TSLabEstado.Text = "ToolStripStatusLabel1"
+        Me.TSLabEstado.Size = New System.Drawing.Size(0, 17)
         '
         'ModificarCliente
         '

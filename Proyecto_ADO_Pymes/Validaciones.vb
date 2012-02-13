@@ -4,7 +4,6 @@
 ''' <author>Raquel Lloréns Gambín</author> 
 
 Module Validaciones
-
     ''' <summary>
     ''' Función que comprueba que una cadena de texto esté compuesta únicamente
     ''' por letras.
@@ -60,21 +59,43 @@ Module Validaciones
     ''' <param name="longitudMin">Longitud mínima requerida</param>
     ''' <param name="longitudMax">Longitud máxima requerida</param>
     ''' <author>Raquel Lloréns Gambín</author>
-    Public Function EsNumero(ByVal texto As String, ByVal longitudMin As Integer, ByVal longitudMax As Integer) As Boolean
+    Public Function LongitudNumero(ByVal texto As String, ByVal longitudMin As Integer, ByVal longitudMax As Integer) As Boolean
+        Dim correcto As Boolean = False
+
+        Try
+            'Intentamos convertir a integer
+            If EsNumero(texto) = False Then
+                correcto = False
+            Else
+                'Comprobamos que esté entre la longitud mínima y máxima requeridas
+                If (texto.Length >= longitudMin) And (texto.Length <= longitudMax) Then
+                    correcto = True
+                Else
+                    correcto = False
+                End If
+            End If
+
+        Catch ex As Exception
+            correcto = False
+        End Try
+
+        Return correcto
+    End Function
+
+
+
+    ''' <summary>
+    ''' Función que comprueba de una cadena es un número.
+    ''' </summary>
+    ''' <param name="texto">Cadena de carácteres a comprobar</param>
+    ''' <author>Raquel Lloréns Gambín</author>
+    Public Function EsNumero(ByVal texto As String) As Boolean
         Dim correcto As Boolean = False
         Dim numero As Integer
 
         Try
-            'Intentamos convertir a integer
             numero = CInt(texto)
-
-            'Comprobamos que esté entre la longitud mínima y máxima requeridas
-            If (texto.Length >= longitudMin) And (texto.Length <= longitudMax) Then
-                correcto = True
-            Else
-                correcto = False
-            End If
-
+            correcto = True
         Catch ex As Exception
             correcto = False
         End Try
@@ -163,6 +184,24 @@ Module Validaciones
         Catch ex As Exception
             correcto = False
         End Try
+
+        Return correcto
+    End Function
+
+    ''' <summary>
+    ''' Indica si una cadena es un DNI.
+    ''' </summary>
+    ''' <param name="texto">Cadena a comprobar</param>
+    ''' <author>Raquel Lloréns Gambín</author>
+    Public Function EsDNI(ByVal texto As String) As Boolean
+        Dim correcto As Boolean = False
+
+        If texto.Length() = 9 And (texto(0) = CChar("X") Or texto(0) = CChar("x") Or EsNumero(texto(0))) And _
+            EsTexto(texto(8)) And EsNumero(texto.Substring(1, 7)) Then
+            correcto = True
+        Else
+            correcto = False
+        End If
 
         Return correcto
     End Function
