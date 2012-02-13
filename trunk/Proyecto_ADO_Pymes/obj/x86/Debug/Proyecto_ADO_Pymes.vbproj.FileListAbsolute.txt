@@ -229,3 +229,28 @@ C:\Users\Maria\Desktop\ProyectoPymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_A
 C:\Users\Maria\Desktop\ProyectoPymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoCliente.resources
 C:\Users\Maria\Desktop\ProyectoPymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Maria\Desktop\ProyectoPymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.exe
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.xml
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.pdb
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\BDCitas.accdb
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.exe
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.pdb
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\bin\Debug\Proyecto_ADO_Pymes.xml
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Consulta.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Facturacion.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarCita.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarCliente.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarEmpleado.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarEspecialidad.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.ModificarServicios.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaEspecialidad.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoEmple.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoServicio.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Principal.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Resources.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.Buscar.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevaCita.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\Proyecto_ADO_Pymes.NuevoCliente.resources
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Maria\Desktop\Proyecto Pymes\Proyecto_ADO_Pymes\obj\x86\Debug\GenerateResource.write.1.tlog

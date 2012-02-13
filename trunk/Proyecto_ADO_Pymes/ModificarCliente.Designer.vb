@@ -50,15 +50,15 @@ Partial Class ModificarCliente
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.PBCancelarMC = New System.Windows.Forms.PictureBox()
-        Me.BarraEstado = New System.Windows.Forms.StatusStrip()
-        Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
         Me.PBBorrarMC = New System.Windows.Forms.PictureBox()
         Me.PBModificarMC = New System.Windows.Forms.PictureBox()
+        Me.BarraEstado = New System.Windows.Forms.StatusStrip()
+        Me.TSLabEstado = New System.Windows.Forms.ToolStripStatusLabel()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.BarraEstado.SuspendLayout()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BarraEstado.SuspendLayout()
         Me.SuspendLayout()
         '
         'LBoxMC
@@ -372,24 +372,6 @@ Partial Class ModificarCliente
         Me.PBCancelarMC.TabIndex = 103
         Me.PBCancelarMC.TabStop = False
         '
-        'BarraEstado
-        '
-        Me.BarraEstado.BackColor = System.Drawing.Color.Transparent
-        Me.BarraEstado.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLabEstado})
-        Me.BarraEstado.Location = New System.Drawing.Point(0, 500)
-        Me.BarraEstado.Name = "BarraEstado"
-        Me.BarraEstado.Size = New System.Drawing.Size(994, 22)
-        Me.BarraEstado.TabIndex = 102
-        Me.BarraEstado.Text = "StatusStrip1"
-        '
-        'TSLabEstado
-        '
-        Me.TSLabEstado.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TSLabEstado.ForeColor = System.Drawing.Color.White
-        Me.TSLabEstado.Name = "TSLabEstado"
-        Me.TSLabEstado.Size = New System.Drawing.Size(143, 17)
-        Me.TSLabEstado.Text = "ToolStripStatusLabel1"
-        '
         'PBBorrarMC
         '
         Me.PBBorrarMC.BackColor = System.Drawing.Color.Transparent
@@ -410,6 +392,24 @@ Partial Class ModificarCliente
         Me.PBModificarMC.TabIndex = 100
         Me.PBModificarMC.TabStop = False
         '
+        'BarraEstado
+        '
+        Me.BarraEstado.BackColor = System.Drawing.Color.Transparent
+        Me.BarraEstado.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSLabEstado})
+        Me.BarraEstado.Location = New System.Drawing.Point(0, 500)
+        Me.BarraEstado.Name = "BarraEstado"
+        Me.BarraEstado.Size = New System.Drawing.Size(994, 22)
+        Me.BarraEstado.TabIndex = 102
+        Me.BarraEstado.Text = "StatusStrip1"
+        '
+        'TSLabEstado
+        '
+        Me.TSLabEstado.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TSLabEstado.ForeColor = System.Drawing.Color.White
+        Me.TSLabEstado.Name = "TSLabEstado"
+        Me.TSLabEstado.Size = New System.Drawing.Size(143, 17)
+        Me.TSLabEstado.Text = "ToolStripStatusLabel1"
+        '
         'ModificarCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -427,10 +427,10 @@ Partial Class ModificarCliente
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PBCancelarMC, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.BarraEstado.ResumeLayout(False)
-        Me.BarraEstado.PerformLayout()
         CType(Me.PBBorrarMC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBModificarMC, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BarraEstado.ResumeLayout(False)
+        Me.BarraEstado.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
