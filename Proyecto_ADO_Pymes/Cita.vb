@@ -238,6 +238,8 @@ Public Class Cita
                 For Each cita In citas
                     cita._Servicios = Servicio.ServiciosPorCita(cita._Codigo, conexion)
                 Next
+            Else
+                citas = Nothing
             End If
 
             conexion.Desconectar()
@@ -358,6 +360,7 @@ Public Class Cita
 
         Return citas
     End Function
+
     ''' <summary>
     ''' Devuelve todas las citas de un mes
     ''' </summary>
@@ -403,6 +406,38 @@ Public Class Cita
         End If
 
         Return citas
+    End Function
+
+    ''' <summary>
+    ''' Indica si hay citas dado un mes y un año
+    ''' </summary>
+    ''' <param name="mes">Mes a buscar</param>
+    ''' <param name="anyo">Año a buscar</param>
+    ''' <returns>True o False dependiendo de si hay datos o no</returns>
+    ''' <author>Andrés Marotta</author>
+    Public Shared Function HayCitas(ByVal mes As Integer, ByVal anyo As Integer) As Boolean
+        Dim conexion As New BBDD
+        Dim lector As OleDbDataReader
+        Dim hay As Boolean
+
+        If conexion.Conectar Then
+            lector = conexion.Consultar("SELECT 1 FROM Citas " & _
+                                         "WHERE fecha LIKE '%/%" & mes & "/%'" & anyo & ";")
+
+            If lector IsNot Nothing Then
+                hay = True
+            Else
+                hay = False
+            End If
+
+            conexion.Desconectar()
+            conexion.Dispose()
+        Else
+            hay = False
+            conexion.Dispose()
+        End If
+
+        Return hay
     End Function
 
     ''' <summary>

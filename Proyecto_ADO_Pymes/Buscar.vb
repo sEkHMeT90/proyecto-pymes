@@ -14,7 +14,7 @@ Public Class Buscar
     ''' <autor>María Navarro Sánchez</autor>
     Private Sub Buscar_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         If TBBuscar.Text = "" Then
-            TBBuscar.Text = "    Antonio Picazo Escudero (ó) 12/12/2012   "
+            TBBuscar.Text = "Antonio Picazo Escudero (ó) 12/12/2012"
         End If
 
         With DataGridBuscar
@@ -27,18 +27,22 @@ Public Class Buscar
         End With
 
     End Sub
+
     Private Sub TBBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TBBuscar.Click
         TBBuscar.Text = ""
     End Sub
 
-
     Private Sub PBBuscarB_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PBBuscarB.Click
         DataGridBuscar.Rows.Clear()
 
-        If Validaciones.EsFecha(TBBuscar.Text) Then
-            BuscarFecha()
+        If TBBuscar.Text.Length > 0 Then
+            If Validaciones.EsFecha(TBBuscar.Text) Then
+                BuscarFecha()
+            Else
+                BuscarTexto()
+            End If
         Else
-            BuscarTexto()
+            TSLabEstado.Text = "Debe introducir un parámetro de búsqueda"
         End If
     End Sub
     Private Sub Panel2_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel2.Paint
@@ -55,8 +59,10 @@ Public Class Buscar
         citas = Cita.Cargar(fecha)
 
         If citas Is Nothing Then
-            MessageBox.Show("No se han encontrado resultados a su busqueda")
+            TSLabEstado.Text = "No se han encontrado resultados a su búsqueda"
         Else
+            TSLabEstado.Text = ""
+
             For Each Cita As Cita In citas
                 For Each Servicio As Servicio In Cita.Servicios()
                     DataGridBuscar.Rows.Add(Cita.Hora().TimeOfDay, Cita.Cliente.Nombre() & " " & Cita.Cliente.Apellido1(), Servicio.Nombre(), Servicio.Duracion(), Cita.Trabajador.Nombre() & " " & Cita.Trabajador.Apellido1())
@@ -73,27 +79,27 @@ Public Class Buscar
         Dim nombres As String()
         Dim citas As List(Of Cita)
 
+
         nombres = TBBuscar.Text.Split(CChar(" "))
 
         If nombres.Count = 1 Then
             citas = Cita.Cargar(nombres(0))
         ElseIf nombres.Count = 2 Then
             citas = Cita.Cargar(nombres(0), nombres(1))
-        ElseIf nombres.Count = 3 Then
+        Else
             citas = Cita.Cargar(nombres(0), nombres(1), nombres(2))
         End If
 
-
         If citas Is Nothing Then
-            MessageBox.Show("No se han encontrado resultados a su busqueda")
+            TSLabEstado.Text = "No se han encontrado resultados a su búsqueda"
         Else
+            TSLabEstado.Text = ""
+
             For Each Cita As Cita In citas
                 For Each Servicio As Servicio In Cita.Servicios()
                     DataGridBuscar.Rows.Add(Cita.Hora().TimeOfDay, Cita.Cliente.Nombre() & " " & Cita.Cliente.Apellido1(), Servicio.Nombre(), Servicio.Duracion(), Cita.Trabajador.Nombre() & " " & Cita.Trabajador.Apellido1())
                 Next
             Next
         End If
-
-
     End Sub
 End Class

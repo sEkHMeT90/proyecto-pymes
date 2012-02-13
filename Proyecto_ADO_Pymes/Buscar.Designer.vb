@@ -24,13 +24,6 @@ Partial Class Buscar
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Buscar))
         Me.DataGridBuscar = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PBBuscarB = New System.Windows.Forms.PictureBox()
         Me.TBBuscar = New System.Windows.Forms.TextBox()
@@ -45,50 +38,23 @@ Partial Class Buscar
         '
         'DataGridBuscar
         '
+        Me.DataGridBuscar.AllowUserToAddRows = False
+        Me.DataGridBuscar.AllowUserToDeleteRows = False
+        Me.DataGridBuscar.AllowUserToResizeColumns = False
+        Me.DataGridBuscar.AllowUserToResizeRows = False
         Me.DataGridBuscar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridBuscar.BackgroundColor = System.Drawing.Color.Thistle
+        Me.DataGridBuscar.BackgroundColor = System.Drawing.Color.White
         Me.DataGridBuscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridBuscar.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
         Me.DataGridBuscar.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DataGridBuscar.Location = New System.Drawing.Point(70, 196)
         Me.DataGridBuscar.Name = "DataGridBuscar"
+        Me.DataGridBuscar.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DataGridBuscar.RowHeadersVisible = False
+        Me.DataGridBuscar.RowTemplate.ReadOnly = True
+        Me.DataGridBuscar.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.DataGridBuscar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridBuscar.Size = New System.Drawing.Size(648, 325)
         Me.DataGridBuscar.TabIndex = 4
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Column1"
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Column2"
-        Me.Column2.Name = "Column2"
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Column3"
-        Me.Column3.Name = "Column3"
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Column4"
-        Me.Column4.Name = "Column4"
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Column5"
-        Me.Column5.Name = "Column5"
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "Column6"
-        Me.Column6.Name = "Column6"
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "Column7"
-        Me.Column7.Name = "Column7"
         '
         'Panel2
         '
@@ -116,7 +82,7 @@ Partial Class Buscar
         '
         'TBBuscar
         '
-        Me.TBBuscar.BackColor = System.Drawing.Color.Thistle
+        Me.TBBuscar.BackColor = System.Drawing.Color.White
         Me.TBBuscar.ForeColor = System.Drawing.Color.Black
         Me.TBBuscar.Location = New System.Drawing.Point(51, 47)
         Me.TBBuscar.Name = "TBBuscar"
@@ -149,8 +115,7 @@ Partial Class Buscar
         Me.TSLabEstado.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TSLabEstado.ForeColor = System.Drawing.Color.White
         Me.TSLabEstado.Name = "TSLabEstado"
-        Me.TSLabEstado.Size = New System.Drawing.Size(143, 17)
-        Me.TSLabEstado.Text = "ToolStripStatusLabel1"
+        Me.TSLabEstado.Size = New System.Drawing.Size(0, 17)
         '
         'Buscar
         '
@@ -176,13 +141,6 @@ Partial Class Buscar
 
     End Sub
     Friend WithEvents DataGridBuscar As System.Windows.Forms.DataGridView
-    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents TBBuscar As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
