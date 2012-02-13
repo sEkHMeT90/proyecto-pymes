@@ -374,7 +374,7 @@ Public Class Cita
 
         If conexion.Conectar Then
             lector = conexion.Consultar("SELECT * FROM Citas " & _
-                                         "WHERE fecha LIKE '%/%" & mes & "/%';")
+                                         "WHERE fecha LIKE '%/%" & mes & "/%' ORDER BY fecha;")
 
             If lector IsNot Nothing Then
                 While lector.Read
@@ -418,17 +418,15 @@ Public Class Cita
     Public Shared Function HayCitas(ByVal mes As Integer, ByVal anyo As Integer) As Boolean
         Dim conexion As New BBDD
         Dim lector As OleDbDataReader
-        Dim hay As Boolean
+        Dim hay As Boolean = False
 
         If conexion.Conectar Then
-            lector = conexion.Consultar("SELECT 1 FROM Citas " & _
-                                         "WHERE fecha LIKE '%/%" & mes & "/%'" & anyo & ";")
+            lector = conexion.Consultar("SELECT * FROM Citas " & _
+                                         "WHERE fecha LIKE '%/%" & mes & "/" & anyo & "';")
 
-            If lector IsNot Nothing Then
+            While lector.Read And hay <> True
                 hay = True
-            Else
-                hay = False
-            End If
+            End While
 
             conexion.Desconectar()
             conexion.Dispose()
