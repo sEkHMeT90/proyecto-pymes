@@ -1,0 +1,1 @@
+Proyecto en ADO .Net para gestionar las citas de una pequeña empresa; dentista, peluquería, etc.
